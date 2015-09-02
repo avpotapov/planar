@@ -1,11 +1,11 @@
 object MainForm: TMainForm
   Left = 344
-  Height = 513
-  Top = 391
-  Width = 912
+  Height = 794
+  Top = 110
+  Width = 1228
   Caption = 'Библиотекарь'
-  ClientHeight = 493
-  ClientWidth = 912
+  ClientHeight = 774
+  ClientWidth = 1228
   Menu = MainMenu
   OnClose = FormClose
   OnCreate = FormCreate
@@ -14,8 +14,8 @@ object MainForm: TMainForm
   object StatusBar: TStatusBar
     Left = 0
     Height = 23
-    Top = 470
-    Width = 912
+    Top = 751
+    Width = 1228
     Panels = <    
       item
         Width = 350
@@ -30,7 +30,7 @@ object MainForm: TMainForm
   end
   object LibraryPanel: TPanel
     Left = 0
-    Height = 470
+    Height = 751
     Top = 0
     Width = 352
     Align = alLeft
@@ -38,9 +38,9 @@ object MainForm: TMainForm
   end
   object FormPanel: TPanel
     Left = 357
-    Height = 470
+    Height = 751
     Top = 0
-    Width = 555
+    Width = 871
     Align = alClient
     Color = clWindow
     ParentColor = False
@@ -48,7 +48,7 @@ object MainForm: TMainForm
   end
   object MainSplitter: TSplitter
     Left = 352
-    Height = 470
+    Height = 751
     Top = 0
     Width = 5
   end

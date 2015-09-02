@@ -18,10 +18,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMainForm"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="34"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="32"/>
         <CursorPos X="37" Y="24"/>
         <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\library\units\ulibrary.pas"/>
@@ -109,7 +112,7 @@
         <ComponentName Value="VarsForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="157"/>
         <CursorPos X="13" Y="174"/>
         <UsageCount Value="71"/>
@@ -187,7 +190,6 @@
         <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uPropertyEditorNew"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
         <TopLine Value="91"/>
         <CursorPos X="3" Y="94"/>
@@ -228,7 +230,7 @@
         <Filename Value="units\vars\uvarseditor.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uVarsEditor"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="9"/>
         <TopLine Value="40"/>
         <CursorPos X="29" Y="51"/>
         <UsageCount Value="71"/>
@@ -278,7 +280,7 @@
         <Filename Value="units\config\uconfigeditor.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uConfigEditor"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="452"/>
         <CursorPos X="104" Y="395"/>
         <UsageCount Value="70"/>
@@ -303,7 +305,7 @@
       <Unit35>
         <Filename Value="d:\soft\lazarus\lcl\lcltype.pp"/>
         <UnitName Value="LCLType"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="10"/>
         <TopLine Value="615"/>
         <CursorPos X="3" Y="401"/>
         <UsageCount Value="25"/>

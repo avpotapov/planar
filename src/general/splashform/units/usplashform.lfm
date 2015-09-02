@@ -1,0 +1,29 @@
+object SplashForm: TSplashForm
+  Left = 373
+  Height = 132
+  Top = 195
+  Width = 487
+  AlphaBlendValue = 200
+  BorderStyle = bsNone
+  Caption = 'SplashForm'
+  ClientHeight = 132
+  ClientWidth = 487
+  Color = clNone
+  FormStyle = fsSplash
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.4.0.4'
+  object Logo: TImage
+    Left = 0
+    Height = 132
+    Top = 0
+    Width = 487
+    Align = alClient
+    AutoSize = True
+    BorderSpacing.CellAlignHorizontal = ccaCenter
+    BorderSpacing.CellAlignVertical = ccaCenter
+    Center = True
+    Proportional = True
+    Transparent = True
+  end
+end

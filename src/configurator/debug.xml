@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="..\..\bin\configurator"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="units;..\setting\units;..\modbus\units;..\library\units;..\map\units;units\detailedconfigsform;units\general;units\mainform;units\detailedbackupform;units\detailedbootloaderform;units\detaileddeviceform;units\detailedmodbusform;units\detailedtrendform;units\deviceform;units\detailedtrendsform;units\detailedgroupform;units\savedholdingsform;..\holdings\units;..\general\settingform\units;units\holdingsform"/>
+      <UnitOutputDirectory Value="..\..\lib"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <IncludeAssertionCode Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <UseLineInfoUnit Value="False"/>
+        <UseHeaptrc Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-dDEBUG"/>
+    </Other>
+  </CompilerOptions>
+</CONFIG>

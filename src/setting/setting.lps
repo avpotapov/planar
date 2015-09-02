@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="setting.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="5" Y="6"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="units\usetting.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSetting"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="19" Y="53"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="units\usettingcls.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSettingCls"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="199"/>
+        <CursorPos X="5" Y="18"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\sysutils\diskh.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="10" Y="18"/>
+        <UsageCount Value="11"/>
+      </Unit3>
+    </Units>
+    <JumpHistory Count="9" HistoryIndex="8">
+      <Position1>
+        <Filename Value="setting.lpr"/>
+        <Caret Line="22"/>
+      </Position1>
+      <Position2>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="226" TopLine="168"/>
+      </Position2>
+      <Position3>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="201" Column="49" TopLine="172"/>
+      </Position3>
+      <Position4>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="283" Column="82" TopLine="210"/>
+      </Position4>
+      <Position5>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="52" Column="23" TopLine="30"/>
+      </Position5>
+      <Position6>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="192" Column="55" TopLine="179"/>
+      </Position6>
+      <Position7>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="60" Column="35" TopLine="33"/>
+      </Position7>
+      <Position8>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="252" Column="108" TopLine="212"/>
+      </Position8>
+      <Position9>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="276" Column="89" TopLine="219"/>
+      </Position9>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

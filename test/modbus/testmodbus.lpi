@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="testmodbus"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="15">
+      <Unit0>
+        <Filename Value="testmodbus.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="units\utestform.lfm"/>
+        <IsPartOfProject Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="units\utestform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <UnitName Value="uTestForm"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\src\modbus\units\umodbus.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\src\modbus\units\ubase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ubase"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uCommunication"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uConnection"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\src\modbus\units\ucontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ucontroller"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\src\modbus\units\ucontrollerpool.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ucontrollerpool"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\src\modbus\units\uframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uframe"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\src\modbus\units\uframefactory.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uframefactory"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\src\modbus\units\ulogger.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ulogger"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\src\modbus\units\userver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="userver"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\src\modbus\units\ustackbuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ustackbuilder"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\src\modbus\units\utransaction.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="utransaction"/>
+      </Unit14>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="..\..\bin\testmodbus"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="units;..\..\src\modbus\units"/>
+      <UnitOutputDirectory Value="..\..\lib"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <UseHeaptrc Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

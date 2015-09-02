@@ -1,0 +1,3913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<holdings uid="13" date="23.07.2015 9:02:20" module="RCCU 3.2M2">
+  <holding name="f_task" type="UINT16" index="0" multipler="100">
+    <description_short>Задание производительности вентилятора, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="t_task" type="SINT16" index="1" multipler="10">
+    <description_short>Задание температуры, °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="h_task" type="SINT16" index="2" multipler="10">
+    <description_short>Задание относительной влажности, %</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="on_off" type="UINT16" index="3" multipler="1">
+    <description_short>Режим работы установки (ОТКЛ/Рабочий/Дежурный)</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="f_add_task" type="UINT16" index="4" multipler="100">
+    <description_short>Задание производительности вентилятора (дополнительный регистр), %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="t_add_task" type="SINT16" index="5" multipler="10">
+    <description_short>Задание температуры (дополнительный регистр), °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="h_add_task" type="SINT16" index="6" multipler="10">
+    <description_short>Задание относительной влажности (дополнительный регистр), %</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="mode" type="UINT16" index="7" multipler="1">
+    <description_short>Управление режимами нагрев/охлаждение (Зима/Лето)</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="hands_mode_autobits" type="UINT16" index="8" multipler="1">
+    <description_short>Настройка битов автомата пользователем</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="chn_fire_di" type="UINT16" index="20" multipler="1">
+    <description_short>Дискретный вход DI аварии "ПОЖАР"</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="chn_error_di" type="UINT16" index="21" multipler="1">
+    <description_short>Дискретный вход DI "Объединенная авария"</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="chn_remote_di" type="UINT16" index="22" multipler="1">
+    <description_short>Дискретный вход DI для дистанционного управления от переключателя</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="chn_err_do" type="UINT16" index="23" multipler="1">
+    <description_short>Номер дискретного выхода DO "Авария"</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="chn_pu_out_t_ai" type="UINT16" index="24" multipler="1">
+    <description_short>Номер канала температуры на выходе ПУ</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="chn_pu_out_h_ai" type="UINT16" index="25" multipler="1">
+    <description_short>Номер канала влажности на выходе ПУ</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="chn_room_air_t_ai" type="UINT16" index="26" multipler="1">
+    <description_short>Номер канала температуры в помещении</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="chn_room_air_h_ai" type="UINT16" index="27" multipler="1">
+    <description_short>Номер канала влажности в помещении</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="chn_ext_air_t_ai" type="UINT16" index="28" multipler="1">
+    <description_short>Номер канала температуры уличного воздуха</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="chn_ext_air_h_ai" type="UINT16" index="29" multipler="1">
+    <description_short>Номер канала влажности уличного воздуха</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="chn_pool_watert_ai" type="UINT16" index="30" multipler="1">
+    <description_short>Номер канала температуры воды в бассейне</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="chn_hot_water_t_ai" type="UINT16" index="31" multipler="1">
+    <description_short>Номер канала температуры теплоносителя</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="ctrl_system" type="BITMAP32" index="40" multipler="1">
+    <description_short>Опции управления системные</description_short>
+    <value_str>0x01C22710</value_str>
+    <value>29501200</value>
+  </holding>
+  <holding name="ctrl_user" type="BITMAP32" index="42" multipler="1">
+    <description_short>Опции управления пользовательские</description_short>
+    <value_str>0x000101F4</value_str>
+    <value>66036</value>
+  </holding>
+  <holding name="hard_en" type="BITMAP16" index="44" multipler="1">
+    <description_short>Наличие дополнительных секций и узлов установки</description_short>
+    <value_str>0x1F40</value_str>
+    <value>8000</value>
+  </holding>
+  <holding name="remote_c_mode" type="UINT16" index="45" multipler="1">
+    <description_short>Режим работы дистанционного управления</description_short>
+    <value_str>230</value_str>
+    <value>230</value>
+  </holding>
+  <holding name="remote_OFF" type="UINT16" index="46" multipler="1">
+    <description_short>Режим работы дистанционного управления для выключенного сухого контакта</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="remote_ON" type="UINT16" index="47" multipler="1">
+    <description_short>Режим работы дистанционного управления для включенного сухого контакта</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="remote_timer_off" type="UINT16" index="48" multipler="1">
+    <description_short>Таймер в минутах сколько должна быть выключена приточка при дистанционном управлении</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="remote_timer_on" type="UINT16" index="49" multipler="1">
+    <description_short>Таймер в минутах сколько должна быть включена приточка при дистанционном управлении</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="err_do_mask" type="BITMAP32" index="50" multipler="1">
+    <description_short>Маска ошибок для генерации ошибки на выходе DO "Авария"</description_short>
+    <value_str>0x00000000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="crit_errors" type="BITMAP32" index="52" multipler="1">
+    <description_short>Маска флагов критических аварий</description_short>
+    <value_str>0x00000000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="lock_errors" type="BITMAP32" index="54" multipler="1">
+    <description_short>Маска флагов аварий с защёлками</description_short>
+    <value_str>0x00000000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="task_pu_out_t" type="IO_DATA" index="70" multipler="10">
+    <description_short>Температура-задание на выходе ПУ</description_short>
+    <value_str>0.0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="task_pu_out_h" type="IO_DATA" index="72" multipler="10">
+    <description_short>Относительная влажность-задание на выходе ПУ</description_short>
+    <value_str>0.0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="task_pu_out_hc" type="IO_DATA" index="74" multipler="100">
+    <description_short>Влагосодержание-задание на выходе ПУ</description_short>
+    <value_str>0.0</value_str>
+    <value>65536</value>
+  </holding>
+  <holding name="task_room_t" type="IO_DATA" index="76" multipler="10">
+    <description_short>Температура-задание в помещении</description_short>
+    <value_str>0.0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="task_room_h" type="IO_DATA" index="78" multipler="10">
+    <description_short>Относительная влажность-задание в помещении</description_short>
+    <value_str>0.0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="task_room_hc" type="IO_DATA" index="80" multipler="100">
+    <description_short>Влагосодержание-задание в помещении</description_short>
+    <value_str>0.0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="fan_task" type="IO_DATA" index="82" multipler="100">
+    <description_short>Задание для вентиляторов, %</description_short>
+    <value_str>0.0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="pr" type="BITMAP16" index="84" multipler="1">
+    <description_short>Поле автомата PR</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="st" type="BITMAP16" index="85" multipler="1">
+    <description_short>Поле автомата ST</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="md" type="UINT16" index="86" multipler="1">
+    <description_short>Поле автомата MD</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="err_ask" type="BITMAP32" index="87" multipler="1">
+    <description_short>Маска квитирования аварий</description_short>
+    <value_str>0x00000000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Usermode_time_min" type="UINT8L" index="100" multipler="1">
+    <description_short>Время включения пользовательского режима, минуты</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Usermode_time_hour" type="UINT8H" index="100" multipler="1">
+    <description_short>Время включения пользовательского режима, часы</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Usermode_mode" type="UINT8L" index="101" multipler="1">
+    <description_short>Включаемый  пользовательский режим</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Usermode_ret_mode" type="UINT8H" index="101" multipler="1">
+    <description_short>Режим, на который будет произведен возврат</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Usermode_time" type="UINT16" index="102" multipler="1">
+    <description_short>Время работы пользовательского режима, в минутах</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Usermode_rule_mode" type="UINT8L" index="103" multipler="1">
+    <description_short>Режим для формирования условия</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Usermode_rule_inv" type="UINT8H" index="103" multipler="1">
+    <description_short>Условие проверки режима</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Usermode_rule_time" type="UINT16" index="104" multipler="1">
+    <description_short>Длительность по времени постоянного выполнения условия, в минутах</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Calibmode_on_off" type="UINT8L" index="120" multipler="1">
+    <description_short>Включить периодическое переключение режимов для калибровиу датчиков давления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Calibmode_mode" type="UINT8H" index="120" multipler="1">
+    <description_short>Режим, на котором происходит калибровка датчиков</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Calibmode_period" type="UINT16" index="121" multipler="1">
+    <description_short>Период между калибровками датчиков давления, в минутах</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Calibmode_pause" type="UINT16" index="122" multipler="1">
+    <description_short>Время действия режима, на который переводится установка для калибровки датчиков давления,  в минутах</description_short>
+    <value_str>450</value_str>
+    <value>450</value>
+  </holding>
+  <holding name="setp_t_in_ai" type="UINT16" index="140" multipler="1">
+    <description_short>Номер измерительного канала, для измерения входного значения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_t_func" type="UINT16" index="141" multipler="1">
+    <description_short>Функция вычисления уставки температуры</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_t_options" type="BITMAP16" index="142" multipler="1">
+    <description_short>Опции функции преобразования</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_t_link_point" type="UINT16" index="143" multipler="1">
+    <description_short>Выбор точки привязки к регистру уставки температуры</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_t_p1_in" type="SINT16" index="144" multipler="1">
+    <description_short>Входное значение точки 1</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_t_p2_in" type="SINT16" index="145" multipler="1">
+    <description_short>Входное значение точки 2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_t_p3_in" type="SINT16" index="146" multipler="1">
+    <description_short>Входное значение точки 3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_t_p1_out" type="SINT16" index="147" multipler="1">
+    <description_short>Выходное значение точки 1</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_t_p2_out" type="SINT16" index="148" multipler="1">
+    <description_short>Выходное значение точки 2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_t_p3_out" type="SINT16" index="149" multipler="1">
+    <description_short>Выходное значение точки 3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_h_in_ai" type="UINT16" index="160" multipler="1">
+    <description_short>Номер измерительного канала, для измерения входного значения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_h_func" type="UINT16" index="161" multipler="1">
+    <description_short>Функция вычисления уставки относительной влажности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_h_options" type="BITMAP16" index="162" multipler="1">
+    <description_short>Опции функции преобразования</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_h_link_point" type="UINT16" index="163" multipler="1">
+    <description_short>Выбор точки привязки к регистру уставки относительной влажности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_h_p1_in" type="SINT16" index="164" multipler="1">
+    <description_short>Входное значение точки 1</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_h_p2_in" type="SINT16" index="165" multipler="1">
+    <description_short>Входное значение точки 2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_h_p3_in" type="SINT16" index="166" multipler="1">
+    <description_short>Входное значение точки 3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_h_p1_out" type="SINT16" index="167" multipler="1">
+    <description_short>Выходное значение точки 1</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_h_p2_out" type="SINT16" index="168" multipler="1">
+    <description_short>Выходное значение точки 2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_h_p3_out" type="SINT16" index="169" multipler="1">
+    <description_short>Выходное значение точки 3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_f_in_ai" type="UINT16" index="180" multipler="1">
+    <description_short>Номер измерительного канала, для измерения входного значения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_f_func" type="UINT16" index="181" multipler="1">
+    <description_short>Функция вычисления уставки производительности вентилятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_f_options" type="BITMAP16" index="182" multipler="1">
+    <description_short>Опции функции преобразования</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_f_link_point" type="UINT16" index="183" multipler="1">
+    <description_short>Выбор точки привязки глобальной уставки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_f_p1_in" type="SINT16" index="184" multipler="1">
+    <description_short>Входное значение точки 1</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_f_p2_in" type="SINT16" index="185" multipler="1">
+    <description_short>Входное значение точки 2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_f_p3_in" type="SINT16" index="186" multipler="1">
+    <description_short>Входное значение точки 3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_f_p1_out" type="SINT16" index="187" multipler="1">
+    <description_short>Выходное значение точки 1</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_f_p2_out" type="SINT16" index="188" multipler="1">
+    <description_short>Выходное значение точки 2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="setp_f_p3_out" type="SINT16" index="189" multipler="1">
+    <description_short>Выходное значение точки 3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="cascade_t_winter_modes" type="BITMAP16" index="200" multipler="1">
+    <description_short>Маска режимов работы установки в режиме ЗИМА, в которых каскадный регулятор включен</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="cascade_t_summer_modes" type="BITMAP16" index="201" multipler="1">
+    <description_short>Маска режимов работы установки в режиме ЛЕТО, в которых каскадный регулятор включен</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="cascade_t_pg" type="UINT16" index="202" multipler="1000">
+    <description_short>Каскадный регулятор Кп</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="cascade_t_ig" type="UINT16" index="203" multipler="1000">
+    <description_short>Каскадный регулятор Ки</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="cascade_t_out_min" type="SINT16" index="204" multipler="10">
+    <description_short>Каскадный регулятор - ограничение минимум на выходе</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="cascade_t_out_max" type="SINT16" index="205" multipler="10">
+    <description_short>Каскадный регулятор - ограничение максимум на выходе</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="cascade_h_winter_modes" type="BITMAP16" index="220" multipler="1">
+    <description_short>Маска режимов работы установки в режиме ЗИМА, в которых каскадный регулятор включен</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="cascade_h_summer_modes" type="BITMAP16" index="221" multipler="1">
+    <description_short>Маска режимов работы установки в режиме ЛЕТО, в которых каскадный регулятор включен</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="cascade_h_pg" type="UINT16" index="222" multipler="1000">
+    <description_short>Каскадный регулятор Кп</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="cascade_h_ig" type="UINT16" index="223" multipler="1000">
+    <description_short>Каскадный регулятор Ки</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="cascade_h_out_min" type="SINT16" index="224" multipler="10">
+    <description_short>Каскадный регулятор - ограничение минимум на выходе</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="cascade_h_out_max" type="SINT16" index="225" multipler="10">
+    <description_short>Каскадный регулятор - ограничение максимум на выходе</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_Tim1_en_dis" type="UINT16" index="1000" multipler="1">
+    <description_short>Включение таймера планировщика</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_Tim1_wday_mask" type="BITMAP16" index="1001" multipler="1">
+    <description_short>Маска включения по дням недели</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_Tim1_minute" type="UINT8L" index="1002" multipler="1">
+    <description_short>Минута включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_Tim1_hour" type="UINT8H" index="1002" multipler="1">
+    <description_short>Час включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_Tim2_en_dis" type="UINT16" index="1003" multipler="1">
+    <description_short>Включение таймера планировщика</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_Tim2_wday_mask" type="BITMAP16" index="1004" multipler="1">
+    <description_short>Маска включения по дням недели</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_Tim2_minute" type="UINT8L" index="1005" multipler="1">
+    <description_short>Минута включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_Tim2_hour" type="UINT8H" index="1005" multipler="1">
+    <description_short>Час включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_f_task" type="UINT16" index="1006" multipler="100">
+    <description_short>Производительность вентилятора, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_t_task" type="SINT16" index="1007" multipler="10">
+    <description_short>Необходимая температура воздуха, в °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_h_task" type="SINT16" index="1008" multipler="10">
+    <description_short>Необходимая влажность воздуха</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_on_off" type="UINT8L" index="1009" multipler="1">
+    <description_short>Режим работы установки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_hands_run" type="UINT8H" index="1009" multipler="1">
+    <description_short>Принудительное включение сценария</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler1_mask" type="BITMAP16" index="1010" multipler="1">
+    <description_short>Маска задействования уставок</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_Tim1_en_dis" type="UINT16" index="1050" multipler="1">
+    <description_short>Включение таймера планировщика</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_Tim1_wday_mask" type="BITMAP16" index="1051" multipler="1">
+    <description_short>Маска включения по дням недели</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_Tim1_minute" type="UINT8L" index="1052" multipler="1">
+    <description_short>Минута включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_Tim1_hour" type="UINT8H" index="1052" multipler="1">
+    <description_short>Час включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_Tim2_en_dis" type="UINT16" index="1053" multipler="1">
+    <description_short>Включение таймера планировщика</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_Tim2_wday_mask" type="BITMAP16" index="1054" multipler="1">
+    <description_short>Маска включения по дням недели</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_Tim2_minute" type="UINT8L" index="1055" multipler="1">
+    <description_short>Минута включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_Tim2_hour" type="UINT8H" index="1055" multipler="1">
+    <description_short>Час включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_f_task" type="UINT16" index="1056" multipler="100">
+    <description_short>Производительность вентилятора, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_t_task" type="SINT16" index="1057" multipler="10">
+    <description_short>Необходимая температура воздуха, в °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_h_task" type="SINT16" index="1058" multipler="10">
+    <description_short>Необходимая влажность воздуха</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_on_off" type="UINT8L" index="1059" multipler="1">
+    <description_short>Режим работы установки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_hands_run" type="UINT8H" index="1059" multipler="1">
+    <description_short>Принудительное включение сценария</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler2_mask" type="BITMAP16" index="1060" multipler="1">
+    <description_short>Маска задействования уставок</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler3_Tim1_en_dis" type="UINT16" index="1100" multipler="1">
+    <description_short>Включение таймера планировщика</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler3_Tim1_wday_mask" type="BITMAP16" index="1101" multipler="1">
+    <description_short>Маска включения по дням недели</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler3_Tim1_minute" type="UINT8L" index="1102" multipler="1">
+    <description_short>Минута включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler3_Tim1_hour" type="UINT8H" index="1102" multipler="1">
+    <description_short>Час включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler3_Tim2_en_dis" type="UINT16" index="1103" multipler="1">
+    <description_short>Включение таймера планировщика</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler3_Tim2_wday_mask" type="BITMAP16" index="1104" multipler="1">
+    <description_short>Маска включения по дням недели</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler3_Tim2_minute" type="UINT8L" index="1105" multipler="1">
+    <description_short>Минута включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler3_Tim2_hour" type="UINT8H" index="1105" multipler="1">
+    <description_short>Час включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler3_f_task" type="UINT16" index="1106" multipler="100">
+    <description_short>Производительность вентилятора, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler3_t_task" type="SINT16" index="1107" multipler="10">
+    <description_short>Необходимая температура воздуха, в °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler3_h_task" type="SINT16" index="1108" multipler="10">
+    <description_short>Необходимая влажность воздуха</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler3_on_off" type="UINT8L" index="1109" multipler="1">
+    <description_short>Режим работы установки</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Sheduler3_hands_run" type="UINT8H" index="1109" multipler="1">
+    <description_short>Принудительное включение сценария</description_short>
+    <value_str>0</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Sheduler3_mask" type="BITMAP16" index="1110" multipler="1">
+    <description_short>Маска задействования уставок</description_short>
+    <value_str>0x0001</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Sheduler4_Tim1_en_dis" type="UINT16" index="1150" multipler="1">
+    <description_short>Включение таймера планировщика</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler4_Tim1_wday_mask" type="BITMAP16" index="1151" multipler="1">
+    <description_short>Маска включения по дням недели</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler4_Tim1_minute" type="UINT8L" index="1152" multipler="1">
+    <description_short>Минута включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler4_Tim1_hour" type="UINT8H" index="1152" multipler="1">
+    <description_short>Час включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler4_Tim2_en_dis" type="UINT16" index="1153" multipler="1">
+    <description_short>Включение таймера планировщика</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler4_Tim2_wday_mask" type="BITMAP16" index="1154" multipler="1">
+    <description_short>Маска включения по дням недели</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler4_Tim2_minute" type="UINT8L" index="1155" multipler="1">
+    <description_short>Минута включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler4_Tim2_hour" type="UINT8H" index="1155" multipler="1">
+    <description_short>Час включения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler4_f_task" type="UINT16" index="1156" multipler="100">
+    <description_short>Производительность вентилятора, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler4_t_task" type="SINT16" index="1157" multipler="10">
+    <description_short>Необходимая температура воздуха, в °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler4_h_task" type="SINT16" index="1158" multipler="10">
+    <description_short>Необходимая влажность воздуха</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Sheduler4_on_off" type="UINT8L" index="1159" multipler="1">
+    <description_short>Режим работы установки</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Sheduler4_hands_run" type="UINT8H" index="1159" multipler="1">
+    <description_short>Принудительное включение сценария</description_short>
+    <value_str>0</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Sheduler4_mask" type="BITMAP16" index="1160" multipler="1">
+    <description_short>Маска задействования уставок</description_short>
+    <value_str>0x0001</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="new_mode" type="UINT16" index="5000" multipler="1">
+    <description_short>Режим автомата</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="CFANSFB_new_mode" type="UINT16" index="5000" multipler="1">
+    <description_short>Режим работы вентилятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="CFANSFBtaskIN" type="UINT16" index="5001" multipler="100">
+    <description_short>Задание на приточные вентиляторы, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="CFANSFBtaskFan1" type="UINT16" index="5002" multipler="100">
+    <description_short>Задание на вентилятор 1, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="CFANSFBtaskFan2" type="UINT16" index="5003" multipler="100">
+    <description_short>Задание на вентилятор 2, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="CFANSFBtaskFan3" type="UINT16" index="5004" multipler="100">
+    <description_short>Задание на вентилятор 3, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="CFANSFBtaskFan4" type="UINT16" index="5005" multipler="100">
+    <description_short>Задание на вентилятор 4, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="CFANSFBmodeIN" type="UINT8L" index="5015" multipler="1">
+    <description_short>Режим работы приточных вентиляторов</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="CFANSFBmodeOUT" type="UINT8H" index="5015" multipler="1">
+    <description_short>Режим работы вытяжных вентиляторов</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="CFANSFBNBinbaseFan" type="UINT8L" index="5016" multipler="1">
+    <description_short>Номер основного приточного вентилятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="CFANSFBNBinaddFan" type="UINT8H" index="5016" multipler="1">
+    <description_short>Номер дополнительного приточного вентилятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="CFANSFBNBoutbaseFan" type="UINT8L" index="5017" multipler="1">
+    <description_short>Номер основного вытяжного вентилятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="CFANSFBNBoutaddFan" type="UINT8H" index="5017" multipler="1">
+    <description_short>Номер дополнительного вытяжного вентилятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="fans_task_min" type="UINT16" index="5018" multipler="100">
+    <description_short>Минимальная производительность вентилятора, которую можно задать, %</description_short>
+    <value_str>10,00</value_str>
+    <value>1000</value>
+  </holding>
+  <holding name="Fan0_work" type="UINT16" index="10000" multipler="100">
+    <description_short>Задание вентилятору, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_nbAO" type="UINT16" index="10001" multipler="1">
+    <description_short>Номер аналогого канала AO для ЕС-вентиляторов</description_short>
+    <value_str>10000</value_str>
+    <value>10000</value>
+  </holding>
+  <holding name="Fan0_nbTahoAI" type="UINT16" index="10002" multipler="1">
+    <description_short>Порядковый номер аналогового тахо - канала</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_REL[0]" type="UINT16" index="10003" multipler="1">
+    <description_short>Номер дискретного выхода канала REL0/ выход для вентилятора на 1-м реле</description_short>
+    <value_str>1000</value_str>
+    <value>1000</value>
+  </holding>
+  <holding name="Fan0_REL[1]" type="UINT16" index="10004" multipler="1">
+    <description_short>Номер дискретного выхода канала REL1</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_REL[2]" type="UINT16" index="10005" multipler="1">
+    <description_short>Номер дискретного выхода канала REL2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_REL[3]" type="UINT16" index="10006" multipler="1">
+    <description_short>Номер дискретного выхода канала REL3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_crash_DI" type="UINT16" index="10007" multipler="1">
+    <description_short>Порядковый номер дискретного канала аварии вентилятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_OR_DI" type="UINT16" index="10008" multipler="1">
+    <description_short>Порядковый номер дискретного канала контроля обрыва ремня</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_OR_AI" type="UINT16" index="10009" multipler="1">
+    <description_short>Порядковый номер канала AI для контроля обрыва ремня</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_AI_Press" type="UINT16" index="10010" multipler="1">
+    <description_short>Порядковый номер канала AI для контроля давления в приточном канале</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_mode" type="UINT16" index="10011" multipler="1">
+    <description_short>Тип работы вентилятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_options" type="BITMAP16" index="10012" multipler="1">
+    <description_short>Опции работы вентилятора</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_err_delta_p" type="SINT16" index="10013" multipler="1">
+    <description_short>Минимальное давление аварии, в Па</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_min_u" type="UINT16" index="10014" multipler="1000">
+    <description_short>Минимально-допустимое напряжение управления, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_max_u" type="UINT16" index="10015" multipler="1000">
+    <description_short>Напряжение, соответствующее производительности 100%, в В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_min_task_lvl" type="UINT16" index="10016" multipler="100">
+    <description_short>Производительность, соответствующая минимально-допустимому напряжению, в %</description_short>
+    <value_str>10,00</value_str>
+    <value>1000</value>
+  </holding>
+  <holding name="Fan0_vav_min_press" type="SINT16" index="10017" multipler="1">
+    <description_short>Минимальная уставка рабочего давления, в Па</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_vav_max_press" type="SINT16" index="10018" multipler="1">
+    <description_short>Максимальная уставка рабочего давления, в Па</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_lock_errors" type="BITMAP16" index="10019" multipler="1">
+    <description_short>Маска ошибок, которые сбрасываются только через квитирование пользователем</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_crit_errors" type="BITMAP16" index="10020" multipler="1">
+    <description_short>Маска критических ошибок вентилятора</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_REG_pg" type="UINT16" index="10021" multipler="1">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_REG_ig" type="UINT16" index="10022" multipler="1">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_REG_dg" type="UINT16" index="10023" multipler="1">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_REG_term" type="UINT16" index="10024" multipler="1">
+    <description_short>Цикл расчета нового значения, мс</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_REG_dead_band" type="SINT16" index="10025" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_REG_offset" type="SINT16" index="10026" multipler="1">
+    <description_short>Смещение (в выходных еденицах) для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_REG_manual" type="SINT16" index="10027" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan0_REG_mode" type="UINT16" index="10028" multipler="1">
+    <description_short>Режим работы регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_work" type="UINT16" index="10200" multipler="100">
+    <description_short>Задание вентилятору, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_nbAO" type="UINT16" index="10201" multipler="1">
+    <description_short>Номер аналогого канала AO для ЕС-вентиляторов</description_short>
+    <value_str>512</value_str>
+    <value>512</value>
+  </holding>
+  <holding name="Fan1_nbTahoAI" type="UINT16" index="10202" multipler="1">
+    <description_short>Порядковый номер аналогового тахо - канала</description_short>
+    <value_str>769</value_str>
+    <value>769</value>
+  </holding>
+  <holding name="Fan1_REL[0]" type="UINT16" index="10203" multipler="1">
+    <description_short>Номер дискретного выхода канала REL0/ выход для вентилятора на 1-м реле</description_short>
+    <value_str>5000</value_str>
+    <value>5000</value>
+  </holding>
+  <holding name="Fan1_REL[1]" type="UINT16" index="10204" multipler="1">
+    <description_short>Номер дискретного выхода канала REL1</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_REL[2]" type="UINT16" index="10205" multipler="1">
+    <description_short>Номер дискретного выхода канала REL2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_REL[3]" type="UINT16" index="10206" multipler="1">
+    <description_short>Номер дискретного выхода канала REL3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_crash_DI" type="UINT16" index="10207" multipler="1">
+    <description_short>Порядковый номер дискретного канала аварии вентилятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_OR_DI" type="UINT16" index="10208" multipler="1">
+    <description_short>Порядковый номер дискретного канала контроля обрыва ремня</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_OR_AI" type="UINT16" index="10209" multipler="1">
+    <description_short>Порядковый номер канала AI для контроля обрыва ремня</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_mode" type="UINT16" index="10209" multipler="1">
+    <description_short>Тип работы вентилятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_AI_Press" type="UINT16" index="10210" multipler="1">
+    <description_short>Порядковый номер канала AI для контроля давления в приточном канале</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_mode" type="UINT16" index="10211" multipler="1">
+    <description_short>Тип работы вентилятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_options" type="BITMAP16" index="10212" multipler="1">
+    <description_short>Опции работы вентилятора</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_err_delta_p" type="SINT16" index="10213" multipler="1">
+    <description_short>Минимальное давление аварии, в Па</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_min_u" type="UINT16" index="10214" multipler="1000">
+    <description_short>Минимально-допустимое напряжение управления, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_max_u" type="UINT16" index="10215" multipler="1000">
+    <description_short>Напряжение, соответствующее производительности 100%, в В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_min_task_lvl" type="UINT16" index="10216" multipler="100">
+    <description_short>Производительность, соответствующая минимально-допустимому напряжению, в %</description_short>
+    <value_str>10,00</value_str>
+    <value>1000</value>
+  </holding>
+  <holding name="Fan1_vav_min_press" type="SINT16" index="10217" multipler="1">
+    <description_short>Минимальная уставка рабочего давления, в Па</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_vav_max_press" type="SINT16" index="10218" multipler="1">
+    <description_short>Максимальная уставка рабочего давления, в Па</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_lock_errors" type="BITMAP16" index="10219" multipler="1">
+    <description_short>Маска ошибок, которые сбрасываются только через квитирование пользователем</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_crit_errors" type="BITMAP16" index="10220" multipler="1">
+    <description_short>Маска критических ошибок вентилятора</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_REG_pg" type="UINT16" index="10221" multipler="1">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_REG_ig" type="UINT16" index="10222" multipler="1">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_REG_dg" type="UINT16" index="10223" multipler="1">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_REG_term" type="UINT16" index="10224" multipler="1">
+    <description_short>Цикл расчета нового значения, мс</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_REG_dead_band" type="SINT16" index="10225" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_REG_offset" type="SINT16" index="10226" multipler="1">
+    <description_short>Смещение (в выходных еденицах) для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_REG_manual" type="SINT16" index="10227" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan1_REG_mode" type="UINT16" index="10228" multipler="1">
+    <description_short>Режим работы регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_work" type="UINT16" index="10400" multipler="100">
+    <description_short>Задание вентилятору, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_nbAO" type="UINT16" index="10401" multipler="1">
+    <description_short>Номер аналогого канала AO для ЕС-вентиляторов</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Fan2_nbTahoAI" type="UINT16" index="10402" multipler="1">
+    <description_short>Порядковый номер аналогового тахо - канала</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Fan2_REL[0]" type="UINT16" index="10403" multipler="1">
+    <description_short>Номер дискретного выхода канала REL0/ выход для вентилятора на 1-м реле</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Fan2_REL[1]" type="UINT16" index="10404" multipler="1">
+    <description_short>Номер дискретного выхода канала REL1</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Fan2_REL[2]" type="UINT16" index="10405" multipler="1">
+    <description_short>Номер дискретного выхода канала REL2</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Fan2_REL[3]" type="UINT16" index="10406" multipler="1">
+    <description_short>Номер дискретного выхода канала REL3</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Fan2_crash_DI" type="UINT16" index="10407" multipler="1">
+    <description_short>Порядковый номер дискретного канала аварии вентилятора</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Fan2_OR_DI" type="UINT16" index="10408" multipler="1">
+    <description_short>Порядковый номер дискретного канала контроля обрыва ремня</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Fan2_mode" type="UINT16" index="10409" multipler="1">
+    <description_short>Тип работы вентилятора</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Fan2_OR_AI" type="UINT16" index="10409" multipler="1">
+    <description_short>Порядковый номер канала AI для контроля обрыва ремня</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Fan2_AI_Press" type="UINT16" index="10410" multipler="1">
+    <description_short>Порядковый номер канала AI для контроля давления в приточном канале</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Fan2_mode" type="UINT16" index="10411" multipler="1">
+    <description_short>Тип работы вентилятора</description_short>
+    <value_str>4</value_str>
+    <value>4</value>
+  </holding>
+  <holding name="Fan2_options" type="BITMAP16" index="10412" multipler="1">
+    <description_short>Опции работы вентилятора</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_err_delta_p" type="SINT16" index="10413" multipler="1">
+    <description_short>Минимальное давление аварии, в Па</description_short>
+    <value_str>50</value_str>
+    <value>50</value>
+  </holding>
+  <holding name="Fan2_min_u" type="UINT16" index="10414" multipler="1000">
+    <description_short>Минимальное напряжение на выходе АО, в В</description_short>
+    <value_str>5,000</value_str>
+    <value>5000</value>
+  </holding>
+  <holding name="Fan2_max_u" type="UINT16" index="10415" multipler="1000">
+    <description_short>Максимальное напряжение на выходе АО, в В</description_short>
+    <value_str>9,000</value_str>
+    <value>9000</value>
+  </holding>
+  <holding name="Fan2_min_task_lvl" type="UINT16" index="10416" multipler="100">
+    <description_short>Минимальная уставка производительности, в %</description_short>
+    <value_str>50,00</value_str>
+    <value>5000</value>
+  </holding>
+  <holding name="Fan2_vav_min_press" type="SINT16" index="10417" multipler="1">
+    <description_short>Минимальная уставка рабочего давления, в Па</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_vav_max_press" type="SINT16" index="10418" multipler="1">
+    <description_short>Максимальная уставка рабочего давления, в Па</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_lock_errors" type="BITMAP16" index="10419" multipler="1">
+    <description_short>Маска ошибок, которые сбрасываются только через квитирование пользователем</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_crit_errors" type="BITMAP16" index="10420" multipler="1">
+    <description_short>Маска критических ошибок вентилятора</description_short>
+    <value_str>0xFFFF</value_str>
+    <value>65535</value>
+  </holding>
+  <holding name="Fan2_REG_pg" type="UINT16" index="10421" multipler="1">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_REG_ig" type="UINT16" index="10422" multipler="1">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_REG_dg" type="UINT16" index="10423" multipler="1">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_REG_term" type="UINT16" index="10424" multipler="1">
+    <description_short>Цикл расчета нового значения, мс</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_REG_dead_band" type="SINT16" index="10425" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_REG_offset" type="SINT16" index="10426" multipler="1">
+    <description_short>Смещение (в выходных еденицах) для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_REG_manual" type="SINT16" index="10427" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan2_REG_mode" type="UINT16" index="10428" multipler="1">
+    <description_short>Режим работы регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_work" type="UINT16" index="10600" multipler="100">
+    <description_short>Задание вентилятору, в %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_nbAO" type="UINT16" index="10601" multipler="1">
+    <description_short>Номер аналогого канала AO для ЕС-вентиляторов</description_short>
+    <value_str>8</value_str>
+    <value>8</value>
+  </holding>
+  <holding name="Fan3_nbTahoAI" type="UINT16" index="10602" multipler="1">
+    <description_short>Порядковый номер аналогового тахо - канала</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Fan3_REL[0]" type="UINT16" index="10603" multipler="1">
+    <description_short>Номер дискретного выхода канала REL0/ выход для вентилятора на 1-м реле</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Fan3_REL[1]" type="UINT16" index="10604" multipler="1">
+    <description_short>Номер дискретного выхода канала REL1</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Fan3_REL[2]" type="UINT16" index="10605" multipler="1">
+    <description_short>Номер дискретного выхода канала REL2</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Fan3_REL[3]" type="UINT16" index="10606" multipler="1">
+    <description_short>Номер дискретного выхода канала REL3</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Fan3_crash_DI" type="UINT16" index="10607" multipler="1">
+    <description_short>Порядковый номер дискретного канала аварии вентилятора</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Fan3_OR_DI" type="UINT16" index="10608" multipler="1">
+    <description_short>Порядковый номер дискретного канала контроля обрыва ремня</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Fan3_mode" type="UINT16" index="10609" multipler="1">
+    <description_short>Тип работы вентилятора</description_short>
+    <value_str>10240</value_str>
+    <value>10240</value>
+  </holding>
+  <holding name="Fan3_OR_AI" type="UINT16" index="10609" multipler="1">
+    <description_short>Порядковый номер канала AI для контроля обрыва ремня</description_short>
+    <value_str>10240</value_str>
+    <value>10240</value>
+  </holding>
+  <holding name="Fan3_AI_Press" type="UINT16" index="10610" multipler="1">
+    <description_short>Порядковый номер канала AI для контроля давления в приточном канале</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Fan3_mode" type="UINT16" index="10611" multipler="1">
+    <description_short>Тип работы вентилятора</description_short>
+    <value_str>4</value_str>
+    <value>4</value>
+  </holding>
+  <holding name="Fan3_options" type="BITMAP16" index="10612" multipler="1">
+    <description_short>Опции работы вентилятора</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_err_delta_p" type="SINT16" index="10613" multipler="1">
+    <description_short>Минимальное давление аварии, в Па</description_short>
+    <value_str>50</value_str>
+    <value>50</value>
+  </holding>
+  <holding name="Fan3_min_u" type="UINT16" index="10614" multipler="1000">
+    <description_short>Минимальное напряжение на выходе АО, в В</description_short>
+    <value_str>6,000</value_str>
+    <value>6000</value>
+  </holding>
+  <holding name="Fan3_max_u" type="UINT16" index="10615" multipler="1000">
+    <description_short>Максимальное напряжение на выходе АО, в В</description_short>
+    <value_str>10,000</value_str>
+    <value>10000</value>
+  </holding>
+  <holding name="Fan3_min_task_lvl" type="UINT16" index="10616" multipler="100">
+    <description_short>Минимальная уставка производительности, в %</description_short>
+    <value_str>50,00</value_str>
+    <value>5000</value>
+  </holding>
+  <holding name="Fan3_vav_min_press" type="SINT16" index="10617" multipler="1">
+    <description_short>Минимальная уставка рабочего давления, в Па</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_vav_max_press" type="SINT16" index="10618" multipler="1">
+    <description_short>Максимальная уставка рабочего давления, в Па</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_lock_errors" type="BITMAP16" index="10619" multipler="1">
+    <description_short>Маска ошибок, которые сбрасываются только через квитирование пользователем</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_crit_errors" type="BITMAP16" index="10620" multipler="1">
+    <description_short>Маска критических ошибок вентилятора</description_short>
+    <value_str>0xFFFF</value_str>
+    <value>65535</value>
+  </holding>
+  <holding name="Fan3_REG_pg" type="UINT16" index="10621" multipler="1">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_REG_ig" type="UINT16" index="10622" multipler="1">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_REG_dg" type="UINT16" index="10623" multipler="1">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_REG_term" type="UINT16" index="10624" multipler="1">
+    <description_short>Цикл расчета нового значения, мс</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_REG_dead_band" type="SINT16" index="10625" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_REG_offset" type="SINT16" index="10626" multipler="1">
+    <description_short>Смещение (в выходных еденицах) для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_REG_manual" type="SINT16" index="10627" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Fan3_REG_mode" type="UINT16" index="10628" multipler="1">
+    <description_short>Режим работы регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Filter0_PRESS" type="UINT16" index="12000" multipler="1">
+    <description_short>Порядковый номер канала AI</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Filter0_DI" type="UINT16" index="12001" multipler="1">
+    <description_short>Порядковый номер канала DI</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Filter0_mode" type="UINT16" index="12002" multipler="1">
+    <description_short>Тип работы фильтра</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Filter0_min_p" type="SINT16" index="12003" multipler="1">
+    <description_short>Давление чистого фильтра, в Па</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Filter0_max_p" type="SINT16" index="12004" multipler="1">
+    <description_short>Давление загрязненного фильтра, в Па</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Filter0_lock_errors" type="BITMAP16" index="12005" multipler="1">
+    <description_short>Маска фиксируемых ошибок фильтра</description_short>
+    <value_str>0x0050</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Filter0_crit_errors" type="BITMAP16" index="12006" multipler="1">
+    <description_short>Маска критических ошибок фильтра</description_short>
+    <value_str>0x0050</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Filter1_PRESS" type="UINT16" index="12200" multipler="1">
+    <description_short>Порядковый номер канала AI</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Filter1_DI" type="UINT16" index="12201" multipler="1">
+    <description_short>Порядковый номер канала DI</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Filter1_mode" type="UINT16" index="12202" multipler="1">
+    <description_short>Тип работы фильтра</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Filter1_min_p" type="SINT16" index="12203" multipler="1">
+    <description_short>Давление чистого фильтра, в Па</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Filter1_max_p" type="SINT16" index="12204" multipler="1">
+    <description_short>Давление загрязненного фильтра, в Па</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Filter1_lock_errors" type="BITMAP16" index="12205" multipler="1">
+    <description_short>Маска фиксируемых ошибок фильтра</description_short>
+    <value_str>0x0050</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Filter1_crit_errors" type="BITMAP16" index="12206" multipler="1">
+    <description_short>Маска критических ошибок фильтра</description_short>
+    <value_str>0x0050</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Filter2_PRESS" type="UINT16" index="12400" multipler="1">
+    <description_short>Порядковый номер канала AI</description_short>
+    <value_str>2</value_str>
+    <value>2</value>
+  </holding>
+  <holding name="Filter2_DI" type="UINT16" index="12401" multipler="1">
+    <description_short>Порядковый номер канала DI</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Filter2_mode" type="UINT16" index="12402" multipler="1">
+    <description_short>Тип работы фильтра</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Filter2_min_p" type="SINT16" index="12403" multipler="1">
+    <description_short>Давление чистого фильтра, в Па</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Filter2_max_p" type="SINT16" index="12404" multipler="1">
+    <description_short>Давление загрязненного фильтра, в Па</description_short>
+    <value_str>150</value_str>
+    <value>150</value>
+  </holding>
+  <holding name="Filter2_lock_errors" type="BITMAP16" index="12405" multipler="1">
+    <description_short>Маска фиксируемых ошибок фильтра</description_short>
+    <value_str>0x0001</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Filter2_crit_errors" type="BITMAP16" index="12406" multipler="1">
+    <description_short>Маска критических ошибок фильтра</description_short>
+    <value_str>0x000F</value_str>
+    <value>15</value>
+  </holding>
+  <holding name="Filter3_PRESS" type="UINT16" index="12600" multipler="1">
+    <description_short>Порядковый номер канала AI</description_short>
+    <value_str>13</value_str>
+    <value>13</value>
+  </holding>
+  <holding name="Filter3_DI" type="UINT16" index="12601" multipler="1">
+    <description_short>Порядковый номер канала DI</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Filter3_mode" type="UINT16" index="12602" multipler="1">
+    <description_short>Тип работы фильтра</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Filter3_min_p" type="SINT16" index="12603" multipler="1">
+    <description_short>Давление чистого фильтра, в Па</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Filter3_max_p" type="SINT16" index="12604" multipler="1">
+    <description_short>Давление загрязненного фильтра, в Па</description_short>
+    <value_str>150</value_str>
+    <value>150</value>
+  </holding>
+  <holding name="Filter3_lock_errors" type="BITMAP16" index="12605" multipler="1">
+    <description_short>Маска фиксируемых ошибок фильтра</description_short>
+    <value_str>0x0001</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Filter3_crit_errors" type="BITMAP16" index="12606" multipler="1">
+    <description_short>Маска критических ошибок фильтра</description_short>
+    <value_str>0x0007</value_str>
+    <value>7</value>
+  </holding>
+  <holding name="Ten0_new_mode" type="UINT16" index="14000" multipler="1">
+    <description_short>Задание режима работы</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_NB_overheatDI" type="UINT16" index="14010" multipler="1">
+    <description_short>Номер дискретного датчика перегрева или замораживания</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_NB_mgp_DO" type="UINT16" index="14011" multipler="1">
+    <description_short>Номер дискретного выхода магнитного пускателя или насоса</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_NB_heatAO" type="UINT16" index="14012" multipler="1">
+    <description_short>Номер канала аналогового выхода на ТЭН или на клапан</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_NB_airtemperAI" type="UINT16" index="14013" multipler="1">
+    <description_short>Номер канала измерения температуры воздуха</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_NB_airhumAI" type="UINT16" index="14014" multipler="1">
+    <description_short>Номер канала измерения относительной влажности воздуха</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_NB_watertemperAI" type="UINT16" index="14015" multipler="1">
+    <description_short>Номер канала измерения температуры обратной воды</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_NB_ten2DO" type="UINT16" index="14016" multipler="1">
+    <description_short>Номер канала DO управления статичным ТЭНом 2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_NB_ten3DO" type="UINT16" index="14017" multipler="1">
+    <description_short>Номер канала DO управления статичным ТЭНом 3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_AI_t_room" type="UINT16" index="14018" multipler="1">
+    <description_short>Канал измерения температуры в помещении</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_AI_h_room" type="UINT16" index="14019" multipler="1">
+    <description_short>Канал измерения влажности в помещении</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_type" type="UINT16" index="14025" multipler="1">
+    <description_short>Тип калорифера</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Ten0_ctrl" type="BITMAP16" index="14026" multipler="1">
+    <description_short>Регистр настроек калорифера</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_train_period" type="UINT16" index="14027" multipler="1">
+    <description_short>Период тренировки насоса, мин</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_train_time" type="UINT16" index="14028" multipler="1">
+    <description_short>Время тренировки насоса, мин</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_t_max_lvl" type="SINT16" index="14029" multipler="10">
+    <description_short>Пороговое значение задания температуры в максимум, °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_t_min_lvl" type="SINT16" index="14030" multipler="10">
+    <description_short>Пороговое значение задания температуры в минимум, °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_h_max_lvl" type="SINT16" index="14031" multipler="10">
+    <description_short>Пороговое значение задания относительной влажности в максимум, %</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_h_min_lvl" type="SINT16" index="14032" multipler="10">
+    <description_short>Пороговое значение задания относительной влажности в минимум, %</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_tout_max" type="UINT16" index="14033" multipler="10">
+    <description_short>Пороговое значение температуры в максимум при перегреве</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_pow_simten" type="UINT16" index="14034" multipler="1">
+    <description_short>Мощность в Вт основного ТЭН</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_pow_ten2" type="UINT16" index="14035" multipler="1">
+    <description_short>Мощность в Вт дополнительного ТЭН3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_pow_ten3" type="UINT16" index="14036" multipler="1">
+    <description_short>Мощность в Вт дополнительного ТЭН3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_lock_errors" type="BITMAP16" index="14037" multipler="1">
+    <description_short>Защёлкиваемые ошибки</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_crit_errors" type="BITMAP16" index="14038" multipler="1">
+    <description_short>Критические ошибки</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_reg_pg" type="UINT16" index="14045" multipler="100">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_reg_ig" type="UINT16" index="14046" multipler="100">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0,01</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Ten0_reg_dg" type="UINT16" index="14047" multipler="100">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_reg_term" type="UINT16" index="14048" multipler="1000">
+    <description_short>Цикл расчета нового значения, с</description_short>
+    <value_str>0,016</value_str>
+    <value>16</value>
+  </holding>
+  <holding name="Ten0_reg_dead_band" type="SINT16" index="14049" multipler="10">
+    <description_short>Зона нечувствительности, °С</description_short>
+    <value_str>2,5</value_str>
+    <value>25</value>
+  </holding>
+  <holding name="Ten0_reg_offset" type="SINT16" index="14050" multipler="1">
+    <description_short>Смещение для добавления к значению регулятора</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Ten0_reg_manual_out" type="SINT16" index="14051" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Ten0_reg_mode" type="UINT16" index="14052" multipler="1">
+    <description_short>Управление работой регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_Adv0_func" type="UINT16" index="14060" multipler="1">
+    <description_short>Функция режима</description_short>
+    <value_str>2</value_str>
+    <value>2</value>
+  </holding>
+  <holding name="Ten0_Adv0_task_source" type="UINT16" index="14061" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Ten0_Adv0_task_local_temper" type="SINT16" index="14062" multipler="10">
+    <description_short>Локальная уставка температуры, °С</description_short>
+    <value_str>144,0</value_str>
+    <value>1440</value>
+  </holding>
+  <holding name="Ten0_Adv0_task_local_hum" type="SINT16" index="14063" multipler="10">
+    <description_short>Локальная уставка относительной влажности, %</description_short>
+    <value_str>0,5</value_str>
+    <value>5</value>
+  </holding>
+  <holding name="Ten0_Adv1_func" type="UINT16" index="14064" multipler="1">
+    <description_short>Функция режима</description_short>
+    <value_str>480</value_str>
+    <value>480</value>
+  </holding>
+  <holding name="Ten0_Adv1_task_source" type="UINT16" index="14065" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>200</value_str>
+    <value>200</value>
+  </holding>
+  <holding name="Ten0_Adv1_task_local_temper" type="SINT16" index="14066" multipler="10">
+    <description_short>Локальная уставка температуры, °С</description_short>
+    <value_str>70,0</value_str>
+    <value>700</value>
+  </holding>
+  <holding name="Ten0_Adv1_task_local_hum" type="SINT16" index="14067" multipler="10">
+    <description_short>Локальная уставка относительной влажности, %</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_Adv2_func" type="UINT16" index="14068" multipler="1">
+    <description_short>Функция режима</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_Adv2_task_source" type="UINT16" index="14069" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_Adv2_task_local_temper" type="SINT16" index="14070" multipler="10">
+    <description_short>Локальная уставка температуры, °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten0_Adv2_task_local_hum" type="SINT16" index="14071" multipler="10">
+    <description_short>Локальная уставка относительной влажности, %</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_task" type="UINT16" index="14200" multipler="1">
+    <description_short>Задание темп. выходного воздуха</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_taskw" type="UINT16" index="14201" multipler="1">
+    <description_short>Задание темп. обратной воды</description_short>
+    <value_str>200</value_str>
+    <value>200</value>
+  </holding>
+  <holding name="Ten1_NB_overheatDI" type="BITMAP16" index="14202" multipler="1">
+    <description_short>Номер дискретного датчика перегрева или замораживания</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_NB_mgp_DO" type="UINT16" index="14203" multipler="1">
+    <description_short>Номер дискретного выхода магнитного пускателя или насоса</description_short>
+    <value_str>1000</value_str>
+    <value>1000</value>
+  </holding>
+  <holding name="Ten1_NB_heatAO" type="UINT16" index="14204" multipler="1">
+    <description_short>Номер канала аналогового выхода на ТЭН или на клапан</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_NB_airtemperAI" type="UINT16" index="14205" multipler="1">
+    <description_short>Номер канала измерения температуры воздуха</description_short>
+    <value_str>1000</value_str>
+    <value>1000</value>
+  </holding>
+  <holding name="Ten1_NB_airhumAI" type="UINT16" index="14206" multipler="1">
+    <description_short>Номер канала измерения относительной влажности воздуха</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_NB_watertemperAI" type="UINT16" index="14207" multipler="1">
+    <description_short>Номер канала измерения температуры обратной воды</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Ten1_NB_ten2DO" type="UINT16" index="14208" multipler="1">
+    <description_short>Номер канала DO управления статичным ТЭНом 2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_NB_ten3DO" type="UINT16" index="14209" multipler="1">
+    <description_short>Номер канала DO управления статичным ТЭНом 3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_ctrl" type="BITMAP16" index="14210" multipler="1">
+    <description_short>Регистр настроек калорифера</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_train_period" type="UINT16" index="14211" multipler="1">
+    <description_short>Период тренировки насоса, мин</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_train_time" type="UINT16" index="14212" multipler="1">
+    <description_short>Время тренировки насоса, мин</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_t_max_lvl" type="UINT16" index="14213" multipler="1">
+    <description_short>Пороговые значения температуры в максимум</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_pg" type="UINT16" index="14214" multipler="1">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_t_min_lvl" type="UINT16" index="14214" multipler="1">
+    <description_short>Пороговые значения температуры в минимум</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_ig" type="UINT16" index="14215" multipler="1">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_tout_max" type="UINT16" index="14215" multipler="1">
+    <description_short>Пороговые значения температуры в максимум при перегреве</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_dg" type="UINT16" index="14216" multipler="1">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_valve_time" type="UINT32" index="14216" multipler="1">
+    <description_short>Время полного хода клапана из одного крайнего положения в другое, с</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_term" type="UINT16" index="14217" multipler="1">
+    <description_short>Цикл расчета нового значения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_pow_simten" type="UINT16" index="14217" multipler="1">
+    <description_short>Мощность в Вт основного ТЭН</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_pow_ten2" type="UINT16" index="14218" multipler="1">
+    <description_short>Мощность в Вт дополнительного ТЭН2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_dead_band" type="SINT16" index="14218" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_pow_ten3" type="UINT16" index="14219" multipler="1">
+    <description_short>Мощность в Вт дополнительного ТЭН3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_offset" type="SINT16" index="14219" multipler="1">
+    <description_short>Смещение для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_manual" type="SINT16" index="14220" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten1_mode" type="UINT16" index="14221" multipler="1">
+    <description_short>Рабочая переменная, управляющая работой регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_task" type="UINT16" index="14400" multipler="1">
+    <description_short>Задание темп. выходного воздуха</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_taskw" type="UINT16" index="14401" multipler="1">
+    <description_short>Задание темп. обратной воды</description_short>
+    <value_str>4</value_str>
+    <value>4</value>
+  </holding>
+  <holding name="Ten2_T_NB_overheatDI" type="BITMAP16" index="14402" multipler="1">
+    <description_short>Номер дискретного датчика перегрева или замораживания</description_short>
+    <value_str>0x012C</value_str>
+    <value>300</value>
+  </holding>
+  <holding name="Ten2_NB_mgp_DO" type="UINT16" index="14403" multipler="1">
+    <description_short>Номер дискретного выхода магнитного пускателя или насоса</description_short>
+    <value_str>500</value_str>
+    <value>500</value>
+  </holding>
+  <holding name="Ten2_NB_heatAO" type="UINT16" index="14404" multipler="1">
+    <description_short>Номер канала аналогового выхода на ТЭН или на клапан</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_NB_airtemperAI" type="UINT16" index="14405" multipler="1">
+    <description_short>Номер канала измерения температуры воздуха</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_NB_airhumAI" type="UINT16" index="14406" multipler="1">
+    <description_short>Номер канала измерения относительной влажности воздуха</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_NB_watertemperAI" type="UINT16" index="14407" multipler="1">
+    <description_short>Номер канала измерения температуры обратной воды</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_NB_ten2DO" type="UINT16" index="14408" multipler="1">
+    <description_short>Номер канала DO управления статичным ТЭНом 2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_NB_ten3DO" type="UINT16" index="14409" multipler="1">
+    <description_short>Номер канала DO управления статичным ТЭНом 3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_ctrl" type="BITMAP16" index="14410" multipler="1">
+    <description_short>Регистр настроек калорифера</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_train_period" type="UINT16" index="14411" multipler="1">
+    <description_short>Период тренировки насоса, мин</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_train_time" type="UINT16" index="14412" multipler="1">
+    <description_short>Время тренировки насоса, мин</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_t_max_lvl" type="UINT16" index="14413" multipler="1">
+    <description_short>Пороговые значения температуры в максимум</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_pg" type="UINT16" index="14414" multipler="1">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_t_min_lvl" type="UINT16" index="14414" multipler="1">
+    <description_short>Пороговые значения температуры в минимум</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_ig" type="UINT16" index="14415" multipler="1">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_tout_max" type="UINT16" index="14415" multipler="1">
+    <description_short>Пороговые значения температуры в максимум при перегреве</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_dg" type="UINT16" index="14416" multipler="1">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_valve_time" type="UINT32" index="14416" multipler="1">
+    <description_short>Время полного хода клапана из одного крайнего положения в другое, с</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_term" type="UINT16" index="14417" multipler="1">
+    <description_short>Цикл расчета нового значения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_pow_simten" type="UINT16" index="14417" multipler="1">
+    <description_short>Мощность в Вт основного ТЭН</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_pow_ten2" type="UINT16" index="14418" multipler="1">
+    <description_short>Мощность в Вт дополнительного ТЭН2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_dead_band" type="SINT16" index="14418" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_pow_ten3" type="UINT16" index="14419" multipler="1">
+    <description_short>Мощность в Вт дополнительного ТЭН3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_offset" type="SINT16" index="14419" multipler="1">
+    <description_short>Смещение для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_manual" type="SINT16" index="14420" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten2_mode" type="UINT16" index="14421" multipler="1">
+    <description_short>Рабочая переменная, управляющая работой регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_task" type="UINT16" index="14600" multipler="1">
+    <description_short>Задание темп. выходного воздуха</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_taskw" type="UINT16" index="14601" multipler="1">
+    <description_short>Задание темп. обратной воды</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Ten3_NB_overheatDI" type="BITMAP16" index="14602" multipler="1">
+    <description_short>Номер дискретного датчика перегрева или замораживания</description_short>
+    <value_str>0x0050</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Ten3_NB_mgp_DO" type="UINT16" index="14603" multipler="1">
+    <description_short>Номер дискретного выхода магнитного пускателя или насоса</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Ten3_NB_heatAO" type="UINT16" index="14604" multipler="1">
+    <description_short>Номер канала аналогового выхода на ТЭН или на клапан</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Ten3_NB_airtemperAI" type="UINT16" index="14605" multipler="1">
+    <description_short>Номер канала измерения температуры воздуха</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_NB_airhumAI" type="UINT16" index="14606" multipler="1">
+    <description_short>Номер канала измерения относительной влажности воздуха</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Ten3_NB_watertemperAI" type="UINT16" index="14607" multipler="1">
+    <description_short>Номер канала измерения температуры обратной воды</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Ten3_NB_ten2DO" type="UINT16" index="14608" multipler="1">
+    <description_short>Номер канала DO управления статичным ТЭНом 2</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Ten3_NB_ten3DO" type="UINT16" index="14609" multipler="1">
+    <description_short>Номер канала DO управления статичным ТЭНом 3</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_ctrl" type="BITMAP16" index="14610" multipler="1">
+    <description_short>Регистр настроек калорифера</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_train_period" type="UINT16" index="14611" multipler="1">
+    <description_short>Период тренировки насоса, мин</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_train_time" type="UINT16" index="14612" multipler="1">
+    <description_short>Время тренировки насоса, мин</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_t_max_lvl" type="UINT16" index="14613" multipler="1">
+    <description_short>Пороговые значения температуры в максимум</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_pg" type="UINT16" index="14614" multipler="1">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_t_min_lvl" type="UINT16" index="14614" multipler="1">
+    <description_short>Пороговые значения температуры в минимум</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_ig" type="UINT16" index="14615" multipler="1">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>300</value_str>
+    <value>300</value>
+  </holding>
+  <holding name="Ten3_tout_max" type="UINT16" index="14615" multipler="1">
+    <description_short>Пороговые значения температуры в максимум при перегреве</description_short>
+    <value_str>300</value_str>
+    <value>300</value>
+  </holding>
+  <holding name="Ten3_dg" type="UINT16" index="14616" multipler="1">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>180</value_str>
+    <value>180</value>
+  </holding>
+  <holding name="Ten3_valve_time" type="UINT32" index="14616" multipler="1">
+    <description_short>Время полного хода клапана из одного крайнего положения в другое, с</description_short>
+    <value_str>180</value_str>
+    <value>180</value>
+  </holding>
+  <holding name="Ten3_pow_simten" type="UINT16" index="14617" multipler="1">
+    <description_short>Мощность в Вт основного ТЭН</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_term" type="UINT16" index="14617" multipler="1">
+    <description_short>Цикл расчета нового значения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_pow_ten2" type="UINT16" index="14618" multipler="1">
+    <description_short>Мощность в Вт дополнительного ТЭН2</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_dead_band" type="SINT16" index="14618" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Ten3_pow_ten3" type="UINT16" index="14619" multipler="1">
+    <description_short>Мощность в Вт дополнительного ТЭН3</description_short>
+    <value_str>310</value_str>
+    <value>310</value>
+  </holding>
+  <holding name="Ten3_offset" type="SINT16" index="14619" multipler="1">
+    <description_short>Смещение для добавления к значению регулятора</description_short>
+    <value_str>310</value_str>
+    <value>310</value>
+  </holding>
+  <holding name="Ten3_manual" type="SINT16" index="14620" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>1200</value_str>
+    <value>1200</value>
+  </holding>
+  <holding name="Ten3_mode" type="UINT16" index="14621" multipler="1">
+    <description_short>Рабочая переменная, управляющая работой регулятора</description_short>
+    <value_str>200</value_str>
+    <value>200</value>
+  </holding>
+  <holding name="Dflap0_new_mode" type="UINT16" index="16000" multipler="1">
+    <description_short>Режим работы заслонки - задание</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Dflap0_DO" type="UINT16" index="16001" multipler="1">
+    <description_short>Порядковый номер дискретного выхода для включения/выключения заслонки</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Dflap0_DO_heat" type="UINT16" index="16002" multipler="1">
+    <description_short>Порядковый номер дискретного выхода для управления подогревом заслонки</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Dflap0_options" type="BITMAP16" index="16003" multipler="1">
+    <description_short>Опции работы заслонки</description_short>
+    <value_str>0x0028</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Dflap0_flap_on_time" type="UINT16" index="16004" multipler="1">
+    <description_short>Открыто, с</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Dflap0_flap_off_time" type="UINT16" index="16005" multipler="1">
+    <description_short>Закрыто, с</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Dflap0_arctic_heat_time" type="UINT16" index="16006" multipler="1">
+    <description_short>Время прогрева, мин</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Dflap0_lock_err" type="UINT16" index="16007" multipler="1">
+    <description_short>Маска аварий с фиксацией аварии</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Dflap0_critical_err" type="UINT16" index="16008" multipler="1">
+    <description_short>Маска аварий с фиксацией аварии</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Dflap1_new_mode" type="UINT16" index="16200" multipler="1">
+    <description_short>Режим работы заслонки - задание</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Dflap1_DO" type="UINT16" index="16201" multipler="1">
+    <description_short>Порядковый номер дискретного выхода для включения/выключения заслонки</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Dflap1_DO_heat" type="UINT16" index="16202" multipler="1">
+    <description_short>Порядковый номер дискретного выхода для управления подогревом заслонки</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Dflap1_options" type="BITMAP16" index="16203" multipler="1">
+    <description_short>Опции работы заслонки</description_short>
+    <value_str>0x0028</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Dflap1_flap_on_time" type="UINT16" index="16204" multipler="1">
+    <description_short>Открыто, с</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Dflap1_flap_off_time" type="UINT16" index="16205" multipler="1">
+    <description_short>Закрыто, с</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Dflap1_arctic_heat_time" type="UINT16" index="16206" multipler="1">
+    <description_short>Время прогрева, мин</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Dflap1_lock_err" type="UINT16" index="16207" multipler="1">
+    <description_short>Маска аварий с фиксацией аварии</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Dflap1_critical_err" type="UINT16" index="16208" multipler="1">
+    <description_short>Маска аварий с фиксацией аварии</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Aflap0_new_mode" type="UINT16" index="18000" multipler="1">
+    <description_short>Режим работы заслонки - задание</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Aflap0_AO" type="UINT16" index="18001" multipler="1">
+    <description_short>Номер канала аналогового вывода 0-10В для управления воздушной заслонкой</description_short>
+    <value_str>6</value_str>
+    <value>6</value>
+  </holding>
+  <holding name="Aflap0_AI_feedback" type="UINT16" index="18002" multipler="1">
+    <description_short>Номер канала аналогового ввода 0-10В для анализа текущего положения</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Aflap0_DO_heat" type="UINT16" index="18003" multipler="1">
+    <description_short>Порядковый номер дискретного выхода для управления подогревом заслонки</description_short>
+    <value_str>5</value_str>
+    <value>5</value>
+  </holding>
+  <holding name="Aflap0_options" type="BITMAP16" index="18004" multipler="1">
+    <description_short>Опции работы заслонки</description_short>
+    <value_str>0x004B</value_str>
+    <value>75</value>
+  </holding>
+  <holding name="Aflap0_arctic_heat_time" type="UINT16" index="18005" multipler="1">
+    <description_short>Время прогрева в режиме "Arctic", мин</description_short>
+    <value_str>7</value_str>
+    <value>7</value>
+  </holding>
+  <holding name="Aflap0_position_manual" type="UINT16" index="18006" multipler="100">
+    <description_short>Уставка для ручного задания положения, % (используется в настраиваемых режимах)</description_short>
+    <value_str>0,05</value_str>
+    <value>5</value>
+  </holding>
+  <holding name="Aflap0_lock_errors" type="BITMAP16" index="18007" multipler="1">
+    <description_short>Маска аварий с защёлкой</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_crit_errors" type="BITMAP16" index="18008" multipler="1">
+    <description_short>Маска критических аварий (любая критическая авария останавливает работу установки)</description_short>
+    <value_str>0xFFFF</value_str>
+    <value>65535</value>
+  </holding>
+  <holding name="Aflap0_func_adv0" type="UINT16" index="18009" multipler="1">
+    <description_short>Функция</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_u_min_adv0" type="UINT16" index="18010" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 0% открытия</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_u_max_adv0" type="UINT16" index="18011" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 100% открытия</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_position_min_adv0" type="UINT16" index="18012" multipler="100">
+    <description_short>Минимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_position_max_adv0" type="UINT16" index="18013" multipler="100">
+    <description_short>Максимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_task_source_adv0" type="UINT16" index="18014" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_task_local_adv0" type="UINT16" index="18015" multipler="10">
+    <description_short>Локальное задание регулируемого параметра, °С, % влажности или %х10 открытия</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_AI_value_adv0" type="UINT16" index="18016" multipler="1">
+    <description_short>Канал, измерения регулируемого параметра</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_time_m_adv0" type="UINT16" index="18017" multipler="1">
+    <description_short>Время допустимого выхода параметра за диапазон, мин</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv_options_adv0" type="BITMAP16" index="18018" multipler="1">
+    <description_short>Дополнительные настройки режима</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_time_pow_adv0" type="UINT16" index="18019" multipler="1">
+    <description_short>Допустимое время перегрева калорифера, в сек</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_time_t_adv0" type="UINT16" index="18020" multipler="1">
+    <description_short>Допустимое время выхода температуры ограничения за диапазон, в сек</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_AI_t_adv0" type="UINT16" index="18021" multipler="1">
+    <description_short>Номер канала AI, измеряющего температуру ограничения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_tlvl_adv0" type="SINT16" index="18022" multipler="10">
+    <description_short>Порог температуры ограничения, в °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv0_REG_pg" type="UINT16" index="18023" multipler="100">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv0_REG_ig" type="UINT16" index="18024" multipler="100">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv0_REG_dg" type="UINT16" index="18025" multipler="100">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv0_REG_term" type="UINT16" index="18026" multipler="1">
+    <description_short>Цикл расчета нового значения, мс</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv0_REG_dead_band" type="SINT16" index="18027" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv0_REG_offset" type="SINT16" index="18028" multipler="1">
+    <description_short>Смещение (в выходных еденицах) для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv0_REG_manual" type="SINT16" index="18029" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv0_REG_mode" type="UINT16" index="18030" multipler="1">
+    <description_short>Режим работы регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_func_adv1" type="UINT16" index="18031" multipler="1">
+    <description_short>Функция</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_u_min_adv1" type="UINT16" index="18032" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 0% открытия</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_u_max_adv1" type="UINT16" index="18033" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 100% открытия</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_position_min_adv1" type="UINT16" index="18034" multipler="100">
+    <description_short>Минимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_position_max_adv1" type="UINT16" index="18035" multipler="100">
+    <description_short>Максимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_task_source_adv1" type="UINT16" index="18036" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_task_local_adv1" type="SINT16" index="18037" multipler="10">
+    <description_short>Локальное задание регулируемого параметра, °С, % влажности или %х10 открытия</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_AI_value_adv1" type="UINT16" index="18038" multipler="1">
+    <description_short>Канал, измерения регулируемого параметра</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_time_m_adv1" type="UINT16" index="18039" multipler="1">
+    <description_short>Время допустимого выхода параметра за диапазон, мин</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv_options_adv1" type="BITMAP16" index="18040" multipler="1">
+    <description_short>Дополнительные настройки режима</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_time_pow_adv1" type="UINT16" index="18041" multipler="1">
+    <description_short>Допустимое время перегрева калорифера, в сек</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_time_t_adv1" type="UINT16" index="18042" multipler="1">
+    <description_short>Допустимое время выхода температуры ограничения за диапазон, в сек</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_AI_t_adv1" type="UINT16" index="18043" multipler="1">
+    <description_short>Номер канала AI, измеряющего температуру ограничения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_tlvl_adv1" type="SINT16" index="18044" multipler="10">
+    <description_short>Порог температуры ограничения, в °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv1_REG_pg" type="UINT16" index="18045" multipler="100">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv1_REG_ig" type="UINT16" index="18046" multipler="100">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv1_REG_dg" type="UINT16" index="18047" multipler="100">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv1_REG_term" type="UINT16" index="18048" multipler="1">
+    <description_short>Цикл расчета нового значения, мс</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv1_REG_dead_band" type="SINT16" index="18049" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv1_REG_offset" type="SINT16" index="18050" multipler="1">
+    <description_short>Смещение (в выходных еденицах) для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv1_REG_manual" type="SINT16" index="18051" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap0_adv1_REG_mode" type="UINT16" index="18052" multipler="1">
+    <description_short>Режим работы регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_new_mode" type="UINT16" index="18200" multipler="1">
+    <description_short>Режим работы заслонки - задание</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_AO" type="UINT16" index="18201" multipler="1">
+    <description_short>Номер канала аналогового вывода 0-10В для управления воздушной заслонкой</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Aflap1_AI_feedback" type="UINT16" index="18202" multipler="1">
+    <description_short>Номер канала аналогового ввода 0-10В для анализа текущего положения</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Aflap1_DO_heat" type="UINT16" index="18203" multipler="1">
+    <description_short>порядковый номер дискретного выхода для управления подогревом заслонки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_options" type="BITMAP16" index="18204" multipler="1">
+    <description_short>Опции работы заслонки</description_short>
+    <value_str>0x001E</value_str>
+    <value>30</value>
+  </holding>
+  <holding name="Aflap1_arctic_heat_time" type="UINT16" index="18205" multipler="1">
+    <description_short>Время прогрева в режиме "Arctic", мин</description_short>
+    <value_str>15</value_str>
+    <value>15</value>
+  </holding>
+  <holding name="Aflap1_position_manual" type="UINT16" index="18206" multipler="100">
+    <description_short>Уставка для ручного задания положения, % (используется в настраиваемых режимах)</description_short>
+    <value_str>0,05</value_str>
+    <value>5</value>
+  </holding>
+  <holding name="Aflap1_lock_errors" type="BITMAP16" index="18207" multipler="1">
+    <description_short>Маска аварий с защёлкой</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_crit_errors" type="BITMAP16" index="18208" multipler="1">
+    <description_short>Маска критических аварий (любая критическая авария останавливает работу установки)</description_short>
+    <value_str>0xFFFF</value_str>
+    <value>65535</value>
+  </holding>
+  <holding name="Aflap1_func_adv0" type="UINT16" index="18209" multipler="1">
+    <description_short>Функция</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_u_min_adv0" type="UINT16" index="18210" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 0% открытия</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_u_max_adv0" type="UINT16" index="18211" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 100% открытия</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_position_min_adv0" type="UINT16" index="18212" multipler="100">
+    <description_short>Минимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_position_max_adv0" type="UINT16" index="18213" multipler="100">
+    <description_short>Максимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_task_source_adv0" type="UINT16" index="18214" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_task_local_adv0" type="UINT16" index="18215" multipler="10">
+    <description_short>Локальное задание регулируемого параметра через регистр модбас</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_AI_value_adv0" type="UINT16" index="18216" multipler="1">
+    <description_short>Канал, измерения регулируемого параметра</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_time_m_adv0" type="UINT16" index="18217" multipler="1">
+    <description_short>Время допустимого выхода параметра за диапазон, мин</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv_options_adv0" type="BITMAP16" index="18218" multipler="1">
+    <description_short>Дополнительные настройки режима</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_time_pow_adv0" type="UINT16" index="18219" multipler="1">
+    <description_short>Допустимое время перегрева калорифера, в сек</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_time_t_adv0" type="UINT16" index="18220" multipler="1">
+    <description_short>Допустимое время выхода температуры ограничения за диапазон, в сек</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_AI_t_adv0" type="UINT16" index="18221" multipler="1">
+    <description_short>Номер канала AI, измеряющего температуру ограничения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_tlvl_adv0" type="SINT16" index="18222" multipler="10">
+    <description_short>Порог температуры ограничения, в °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv0_REG_pg" type="UINT16" index="18223" multipler="100">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv0_REG_ig" type="UINT16" index="18224" multipler="100">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv0_REG_dg" type="UINT16" index="18225" multipler="100">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv0_REG_term" type="UINT16" index="18226" multipler="1">
+    <description_short>Цикл расчета нового значения, мс</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv0_REG_dead_band" type="SINT16" index="18227" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv0_REG_offset" type="SINT16" index="18228" multipler="1">
+    <description_short>Смещение (в выходных еденицах) для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv0_REG_manual" type="SINT16" index="18229" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv0_REG_mode" type="UINT16" index="18230" multipler="1">
+    <description_short>Режим работы регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_func_adv1" type="UINT16" index="18231" multipler="1">
+    <description_short>Функция</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_u_min_adv1" type="UINT16" index="18232" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 0% открытия</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_u_max_adv1" type="UINT16" index="18233" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 100% открытия</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_position_min_adv1" type="UINT16" index="18234" multipler="100">
+    <description_short>Минимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_position_max_adv1" type="UINT16" index="18235" multipler="100">
+    <description_short>Максимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_task_source_adv1" type="UINT16" index="18236" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_task_local_adv1" type="SINT16" index="18237" multipler="10">
+    <description_short>Локальное задание регулируемого параметра через регистр модбас</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_AI_value_adv1" type="UINT16" index="18238" multipler="1">
+    <description_short>Канал, измерения регулируемого параметра</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_time_m_adv1" type="UINT16" index="18239" multipler="1">
+    <description_short>Время допустимого выхода параметра за диапазон, мин</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv_options_adv1" type="BITMAP16" index="18240" multipler="1">
+    <description_short>Дополнительные настройки режима</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_time_pow_adv1" type="UINT16" index="18241" multipler="1">
+    <description_short>Допустимое время перегрева калорифера, в сек</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_time_t_adv1" type="UINT16" index="18242" multipler="1">
+    <description_short>Допустимое время выхода температуры ограничения за диапазон, в сек</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_AI_t_adv1" type="UINT16" index="18243" multipler="1">
+    <description_short>Номер канала AI, измеряющего температуру ограничения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_tlvl_adv1" type="SINT16" index="18244" multipler="10">
+    <description_short>Порог температуры ограничения, в °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv1_REG_pg" type="UINT16" index="18245" multipler="100">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv1_REG_ig" type="UINT16" index="18246" multipler="100">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv1_REG_dg" type="UINT16" index="18247" multipler="100">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv1_REG_term" type="UINT16" index="18248" multipler="1">
+    <description_short>Цикл расчета нового значения, мс</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv1_REG_dead_band" type="SINT16" index="18249" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv1_REG_offset" type="SINT16" index="18250" multipler="1">
+    <description_short>Смещение (в выходных еденицах) для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv1_REG_manual" type="SINT16" index="18251" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap1_adv1_REG_mode" type="UINT16" index="18252" multipler="1">
+    <description_short>Режим работы регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_new_mode" type="UINT16" index="18400" multipler="1">
+    <description_short>Режим работы заслонки - задание</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_AO" type="UINT16" index="18401" multipler="1">
+    <description_short>Номер канала аналогового вывода 0-10В для управления воздушной заслонкой</description_short>
+    <value_str>16</value_str>
+    <value>16</value>
+  </holding>
+  <holding name="Aflap2_AI_feedback" type="UINT16" index="18402" multipler="1">
+    <description_short>Номер канала аналогового ввода 0-10В для анализа текущего положения</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Aflap2_DO_heat" type="UINT16" index="18403" multipler="1">
+    <description_short>порядковый номер дискретного выхода для управления подогревом заслонки</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Aflap2_options" type="BITMAP16" index="18404" multipler="1">
+    <description_short>Опции работы заслонки</description_short>
+    <value_str>0x0001</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Aflap2_arctic_heat_time" type="UINT16" index="18405" multipler="1">
+    <description_short>Время прогрева в режиме "Arctic", мин</description_short>
+    <value_str>5</value_str>
+    <value>5</value>
+  </holding>
+  <holding name="Aflap2_position_manual" type="UINT16" index="18406" multipler="100">
+    <description_short>Уставка для ручного задания положения, % (используется в настраиваемых режимах)</description_short>
+    <value_str>50,00</value_str>
+    <value>5000</value>
+  </holding>
+  <holding name="Aflap2_lock_errors" type="BITMAP16" index="18407" multipler="1">
+    <description_short>Маска аварий с защёлкой</description_short>
+    <value_str>0x0007</value_str>
+    <value>7</value>
+  </holding>
+  <holding name="Aflap2_crit_errors" type="BITMAP16" index="18408" multipler="1">
+    <description_short>Маска критических аварий (любая критическая авария останавливает работу установки)</description_short>
+    <value_str>0x0001</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Aflap2_func_adv0" type="UINT16" index="18409" multipler="1">
+    <description_short>Функция</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_u_min_adv0" type="UINT16" index="18410" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 0% открытия</description_short>
+    <value_str>2,000</value_str>
+    <value>2000</value>
+  </holding>
+  <holding name="Aflap2_u_max_adv0" type="UINT16" index="18411" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 100% открытия</description_short>
+    <value_str>7,500</value_str>
+    <value>7500</value>
+  </holding>
+  <holding name="Aflap2_position_min_adv0" type="UINT16" index="18412" multipler="100">
+    <description_short>Минимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_position_max_adv0" type="UINT16" index="18413" multipler="100">
+    <description_short>Максимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>100,00</value_str>
+    <value>10000</value>
+  </holding>
+  <holding name="Aflap2_task_source_adv0" type="UINT16" index="18414" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_task_local_adv0" type="UINT16" index="18415" multipler="10">
+    <description_short>Локальное задание регулируемого параметра через регистр модбас</description_short>
+    <value_str>1000,0</value_str>
+    <value>10000</value>
+  </holding>
+  <holding name="Aflap2_AI_value_adv0" type="UINT16" index="18416" multipler="1">
+    <description_short>Канал, измерения регулируемого параметра</description_short>
+    <value_str>17</value_str>
+    <value>17</value>
+  </holding>
+  <holding name="Aflap2_time_m_adv0" type="UINT16" index="18417" multipler="1">
+    <description_short>Время допустимого выхода параметра за диапазон, мин</description_short>
+    <value_str>20</value_str>
+    <value>20</value>
+  </holding>
+  <holding name="Aflap2_adv_options_adv0" type="BITMAP16" index="18418" multipler="1">
+    <description_short>Дополнительные настройки режима</description_short>
+    <value_str>0x000B</value_str>
+    <value>11</value>
+  </holding>
+  <holding name="Aflap2_time_pow_adv0" type="UINT16" index="18419" multipler="1">
+    <description_short>Допустимое время перегрева калорифера, в сек</description_short>
+    <value_str>30</value_str>
+    <value>30</value>
+  </holding>
+  <holding name="Aflap2_time_t_adv0" type="UINT16" index="18420" multipler="1">
+    <description_short>Допустимое время выхода температуры ограничения за диапазон, в сек</description_short>
+    <value_str>30</value_str>
+    <value>30</value>
+  </holding>
+  <holding name="Aflap2_AI_t_adv0" type="UINT16" index="18421" multipler="1">
+    <description_short>Номер канала AI, измеряющего температуру ограничения</description_short>
+    <value_str>10</value_str>
+    <value>10</value>
+  </holding>
+  <holding name="Aflap2_tlvl_adv0" type="SINT16" index="18422" multipler="10">
+    <description_short>Порог температуры ограничения, в °С</description_short>
+    <value_str>5,0</value_str>
+    <value>50</value>
+  </holding>
+  <holding name="Aflap2_adv0_REG_pg" type="UINT16" index="18423" multipler="100">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_adv0_REG_ig" type="UINT16" index="18424" multipler="100">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_adv0_REG_dg" type="UINT16" index="18425" multipler="100">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_adv0_REG_term" type="UINT16" index="18426" multipler="1">
+    <description_short>Цикл расчета нового значения, мс</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_adv0_REG_dead_band" type="SINT16" index="18427" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>2</value_str>
+    <value>2</value>
+  </holding>
+  <holding name="Aflap2_adv0_REG_offset" type="SINT16" index="18428" multipler="1">
+    <description_short>Смещение (в выходных еденицах) для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_adv0_REG_manual" type="SINT16" index="18429" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_adv0_REG_mode" type="UINT16" index="18430" multipler="1">
+    <description_short>Режим работы регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_func_adv1" type="UINT16" index="18431" multipler="1">
+    <description_short>Функция</description_short>
+    <value_str>2</value_str>
+    <value>2</value>
+  </holding>
+  <holding name="Aflap2_u_min_adv1" type="UINT16" index="18432" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 0% открытия</description_short>
+    <value_str>2,000</value_str>
+    <value>2000</value>
+  </holding>
+  <holding name="Aflap2_u_max_adv1" type="UINT16" index="18433" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 100% открытия</description_short>
+    <value_str>7,500</value_str>
+    <value>7500</value>
+  </holding>
+  <holding name="Aflap2_position_min_adv1" type="UINT16" index="18434" multipler="100">
+    <description_short>Минимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_position_max_adv1" type="UINT16" index="18435" multipler="100">
+    <description_short>Максимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>100,00</value_str>
+    <value>10000</value>
+  </holding>
+  <holding name="Aflap2_task_source_adv1" type="UINT16" index="18436" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_task_local_adv1" type="SINT16" index="18437" multipler="10">
+    <description_short>Локальное задание регулируемого параметра через регистр модбас</description_short>
+    <value_str>5,0</value_str>
+    <value>50</value>
+  </holding>
+  <holding name="Aflap2_AI_value_adv1" type="UINT16" index="18438" multipler="1">
+    <description_short>Канал, измерения регулируемого параметра</description_short>
+    <value_str>18</value_str>
+    <value>18</value>
+  </holding>
+  <holding name="Aflap2_time_m_adv1" type="UINT16" index="18439" multipler="1">
+    <description_short>Время допустимого выхода параметра за диапазон, мин</description_short>
+    <value_str>20</value_str>
+    <value>20</value>
+  </holding>
+  <holding name="Aflap2_adv_options_adv1" type="BITMAP16" index="18440" multipler="1">
+    <description_short>Дополнительные настройки режима</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_time_pow_adv1" type="UINT16" index="18441" multipler="1">
+    <description_short>Допустимое время перегрева калорифера, в сек</description_short>
+    <value_str>15</value_str>
+    <value>15</value>
+  </holding>
+  <holding name="Aflap2_time_t_adv1" type="UINT16" index="18442" multipler="1">
+    <description_short>Допустимое время выхода температуры ограничения за диапазон, в сек</description_short>
+    <value_str>30</value_str>
+    <value>30</value>
+  </holding>
+  <holding name="Aflap2_AI_t_adv1" type="UINT16" index="18443" multipler="1">
+    <description_short>Номер канала AI, измеряющего температуру ограничения</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Aflap2_tlvl_adv1" type="SINT16" index="18444" multipler="10">
+    <description_short>Порог температуры ограничения, в °С</description_short>
+    <value_str>5,0</value_str>
+    <value>50</value>
+  </holding>
+  <holding name="Aflap2_adv1_REG_pg" type="UINT16" index="18445" multipler="100">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>5,00</value_str>
+    <value>500</value>
+  </holding>
+  <holding name="Aflap2_adv1_REG_ig" type="UINT16" index="18446" multipler="100">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>3,00</value_str>
+    <value>300</value>
+  </holding>
+  <holding name="Aflap2_adv1_REG_dg" type="UINT16" index="18447" multipler="100">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_adv1_REG_term" type="UINT16" index="18448" multipler="1">
+    <description_short>Цикл расчета нового значения, мс</description_short>
+    <value_str>1000</value_str>
+    <value>1000</value>
+  </holding>
+  <holding name="Aflap2_adv1_REG_dead_band" type="SINT16" index="18449" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_adv1_REG_offset" type="SINT16" index="18450" multipler="1">
+    <description_short>Смещение (в выходных еденицах) для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_adv1_REG_manual" type="SINT16" index="18451" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap2_adv1_REG_mode" type="UINT16" index="18452" multipler="1">
+    <description_short>Режим работы регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_new_mode" type="UINT16" index="18600" multipler="1">
+    <description_short>Режим работы заслонки - задание</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_AO" type="UINT16" index="18601" multipler="1">
+    <description_short>Номер канала аналогового вывода 0-10В для управления воздушной заслонкой</description_short>
+    <value_str>12</value_str>
+    <value>12</value>
+  </holding>
+  <holding name="Aflap3_AI_feedback" type="UINT16" index="18602" multipler="1">
+    <description_short>Номер канала аналогового ввода 0-10В для анализа текущего положения</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Aflap3_DO_heat" type="UINT16" index="18603" multipler="1">
+    <description_short>порядковый номер дискретного выхода для управления подогревом заслонки</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Aflap3_options" type="BITMAP16" index="18604" multipler="1">
+    <description_short>Опции работы заслонки</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_arctic_heat_time" type="UINT16" index="18605" multipler="1">
+    <description_short>Время прогрева в режиме "Arctic", мин</description_short>
+    <value_str>5</value_str>
+    <value>5</value>
+  </holding>
+  <holding name="Aflap3_position_manual" type="UINT16" index="18606" multipler="100">
+    <description_short>Уставка для ручного задания положения, % (используется в настраиваемых режимах)</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_lock_errors" type="BITMAP16" index="18607" multipler="1">
+    <description_short>Маска аварий с защёлкой</description_short>
+    <value_str>0x0007</value_str>
+    <value>7</value>
+  </holding>
+  <holding name="Aflap3_crit_errors" type="BITMAP16" index="18608" multipler="1">
+    <description_short>Маска критических аварий (любая критическая авария останавливает работу установки)</description_short>
+    <value_str>0x0001</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Aflap3_func_adv0" type="UINT16" index="18609" multipler="1">
+    <description_short>Функция</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_u_min_adv0" type="UINT16" index="18610" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 0% открытия</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_u_max_adv0" type="UINT16" index="18611" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 100% открытия</description_short>
+    <value_str>10,000</value_str>
+    <value>10000</value>
+  </holding>
+  <holding name="Aflap3_position_min_adv0" type="UINT16" index="18612" multipler="100">
+    <description_short>Минимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_position_max_adv0" type="UINT16" index="18613" multipler="100">
+    <description_short>Максимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>100,00</value_str>
+    <value>10000</value>
+  </holding>
+  <holding name="Aflap3_task_source_adv0" type="UINT16" index="18614" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_task_local_adv0" type="UINT16" index="18615" multipler="10">
+    <description_short>Локальное задание регулируемого параметра через регистр модбас</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_AI_value_adv0" type="UINT16" index="18616" multipler="1">
+    <description_short>Канал, измерения регулируемого параметра</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Aflap3_time_m_adv0" type="UINT16" index="18617" multipler="1">
+    <description_short>Время допустимого выхода параметра за диапазон, мин</description_short>
+    <value_str>20</value_str>
+    <value>20</value>
+  </holding>
+  <holding name="Aflap3_adv_options_adv0" type="BITMAP16" index="18618" multipler="1">
+    <description_short>Дополнительные настройки режима</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_time_pow_adv0" type="UINT16" index="18619" multipler="1">
+    <description_short>Допустимое время перегрева калорифера, в сек</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_time_t_adv0" type="UINT16" index="18620" multipler="1">
+    <description_short>Допустимое время выхода температуры ограничения за диапазон, в сек</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_AI_t_adv0" type="UINT16" index="18621" multipler="1">
+    <description_short>Номер канала AI, измеряющего температуру ограничения</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_tlvl_adv0" type="SINT16" index="18622" multipler="10">
+    <description_short>Порог температуры ограничения, в °С</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv0_REG_pg" type="UINT16" index="18623" multipler="100">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv0_REG_ig" type="UINT16" index="18624" multipler="100">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv0_REG_dg" type="UINT16" index="18625" multipler="100">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv0_REG_term" type="UINT16" index="18626" multipler="1">
+    <description_short>Цикл расчета нового значения, мс</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv0_REG_dead_band" type="SINT16" index="18627" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv0_REG_offset" type="SINT16" index="18628" multipler="1">
+    <description_short>Смещение (в выходных еденицах) для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv0_REG_manual" type="SINT16" index="18629" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv0_REG_mode" type="UINT16" index="18630" multipler="1">
+    <description_short>Режим работы регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_func_adv1" type="UINT16" index="18631" multipler="1">
+    <description_short>Функция заслонки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_u_min_adv1" type="UINT16" index="18632" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 0% открытия</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_u_max_adv1" type="UINT16" index="18633" multipler="1000">
+    <description_short>Напряжение на выход заслонки, соответствующее 100% открытия</description_short>
+    <value_str>10,000</value_str>
+    <value>10000</value>
+  </holding>
+  <holding name="Aflap3_position_min_adv1" type="UINT16" index="18634" multipler="100">
+    <description_short>Минимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_position_max_adv1" type="UINT16" index="18635" multipler="100">
+    <description_short>Максимально-допустимая степень открытия заслонки, %</description_short>
+    <value_str>100,00</value_str>
+    <value>10000</value>
+  </holding>
+  <holding name="Aflap3_task_source_adv1" type="UINT16" index="18636" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_task_local_adv1" type="SINT16" index="18637" multipler="10">
+    <description_short>Локальное задание регулируемого параметра через регистр модбас</description_short>
+    <value_str>0,0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_AI_value_adv1" type="UINT16" index="18638" multipler="1">
+    <description_short>Канал, измерения регулируемого параметра</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Aflap3_time_m_adv1" type="UINT16" index="18639" multipler="1">
+    <description_short>Время допустимого выхода параметра за диапазон, мин</description_short>
+    <value_str>20</value_str>
+    <value>20</value>
+  </holding>
+  <holding name="Aflap3_adv_options_adv1" type="BITMAP16" index="18640" multipler="1">
+    <description_short>Дополнительные настройки режима</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_time_pow_adv1" type="UINT16" index="18641" multipler="1">
+    <description_short>Допустимое время перегрева калорифера, в сек</description_short>
+    <value_str>5120</value_str>
+    <value>5120</value>
+  </holding>
+  <holding name="Aflap3_time_t_adv1" type="UINT16" index="18642" multipler="1">
+    <description_short>Допустимое время выхода температуры ограничения за диапазон, в сек</description_short>
+    <value_str>5120</value_str>
+    <value>5120</value>
+  </holding>
+  <holding name="Aflap3_AI_t_adv1" type="UINT16" index="18643" multipler="1">
+    <description_short>Номер канала AI, измеряющего температуру ограничения</description_short>
+    <value_str>10240</value_str>
+    <value>10240</value>
+  </holding>
+  <holding name="Aflap3_tlvl_adv1" type="SINT16" index="18644" multipler="10">
+    <description_short>Порог температуры ограничения, в °С</description_short>
+    <value_str>2560,0</value_str>
+    <value>25600</value>
+  </holding>
+  <holding name="Aflap3_adv1_REG_pg" type="UINT16" index="18645" multipler="100">
+    <description_short>Коэффициент пропорциональной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv1_REG_ig" type="UINT16" index="18646" multipler="100">
+    <description_short>Коэффициент пропорциональности интегральной составляющей</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv1_REG_dg" type="UINT16" index="18647" multipler="100">
+    <description_short>Постоянная времени дифференцирования</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv1_REG_term" type="UINT16" index="18648" multipler="1">
+    <description_short>Цикл расчета нового значения, мс</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv1_REG_dead_band" type="SINT16" index="18649" multipler="1">
+    <description_short>Зона нечувствительности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv1_REG_offset" type="SINT16" index="18650" multipler="1">
+    <description_short>Смещение (в выходных еденицах) для добавления к значению регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv1_REG_manual" type="SINT16" index="18651" multipler="1">
+    <description_short>Значение выхода регулятора для ручного управления</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Aflap3_adv1_REG_mode" type="UINT16" index="18652" multipler="1">
+    <description_short>Режим работы регулятора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_new_mode" type="UINT16" index="20000" multipler="1">
+    <description_short>Режим работы узла</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_DI_coolant_alarm" type="UINT16" index="20001" multipler="1">
+    <description_short>Датчик высокого/низкого давления фреона</description_short>
+    <value_str>11</value_str>
+    <value>11</value>
+  </holding>
+  <holding name="Comp_DO_compressor" type="UINT16" index="20002" multipler="1">
+    <description_short>Выход управления компрессором, совместно с отсечным клапаном</description_short>
+    <value_str>40</value_str>
+    <value>40</value>
+  </holding>
+  <holding name="Comp_DO_hot_gas_bypass" type="UINT16" index="20003" multipler="1">
+    <description_short>Выход управления клапаном перепуска горячих газов</description_short>
+    <value_str>80</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Comp_DO_heat_switch" type="UINT16" index="20004" multipler="1">
+    <description_short>Выход управления клапаном тепло/холод</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_AI_freezing" type="UINT16" index="20006" multipler="1">
+    <description_short>Датчик температуры испарителя</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_options" type="BITMAP16" index="20008" multipler="1">
+    <description_short>Опции работы компрессора</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_lock_errors" type="BITMAP16" index="20009" multipler="1">
+    <description_short>Маска аварий с защёлкой</description_short>
+    <value_str>0x0050</value_str>
+    <value>80</value>
+  </holding>
+  <holding name="Comp_crit_errors" type="BITMAP16" index="20010" multipler="1">
+    <description_short>Маска критических аварий</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_temp_froze" type="SINT16" index="20011" multipler="10">
+    <description_short>Температура обмерзания, °С</description_short>
+    <value_str>550,0</value_str>
+    <value>5500</value>
+  </holding>
+  <holding name="Comp_delay_hot_gas_bypass" type="UINT16" index="20012" multipler="1">
+    <description_short>Время задержки на перепуск горячих газов при обмерзании, c</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_time_compr_off" type="UINT16" index="20013" multipler="1">
+    <description_short>Минимальное время нахождения компрессора в отключенном состоянии, c</description_short>
+    <value_str>10000</value_str>
+    <value>10000</value>
+  </holding>
+  <holding name="Comp_func_adv0" type="UINT16" index="20020" multipler="1">
+    <description_short>Функция</description_short>
+    <value_str>17</value_str>
+    <value>17</value>
+  </holding>
+  <holding name="Comp_task_source_adv0" type="UINT16" index="20021" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>3</value_str>
+    <value>3</value>
+  </holding>
+  <holding name="Comp_task_local_adv0" type="SINT16" index="20022" multipler="1">
+    <description_short>Локальное задание регулируемого параметра через регистр модбас</description_short>
+    <value_str>4</value_str>
+    <value>4</value>
+  </holding>
+  <holding name="Comp_hyst_adv0" type="SINT16" index="20023" multipler="1">
+    <description_short>Гистерезис порога включения компрессора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_AI_measure_adv0" type="UINT16" index="20024" multipler="1">
+    <description_short>Номер канала датчика, измеряющего текущее значение</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_DI_hygrostat_adv0" type="UINT16" index="20025" multipler="1">
+    <description_short>Вход подключения гигростата для управления работой компрессора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_keys_adv0" type="BITMAP16" index="20026" multipler="1">
+    <description_short>Опции режима</description_short>
+    <value_str>0x03E8</value_str>
+    <value>1000</value>
+  </holding>
+  <holding name="Comp_func_adv1" type="UINT16" index="20030" multipler="1">
+    <description_short>Функция</description_short>
+    <value_str>1</value_str>
+    <value>1</value>
+  </holding>
+  <holding name="Comp_task_source_adv1" type="UINT16" index="20031" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_task_local_adv1" type="SINT16" index="20032" multipler="1">
+    <description_short>Локальное задание регулируемого параметра через регистр модбас</description_short>
+    <value_str>2</value_str>
+    <value>2</value>
+  </holding>
+  <holding name="Comp_hyst_adv1" type="SINT16" index="20033" multipler="1">
+    <description_short>Гистерезис порога включения компрессора</description_short>
+    <value_str>5</value_str>
+    <value>5</value>
+  </holding>
+  <holding name="Comp_AI_measure_adv1" type="UINT16" index="20034" multipler="1">
+    <description_short>Номер канала датчика, измеряющего текущее значение</description_short>
+    <value_str>10</value_str>
+    <value>10</value>
+  </holding>
+  <holding name="Comp_DI_hygrostat_adv1" type="UINT16" index="20035" multipler="1">
+    <description_short>Вход подключения гигростата для управления работой компрессора</description_short>
+    <value_str>360</value_str>
+    <value>360</value>
+  </holding>
+  <holding name="Comp_keys_adv1" type="BITMAP16" index="20036" multipler="1">
+    <description_short>Опции режима</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_func_adv2" type="UINT16" index="20040" multipler="1">
+    <description_short>Функция</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_task_source_adv2" type="UINT16" index="20041" multipler="1">
+    <description_short>Источник уставки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_task_local_adv2" type="SINT16" index="20042" multipler="1">
+    <description_short>Локальное задание регулируемого параметра через регистр модбас</description_short>
+    <value_str>500</value_str>
+    <value>500</value>
+  </holding>
+  <holding name="Comp_hyst_adv2" type="UINT8L" index="20043" multipler="1">
+    <description_short>Гистерезис порога включения компрессора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_AI_measure_adv2" type="UINT16" index="20044" multipler="1">
+    <description_short>Номер канала датчика, измеряющего текущее значение</description_short>
+    <value_str>25</value_str>
+    <value>25</value>
+  </holding>
+  <holding name="Comp_DI_hygrostat_adv2" type="UINT16" index="20045" multipler="1">
+    <description_short>Вход подключения гигростата для управления работой компрессора</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Comp_keys_adv2" type="BITMAP16" index="20046" multipler="1">
+    <description_short>Опции режима</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="PORT1_mode" type="UINT16" index="32768" multipler="1">
+    <description_short>Режим работы порта</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="PORT1_addr" type="UINT16" index="32769" multipler="1">
+    <description_short>Адрес модуля в режиме Modbus RTU Slave</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="PORT1_rate" type="UINT16" index="32770" multipler="1">
+    <description_short>Скорость работы порта</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="PORT1_nbstop" type="UINT16" index="32771" multipler="1">
+    <description_short>Количество стоп бит</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="PORT1_even" type="UINT16" index="32772" multipler="1">
+    <description_short>Проверка четности</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="PORT1_wait" type="UINT16" index="32773" multipler="1">
+    <description_short>Время ожидания ответа, в мс</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="PORT1_nbrepeat" type="UINT16" index="32774" multipler="1">
+    <description_short>Количество повторов</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="MBslot1_type" type="UINT8L" index="32800" multipler="1">
+    <description_short>Тип внешнего устройства</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="MBslot1_addr" type="UINT8H" index="32800" multipler="1">
+    <description_short>Адрес внешнего устройства</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="MBslot1_period" type="UINT16" index="32801" multipler="1">
+    <description_short>Цикл опроса внешнего устройства</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="MBslot2_type" type="UINT8L" index="32802" multipler="1">
+    <description_short>Тип внешнего устройства</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="MBslot2_addr" type="UINT8H" index="32802" multipler="1">
+    <description_short>Адрес внешнего устройства</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="MBslot2_period" type="UINT16" index="32803" multipler="1">
+    <description_short>Цикл опроса внешнего устройства</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="MBslot3_type" type="UINT8L" index="32804" multipler="1">
+    <description_short>Тип внешнего устройства</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="MBslot3_addr" type="UINT8H" index="32804" multipler="1">
+    <description_short>Адрес внешнего устройства</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="MBslot3_period" type="UINT16" index="32805" multipler="1">
+    <description_short>Цикл опроса внешнего устройства</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="MBslot4_type" type="UINT8L" index="32806" multipler="1">
+    <description_short>Тип внешнего устройства</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="MBslot4_addr" type="UINT8H" index="32806" multipler="1">
+    <description_short>Адрес внешнего устройства</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="MBslot4_period" type="UINT16" index="32807" multipler="1">
+    <description_short>Цикл опроса внешнего устройства</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT0_AO0" type="UINT16" index="33000" multipler="1000">
+    <description_short>Задание на выход АО0, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT0_AO1" type="UINT16" index="33001" multipler="1000">
+    <description_short>Задание на выход АО1, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT0_AO2" type="UINT16" index="33002" multipler="1000">
+    <description_short>Задание на выход АО2, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT0_AO3" type="UINT16" index="33003" multipler="1000">
+    <description_short>Задание на выход АО3, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT0_AO4" type="UINT16" index="33004" multipler="1000">
+    <description_short>Задание на выход АО4, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT0_AO5" type="UINT16" index="33005" multipler="1000">
+    <description_short>Задание на выход АО5, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT0_AO6" type="UINT16" index="33006" multipler="1000">
+    <description_short>Задание на выход АО6, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT0_AO7" type="UINT16" index="33007" multipler="1000">
+    <description_short>Задание на выход АО7, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT0_DO_direct" type="BITMAP16" index="33008" multipler="1">
+    <description_short>Маска дискретных выходов</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT1_AO0" type="UINT16" index="33100" multipler="1000">
+    <description_short>Задание на выход АО0, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT1_AO1" type="UINT16" index="33101" multipler="1000">
+    <description_short>Задание на выход АО1, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT1_AO2" type="UINT16" index="33102" multipler="1000">
+    <description_short>Задание на выход АО2, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT1_AO3" type="UINT16" index="33103" multipler="1000">
+    <description_short>Задание на выход АО3, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT1_AO4" type="UINT16" index="33104" multipler="1000">
+    <description_short>Задание на выход АО4, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT1_AO5" type="UINT16" index="33105" multipler="1000">
+    <description_short>Задание на выход АО5, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT1_AO6" type="UINT16" index="33106" multipler="1000">
+    <description_short>Задание на выход АО6, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT1_AO7" type="UINT16" index="33107" multipler="1000">
+    <description_short>Задание на выход АО7, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT1_DO_direct" type="BITMAP16" index="33108" multipler="1">
+    <description_short>Маска дискретных выходов</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT2_AO0" type="UINT16" index="33200" multipler="1000">
+    <description_short>Задание на выход АО0, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT2_AO1" type="UINT16" index="33201" multipler="1000">
+    <description_short>Задание на выход АО1, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT2_AO2" type="UINT16" index="33202" multipler="1000">
+    <description_short>Задание на выход АО2, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT2_AO3" type="UINT16" index="33203" multipler="1000">
+    <description_short>Задание на выход АО3, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT2_AO4" type="UINT16" index="33204" multipler="1000">
+    <description_short>Задание на выход АО4, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT2_AO5" type="UINT16" index="33205" multipler="1000">
+    <description_short>Задание на выход АО5, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT2_AO6" type="UINT16" index="33206" multipler="1000">
+    <description_short>Задание на выход АО6, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT2_AO7" type="UINT16" index="33207" multipler="1000">
+    <description_short>Задание на выход АО7, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT2_DO_direct" type="BITMAP16" index="33208" multipler="1">
+    <description_short>Маска дискретных выходов</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT3_AO0" type="UINT16" index="33300" multipler="1000">
+    <description_short>Задание на выход АО0, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT3_AO1" type="UINT16" index="33301" multipler="1000">
+    <description_short>Задание на выход АО1, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT3_AO2" type="UINT16" index="33302" multipler="1000">
+    <description_short>Задание на выход АО2, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT3_AO3" type="UINT16" index="33303" multipler="1000">
+    <description_short>Задание на выход АО3, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT3_AO4" type="UINT16" index="33304" multipler="1000">
+    <description_short>Задание на выход АО4, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT3_AO5" type="UINT16" index="33305" multipler="1000">
+    <description_short>Задание на выход АО5, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT3_AO6" type="UINT16" index="33306" multipler="1000">
+    <description_short>Задание на выход АО6, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT3_AO7" type="UINT16" index="33307" multipler="1000">
+    <description_short>Задание на выход АО7, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="SLOT3_DO_direct" type="BITMAP16" index="33308" multipler="1">
+    <description_short>Маска дискретных выходов</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AI0_type" type="UINT16" index="35000" multipler="1">
+    <description_short>Тип температурного датчика</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AI0_offset" type="SINT16" index="35001" multipler="1">
+    <description_short>Корректирующая константа, смещение температуры, °C</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AI1_type" type="UINT16" index="35200" multipler="1">
+    <description_short>Тип температурного датчика</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AI1_offset" type="SINT16" index="35201" multipler="1">
+    <description_short>Корректирующая константа, смещение температуры, °C</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AI2_setting" type="BITMAP16" index="35400" multipler="1">
+    <description_short>Настройки канала AI2</description_short>
+    <value_str>0x0002</value_str>
+    <value>2</value>
+  </holding>
+  <holding name="AI2_aconst" type="SINT16" index="35401" multipler="1">
+    <description_short>Калибровочная константа для 0 Па (ручное задание)</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AO0_value_set" type="UINT16" index="36000" multipler="1000">
+    <description_short>Задание на АО0, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AO1_value_set" type="UINT16" index="36001" multipler="1000">
+    <description_short>Задание на АО1, В</description_short>
+    <value_str>0,000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AO2_value_set" type="UINT16" index="36002" multipler="100">
+    <description_short>Задание на АО2 (ШИМ через DO7), %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AO3_value_set" type="UINT16" index="36003" multipler="100">
+    <description_short>Задание на АО3 (ШИМ через DO8), %</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AO2_mode" type="UINT16" index="36004" multipler="1">
+    <description_short>Режим работы канала АО2/DO7</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AO2_period" type="UINT16" index="36005" multipler="100">
+    <description_short>Период ШИМ, с</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AO3_mode" type="UINT16" index="36006" multipler="1">
+    <description_short>Режим работы канала АО3/DO8</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="AO3_period" type="UINT16" index="36007" multipler="100">
+    <description_short>Период ШИМ, с</description_short>
+    <value_str>0,00</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="do_direct" type="BITMAP16" index="38000" multipler="1">
+    <description_short>Маска для прямого управления каналами DO</description_short>
+    <value_str>0x0000</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="spec_mode" type="UINT16" index="60000" multipler="1">
+    <description_short>Режим работы/отладки</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="debugw" type="UINT16" index="60001" multipler="1">
+    <description_short>Отладочная переменная</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Time_min" type="UINT8L" index="60020" multipler="1">
+    <description_short>Внутреннее время установки, минуты</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Time_hour" type="UINT8H" index="60020" multipler="1">
+    <description_short>Внутреннее время установки, часы</description_short>
+    <value_str>0</value_str>
+    <value>0</value>
+  </holding>
+  <holding name="Time_sec" type="UINT8L" index="60021" multipler="1">
+    <description_short>Внутреннее время установки, секунды</description_short>
+    <value_str>0</value_str>
+    <value>256</value>
+  </holding>
+  <holding name="Time_dow" type="UINT8H" index="60021" multipler="1">
+    <description_short>Внутреннее время установки, день недели</description_short>
+    <value_str>1</value_str>
+    <value>256</value>
+  </holding>
+</holdings>

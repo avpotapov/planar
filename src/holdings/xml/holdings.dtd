@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT holdings (holding+)>
+<!ATTLIST holdings
+          date CDATA #IMPLIED
+          module CDATA #IMPLIED
+          uid CDATA #IMPLIED>
+<!ELEMENT holding (description_short, value_str, value)>
+<!ATTLIST holding
+          name CDATA #REQUIRED
+          index CDATA #REQUIRED
+          var_type CDATA #REQUIRED
+          multipler CDATA #REQUIRED>
+<!ELEMENT description_short (#PCDATA)>
+<!ELEMENT value_str (#PCDATA)>
+<!ELEMENT value (#PCDATA)>

@@ -1,0 +1,52 @@
+object DetailedModbusForm: TDetailedModbusForm
+  Left = 2062
+  Height = 278
+  Top = 394
+  Width = 430
+  BorderStyle = bsNone
+  Caption = 'DetailedModbusForm'
+  ClientHeight = 278
+  ClientWidth = 430
+  LCLVersion = '1.4.0.4'
+  object SettingTree: TVirtualStringTree
+    Left = 0
+    Height = 278
+    Top = 0
+    Width = 430
+    Align = alClient
+    DefaultText = 'Node'
+    Header.AutoSizeIndex = 1
+    Header.Columns = <    
+      item
+        CheckType = ctNone
+        MinWidth = 200
+        Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring, coAllowFocus]
+        Position = 0
+        Text = 'Параметр'
+        Width = 298
+      end    
+      item
+        CheckType = ctNone
+        CheckBox = True
+        Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring, coAllowFocus]
+        Position = 1
+        Text = 'Значение'
+        Width = 128
+      end>
+    Header.DefaultHeight = 20
+    Header.Height = 20
+    Header.Options = [hoAutoResize, hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible, hoAutoSpring]
+    LineStyle = lsSolid
+    TabOrder = 0
+    TreeOptions.MiscOptions = [toAcceptOLEDrop, toCheckSupport, toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning, toEditOnClick]
+    TreeOptions.PaintOptions = [toShowButtons, toShowDropmark, toShowHorzGridLines, toShowRoot, toShowVertGridLines, toThemeAware, toUseBlendedImages]
+    TreeOptions.SelectionOptions = [toExtendedFocus]
+    OnColumnDblClick = SettingTreeColumnDblClick
+    OnCreateEditor = SettingTreeCreateEditor
+    OnEditing = SettingTreeEditing
+    OnFreeNode = SettingTreeFreeNode
+    OnGetText = SettingTreeGetText
+    OnPaintText = SettingTreePaintText
+    OnGetNodeDataSize = SettingTreeGetNodeDataSize
+  end
+end

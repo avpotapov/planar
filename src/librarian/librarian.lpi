@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <AutoCreateForms Value="False"/>
+      <Title Value="librarian"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MajorVersionNr Value="1"/>
+      <BuildNr Value="394"/>
+      <Language Value="0419"/>
+      <Attributes pvaPreRelease="True"/>
+      <StringTable Comments="Приложение &quot;Библиотекарь&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Библиотекарь&quot;" LegalCopyright="Planar, LLC" OriginalFilename="Librarian.exe" ProductName="Библиотекарь" ProductVersion="0.0"/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="virtualtreeview_package"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="33">
+      <Unit0>
+        <Filename Value="librarian.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="units\main\umainform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uMainForm"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\library\units\ulibrary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibrary"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\setting\units\usetting.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\general\splashform\units\usplashform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <UnitName Value="uSplashForm"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\general\settingform\units\usettingform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <UnitName Value="uSettingForm"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\general\settingform\units\usettingformdata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSettingFormData"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="units\main\ueditingformpool.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uEditingFormPool"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="units\module\umoduleform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModuleForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uModuleForm"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="units\empty\uemptyform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EmptyForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uEmptyForm"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="units\basedesc\ubasedescform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BaseDescForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="units\picklist\upicklistform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PickListForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPickListForm"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="units\vars\uvarsform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="VarsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="units\config\uconfigform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ConfigForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uConfigForm"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\general\customeditor\units\ucustomeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="units\picklist\upickitemeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPickItemEditor"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="units\bits\ubitsform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BitsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uBitsForm"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="units\bits\ubiteditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uBitEditor"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="units\vars\uvareditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uVarEditor"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="units\picklist\upicklisteditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPickListEditor"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\general\vteditor\uvtbaseeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uVtBaseEditor"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPropertyEditorNew"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="units\bits\ubitseditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uBitsEditor"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="units\general\umenuhelper.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMenuHelper"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="units\general\uadvancedpropertyeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uAdvancedPropertyEditor"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="units\general\u2columneditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="u2ColumnEditor"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="units\vars\uvarseditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uVarsEditor"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="units\main\ulibraryeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibraryEditor"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="units\general\ulibrarydata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibraryData"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="units\main\ulibrarybuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibraryBuilder"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="units\module\umoduledata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uModuleData"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="units\config\uregisterseditor.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="units\config\uconfigeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uConfigEditor"/>
+      </Unit32>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="..\..\bin\librarian"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="units\main;units\general;..\library\units;..\setting\units;..\general\splashform\units;..\general\settingform\units;..\general\customeditor\units;units;..\general\vteditor;units\bits;units\picklist;units\vars;units\basedesc;units\module;units\empty;units\config"/>
+      <UnitOutputDirectory Value="..\..\lib"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

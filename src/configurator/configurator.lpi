@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <SaveJumpHistory Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="configurator"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MajorVersionNr Value="1"/>
+      <BuildNr Value="24"/>
+      <Language Value="0419"/>
+      <Attributes pvaPreRelease="True"/>
+      <StringTable Comments="Приложение &quot;Конфигуратор&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Конфигуратор&quot;" LegalCopyright="Planar, LLC" OriginalFilename="Configurator.exe" ProductName="Конфигуратор" ProductVersion="1.0"/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="virtualtreeview_package"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="33">
+      <Unit0>
+        <Filename Value="configurator.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="units\mainform\umainform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uMainForm"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\general\settingform\units\usettingform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SettingForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uSettingForm"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\general\customeditor\units\ucustomeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\setting\units\usetting.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\modbus\units\umodbus.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="units\deviceform\udeviceform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DeviceForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\library\units\ulibrary.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\map\units\umap.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="units\general\usignature.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="units\detailedmodbusform\udetailedmodbusform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DetailedModbusForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uDetailedModbusForm"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="units\detaileddeviceform\udetaileddeviceform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DetailedDeviceForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uDetailedDeviceForm"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="units\detailedgroupform\udetailedgroupform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DetailedGroupForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="units\detailedbackupform\udetailedbackupform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DetailedBackupForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="units\detailedtrendsform\udetailedtrendsform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DetailedTrendsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="units\detailedbootloaderform\udetailedbootloaderform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DetailedBootloaderForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="units\general\uframelistfactory.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uFrameListFactory"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="units\detailedgroupform\ugroupitemtreenodefactory.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uGroupItemTreeNodeFactory"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="units\general\uconfiguratordata.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="units\mainform\udetailedproxyform.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="units\general\uautoscan.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="units\mainform\ucontentbuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="units\mainform\umainformpopupmenu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMainFormPopupMenu"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="units\detailedmodbusform\umodbusformdata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uModbusFormData"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="units\detaileddeviceform\udeviceformdata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uDeviceFormData"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="units\detailedbootloaderform\ubootloader.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="units\detailedbackupform\ubackupformdata.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\holdings\units\uholdings.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="units\holdingsform\uholdingsform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="HoldingsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uHoldingsForm"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="units\holdingsform\uholdingsdata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uHoldingsData"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\general\splashform\units\usplashform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SplashForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uSplashForm"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="..\general\settingform\units\usettingformdata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSettingFormData"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\general\customeditor\units\upropertyeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit32>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="..\..\bin\configurator"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="units;..\setting\units;..\modbus\units;..\library\units;..\map\units;units\general;units\mainform;units\detailedbackupform;units\detailedbootloaderform;units\detaileddeviceform;units\detailedmodbusform;units\deviceform;units\detailedtrendsform;units\detailedgroupform;..\holdings\units;..\general\settingform\units;units\holdingsform;..\general\customeditor\units;..\general\splashform\units"/>
+      <UnitOutputDirectory Value="..\..\lib"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <UseLineInfoUnit Value="False"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

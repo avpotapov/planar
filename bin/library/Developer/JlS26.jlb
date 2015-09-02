@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <presets/>
+  <registers>
+    <var_set array_type="HOLDING"/>
+    <var_set array_type="INPUT">
+      <var_define ver="0.0" type="IO_DATA">
+        <index>3</index>
+        <description_short>Температура, °С</description_short>
+        <name>temp2</name>
+        <uid>01B4A410-2871-479D-9CCE-60FF4D245875</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Температура, °С</para>
+          <para>По протоколу Modbus значение передаётся домноженным на 10, со статусной информацией (см. описание формата IO_DATA)</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="BITMAP16">
+        <index>32768</index>
+        <description_short>Проверка работы переключателей</description_short>
+        <name>switch_state</name>
+        <uid>15CBF841-9F5A-4CA2-A4BD-A4C68CA1A306</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Проверка работы переключателей. В реальном времени отображается число, выставленное на переключателях</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>1</index>
+        <description_short>Влажность, %</description_short>
+        <name>hum1</name>
+        <uid>1DB469D6-5C06-4C7F-9EA9-4F4FF7C0D927</uid>
+        <read_always>0</read_always>
+        <multipler>100</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Влажность, %</para>
+          <para>По протоколу Mosbus передается как значение, домноженное на 100 (т.е. 2 знака после запятой)</para>
+          <para>Данный регистр совпадает с аналогичным регистром датчика THD-D2-T</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="IO_DATA">
+        <index>5</index>
+        <description_short>Влажность, %</description_short>
+        <name>hum2</name>
+        <uid>26810827-549C-49CC-BBFF-C50B4BB07793</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Влажность, %</para>
+          <para>По протоколу Modbus значение передаётся домноженным на 10, со статусной информацией (см. описание формата IO_DATA)</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>15</index>
+        <description_short>Температура, °С</description_short>
+        <name>temp4</name>
+        <uid>2ECC97AA-7644-42A2-8ABF-01C3E6B3329F</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Температура, °С</para>
+          <para>Передается округленным до ближайшего целого числа</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>17</index>
+        <description_short>Влагосодержание, г/кг c.в.</description_short>
+        <name>hum_cont4</name>
+        <uid>3DEC675D-1530-413D-B4A4-6E9FB630A305</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Влагосодержание, г/кг c.в.</para>
+          <para>Передается округленным до ближайшего целого числа</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="FLOAT">
+        <index>11</index>
+        <description_short>Влажность, %</description_short>
+        <name>hum3</name>
+        <uid>42D89B60-DAF7-40C1-8984-9423FE05D7A0</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Влажность, %</para>
+          <para>По протоколу Modbus передаётся в формате FLOAT</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>0</index>
+        <description_short>Температура, °С</description_short>
+        <name>temp1</name>
+        <uid>54110C5B-6D20-4728-A8DA-99C4BBC4A402</uid>
+        <read_always>0</read_always>
+        <multipler>100</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Температура, °С</para>
+          <para>По протоколу Mosbus передается как значение, домноженное на 100 (т.е. 2 знака после запятой)</para>
+          <para>Данный регистр совпадает с аналогичным регистром датчика THD-D2-T</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="1.3" type="UINT16">
+        <index>65011</index>
+        <description_short>Тип прошивки</description_short>
+        <name>id_soft</name>
+        <uid>5EFA736B-A5BD-499C-A2A3-7BB975F8F364</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Тип прошивки</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="1.3" type="UINT16">
+        <index>65000</index>
+        <description_short>Аппаратная платформа</description_short>
+        <name>id_hard</name>
+        <uid>6FDDED49-C91B-47E7-9392-EB389155247D</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Тип аппаратной платформы</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="IO_DATA">
+        <index>7</index>
+        <description_short>Влагосодержание, г/кг c.в.</description_short>
+        <name>hum_cont2</name>
+        <uid>80E3583E-36AF-4D6C-84BF-E28A7BE6354C</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Влагосодержание, г/кг c.в.</para>
+          <para>По протоколу Modbus значение передаётся домноженным на 10, со статусной информацией (см. описание формата IO_DATA)</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="1.3" type="ID_VERSION">
+        <index>65012</index>
+        <description_short>Версия ПО</description_short>
+        <name>soft_ver</name>
+        <uid>99642744-6719-44F6-94D6-DCE89FF72EEE</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Версия ПО</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="FLOAT">
+        <index>13</index>
+        <description_short>Влагосодержание, г/кг c.в.</description_short>
+        <name>hum_cont3</name>
+        <uid>B2277BA4-745C-4756-903A-F0D755006C45</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Влагосодержание, г/кг c.в.</para>
+          <para>По протоколу Modbus передаётся в формате FLOAT</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>16</index>
+        <description_short>Влажность, %</description_short>
+        <name>hum4</name>
+        <uid>E83F94A9-39BB-4B30-AF80-43453DB3569F</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Влажность, %</para>
+          <para>Передается округленным до ближайшего целого числа</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>2</index>
+        <description_short>Влагосодержание, г/кг c.в.</description_short>
+        <name>hum_cont1</name>
+        <uid>EE100593-6A72-4D3B-8CBF-E4FD51F43DCE</uid>
+        <read_always>0</read_always>
+        <multipler>100</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Влагосодержание, г/кг c.в.</para>
+          <para>По протоколу Mosbus передается как значение, домноженное на 100 (т.е. 2 знака после запятой)</para>
+          <para>Данный регистр совпадает с аналогичным регистром датчика THD-D2-T</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="FLOAT">
+        <index>9</index>
+        <description_short>Температура, °С</description_short>
+        <name>temp3</name>
+        <uid>F45D2DD7-FAB8-40CD-9EDF-5EDCB41A32A9</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Температура, °С</para>
+          <para>По протоколу Modbus передаётся в формате FLOAT</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+    </var_set>
+  </registers>
+  <configuration>
+    <gnc_set name="Основные данные">
+      <gnc_var>
+        <uid>01B4A410-2871-479D-9CCE-60FF4D245875</uid>
+        <uid>26810827-549C-49CC-BBFF-C50B4BB07793</uid>
+        <uid>80E3583E-36AF-4D6C-84BF-E28A7BE6354C</uid>
+      </gnc_var>
+    </gnc_set>
+    <gnc_set name="Системная информация">
+      <gnc_var>
+        <uid>15CBF841-9F5A-4CA2-A4BD-A4C68CA1A306</uid>
+      </gnc_var>
+    </gnc_set>
+    <gnc_set name="Дополнительные данные">
+      <gnc_var>
+        <uid>54110C5B-6D20-4728-A8DA-99C4BBC4A402</uid>
+        <uid>1DB469D6-5C06-4C7F-9EA9-4F4FF7C0D927</uid>
+        <uid>EE100593-6A72-4D3B-8CBF-E4FD51F43DCE</uid>
+        <uid>F45D2DD7-FAB8-40CD-9EDF-5EDCB41A32A9</uid>
+        <uid>42D89B60-DAF7-40C1-8984-9423FE05D7A0</uid>
+        <uid>B2277BA4-745C-4756-903A-F0D755006C45</uid>
+        <uid>2ECC97AA-7644-42A2-8ABF-01C3E6B3329F</uid>
+        <uid>E83F94A9-39BB-4B30-AF80-43453DB3569F</uid>
+        <uid>3DEC675D-1530-413D-B4A4-6E9FB630A305</uid>
+      </gnc_var>
+    </gnc_set>
+  </configuration>
+</module>

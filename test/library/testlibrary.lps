@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="19">
+      <Unit0>
+        <Filename Value="testlibrary.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="13" Y="6"/>
+        <UsageCount Value="53"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="units\utestlibrary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestLibrary"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="48" Y="20"/>
+        <UsageCount Value="53"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\src\library\units\ulibrary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibrary"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="518"/>
+        <CursorPos X="14" Y="544"/>
+        <UsageCount Value="53"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="units\utestsaxparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestSaxParser"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="94"/>
+        <CursorPos X="10" Y="115"/>
+        <UsageCount Value="53"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\src\library\units\ubase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uBase"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="433"/>
+        <CursorPos Y="462"/>
+        <UsageCount Value="53"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibraryCls"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="1201"/>
+        <CursorPos Y="1235"/>
+        <UsageCount Value="53"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\src\library\units\usaxbase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSaxBase"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="243"/>
+        <CursorPos Y="416"/>
+        <UsageCount Value="53"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="units\utestlibrarycls.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestLibraryCls"/>
+        <EditorIndex Value="8"/>
+        <CursorPos Y="18"/>
+        <UsageCount Value="49"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\src\library\units\ulibrarybuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="37"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\src\library\units\ulibrarysaxparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibrarySaxParser"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="242"/>
+        <CursorPos Y="268"/>
+        <UsageCount Value="37"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\src\library\units\umodulebuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uModuleBuilder"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="882"/>
+        <CursorPos Y="685"/>
+        <UsageCount Value="37"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="units\utestansilibrary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestAnsiLibrary"/>
+        <EditorIndex Value="7"/>
+        <CursorPos X="62" Y="69"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\src\library\units\usaxlibrary.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1072"/>
+        <CursorPos X="41" Y="1072"/>
+        <UsageCount Value="35"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\src\library\units\usaxparser2.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1355"/>
+        <CursorPos X="3" Y="1367"/>
+        <UsageCount Value="19"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\src\library\units\ulibrarycls2.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1388"/>
+        <CursorPos X="46" Y="1422"/>
+        <UsageCount Value="35"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\inc\ustringh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="75"/>
+        <CursorPos X="10" Y="114"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="units\utestserializer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestSerializer"/>
+        <CursorPos X="35" Y="17"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\src\setting\units\usetting.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="35"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\src\library\units\ulibraryserializer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibrarySerializer"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="153"/>
+        <CursorPos Y="188"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit18>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1227" TopLine="1200"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1228" TopLine="1200"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1234" TopLine="1200"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1244" TopLine="1215"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\src\library\units\ulibraryserializer.pas"/>
+        <Caret Line="204" TopLine="165"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1044" TopLine="1018"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1045" TopLine="1018"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1047" TopLine="1018"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1048" TopLine="1018"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1227" TopLine="1201"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1228" TopLine="1201"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1229" TopLine="1201"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1231" TopLine="1201"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1232" TopLine="1201"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1234" TopLine="1201"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1235" TopLine="1201"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\src\library\units\ulibraryserializer.pas"/>
+        <Caret Line="206" TopLine="173"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1044" TopLine="1018"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1045" TopLine="1018"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1047" TopLine="1018"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1048" TopLine="1018"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1227" TopLine="1201"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1228" TopLine="1201"/>
+      </Position23>
+      <Position24>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1229" TopLine="1201"/>
+      </Position24>
+      <Position25>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1231" TopLine="1201"/>
+      </Position25>
+      <Position26>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1232" TopLine="1201"/>
+      </Position26>
+      <Position27>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1234" TopLine="1201"/>
+      </Position27>
+      <Position28>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <Caret Line="1235" TopLine="1201"/>
+      </Position28>
+      <Position29>
+        <Filename Value="..\..\src\library\units\ulibraryserializer.pas"/>
+        <Caret Line="207" TopLine="173"/>
+      </Position29>
+      <Position30>
+        <Filename Value="..\..\src\library\units\ulibraryserializer.pas"/>
+        <Caret Line="198" Column="12" TopLine="166"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

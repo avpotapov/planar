@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="5">
+      <Unit0>
+        <Filename Value="writeread.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="13" Y="6"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="units\utestwriteread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestWriteRead"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="1167"/>
+        <CursorPos X="35" Y="1200"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\src\modbus\units\umodbus.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uModbus"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="385"/>
+        <CursorPos X="23" Y="396"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\src\map\units\umap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMap"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="42"/>
+        <CursorPos X="14" Y="68"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\map\units\utestmap.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit4>
+    </Units>
+    <JumpHistory Count="24" HistoryIndex="23">
+      <Position1>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="30" Column="19" TopLine="8"/>
+      </Position1>
+      <Position2>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="16" Column="19"/>
+      </Position2>
+      <Position3>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="46" Column="27" TopLine="27"/>
+      </Position3>
+      <Position4>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="17" Column="19" TopLine="8"/>
+      </Position4>
+      <Position5>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="100" Column="15" TopLine="75"/>
+      </Position5>
+      <Position6>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="18" Column="23"/>
+      </Position6>
+      <Position7>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="264" Column="33" TopLine="239"/>
+      </Position7>
+      <Position8>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="179" Column="30" TopLine="166"/>
+      </Position8>
+      <Position9>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="22" Column="20" TopLine="5"/>
+      </Position9>
+      <Position10>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="283" Column="27" TopLine="267"/>
+      </Position10>
+      <Position11>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="258" TopLine="250"/>
+      </Position11>
+      <Position12>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="17" Column="25"/>
+      </Position12>
+      <Position13>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="18" Column="20" TopLine="7"/>
+      </Position13>
+      <Position14>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="20" Column="23"/>
+      </Position14>
+      <Position15>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="23" Column="14" TopLine="10"/>
+      </Position15>
+      <Position16>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="26" Column="23"/>
+      </Position16>
+      <Position17>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="29" Column="21" TopLine="7"/>
+      </Position17>
+      <Position18>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="32" Column="22" TopLine="5"/>
+      </Position18>
+      <Position19>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="39" Column="16"/>
+      </Position19>
+      <Position20>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="835" Column="37" TopLine="817"/>
+      </Position20>
+      <Position21>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="837" Column="80" TopLine="817"/>
+      </Position21>
+      <Position22>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="847" Column="66" TopLine="820"/>
+      </Position22>
+      <Position23>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="855" Column="64" TopLine="820"/>
+      </Position23>
+      <Position24>
+        <Filename Value="units\utestwriteread.pas"/>
+        <Caret Line="44" Column="17"/>
+      </Position24>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

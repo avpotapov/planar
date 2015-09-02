@@ -1,0 +1,10 @@
+object ModuleForm: TModuleForm
+  Left = 55
+  Height = 370
+  Top = 321
+  Width = 560
+  BorderStyle = bsNone
+  Caption = 'ModuleForm'
+  OnCreate = FormCreate
+  LCLVersion = '1.4.2.0'
+end

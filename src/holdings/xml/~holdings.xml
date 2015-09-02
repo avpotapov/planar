@@ -1,0 +1,21 @@
+<holdings date="12.12.12 12:12" module="RCCU3.2" uid="13">
+	
+	<holding name="bla" index="1" var_type="UINT8L" multipler="1">
+		<description_short>blablabla</description_short>
+		<value_str>12.2</value_str>
+		<value>123</value>
+	</holding>
+	
+	<holding name="bla2" index="10" var_type="UINT8H" multipler="10">
+		<description_short>blablabla2</description_short>
+		<value_str>12.4</value_str>
+		<value>12</value>
+	</holding>
+	
+	<holding name="bla3" index="1" var_type="UINT16" multipler="1">
+		<description_short>blablabla3</description_short>
+		<value_str>12</value_str>
+		<value>1230</value>
+	</holding>
+
+</holdings>

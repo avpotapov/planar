@@ -1,0 +1,4154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <presets/>
+  <registers>
+    <var_set array_type="HOLDING">
+      <var_define ver="0.0" type="UINT16">
+        <index>88</index>
+        <description_short>Регулятор температуры воздуха - цикл работы регуля-
+тора, диапазон от 1 до 600 с</description_short>
+        <name>air_reg_term</name>
+        <uid>063431FE-11D9-47CC-98AC-2D293C56598D</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.14" type="UINT16">
+        <index>182</index>
+        <description_short>Мощность калорифера</description_short>
+        <name>lux550_heat_limit</name>
+        <uid>0699B9CA-C4DB-42EB-B106-FEB4CB8A0BF9</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Ограничение мощности калорифера для приточной установки Lux 550</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>134</index>
+        <description_short>Планировщик - задание 1 - день недели: 0 - не включать; 1...7 - включать в указанный день недели; 8 - включать в рабочие дни (с понедельника по пятницу); 9 - включать ежедневно</description_short>
+        <name>task_dow_1</name>
+        <uid>0A79822F-8196-4331-BC3F-B4B237F21C44</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>101</index>
+        <description_short>Напряжение на аналоговом выходе в мВ соответствую-
+щее максимальной скорости вентилятора. Напряжение для установки скорости будет линейно апроксимировано в диапазоне от fan_min_ao до fan_max_ao</description_short>
+        <name>fan_max_ao</name>
+        <uid>0AE10F8C-7C06-40BA-B118-E0803C706174</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>207</index>
+        <description_short>Таймер на задержку формирования аварийного сообщения, после появления аварийного сигнала на входе cooler_di_drainage_err</description_short>
+        <name>cooler_time_drainage_err</name>
+        <uid>0B68109D-D660-4F55-9169-BC47909E4F00</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>203</index>
+        <description_short>Регулятор температуры воздуха водяного/фреонового охладителя - коэффициент пропорциональной составляющей, умноженный на 10, диапазон от 0 до 99.9 мВ/°С</description_short>
+        <name>cooler_reg_pg</name>
+        <uid>0BB18B20-3A0C-4DED-B6CE-79297A7674E9</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.0" type="BITMAP16">
+        <index>2</index>
+        <description_short>Квитирование аварий, регистр 0</description_short>
+        <name>error_ack_0</name>
+        <uid>0E64E3ED-500F-4951-8836-F68D6CF3005E</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Биты соответствуют Input Register [05] (error_code_0). Для квитирования всех текущих аварий - записать 0xFFFF</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>196</index>
+        <description_short>Номер дискретного входа для подключения сухого контакта” аварии компрессора (ККБ)</description_short>
+        <name>cooler_di_compressor_err</name>
+        <uid>1055C940-133F-46AC-BEDA-419B80A8970A</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>6</index>
+        <description_short>Внутренние часы – день (0...65535), считает дни с момента
+включения установки</description_short>
+        <name>time_day</name>
+        <uid>1068FD18-C6B9-4C93-A3D9-4E1216E8A011</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.22" type="SINT16">
+        <index>191</index>
+        <description_short>Уставка температуры</description_short>
+        <name>temperature_set</name>
+        <uid>1271DFE4-874A-467A-8B82-18E7D3F72618</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>В зависимости от конфигурации установки, данное значение используется для регулирования температуры либо на выходе установке, либо на выходе увлажнителя (для систем с увлажнителем), либо в вытяжном канале или в помещении (если активирован каскадный регулятор)</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="BITMAP16">
+        <index>193</index>
+        <description_short>Конфигурация входов/выходов для управления
+охладителем (битовое поле)</description_short>
+        <name>cooler_io_config</name>
+        <uid>129D490B-B636-49BA-B908-C02546EF80F1</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits>
+          <bit_define ver="3.5">
+            <name>bit</name>
+            <index>0</index>
+            <description_short>дискретный вход “АВАРИЯ ДРЕНАЖА” присутствует в системе</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.5">
+            <name>bit</name>
+            <index>1</index>
+            <description_short>дискретный вход “АВАРИЯ ККБ” (авария охладителя) присутствует в системе</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.5">
+            <name>bit</name>
+            <index>4</index>
+            <description_short>релейный выход “ВКЛ/ВЫКЛ” присутствует в системе</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.5">
+            <name>bit</name>
+            <index>5</index>
+            <description_short>релейный выход “НАСОС” присутствует в системе</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.5">
+            <name>bit</name>
+            <index>6</index>
+            <description_short>релейный выход “НАСОС” включать синхронно с включением охлаждения</description_short>
+            <description/>
+          </bit_define>
+        </bits>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.3" type="UINT16">
+        <index>172</index>
+        <description_short>Серийный номер приточной установки (1 ... 65535)</description_short>
+        <name>plant_ser_no</name>
+        <uid>164861C4-5C6F-4A1A-92C7-B456A2D37B26</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>161</index>
+        <description_short>Мощность в Вт, приходящаяся суммарно на нагреватели, управляемые симисторами (каналы DO8 и DO9) - ТЭН1 и ТЭН2</description_short>
+        <name>ten1_2_power</name>
+        <uid>18BB5FCB-7CBC-49A5-8D74-44E555868C70</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.3" type="UINT8L">
+        <index>173</index>
+        <description_short>Дата изготовления контроллера - день месяца</description_short>
+        <name>contr_assembly_date</name>
+        <uid>18EBC36A-0157-409D-91BF-E4356DB3120E</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.16" type="UINT16">
+        <index>223</index>
+        <description_short>Количество ступеней вентилятора</description_short>
+        <name>max_bw_fan</name>
+        <uid>1BBD775A-C102-4092-BA65-3D15F4749856</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Действует, если выбран fan_type=4 (см.Holding[127]). Значение от 2 до 8</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.10" type="UINT16">
+        <index>213</index>
+        <description_short>Смещение выхода регулятора</description_short>
+        <name>cooler_reg_offset</name>
+        <uid>1D847FB1-1570-4EFE-B85E-3729CAAD448F</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8H">
+        <index>116</index>
+        <description_short>Планировщик - задание 1 - время окончания часы</description_short>
+        <name>task_end_hour_1</name>
+        <uid>212E8D53-1C35-495E-9457-00CBDEBF408B</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>128</index>
+        <description_short>Тип датчика температуры канала AI0:
+  0 - TG-K330;
+  1 - внутренний в контроллере;
+  2 - TW-130</description_short>
+        <name>tsens_type_0</name>
+        <uid>252AEF35-2096-4518-ACFA-C5EC13D45690</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>106</index>
+        <description_short>Режим работы внешнего (дистанционного) управления</description_short>
+        <name>remote_c_mode</name>
+        <uid>2577F70E-0489-4F75-B6C6-9DF39C07288D</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Данные режимы действуют, если установлен Bit 9 регистра dev_keys_0</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>145</index>
+        <description_short>Количество повторов (в режиме Master, Порт 1). Значения от 0 до 10</description_short>
+        <name>p1_nbb_repeat</name>
+        <uid>264788D5-C4F9-4B0A-A3BF-9F2AAB23FFEF</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>160</index>
+        <description_short>Планировщик - задание 4 - скорость вентилятора. Значения: 1 ... 3 – в режиме с дискретным управлением вентилятором; 1 ... 8 – в режиме с аналоговым 0-10 В управлением вентилятором</description_short>
+        <name>task_fan_6</name>
+        <uid>27067587-CA56-4C85-98B8-E245EDB2326C</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>95</index>
+        <description_short>Регулятор температуры обратной воды - коэффициент пропорциональности интегральной составляющей, обратная величина к постоянной времени интегрирования, умноженный на 10, диапазон от 0 до 99.9 мВ/°C·с</description_short>
+        <name>water_reg_ig</name>
+        <uid>27686847-1AF3-457E-9161-D28B8105D56E</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.4" type="BITMAP16">
+        <index>87</index>
+        <description_short>Ключи устройства (опции)</description_short>
+        <name>dev_keys_1</name>
+        <uid>284341F9-A8A3-4E60-8527-64F6DB99AA27</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Битовое поле</para>
+        </description>
+        <bits>
+          <bit_define ver="0.0">
+            <name>DK_DO_VAL_AIR_OFFm</name>
+            <index>0</index>
+            <description_short>Отключение реле, управляющего воздушным клапаном и проч.устройствами на момент переключения реле скорости вентилятора</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_DO_EXHAUST_FANm</name>
+            <index>1</index>
+            <description_short>Активация реле, управляющего вытяжным вентилятором</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_AUTO_Z_PRESSm</name>
+            <index>2</index>
+            <description_short>Автоподстройка смещения нуля датчика давления (каждые 60 с при остановленном вентиляторе)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_DO_ERROR</name>
+            <index>3</index>
+            <description_short>Не используется</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_HUM_MODEm</name>
+            <index>4</index>
+            <description_short>Управление увлажнением</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_DI1_FAN_ERRORm</name>
+            <index>5</index>
+            <description_short>Использовать вход DI1 для контроля сводной аварии</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_DP_FAN_ERRORm</name>
+            <index>6</index>
+            <description_short>Контролировать исправность вентилятора по перепаду давления на фильтре</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_CASCADEm</name>
+            <index>7</index>
+            <description_short>Активировать каскадный регулятор температуры</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_AI_EXTm</name>
+            <index>8</index>
+            <description_short>В системе присутствует датчик уличного воздуха</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_AUTO_SUMMERm</name>
+            <index>9</index>
+            <description_short> ЛЕТО</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_COMMON_ERRm</name>
+            <index>10</index>
+            <description_short>Активировать выход "Объединенная авария"</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_DI1_POW_FAIL_ERRm</name>
+            <index>11</index>
+            <description_short>Контролировать провал напряжения питания на входе DI1</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_NO_CFGm</name>
+            <index>12</index>
+            <description_short>Приточная установка не сконфигурирована пользователем</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_ARCTIC_FLAPm</name>
+            <index>13</index>
+            <description_short>Арктическое исполнение воздушной заслонки</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_COMMON_ERR_NOm</name>
+            <index>14</index>
+            <description_short>Реле "Объединенная авария имеет" НР контакты, если не установлен - НЗ</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.18">
+            <name>DK_DRYER_MODEm</name>
+            <index>15</index>
+            <description_short>Управление осушителем</description_short>
+            <description/>
+          </bit_define>
+        </bits>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.12" type="UINT16">
+        <index>217</index>
+        <description_short>Маска для получения списка аварий, накладывается на error_code_0</description_short>
+        <name>common_err_mask_0</name>
+        <uid>2848325D-F0E5-44D9-AA00-7E0D444AF250</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>91</index>
+        <description_short>Регулятор температуры воздуха - зона нечувствительности, °С x10 (диапазон от 0 до 5.0 °C)</description_short>
+        <name>air_reg_deadband</name>
+        <uid>2A520411-37EC-42E6-BCB8-FDF4E2773594</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.8" type="SINT16">
+        <index>187</index>
+        <description_short>Задание температуры воздуха в на выходе увлажнителя, °С</description_short>
+        <name>humidifier_temp_task</name>
+        <uid>2ABCA7F3-450C-4907-A5E1-A258BD201838</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>В данный регистр следует записывать уставку температуры, если система оборудована секцией увлажнения.  Данный параметр передается в контроллер секции увлажнения.
+В контроллерах с прошивкой 3.22 и больше рекомендуется использовать единый регистр temperature_set (Holding[191]). Единица измерения °С х 10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8H">
+        <index>122</index>
+        <description_short>Планировщик - задание 3 - время окончания часы</description_short>
+        <name>task_end_hour_3</name>
+        <uid>2CCD9535-76BD-46A8-8F5F-07F69B88C924</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8H">
+        <index>119</index>
+        <description_short>Планировщик - задание 2 - время окончания часы</description_short>
+        <name>task_end_hour_2</name>
+        <uid>2DE6B8D1-77EE-4E39-8260-7EDF452FA666</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.4" type="UINT16">
+        <index>177</index>
+        <description_short>Шаг давления в распределительной камере, соответствующий ступеням производительности вентилятора со 2 по 8</description_short>
+        <name>vav_step_2-8</name>
+        <uid>301E0D91-539F-4AD3-8F83-014501D36958</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>82</index>
+        <description_short>Канал аналогового ввода AI2 калибровочная константа (смещение нуля) значение в °С x10</description_short>
+        <name>tsens_zcal_2</name>
+        <uid>30C7CA36-4145-43CF-9C3F-1E6DD615F12C</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>192</index>
+        <description_short>Тип секции охлаждения: 0 - отсутствует; 1 - фреоновый охладитель с дискретным управлением, подключенный к данному контроллеру (ВКЛ/ВЫКЛ, контроль аварий, комнатных термостатов и пр.); 2 - водяной охладитель с аналоговым управлением, подключенный к данному контроллеру; 3 - охладитель с собственным контроллером (собственный контроллер охладителя реализует управление по термостату, контроль аварий и пр.), связь между контроллерами через дискретные входы/выходы</description_short>
+        <name>cooler_type</name>
+        <uid>33F31274-5779-4EF2-B268-DDEF53794B64</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>204</index>
+        <description_short>Регулятор температуры воздуха водяного/фреонового охладителя - коэффициент пропорциональности интегральной составляющей, обратная величина к постоянной времени интегрирования, умноженный на 10, диапазон от 0 до 99.9 мВ/°С·с</description_short>
+        <name>cooler_reg_ig</name>
+        <uid>3403AB2F-1F61-4F5F-B08F-FCACA7AE8047</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8L">
+        <index>152</index>
+        <description_short>Планировщик - задание 4 - время окончания минуты</description_short>
+        <name>task_end_min_5</name>
+        <uid>363857A7-D619-4BCC-9895-6D1115DF9EBB</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>149</index>
+        <description_short>Планировщик - задание 4 - день недели: 0 - не включать; 1...7 - включать в указанный день недели; 8 - включать в рабочие дни (с понедельника по пятницу); 9 - включать ежедневно</description_short>
+        <name>task_dow_4</name>
+        <uid>36DD1536-5869-462B-8776-34D06C63A9F4</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8L">
+        <index>151</index>
+        <description_short>Планировщик - задание 4 - время начала минуты</description_short>
+        <name>task_begin_min_5</name>
+        <uid>377C270C-3B6A-40D7-BB60-C3C7E9A27481</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>97</index>
+        <description_short>Регулятор температуры обратной воды - постоянная времени дифференцирования, диапазон от 0 до 9 999 мВ·с/°C</description_short>
+        <name>water_reg_dg</name>
+        <uid>3A21B921-3994-4DCF-B782-5A2692A21108</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8L">
+        <index>157</index>
+        <description_short>Планировщик - задание 4 - время окончания минуты</description_short>
+        <name>task_end_min_6</name>
+        <uid>3CB4B208-4937-49FD-9840-87E6FC5892A4</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="SINT16">
+        <index>158</index>
+        <description_short>Планировщик - задание 4 - температура в °С x10 (15 ... 30)</description_short>
+        <name>task_temp_6</name>
+        <uid>3D60919D-2549-4AE2-B6AC-572C96541BE6</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="BITMAP16">
+        <index>49</index>
+        <description_short>Маска последней зафиксированной аварии слово 1</description_short>
+        <name>err_mask_1</name>
+        <uid>3E91DBC9-C67C-46DA-83F1-0ACE44BBDD1A</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Соответствует регистру error_code_1 (Input Register 6)</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8H">
+        <index>151</index>
+        <description_short>Планировщик - задание 4 - время начала часы</description_short>
+        <name>task_begin_hour_5</name>
+        <uid>3F070372-D6A9-4336-B7CE-A349BDCFE4E1</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>166</index>
+        <description_short>Режим работы дополнительного канала измерения температуры (AI1) в приточной установке с электрическим нагревателем: 0 - отключен; 1 - ограничение температуры на выходе приточной установки; 2 - измерение температуры воздуха, поступающего в приточную установку</description_short>
+        <name>tsens1_mode</name>
+        <uid>40C3F4C0-1636-4F81-AF42-A2E2BC0E8671</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.6" type="UINT16">
+        <index>109</index>
+        <description_short>Тип управления электроприводом 2-х, 3-х ходового клапана смесительного узла</description_short>
+        <name>drive_type</name>
+        <uid>41D3F018-98D1-44F0-BF64-A27AA70115A8</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Начиная с прошивки 3.13 доступно только аналоговое управление и значение регистра не анализируется программой</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.1" type="UINT16">
+        <index>105</index>
+        <description_short>Напряжение на аналоговом выходе соответствующее нулевой скорости вентилятора, мВ</description_short>
+        <name>fan_min_ao</name>
+        <uid>42ED50D5-EDF2-41F0-AE1C-569843DE378F</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Напряжение для установки скорости будет линейно апроксимировано в диапазоне от fan_min_ao до fan_max_ao</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>150</index>
+        <description_short>Планировщик - задание 4 - скорость вентилятора. Значения: 1 ... 3 – в режиме с дискретным управлением вентилятором; 1 ... 8 – в режиме с аналоговым 0-10 В управлением вентилятором</description_short>
+        <name>task_fan_4</name>
+        <uid>44551FE1-2DF0-452A-9AFE-BAA052C820C3</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>129</index>
+        <description_short>Тип датчика температуры канала AI1:
+  0 - TG-K330;
+  1 - внутренний в контроллере;
+  2 - TW-130</description_short>
+        <name>tsens_type_1</name>
+        <uid>45EE9608-F8E1-448B-9762-0A4746C0CB4C</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.12" type="UINT16">
+        <index>127</index>
+        <description_short>Тип управления вентилятором</description_short>
+        <name>fan_type</name>
+        <uid>461FAB46-CDFC-4FF9-B4DF-88323B7D1511</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>144</index>
+        <description_short>Бит контроля четности (Порт 1): 0 - нет; 1 - недопустимое значение; 2 - четность; 3 - нечетность; 4...255 - недопустимые значения</description_short>
+        <name>p1_evenb</name>
+        <uid>462C3CEE-CE60-41B8-A7AF-6256C6E6B3CE</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>96</index>
+        <description_short>Регулятор температуры обратной воды - зона нечувствительности, оС x 10 (значение больше или равно 0)</description_short>
+        <name>water_reg_deadband</name>
+        <uid>478F091A-9B6D-4838-AD9C-A534D1E5AC6A</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8H">
+        <index>7</index>
+        <description_short>Месяц</description_short>
+        <name>time_month</name>
+        <uid>4A5D0294-8170-4E6B-8EC4-AA2218FE5DBB</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>От 1 до 12, данный параметр актуален при наличии дополнительной платы часов реального времени RTC</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>130</index>
+        <description_short>Тип датчика температуры канала AI2:
+  0 - TG-K330;
+  1 - внутренний в контроллере;
+  2 - TW-130</description_short>
+        <name>tsens_type_2</name>
+        <uid>5166EF15-66EC-4659-9C54-379A9720C43A</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.10" type="UINT16">
+        <index>208</index>
+        <description_short>Кп - коэффициент пропорциональной составляющей</description_short>
+        <name>cascade_kp</name>
+        <uid>519E1551-8DCD-4DAD-BF87-CA8D845B26CD</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Каскадный регулятор. Кп - коэффициент пропорциональной составляющей</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>155</index>
+        <description_short>Планировщик - задание 4 - скорость вентилятора. Значения: 1 ... 3 – в режиме с дискретным управлением вентилятором; 1 ... 8 – в режиме с аналоговым 0-10 В управлением вентилятором</description_short>
+        <name>task_fan_5</name>
+        <uid>51CA3524-653E-4E1F-82FD-6966B22BFB01</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8H">
+        <index>118</index>
+        <description_short>Планировщик - задание 2 - время начала часы</description_short>
+        <name>task_begin_hour_2</name>
+        <uid>52D1C21D-B61F-4300-8A28-8BAD1921B344</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.3" type="UINT16">
+        <index>175</index>
+        <description_short>Серийный номер контроллера  (1 ... 65535)</description_short>
+        <name>contr_ser_no</name>
+        <uid>53373526-3647-48C5-AAD6-2DE6D95D611B</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>60</index>
+        <description_short>Температура-задание на момент аварии, °С х10</description_short>
+        <name>err_temp_target</name>
+        <uid>544949F4-96F6-44D8-806F-8DA1A440E798</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>53</index>
+        <description_short>Показания датчика температуры AI0 на момент аварии, °С х10</description_short>
+        <name>err_tsens_0</name>
+        <uid>549D0C13-351E-4DD8-A8C3-AD5AC67BA2C1</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8H">
+        <index>5</index>
+        <description_short>Внутренние часы – день недели (1...7)</description_short>
+        <name>time_dow</name>
+        <uid>55D3CA6A-918D-4E00-B940-7ADD2E5BDD95</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>102</index>
+        <description_short>Управление устройством (включить/выключить)</description_short>
+        <name>dev_control_0</name>
+        <uid>56E4C488-13BE-43CB-8AD2-500B433293AA</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Сбрасывается в 0 при включении питания, если автоматическое восстановление не включено. Либо, если включено автоматическое восстановление (см. </para>
+          <para>Dev_Keys_0), то восстанавливается состояние установки до отключения питания, т.е. установка запускается, если работала в момент пропадания питания</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.3" type="UINT16">
+        <index>174</index>
+        <description_short>Год изготовления контроллера</description_short>
+        <name>contr_assembly_year</name>
+        <uid>59686D59-F6AB-4D9C-8AD5-1861E1708F64</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8L">
+        <index>147</index>
+        <description_short>Планировщик - задание 4 - время окончания минуты</description_short>
+        <name>task_end_min_4</name>
+        <uid>5A3DA3D4-78FD-4A0B-A48F-D17A66E17BBC</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8H">
+        <index>115</index>
+        <description_short>Планировщик - задание 1 - время начала часы</description_short>
+        <name>task_begin_hour_1</name>
+        <uid>5D4AE28B-9BC3-4877-AF0F-504B4C320480</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8L">
+        <index>777</index>
+        <description_short>Дата (день месяца)</description_short>
+        <name>time_date</name>
+        <uid>5F75BA57-1F33-494F-9C91-FEEA1F668E9D</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>От 1 до 31. Данный параметр актуален при наличии дополнительной платы часов реального времени RTC</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>93</index>
+        <description_short>Регулятор температуры обратной воды - цикл работы регулятора, диапазон от 1 до 600 с</description_short>
+        <name>water_reg_term</name>
+        <uid>6032EE58-3743-4309-93A8-434E7D0179B0</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>116</index>
+        <description_short>Планировщик - задание 1 - время окончания минуты</description_short>
+        <name>task_end_min_1</name>
+        <uid>637D46FF-72C8-4D77-8CAD-9ACC7FE2B54C</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="BITMAP16">
+        <index>86</index>
+        <description_short>Ключи устройства (опции)</description_short>
+        <name>dev_keys_0</name>
+        <uid>63B38C37-BD45-424C-9105-BE18D5CC92C6</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Битовое поле</para>
+        </description>
+        <bits>
+          <bit_define ver="0.0">
+            <name>DK_HEAT_MODEm</name>
+            <index>0</index>
+            <description_short>Режим работы нагревателя</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_FILT_DIGm</name>
+            <index>1</index>
+            <description_short>Использовать дискретный датчик давления</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_FILT_ANLGm</name>
+            <index>2</index>
+            <description_short>Использовать аналоговый датчик давления</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_FAIRm</name>
+            <index>3</index>
+            <description_short>Использовать для анализа ПОЖАРА дискретный вход DI2</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_COMFm</name>
+            <index>4</index>
+            <description_short>Комфорт - автопонижение скорости</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>NO</name>
+            <index>5</index>
+            <description_short>Не используется</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>NO</name>
+            <index>6</index>
+            <description_short>Не используется</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_FAN_AO</name>
+            <index>7</index>
+            <description_short>Используется вентилятор с управлением 0-10В</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_RESTOREm</name>
+            <index>8</index>
+            <description_short>Восстанавливать режим при включении питания</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_REMOTEm</name>
+            <index>9</index>
+            <description_short>Использовать вход DI2 для дистанционного управления установкой</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_RCACTm</name>
+            <index>10</index>
+            <description_short>Состояние логического входа дист. управления, соответствующее включенному состоянию установки</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_3Fm</name>
+            <index>11</index>
+            <description_short>Тип сети</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_TEN3m</name>
+            <index>12</index>
+            <description_short>Наличие ТЭН 3</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_TEN4m</name>
+            <index>13</index>
+            <description_short>Наличие ТЭН 4</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_VAVm</name>
+            <index>14</index>
+            <description_short>Активирует регулирование давления в воздушном канале (VAV-система)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>DK_COOL_MODEm</name>
+            <index>15</index>
+            <description_short>Включение охладителя</description_short>
+            <description/>
+          </bit_define>
+        </bits>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.10" type="UINT16">
+        <index>212</index>
+        <description_short>Канал измерения температуры</description_short>
+        <name>cascade_ainumb</name>
+        <uid>64D2FEF1-E87A-48D2-AC4B-14616A6B2801</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Каскадный регулятор. Номер канала измерения температуры в помещении (или вытяжном канале)</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>81</index>
+        <description_short>Канал аналогового ввода AI0 калибровочная константа (смещение нуля) значение в °С x10</description_short>
+        <name>tsens_zcal_1</name>
+        <uid>6720A78E-CD13-4FBE-89E6-405650ABB01D</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="BITMAP16">
+        <index>58</index>
+        <description_short>Маска дискретных выходов на момент аварии</description_short>
+        <name>err_doutputs</name>
+        <uid>68395967-8D36-403E-8542-9FDE34E9351F</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.8" type="UINT16">
+        <index>184</index>
+        <description_short>Смещение для регулятора температуры воды в мВ. Данное значение смещения предназначено для компенсации "мертвой зоны" для 2-х (3-х) ходовых клапанов смесительных узлов</description_short>
+        <name>waterreg_offset</name>
+        <uid>68E64AD8-1D48-4655-8985-ABBEC690C8E7</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>84</index>
+        <description_short>Датчик давления - код АЦП, соответствующий 0 Па</description_short>
+        <name>psens_zcal</name>
+        <uid>69AADAF6-E02D-4795-9D88-A0B17F36856A</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>137</index>
+        <description_short>Планировщик - задание 2 - скорость вентилятора. Значения: 1 ... 3 – в режиме с дискретным управлением вентилятором; 1 ... 8 – в режиме с аналоговым 0-10 В управлением вентилятором</description_short>
+        <name>task_fan_2</name>
+        <uid>6B492377-B5F6-441B-99E0-3C8191B38060</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>54</index>
+        <description_short>Показания датчика температуры AI1 на момент аварии, °С х10</description_short>
+        <name>err_tsens_1</name>
+        <uid>6BC6BC82-C237-41F1-953A-E2E0CE6D8543</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.1" type="SINT16">
+        <index>83</index>
+        <description_short>Перепад давления на фильтре, соответствующий 0 % загрязненности, Па</description_short>
+        <name>psens_zperc_pa</name>
+        <uid>6BEBFC31-0C0E-4820-99B1-8C2562568034</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Должен устанавливаться для нового фильтра при включенной максимальной скорости вентилятора</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>159</index>
+        <description_short>Планировщик - задание 4 - день недели: 0 - не включать; 1...7 - включать в указанный день недели; 8 - включать в рабочие дни (с понедельника по пятницу); 9 - включать ежедневно</description_short>
+        <name>task_dow_6</name>
+        <uid>6CB64231-8742-4682-A00C-92CAFD00F515</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>56</index>
+        <description_short>Значение напряжения на аналоговом выходе AO1 на момент аварии, мВ</description_short>
+        <name>err_ao_1</name>
+        <uid>6CDC59E9-8E8D-46B3-B5DB-FDB90C7B572B</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Фиксируется реальное значение на выходных клеммах</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="BITMAP16">
+        <index>57</index>
+        <description_short>Маска дискретных входов на момент аварии</description_short>
+        <name>err_dinputs</name>
+        <uid>6D6A947F-E20A-496D-BF00-812F3650A9AA</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>103</index>
+        <description_short>Температура-задание для регулятора температуры воздуха на выходе установки, °С</description_short>
+        <name>temp_target</name>
+        <uid>6F297FA6-2B6F-4AB1-8C2B-4D5EAF130611</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Значение от 50 до 300 для элеткрических установок и от 180 до 400 - для водяных.
+Используется в прошивках с версией ниже 3.22. Для прошивки 3.22 и больше рекомендуется использовать регистр temperature_set (Holding[191]). Хранение в °С х10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>201</index>
+        <description_short>Минимальное время включенного/выключенного состояния компрессора для исключения частых переключений, с</description_short>
+        <name>cooler_time_compressor</name>
+        <uid>6F657D27-3C92-42A3-9D67-F0BAED75D90C</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>90</index>
+        <description_short>Регулятор температуры воздуха - коэффициент пропорциональности интегральной составляющей, обратная величина к постоянной времени интегрирования</description_short>
+        <name>air_reg_ig</name>
+        <uid>71678882-66D4-4B17-9864-5D93A4FF5679</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.4" type="UINT16">
+        <index>180</index>
+        <description_short>Регулятор давления в распределительной камере - постоянная времени дифференцирования, умноженная на 10 диапазон от 0 до 99.9 мВ·с/Па</description_short>
+        <name>vavreg_dg</name>
+        <uid>7169AE3C-1F9A-4650-A7A8-568F9AD863E6</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8H">
+        <index>112</index>
+        <description_short>Планировщик - задание 0 - время начала часы</description_short>
+        <name>task_begin_hour_0</name>
+        <uid>7176662F-22C6-4C20-8CDD-7C689284B556</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.4" type="UINT16">
+        <index>179</index>
+        <description_short>Регулятор давления в распределительной камере - коэффициент пропорциональности интегральной составляющей, обратная величина к постоянной времени интегрирования, умноженный на 10, диапазон от 0 до 99.9 мВ/Па·с</description_short>
+        <name>vavreg_ig</name>
+        <uid>735CF4AE-1C6E-49B9-8A6D-FD56048B9D67</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>167</index>
+        <description_short>Номер релейного выхода, управляющего вытяжным вентилятором (для активации выхода см. 0x57 dev_keys_1 bit 1)</description_short>
+        <name>do_exhaust_fan</name>
+        <uid>73FF354C-B3BE-46BB-8844-EF7D55E82506</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>202</index>
+        <description_short>Время работы дренажного насоса после пропадания аварийного сигнла "АВАРИЯ ДРЕНАЖА", с</description_short>
+        <name>cooler_time_pump</name>
+        <uid>76B0EE33-2D15-4FB8-8099-315D8FBF7256</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.8" type="UINT16">
+        <index>183</index>
+        <description_short>Смещение для регулятора температуры воздуха в мВ. Данное значение смещения предназначено для компенсации "мертвой зоны" для 2-х (3-х) ходовых клапанов смесительных узлов</description_short>
+        <name>airreg_offset</name>
+        <uid>77F1EAD5-BD80-46C8-9662-A03808DB2A79</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>62</index>
+        <description_short>Состояние вентилятора на момент аварии</description_short>
+        <name>err_fan_state</name>
+        <uid>78E9B3CA-24A6-40FB-BAEA-91DED27DDB3D</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.11" type="UINT16">
+        <index>214</index>
+        <description_short>Номер канала измерения температуры уличного воздуха</description_short>
+        <name>ext_air_ai</name>
+        <uid>7A0265B4-95CC-496F-BAA6-505FD0530201</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>85</index>
+        <description_short>Перепад давления на фильтре, соответствующий 100 % загрязненности, Па</description_short>
+        <name>psens_lim_pa</name>
+        <uid>7A4F64E5-7FB1-432B-9ECE-DBB694079D20</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>При достижении этого значения установка отключается</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="BITMAP16">
+        <index>52</index>
+        <description_short>Регистр состояний state_0 на момент, когда была зафиксирована авария</description_short>
+        <name>err_state</name>
+        <uid>7BABD761-3DF2-47AA-9B0C-2672ED96DDE8</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.4" type="UINT16">
+        <index>176</index>
+        <description_short>Давление в распределительной камере (воздуховоде), соответствующее 1 ступени производительности вентилятора</description_short>
+        <name>vav_level_1</name>
+        <uid>7C105C2F-E18C-4AAE-8500-0E56E7EB689E</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>125</index>
+        <description_short>Период отправки запросов в режиме Master (Порт 1), мс</description_short>
+        <name>p1_cycle</name>
+        <uid>7D9CD613-EF0E-4DA6-9CE0-736A1A8B0F88</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>139</index>
+        <description_short>Планировщик - задание 3 - скорость вентилятора. Значения: 1 ... 3 – в режиме с дискретным управлением вентилятором; 1 ... 8 – в режиме с аналоговым 0-10 В управлением вентилятором</description_short>
+        <name>task_fan_3</name>
+        <uid>7FE6BE93-4E39-4E6B-B0C9-08544C9187FA</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>99</index>
+        <description_short>Время открытия воздушной заслонки, с (на настоящий момент данный параметр не используется)</description_short>
+        <name>gate_time</name>
+        <uid>80614702-B0B2-4817-ADD5-117A5DD49C89</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>5</index>
+        <description_short>Внутренние часы – секунды (0...59)</description_short>
+        <name>time_sec</name>
+        <uid>818C5645-A5CB-4AEF-9323-31352F16451F</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>205</index>
+        <description_short>Регулятор температуры воздуха водяного/фреонового охладителя - постоянная времени дифференцирования, умноженная на 10, диапазон от 0 до 99.9 мВ·мВ·с/°С</description_short>
+        <name>cooler_reg_dg</name>
+        <uid>81BD9F8E-6D9B-4BFF-8116-9F34DFE7E724</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>143</index>
+        <description_short>Количество Stop-битов (Порт 1): 1 - 1 бит; 2 - 2 бита; остальные значения недопустимы</description_short>
+        <name>p1_stopb</name>
+        <uid>825DE168-7230-4FC9-A578-1A87AC8ACA3C</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>115</index>
+        <description_short>Планировщик - задание 1 - время начала минуты</description_short>
+        <name>task_begin_min_1</name>
+        <uid>828DABE7-3640-4D5B-B613-57D73C6DECFC</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>138</index>
+        <description_short>Планировщик - задание 3 - день недели: 0 - не включать; 1...7 - включать в указанный день недели; 8 - включать в рабочие дни (с понедельника по пятницу); 9 - включать ежедневно</description_short>
+        <name>task_dow_3</name>
+        <uid>84565A54-B7DB-4158-A518-DFE4DC75C1ED</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>194</index>
+        <description_short>Номер дискретного входа для подключения термостата</description_short>
+        <name>cooler_di_thermostat</name>
+        <uid>8734185E-6FC9-408D-8FCD-0BB159B05106</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="BITMAP16">
+        <index>48</index>
+        <description_short>Маска последней зафиксированной аварии слово 0</description_short>
+        <name>err_mask_0</name>
+        <uid>877326F6-501E-423A-A486-56D862D3EE1D</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Соответствует регистру error_code_0 (Input Register 5)</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>112</index>
+        <description_short>Планировщик - задание 0 - время начала минуты</description_short>
+        <name>task_begin_min_0</name>
+        <uid>8A22FD3A-5EA2-42EE-8324-61DBEA41BA8A</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8L">
+        <index>146</index>
+        <description_short>Планировщик - задание 4 - время начала минуты</description_short>
+        <name>task_begin_min_4</name>
+        <uid>8C79911A-7B7C-46DB-902A-189CB2BCA815</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>55</index>
+        <description_short>Значение напряжения на аналоговом выходе AO0 на момент аварии, мВ</description_short>
+        <name>err_ao_0</name>
+        <uid>8DBD0C01-82E4-4665-84DA-BF5170DB71E1</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Фиксируется реальное значение на выходных клеммах</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.4" type="UINT16">
+        <index>169</index>
+        <description_short>Тип приточной установки (в данное поле записывается цифровой код, определяемый производителем приточной установки)</description_short>
+        <name>plant_type</name>
+        <uid>8F3EA8C3-4761-4AF6-955C-A805E7BA2145</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>123</index>
+        <description_short>Планировщик - задание 3 - температура в °С x10 (15 ... 30)</description_short>
+        <name>task_temp_3</name>
+        <uid>8FAE2E41-D9BF-4C73-ACF2-BA20A7D8751B</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>142</index>
+        <description_short>Скорость обмена через Порт1 бит/с: 0 - 1200; 1 - 2400; 2 - 4800; 3 - 9600; 4 - 19200; 5 - 38400; 6 - 115200; 7 - 250000; 8 - 500000; 9 - 1000000</description_short>
+        <name>p1_rate</name>
+        <uid>912BEFA1-E875-4D26-9510-3BDA91173653</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.12" type="UINT16">
+        <index>216</index>
+        <description_short>Номер реле для выхода объединенная авария</description_short>
+        <name>ro_common_err</name>
+        <uid>942AE27D-A1EB-4521-A1B8-0748A05E81F6</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>98</index>
+        <description_short>Время полного хода 3-х (2-х) ходового клапана смесительного узла из одного крайнего положения в другое, диапазон от 1 до 1200 с</description_short>
+        <name>valve_time</name>
+        <uid>97F3E942-FDC1-460C-B5E3-77E8B80E3792</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>114</index>
+        <description_short>Планировщик - задание 0 - температура в °С x10 (15 ... 30)</description_short>
+        <name>task_temp_0</name>
+        <uid>98712999-1A56-4942-AB3E-039B4042BAF1</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.10" type="SINT16">
+        <index>211</index>
+        <description_short>Максимальная температура на выходе установки, °C</description_short>
+        <name>cascade_tmax</name>
+        <uid>99384C97-CACB-4E83-989E-56FE51B7E42F</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Каскадный регулятор. Максимальная температура на выходе установки, (хранение в °C х 10)</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>89</index>
+        <description_short>Регулятор температуры воздуха - коэффициент усиления пропорциональной составляющей</description_short>
+        <name>air_reg_pg</name>
+        <uid>9BB2E9FD-1908-4073-9F88-FF22CF3EAD44</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>108</index>
+        <description_short>Минимальное время во включенном состоянии</description_short>
+        <name>remote_timer_on</name>
+        <uid>9CAC22CE-4E47-48C5-AEDF-15F704E00DE5</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>После включения внешним “сухим контактом” (0 - таймер отключен), мин</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.3" type="UINT16">
+        <index>171</index>
+        <description_short>Год изготовления приточной установки</description_short>
+        <name>plant_assembly_year</name>
+        <uid>9E41BD20-BA5C-4B9B-8E9F-20D35B677B66</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>121</index>
+        <description_short>Планировщик - задание 3 - время начала минуты</description_short>
+        <name>task_begin_min_3</name>
+        <uid>A0160B4E-F4C4-43E7-B49D-44365FD46EB9</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>200</index>
+        <description_short>Номер канала дискретного вывода для управления дренажным насосом</description_short>
+        <name>cooler_do_pump</name>
+        <uid>A3709AEF-7225-4D89-BEC9-70E725FA6BF2</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT32">
+        <index>14</index>
+        <description_short>Текущее значение потребленной электроэнергии, Вт х ч</description_short>
+        <name>energy_wh</name>
+        <uid>A3A767A6-1A62-4C55-BBD4-05DEDA08A595</uid>
+        <read_always>0</read_always>
+        <multipler>0</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Только для установок с электрическим калорифером. Значение потребленной электрической энергии вычисляется на основании известной мощности калорифера и вентитлятора.</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>107</index>
+        <description_short>Минимальное время в выключенном состоянии</description_short>
+        <name>remote_timer_off</name>
+        <uid>A5242E52-9568-420D-AAEC-F1E14AA4EDDB</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>После выключения внешним “сухим контактом” (0 - таймер отключен), мин</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.8" type="UINT16">
+        <index>185</index>
+        <description_short>Тип секции увлажнения, подключенной к контроллеру через порт P1: 0 - отсутствует;
+1 - с контроллером Breezart, с пред- и постнагревателями; 2 - с контроллером Breezart, без преднагревателя (калорифер приточной установки используется в качестве преднагревателя)</description_short>
+        <name>humidifier_type</name>
+        <uid>A6A32359-5B7C-4F7E-8137-5F16DE33E5C0</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>117</index>
+        <description_short>Планировщик - задание 1 - температура в °С x10 (15 ... 30)</description_short>
+        <name>task_temp_1</name>
+        <uid>A86171E6-1C43-4B2B-B9A4-CADAF9D79805</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.10" type="SINT16">
+        <index>210</index>
+        <description_short>Минимальная температура на выходе установки, °C</description_short>
+        <name>cascade_tmin</name>
+        <uid>A8871CBE-348F-4B7C-A3B5-C41950FD2782</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Каскадный регулятор. Минимальная температура на выходе установки, (хранение в °C х 10)</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.8" type="UINT8H">
+        <index>3</index>
+        <description_short>Квитирование аварий, регистр 1</description_short>
+        <name>error_ack_1</name>
+        <uid>AC9D2E73-C44A-4A00-9086-B061BD27625B</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Биты соответствуют Input Register [06] (error_code_1). Для квитирования всех текущих аварий - записать 0xFFFF</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8H">
+        <index>157</index>
+        <description_short>Планировщик - задание 4 - время окончания часы</description_short>
+        <name>task_end_hour_6</name>
+        <uid>ACA70D0B-FE5D-47F5-8400-175676E968ED</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>141</index>
+        <description_short>В режиме Master - адрес контроллера в сети при работе через Порт 1 (1 ... 247). В режиме Slave - начальный адрес ведомого устройства (1 ... 247), остальные адреса распределяются последовательно по количеству устройств</description_short>
+        <name>p1_addr</name>
+        <uid>AD9BAF36-421B-4A4E-89B2-7F8369CABBEA</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.10" type="UINT16">
+        <index>209</index>
+        <description_short>Ки - коэффициент интегральной составляющей</description_short>
+        <name>cascade_ki</name>
+        <uid>ADE74D79-6946-4A97-BDE8-1CFF060ED217</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Каскадный регулятор. Ки - коэффициент интегральной составляющей</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>8</index>
+        <description_short>Год</description_short>
+        <name>time_year</name>
+        <uid>AEC29376-FA04-45FC-AF22-7E99C71B30B3</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Данный параметр актуален при наличии дополнительной платы часов реального времени RTC</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>195</index>
+        <description_short>Номер дискретного входа для подключения датчика аварии дренажа</description_short>
+        <name>cooler_di_drainage_err</name>
+        <uid>AFF24BA3-A11E-4FF2-9315-90044362A61E</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>119</index>
+        <description_short>Планировщик - задание 2 - время окончания минуты</description_short>
+        <name>task_end_min_2</name>
+        <uid>B38F290E-2A6F-4F9B-B9EF-A34BD2A8E09E</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>61</index>
+        <description_short>Задание вентилятора на момент аварии</description_short>
+        <name>err_fan_target</name>
+        <uid>B412DE35-6FA9-4EAA-841A-5A04359E8FDE</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.6" type="UINT16">
+        <index>126</index>
+        <description_short>Количество устройств Slave на шине Modbus, адреса устройств распределяются последовательно начиная с P1_Addr (0x8D), все устройства должны быть одного типа, указанного в P1_Mode (0x8C)</description_short>
+        <name>p1_slave_num</name>
+        <uid>B46748BB-C72E-4F7C-A616-76E066C95D35</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>4</index>
+        <description_short>Внутренние часы – минуты (0...59)</description_short>
+        <name>time_min</name>
+        <uid>B491D7A3-A623-4324-8E23-4EF789CFE03D</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>100</index>
+        <description_short>Ресурс фильтра до замены в часах</description_short>
+        <name>filter_resource</name>
+        <uid>B6B66244-8824-473D-985F-6B45DFE56612</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>199</index>
+        <description_short>Номер канала дискретного вывода для включения/выключения охладителя</description_short>
+        <name>cooler_do_on</name>
+        <uid>B93AFB67-74FD-4280-8D7D-519B8449DD8F</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>124</index>
+        <description_short>Время ожидания ответа после отправки запроса до получения всего ответа (в режиме Master, Порт 1), мс</description_short>
+        <name>p1_wait</name>
+        <uid>B98C56A4-E10E-44F2-8CE7-956260716D52</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.9" type="UINT16">
+        <index>168</index>
+        <description_short>Заводское значение ресурса фильтра, ч</description_short>
+        <name>resurs_hour_init</name>
+        <uid>BA0FB233-808C-4C67-B4C1-8918C8F291A3</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Этим значением инициализируется текущий счетчик ресурса при процедуре инициализации нового фильтра</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="SINT16">
+        <index>148</index>
+        <description_short>Планировщик - задание 4 - температура в °С x10 (15 ... 30)</description_short>
+        <name>task_temp_4</name>
+        <uid>BBBAA3DB-E6F2-43F8-BA2A-1BBF33E861A5</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8H">
+        <index>51</index>
+        <description_short>Показания часов реального времени, когда была зафиксирована авария - часы</description_short>
+        <name>err_time_hour</name>
+        <uid>BC332084-A551-4FD3-A076-152B53ED6CE9</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8H">
+        <index>156</index>
+        <description_short>Планировщик - задание 4 - время начала часы</description_short>
+        <name>task_begin_hour_6</name>
+        <uid>BE09773F-B8E7-4E96-8BD3-33E074A12FC5</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8L">
+        <index>156</index>
+        <description_short>Планировщик - задание 4 - время начала минуты</description_short>
+        <name>task_begin_min_6</name>
+        <uid>BEC82C31-561D-4FD5-BA7F-A14E45FEE848</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8H">
+        <index>113</index>
+        <description_short>Планировщик - задание 0 - время окончания часы</description_short>
+        <name>task_end_hour_0</name>
+        <uid>C1034986-24A5-4E16-835C-2316382EC805</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>94</index>
+        <description_short>регулятор температуры обратной воды - коэффициент усиления пропорциональной составляющей, диапазон от 0 до 9999 мВ/°C</description_short>
+        <name>water_reg_pg</name>
+        <uid>C402AF2E-3141-4111-9119-A78E597FE420</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.3" type="UINT8L">
+        <index>170</index>
+        <description_short>Дата изготовления приточной установки - день месяца</description_short>
+        <name>plant_assembly_date</name>
+        <uid>C5758416-31F5-49DA-8D8B-487D0C86A975</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="FLOAT">
+        <index>110</index>
+        <description_short>Энергия, в Вт·ч, накопленная путём подсчёта времени включенного состояния нагревателей и вентилятора</description_short>
+        <name>energy_wh_hold</name>
+        <uid>C78E1F4E-D08F-424B-AD95-8C82FEDDB5CF</uid>
+        <read_always>0</read_always>
+        <multipler>1000</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Данный регистр является служебным и предназначен для периодического сохранения накопленной энергии в энеронезависимой памяти. Чтобы обнулить </para>
+          <para>накопления - необходимо записать 0 в регистр energy_wh</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.4" type="SINT16">
+        <index>181</index>
+        <description_short>регулятор давления в распределительной камерезона нечувствительности, диапазон от 0 до 20 Па</description_short>
+        <name>vavreg_deadband</name>
+        <uid>CA1FD3F9-D3AC-4660-B39F-33B095A984B8</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>197</index>
+        <description_short>Номер канала аналогового ввода температуры по которому выполняется регулирование температуры воздуха (для охладителей с аналоговым управлением)</description_short>
+        <name>cooler_ai_temp</name>
+        <uid>CC3C54FE-A548-4605-8DE5-D7BF5AEF10F5</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>511</index>
+        <description_short>Показания часов реального времени, когда была зафиксирована авария - минуты</description_short>
+        <name>err_time_min</name>
+        <uid>CF0DD396-549D-46B4-A98B-D2BC29DBF159</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>80</index>
+        <description_short>Канал аналогового ввода AI1 калибровочная константа (смещение нуля) значение в °С x10</description_short>
+        <name>tsens_zcal_0</name>
+        <uid>D4718253-5CD8-4BD3-A2BA-C5803235FFAC</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>50</index>
+        <description_short>День (с момента включения), когда была зафиксирована авария</description_short>
+        <name>err_day</name>
+        <uid>D673F5B8-BC66-449A-96DC-FA8A7F3B9DB8</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="SINT16">
+        <index>165</index>
+        <description_short>Максимальная температура, измеренная дополнительным каналом температуры, работающим в режиме 1 (см. Tsens1_Mode), выше этой температуры начинается ограничение мощности, подаваемой на нагреватели, управляемые симисторами</description_short>
+        <name>tout_max</name>
+        <uid>D73D5F6E-9295-4A1B-8E4E-CEF065124C96</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>104</index>
+        <description_short>скорость вентилятора - задание</description_short>
+        <name>fan_target</name>
+        <uid>D9359841-1270-4346-8D0D-81B21D822B20</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Значения: 1 ... 3 – в режиме с дискретным управлением вентилятором; 1 ... 8 – в режиме с аналоговым 0-10 В управлением вентилятором</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>122</index>
+        <description_short>Планировщик - задание 3 - время окончания минуты</description_short>
+        <name>task_end_min_3</name>
+        <uid>DA72AD1C-5036-4802-8103-A288E05FC986</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="SINT16">
+        <index>206</index>
+        <description_short>Регулятор температуры воздуха водяного охладителя - зона нечувствительности, диапазон от 0 до 20 °С</description_short>
+        <name>cooler_reg_deadband</name>
+        <uid>DA7E4EB9-1486-41CE-915F-881BC0BAEAD9</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8H">
+        <index>147</index>
+        <description_short>Планировщик - задание 4 - время окончания часы</description_short>
+        <name>task_end_hour_4</name>
+        <uid>DD0169D7-B829-42AF-996B-7D07DA3F2790</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8H">
+        <index>146</index>
+        <description_short>Планировщик - задание 4 - время начала часы</description_short>
+        <name>task_begin_hour_4</name>
+        <uid>E0C28E88-0B3A-4390-AFEB-7B9BD5E80220</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>59</index>
+        <description_short>Регистр управления устройством на момент аварии</description_short>
+        <name>err_dev_control</name>
+        <uid>E29D269F-5FF9-4B1B-B4B1-BE6FE6A3AFF4</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Соответствует Dev_Control_0</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>140</index>
+        <description_short>Режим работы Порта 1: 0x00 - Modbus RTU Slave; 0x81 - Modbus RTU Master - управление пультом Zentec; 0x82 - Modbus RTU Master - опрос датчика влажности/температуры
+типа THD-xxx-T (реализовано в версиях ПО контроллера для управления увлажнителем); 0x83 - Modbus RTU Master - управление увлажнителем с контроллером Breezart</description_short>
+        <name>p1_mode</name>
+        <uid>E3E037FA-359E-431D-BEFE-BF5CA61294F1</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>92</index>
+        <description_short>Регулятор температуры воздуха - постоянная времени дифференцирования, диапазон от 0 до 9999 мВ·с/°C</description_short>
+        <name>air_reg_dg</name>
+        <uid>E76E2383-25FF-4BC6-9CB4-1C73FE46924C</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>164</index>
+        <description_short>Мощность в Вт, потребляемая вентилятором, используется для подсчёта потребленной электроэнергии</description_short>
+        <name>fan_power</name>
+        <uid>E82ACCED-563E-4E0E-A91C-527C9CCD4F0E</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT8H">
+        <index>152</index>
+        <description_short>Планировщик - задание 4 - время окончания часы</description_short>
+        <name>task_end_hour_5</name>
+        <uid>E8DCC91D-3835-4275-A240-8D51F1F37E2A</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.4" type="UINT16">
+        <index>178</index>
+        <description_short>Регулятор давления в распределительной камере - коэффициент пропорциональной составляющей, умноженный на 10, диапазон от 0 до 99.9 мВ/Па</description_short>
+        <name>vavreg_pg</name>
+        <uid>EA28EEDD-C7B6-4498-BFC9-6B958EF08F06</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.8" type="UINT16">
+        <index>188</index>
+        <description_short>Значение предельной относительной влажности воздуха (% x10) в вытяжном канале, при достижение которой начнется ограничение влажности на выходе из увлажнителя</description_short>
+        <name>humidifier_hum_limit</name>
+        <uid>EA630BB3-2744-4063-A22E-B0F8B559519F</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.10" type="UINT16">
+        <index>189</index>
+        <description_short>Маска разрешенных дискретных выходов для прямого управления выходами</description_short>
+        <name>dout_direct_mask</name>
+        <uid>EBDE4D6A-0022-4EEE-8FF5-5F7B5BF9451B</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.5" type="UINT16">
+        <index>198</index>
+        <description_short>Номер канала аналогового вывода с помощью которого выполняется регулирование (для охладителей с аналоговым управлением)</description_short>
+        <name>cooler_ao_control</name>
+        <uid>ECA6DE6F-20AC-46CE-9030-EEB46DC93ED6</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>154</index>
+        <description_short>Планировщик - задание 4 - день недели: 0 - не включать; 1...7 - включать в указанный день недели; 8 - включать в рабочие дни (с понедельника по пятницу); 9 - включать ежедневно</description_short>
+        <name>task_dow_5</name>
+        <uid>F01F40C8-717F-4145-B4BF-EA0838A4C52B</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>136</index>
+        <description_short>Планировщик - задание 2 - день недели: 0 - не включать; 1...7 - включать в указанный день недели; 8 - включать в рабочие дни (с понедельника по пятницу); 9 - включать ежедневно</description_short>
+        <name>task_dow_2</name>
+        <uid>F1AD8180-553B-4743-A984-8418C9AD60DC</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.3" type="UINT8H">
+        <index>173</index>
+        <description_short>Дата изготовления контроллера - месяц (1..12)</description_short>
+        <name>contr_assembly_month</name>
+        <uid>F210509A-561B-4B9B-9E71-E9B3A20BF8C7</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>113</index>
+        <description_short>Планировщик - задание 0 - время окончания минуты</description_short>
+        <name>task_end_min_0</name>
+        <uid>F429ECC1-ADEC-4573-893B-3E4710B9C387</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>118</index>
+        <description_short>Планировщик - задание 2 - время начала минуты</description_short>
+        <name>task_begin_min_2</name>
+        <uid>F66406EE-B9B5-4716-BD1F-55A33E8A8B4B</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.3" type="UINT8H">
+        <index>170</index>
+        <description_short>Дата изготовления приточной установки - месяц (1..12)</description_short>
+        <name>plant_assembly_month</name>
+        <uid>F73412F5-E724-4882-AF61-EF61DD775A16</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>120</index>
+        <description_short>Планировщик - задание 2 - температура в °С x10 (15 ... 30)</description_short>
+        <name>task_temp_2</name>
+        <uid>F82DFC04-0AB7-4535-B061-76DAC5AD9FB9</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.8" type="UINT16">
+        <index>186</index>
+        <description_short>Задание относительной влажности в (% x10) на выходе увлажнителя - передается в контроллер секции увлажнения</description_short>
+        <name>humidifier_hum_task</name>
+        <uid>F862771F-64A4-40B1-9EA7-B09B775B089D</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8H">
+        <index>121</index>
+        <description_short>Планировщик - задание 3 - время начала часы</description_short>
+        <name>task_begin_hour_3</name>
+        <uid>FA1DD37D-127F-4005-AF76-F64609CE2A7A</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>162</index>
+        <description_short>Мощность в Вт нагревателя ТЭН3 - управление реле DO1</description_short>
+        <name>ten3_power</name>
+        <uid>FAAF11F6-D836-4938-8FE0-3DFD53DC4304</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>132</index>
+        <description_short>Планировщик - задание 0 - день недели: 0 - не включать; 1...7 - включать в указанный день недели; 8 - включать в рабочие дни (с понедельника по пятницу); 9 - включать ежедневно</description_short>
+        <name>task_dow_0</name>
+        <uid>FCCBF786-B46B-4B0E-855F-E59BA5882418</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="UINT16">
+        <index>163</index>
+        <description_short>Мощность в Вт нагревателя ТЭН4 - управление реле DO2</description_short>
+        <name>ten4_power</name>
+        <uid>FDF24433-67C9-45CC-BAD6-73A89EBBEE13</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>133</index>
+        <description_short>Планировщик - задание 0 - скорость вентилятора. Значения: 1 ... 3 – в режиме с дискретным управлением вентилятором; 1 ... 8 – в режиме с аналоговым 0-10 В управлением вентилятором</description_short>
+        <name>task_fan_0</name>
+        <uid>FEC7D1F8-9381-400F-A9C0-796142CD79A0</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8H">
+        <index>4</index>
+        <description_short>Внутренние часы – часы (0...23)</description_short>
+        <name>time_hour</name>
+        <uid>FEEA8C2D-F512-420C-8596-F3F8242144D4</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.12" type="UINT16">
+        <index>218</index>
+        <description_short>Маска для получения списка аварий, накладывается на error_code_1</description_short>
+        <name>common_err_mask_1</name>
+        <uid>FF90B270-C4F4-4FE7-9EBC-A3AA9FBBF521</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>135</index>
+        <description_short>Планировщик - задание 1 - скорость вентилятора. Значения: 1 ... 3 – в режиме с дискретным управлением вентилятором; 1 ... 8 – в режиме с аналоговым 0-10 В управлением вентилятором</description_short>
+        <name>task_fan_1</name>
+        <uid>FFFFB8A3-1C06-44BD-81AC-FF3280258156</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+    </var_set>
+    <var_set array_type="INPUT">
+      <var_define ver="3.22" type="SINT16">
+        <index>54</index>
+        <description_short>Температура воздуха на выходе установки, °C</description_short>
+        <name>out_air_temp</name>
+        <uid>08D4CDC3-E0C3-4D10-917A-874D4FED69A3</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>В зависимости от конфигурации приточной установки (с охладителем, с увлажнителем) и текущего режима работы (зима/лето) сюда копируется значение текущей температуры с соответствующего датчика (после калорифера, после охладителя или после увлажнителя).</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.19" type="SINT16">
+        <index>55</index>
+        <description_short>Датчик THD-D2-T [D1] - температура, °C</description_short>
+        <name>thd_temp_1</name>
+        <uid>0AA0AEA4-3ECA-486B-9C6F-251B4414A74C</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Температура воздуха, измеренная цифровым датчиком температуры и влажности THD-D2-T [D1], подключенным по интерфейсу Modbus к порту P1, хранение в °C х 10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>50</index>
+        <description_short>Датчик THD-D2-T [D1] в увлажнителе - влажность, %</description_short>
+        <name>hum_thd_hum_1</name>
+        <uid>0E44490F-7BA2-4961-A371-C829A5FA98A1</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Влажность воздуха, измеренная цифровым датчиком температуры и влажности THD-D2-T [D1], подключенного к контроллеру увлажнителя. Контроллер увлажнителя подключается по интерфейсу Modbus к порту P1. Хранение в % х 10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>0</index>
+        <description_short>Тип управляющей программы</description_short>
+        <name>dev_subtype</name>
+        <uid>0F734962-C574-4741-B43C-240E70C712BD</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Код, определяющий основной алгритм работы (водяная приточка, электрическая, </para>
+          <para>увлажнитель и т.д.)</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>9</index>
+        <description_short>Канал аналогового ввода температуры AI1, °C</description_short>
+        <name>tsens_temp_1</name>
+        <uid>1CA7AB03-A7CB-4255-8A3C-D716B09B4786</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Температура хранится в °С х 10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>51</index>
+        <description_short>Датчик THD-D2-T [D1] в увлажнителе - температура, °C</description_short>
+        <name>hum_thd_temp_1</name>
+        <uid>24C2ED88-3FA3-40C3-9258-137E5ACFDA07</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Температура воздуха, измеренная цифровым датчиком температуры и влажности THD-D2-T [D1], подключенного к контроллеру увлажнителя. Контроллер увлажнителя подключается по интерфейсу Modbus к порту P1. Хранение в °C х 10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="IO_DATA">
+        <index>8</index>
+        <description_short>Канал аналогового ввода температуры AI0, °C</description_short>
+        <name>tsens_temp_0</name>
+        <uid>2584DF16-3C35-4EF5-8D58-18762886EAC8</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Как правило этот канал используется для измерения температуры на выходе установки. Температура хранится в °С х 10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8L">
+        <index>52</index>
+        <description_short>Текущий режим работы котроллера</description_short>
+        <name>bw_state</name>
+        <uid>31629700-469F-46B9-877D-F405A68245E8</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Используется в отладочных целях</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.8" type="UINT16">
+        <index>7</index>
+        <description_short>Диагностический, код определяющий причину сброса микроконтроллера</description_short>
+        <name>reset_status</name>
+        <uid>3A0D5414-9CA0-4CFA-B233-EDBAA1D4D8E5</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Регистр MCUSR микроконтроллера ATmega.</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="1.0" type="UINT16">
+        <index>65500</index>
+        <description_short>UST</description_short>
+        <name>UST</name>
+        <uid>4F53B8EF-9FC4-4E69-A60C-008EE921EBA8</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>0</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>26</index>
+        <description_short>Текущая скорость вентилятора</description_short>
+        <name>bw_fan</name>
+        <uid>55B6B4B4-A631-4E6A-B996-C4F35282F974</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.20" type="UINT16">
+        <index>61</index>
+        <description_short>Статус связи с ведомым устройством 2 на шине Modbus (Port 1)</description_short>
+        <name>slave_status_2</name>
+        <uid>5BE06CCF-1A41-44A3-B996-74541C4BA85A</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.19" type="SINT16">
+        <index>56</index>
+        <description_short>Датчик THD-D2-T [D1] - влажность, %</description_short>
+        <name>thd_hum_1</name>
+        <uid>67C5F40B-236F-42D3-BA2E-D8E1FB93478A</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Влажность воздуха, измеренная цифровым датчиком температуры и влажности THD-D2-T [D1], подключенным по интерфейсу Modbus к порту P1, хранение в % х 10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>14</index>
+        <description_short>Канал измерения перепада давления, Па</description_short>
+        <name>psens_pa</name>
+        <uid>6AAA0504-9E5C-4C4C-8B72-872A868F9805</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Встроенный датчик</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.22" type="SINT16">
+        <index>23</index>
+        <description_short>Текущее значение уставки для регулятора температуры на выходе приточной установки</description_short>
+        <name>out_air_task</name>
+        <uid>6DCCDFA6-549B-420E-BB60-637FBE47807D</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.8" type="BITMAP16">
+        <index>6</index>
+        <description_short>Код текущих аварий (маска). Регистр 1</description_short>
+        <name>error_code_1</name>
+        <uid>85D3AB7B-BB18-433B-AAA6-BE35E5386F37</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Код текущих аварий (маска). Регистр 1</para>
+        </description>
+        <bits>
+          <bit_define ver="0.0">
+            <name>err_common_b</name>
+            <index>0</index>
+            <description_short>объединенная (сводная) авария, контролируется по состоянию НЗ входа DI1</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_fan_b</name>
+            <index>1</index>
+            <description_short>неисправность вентилятора, контролируемая по перепаду давления на фильтре</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_pow_fail_b</name>
+            <index>2</index>
+            <description_short>кратковременный провал питания</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_no_cfg_b</name>
+            <index>3</index>
+            <description_short>новая ПУ не сконфигурирована (только для установок, поддерживающих конфигурирование фазности, мощности калорифера и производительности вентилятора)</description_short>
+            <description/>
+          </bit_define>
+        </bits>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.22" type="SINT16">
+        <index>53</index>
+        <description_short>Температура уличного воздуха, °C</description_short>
+        <name>ext_air_temp</name>
+        <uid>90115F37-4F38-461B-8990-1CF9357AE6CC</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Текущее значение</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.20" type="UINT16">
+        <index>62</index>
+        <description_short>Статус связи с ведомым устройством 3 на шине Modbus (Port 1)</description_short>
+        <name>slave_status_3</name>
+        <uid>9269288B-1C58-4DB6-AD1A-1DA7A9211B2D</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>1</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.20" type="UINT16">
+        <index>59</index>
+        <description_short>Статус связи с ведомым устройством 0 на шине Modbus (Port 1)</description_short>
+        <name>slave_status_0</name>
+        <uid>94582139-35A8-432A-B5AE-73B1AE52E70B</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>15</index>
+        <description_short>Степень загрязненности фильтра, %</description_short>
+        <name>filter_proc</name>
+        <uid>9AFCB2EC-F760-4179-A0C6-A713699FEC81</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Загрязненность фильтра измеряется в процентах по отношению к установленному порогу защитного отключения</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.10" type="SINT16">
+        <index>19</index>
+        <description_short>Датчик THD-D2-T [D0] - влажность, %</description_short>
+        <name>thd_hum_0</name>
+        <uid>A046270B-E25F-4539-8FFC-BF4E84DEF78F</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Влажность воздуха, измеренная цифровым датчиком температуры и влажности THD-D2-T [D0], подключенным по интерфейсу Modbus к порту P1, хранение в % х 10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="BITMAP16">
+        <index>5</index>
+        <description_short>Код текущих аварий (маска). Регистр 0</description_short>
+        <name>error_code_0</name>
+        <uid>A15B0BBC-8A77-425F-B235-5C457C554E19</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Код текущих аварий (маска). Регистр 0</para>
+        </description>
+        <bits>
+          <bit_define ver="0.0">
+            <name>err_temp_ai0_b</name>
+            <index>0</index>
+            <description_short>неисправность в цепи датчика температуры канала 0 (обрыв или КЗ)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_temp_ai1_b</name>
+            <index>1</index>
+            <description_short>неисправность в цепи датчика температуры канала 1 (обрыв или КЗ)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_temp_ai2_b</name>
+            <index>2</index>
+            <description_short>неисправность в цепи датчика температуры канала 2 (обрыв или КЗ)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_press_b</name>
+            <index>3</index>
+            <description_short>неисправность датчика давления</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_ao0_b</name>
+            <index>4</index>
+            <description_short>неисправность канала аналогового вывода AO0</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_ao1_b</name>
+            <index>5</index>
+            <description_short>неисправность канала аналогового вывода AO1</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_mb_b</name>
+            <index>6</index>
+            <description_short>ошибка связи по Modbus (Port 1)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.20">
+            <name>err_ext_io_b</name>
+            <index>7</index>
+            <description_short>неисправность канала ввода/вывода во внешнем устройстве на Modbus (Port 1)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_hum_b</name>
+            <index>8</index>
+            <description_short>ошибка (неисправность) в увлажнителе (кроме аварии дренажа и перегрева)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_cold_water_b</name>
+            <index>9</index>
+            <description_short>"холодная вода" формируется только в установках с водяным калорифером на этапе первоначального выхода установки "на режим" с включенным нагревом, если температура обратной воды в калорифере меньше чем [уставка по воздуху + 10 °С], но не менее 12 °С в течение 3 мин, (возможно отключено ГВС и нужно переключиться в режим ЛЕТО). Не является аварией, установка не отключается</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_filter_b</name>
+            <index>10</index>
+            <description_short>загрязнен фильтр (сбрасывается пользователем)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_fire_b</name>
+            <index>11</index>
+            <description_short>получен сигнал ПОЖАР от внешнего прибора приёмно-контрольного пожарного (сбрасывается пользователем)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_frost_b</name>
+            <index>12</index>
+            <description_short>для установок с водяным калорифером - УГРОЗА ЗАМОРАЖИВАНИЯ - сработал капилярный датчик обмерзания калорифера или температура воды в калорифере, измеренная датчиком температуры обратной воды, ниже 5 °С (сбрасывается пользователем)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_overheat_b</name>
+            <index>13</index>
+            <description_short>ПЕРЕГРЕВ электрического калорифера, включена защитная продувка - сработал дискретный датчик перегрева на входе DI0, либо температура, измеренная аналоговым датчиком температуры канала AI1 (в режиме ограничения) выше порога, заданного в регистре tout_max (HOLDING [165]) + 10 °С (сбрасывается пользователем)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>err_cooler_b</name>
+            <index>14</index>
+            <description_short>авария охладителя в приточных установках, оборудованных секцией охлаждения (сбрасывается пользователем)</description_short>
+            <description/>
+          </bit_define>
+        </bits>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="BITMAP16">
+        <index>16</index>
+        <description_short>Слово состояния каналов дискретного ввода</description_short>
+        <name>dinputs</name>
+        <uid>AEA5BE8E-C54D-4861-AA88-17E280D010B5</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Битовое поле. 
+Значения битов:</para>
+          <para>  0 - цепь разомкнута;</para>
+          <para>  1 - цепь замкнута</para>
+        </description>
+        <bits>
+          <bit_define ver="0.0">
+            <name>di0_b</name>
+            <index>0</index>
+            <description_short>Состояние канала дискретного ввода DI0</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>di1_b</name>
+            <index>1</index>
+            <description_short>Состояние канала дискретного ввода DI1</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>di2_b</name>
+            <index>2</index>
+            <description_short>Состояние канала дискретного ввода DI2</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.20">
+            <name>di3_b</name>
+            <index>3</index>
+            <description_short>Состояние канала дискретного ввода JL201 - DI0 (внешний)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.20">
+            <name>di4_b</name>
+            <index>4</index>
+            <description_short>Состояние канала дискретного ввода JL201 - DI1 (внешний)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.20">
+            <name>di5_b</name>
+            <index>5</index>
+            <description_short>Состояние канала дискретного ввода JL201 - DI2 (внешний)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.20">
+            <name>di6_b</name>
+            <index>6</index>
+            <description_short>Состояние канала дискретного ввода JL201 - DI3 (внешний)</description_short>
+            <description/>
+          </bit_define>
+        </bits>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.2" type="BITMAP32">
+        <index>2</index>
+        <description_short>Дополнительное установленное оборудование</description_short>
+        <name>adv_hardvare</name>
+        <uid>B106538A-7C6D-48A2-AB7F-8C84E94BB3B5</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits>
+          <bit_define ver="0.0">
+            <name>advh_rtc_b</name>
+            <index>0</index>
+            <description_short>контроллер оборудован дополнительной платой энергонезависимых часов реального времени RTC (позволяет вести часы и календарь при отключенном питании приточной установки)</description_short>
+            <description/>
+          </bit_define>
+        </bits>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>49</index>
+        <description_short>Датчик THD-D2-T [D0] в увлажнителе - температура, °C</description_short>
+        <name>hum_thd_temp_0</name>
+        <uid>B6A1D81F-51C0-4439-A2AF-0EE613FE0283</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Температура воздуха, измеренная цифровым датчиком температуры и влажности THD-D2-T [D0], подключенного к контроллеру увлажнителя. Контроллер </para>
+          <para>увлажнителя подключается по интерфейсу Modbus к порту P1. Хранение в °C х 10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>48</index>
+        <description_short>Датчик THD-D2-T [D0] в увлажнителе - влажность, %</description_short>
+        <name>hum_thd_hum_0</name>
+        <uid>B85F6378-B46A-4AB8-B691-A88FA6F5A761</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Влажность воздуха, измеренная цифровым датчиком температуры и влажности THD-D2-T [D0], подключенного к контроллеру увлажнителя. Контроллер увлажнителя подключается по интерфейсу Modbus к порту P1. Хранение в % х 10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT8H">
+        <index>0</index>
+        <description_short>Тип аппаратной платформы</description_short>
+        <name>dev_type</name>
+        <uid>BB7D3D9D-81C7-41EA-8E2F-FB01CBABE452</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Контроллеры с разным типом аппартной платформы не совместимы программно</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>10</index>
+        <description_short>Канал аналогового ввода температуры AI2, °С</description_short>
+        <name>tsens_temp_2</name>
+        <uid>C7E76447-981A-4FAA-9092-9AEC7840865F</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Канал измеряет температуру внутри оболочки контроллера, температура хранится в °С х 10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>12</index>
+        <description_short>Канал аналогового вывода AO0 - текущее измеренное напряжение, мВ</description_short>
+        <name>ao_mv_0</name>
+        <uid>CBD087BD-2FB4-47D0-A8BE-1DCE1A86A74C</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Текущее измеренное напряжение на выходных клеммах. Это реальное напряжение, которое может отличаться от заданного (например из-за замыкания выходных линий в нагрузке), мВ</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.22" type="BOOL">
+        <index>63</index>
+        <description_short>Текущая температура в точке регулирования</description_short>
+        <name>main_air_temp</name>
+        <uid>CD7C1FD9-6283-4B2B-84B1-88E92B227147</uid>
+        <read_always>0</read_always>
+        <multipler>100</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Контроллер копирует в этот регистр показания с соответсвующего датчика температуры. В зависимости от конфигурации системы показания могут браться от </para>
+          <para>разных датчиков. Номер нужного измерительного канала определяется контроллером автоматически.</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.20" type="UINT16">
+        <index>60</index>
+        <description_short>Статус связи с ведомым устройством 1 на шине Modbus (Port 1)</description_short>
+        <name>slave_status_1</name>
+        <uid>CEA521C6-9A2E-41DC-802B-BAB20EABA2B8</uid>
+        <read_always>0</read_always>
+        <multipler>1000</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description/>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="BITMAP16">
+        <index>17</index>
+        <description_short>Слово состояния каналов дискретного вывода</description_short>
+        <name>doutputs</name>
+        <uid>D78F573E-1BD1-4005-B231-2AD14CF99A9D</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Слово состояния каналов дискретного вывода - битовое поле. Значения битов: 0 - выход отключен, 1 - выход включен</para>
+        </description>
+        <bits>
+          <bit_define ver="0.0">
+            <name>do0_b</name>
+            <index>0</index>
+            <description_short>Состояние канала дискретного вывода DO0</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>do1_b</name>
+            <index>1</index>
+            <description_short>Состояние канала дискретного вывода DO1</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>do2_b</name>
+            <index>2</index>
+            <description_short>Состояние канала дискретного вывода DO2</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>do3_b</name>
+            <index>3</index>
+            <description_short>Состояние канала дискретного вывода DO3</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>do4_b</name>
+            <index>4</index>
+            <description_short>Состояние канала дискретного вывода DO4</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>do5_b</name>
+            <index>5</index>
+            <description_short>Состояние канала дискретного вывода DO5</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>do6_b</name>
+            <index>6</index>
+            <description_short>Состояние канала дискретного вывода DO6</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>do7_b</name>
+            <index>7</index>
+            <description_short>Канал отсутствует</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>do8_b</name>
+            <index>8</index>
+            <description_short>Состояние канала дискретного вывода DO8 (симистор)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="0.0">
+            <name>do9_b</name>
+            <index>9</index>
+            <description_short>Состояние канала дискретного вывода DO9 (симистор)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.20">
+            <name>do10_b</name>
+            <index>10</index>
+            <description_short>Состояние канала дискретного вывода JL201 - DO0 (внешний)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.20">
+            <name>do11_b</name>
+            <index>11</index>
+            <description_short>Состояние канала дискретного вывода JL201 - DO1 (внешний)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.20">
+            <name>do12_b</name>
+            <index>12</index>
+            <description_short>Состояние канала дискретного вывода JL201 - DO2 (внешний)</description_short>
+            <description/>
+          </bit_define>
+          <bit_define ver="3.20">
+            <name>do13_b</name>
+            <index>13</index>
+            <description_short>Состояние канала дискретного вывода JL201 - DO3 (внешний)</description_short>
+            <description/>
+          </bit_define>
+        </bits>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>13</index>
+        <description_short>Канал аналогового вывода AO1 - текущее измеренное напряжение, мВ</description_short>
+        <name>ao_mv_1</name>
+        <uid>DA0C46E3-1322-4488-BF06-BE2E50DBED8A</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Текущее измеренное напряжение на выходных клеммах. Это реальное напряжение, которое может отличаться от заданного (например из-за замыкания выходных линий в нагрузке), мВ</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="3.10" type="SINT16">
+        <index>18</index>
+        <description_short>Датчик THD-D2-T [D0] - температура, °C</description_short>
+        <name>thd_temp_0</name>
+        <uid>DAB2B5A5-016C-4AF1-856F-4640848A9F3A</uid>
+        <read_always>0</read_always>
+        <multipler>10</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Температура воздуха, измеренная цифровым датчиком температуры и влажности THD-D2-T [D0], подключенным по интерфейсу Modbus к порту P1, хранение в °C х 10</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>27</index>
+        <description_short>Номер активного таймера планировщика</description_short>
+        <name>task_enabled</name>
+        <uid>ECB0DF3F-188D-41B3-8126-7364BEC83DA8</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Т.е. таймера по которому запустилась и работает установка</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="UINT16">
+        <index>1</index>
+        <description_short>Версия управляющей программы (прошивки)</description_short>
+        <name>firmware_ver</name>
+        <uid>F3FE89B5-3CB1-4983-8CBA-EB0C38E01339</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Старший байт - значение слева от точки, младший байт - значение справа от точки. Например, если считано 0x0316, то это соответствует версии прошивки 3.22</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+      <var_define ver="0.0" type="SINT16">
+        <index>25</index>
+        <description_short>Оставшийся ресурс фильтра в часах</description_short>
+        <name>resurs_hour</name>
+        <uid>F7235CA6-2D9E-4FEA-8B64-BB73CEF80537</uid>
+        <read_always>0</read_always>
+        <multipler>1</multipler>
+        <access>1</access>
+        <synch_type>0</synch_type>
+        <single_req>0</single_req>
+        <kind>0</kind>
+        <unit></unit>
+        <description>
+          <para>Показывет оставшийся ресурс фильтра до замены/чистки. Исходное значение ресурса устанавливается процедурой инициализации нового фильтра (устанавливается значение установленное на заводе изготовителе)</para>
+        </description>
+        <bits/>
+        <picklist/>
+      </var_define>
+    </var_set>
+  </registers>
+  <configuration>
+    <gnc_set name="Пример 3">
+      <gnc_set name="Подгруппа 2">
+        <gnc_set name="Подгруппа 2-1">
+          <gnc_var>
+            <uid>F3FE89B5-3CB1-4983-8CBA-EB0C38E01339</uid>
+          </gnc_var>
+        </gnc_set>
+        <gnc_var>
+          <uid>FEC7D1F8-9381-400F-A9C0-796142CD79A0</uid>
+          <uid>1CA7AB03-A7CB-4255-8A3C-D716B09B4786</uid>
+        </gnc_var>
+      </gnc_set>
+      <gnc_set name="Подгруппа 1">
+        <gnc_var>
+          <uid>F862771F-64A4-40B1-9EA7-B09B775B089D</uid>
+          <uid>5F75BA57-1F33-494F-9C91-FEEA1F668E9D</uid>
+        </gnc_var>
+      </gnc_set>
+      <gnc_var>
+        <uid>AC9D2E73-C44A-4A00-9086-B061BD27625B</uid>
+        <uid>63B38C37-BD45-424C-9105-BE18D5CC92C6</uid>
+        <uid>56E4C488-13BE-43CB-8AD2-500B433293AA</uid>
+        <uid>CEA521C6-9A2E-41DC-802B-BAB20EABA2B8</uid>
+        <uid>5BE06CCF-1A41-44A3-B996-74541C4BA85A</uid>
+        <uid>9269288B-1C58-4DB6-AD1A-1DA7A9211B2D</uid>
+        <uid>CD7C1FD9-6283-4B2B-84B1-88E92B227147</uid>
+        <uid>B491D7A3-A623-4324-8E23-4EF789CFE03D</uid>
+        <uid>FEEA8C2D-F512-420C-8596-F3F8242144D4</uid>
+        <uid>1068FD18-C6B9-4C93-A3D9-4E1216E8A011</uid>
+      </gnc_var>
+    </gnc_set>
+    <gnc_set name="Пример 2">
+      <gnc_var>
+        <uid>4F53B8EF-9FC4-4E69-A60C-008EE921EBA8</uid>
+      </gnc_var>
+    </gnc_set>
+    <gnc_set name="Пример 1">
+      <gnc_set name="Подгруппа 2">
+        <gnc_var>
+          <uid>FEC7D1F8-9381-400F-A9C0-796142CD79A0</uid>
+        </gnc_var>
+      </gnc_set>
+      <gnc_set name="Подгруппа 1">
+        <gnc_var>
+          <uid>F862771F-64A4-40B1-9EA7-B09B775B089D</uid>
+          <uid>5F75BA57-1F33-494F-9C91-FEEA1F668E9D</uid>
+        </gnc_var>
+      </gnc_set>
+      <gnc_var>
+        <uid>F3FE89B5-3CB1-4983-8CBA-EB0C38E01339</uid>
+        <uid>AC9D2E73-C44A-4A00-9086-B061BD27625B</uid>
+        <uid>2584DF16-3C35-4EF5-8D58-18762886EAC8</uid>
+      </gnc_var>
+    </gnc_set>
+    <gnc_set name="New_configuration_4">
+      <gnc_var>
+        <uid>F3FE89B5-3CB1-4983-8CBA-EB0C38E01339</uid>
+      </gnc_var>
+    </gnc_set>
+    <gnc_set name="Пример4">
+      <gnc_var>
+        <uid>2584DF16-3C35-4EF5-8D58-18762886EAC8</uid>
+      </gnc_var>
+    </gnc_set>
+    <gnc_set name="Новая конфиг">
+      <gnc_var>
+        <uid>825DE168-7230-4FC9-A578-1A87AC8ACA3C</uid>
+        <uid>B491D7A3-A623-4324-8E23-4EF789CFE03D</uid>
+      </gnc_var>
+    </gnc_set>
+    <gnc_set name="Киловат">
+      <gnc_var>
+        <uid>C78E1F4E-D08F-424B-AD95-8C82FEDDB5CF</uid>
+      </gnc_var>
+    </gnc_set>
+  </configuration>
+</module>

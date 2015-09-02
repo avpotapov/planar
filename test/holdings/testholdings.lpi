@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="testholdings"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="FPCUnitTestRunner"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="11">
+      <Unit0>
+        <Filename Value="testholdings.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="units\utestholdings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestHoldings"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\src\holdings\units\uholdings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uHoldings"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\src\library\units\ulibrary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibrary"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="units\utestparserholdings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestParserHoldings"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\src\holdings\units\uholdingsbuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uHoldingsBuilder"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\src\holdings\units\uholdingscls.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\src\holdings\units\uholdingssaxparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uHoldingsSaxParser"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\src\holdings\units\usaxbase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSaxBase"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\src\holdings\units\uholdingsserialize.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uHoldingsSerialize"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="utestlibraryholdings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestLibraryHoldings"/>
+      </Unit10>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="..\..\bin\testholdings"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="units;..\..\src\holdings\units;..\..\src\library\units"/>
+      <UnitOutputDirectory Value="..\..\lib"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <IncludeAssertionCode Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <UseHeaptrc Value="True"/>
+      </Debugging>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-dDEBUG"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

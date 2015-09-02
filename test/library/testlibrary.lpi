@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="testlibrary"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="FPCUnitTestRunner"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="15">
+      <Unit0>
+        <Filename Value="testlibrary.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="units\utestlibrary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestLibrary"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\src\library\units\ulibrary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibrary"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="units\utestsaxparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestSaxParser"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\src\library\units\ubase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uBase"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\src\library\units\ulibrarycls.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibraryCls"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\src\library\units\usaxbase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSaxBase"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="units\utestlibrarycls.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestLibraryCls"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\src\library\units\ulibrarybuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\src\library\units\ulibrarysaxparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibrarySaxParser"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\src\library\units\umodulebuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uModuleBuilder"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="units\utestansilibrary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestAnsiLibrary"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="units\utestserializer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTestSerializer"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\src\setting\units\usetting.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\src\library\units\ulibraryserializer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibrarySerializer"/>
+      </Unit14>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="..\..\bin\testlibrary"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="units;..\..\src\library\units;..\..\src\setting\units"/>
+      <UnitOutputDirectory Value="..\..\lib"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <IncludeAssertionCode Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <UseHeaptrc Value="True"/>
+      </Debugging>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-dDEBUG"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

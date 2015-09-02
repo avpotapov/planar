@@ -1,0 +1,52 @@
+object DetailedDeviceForm: TDetailedDeviceForm
+  Left = 564
+  Height = 240
+  Top = 211
+  Width = 320
+  BorderStyle = bsNone
+  Caption = 'DetailedDeviceForm'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '1.4.0.4'
+  object DeviceTree: TVirtualStringTree
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 320
+    Align = alClient
+    DefaultText = 'Node'
+    Header.AutoSizeIndex = 1
+    Header.Columns = <    
+      item
+        CheckType = ctNone
+        MinWidth = 200
+        Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring, coAllowFocus]
+        Position = 0
+        Text = 'Параметр'
+        Width = 242
+      end    
+      item
+        CheckType = ctNone
+        CheckBox = True
+        Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring, coAllowFocus]
+        Position = 1
+        Text = 'Значение'
+        Width = 74
+      end>
+    Header.DefaultHeight = 20
+    Header.Height = 20
+    Header.Options = [hoAutoResize, hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible, hoAutoSpring]
+    LineStyle = lsSolid
+    TabOrder = 0
+    TreeOptions.MiscOptions = [toAcceptOLEDrop, toCheckSupport, toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning, toEditOnClick]
+    TreeOptions.PaintOptions = [toShowButtons, toShowDropmark, toShowHorzGridLines, toShowRoot, toShowVertGridLines, toThemeAware, toUseBlendedImages]
+    TreeOptions.SelectionOptions = [toExtendedFocus]
+    OnColumnDblClick = DeviceTreeColumnDblClick
+    OnCreateEditor = DeviceTreeCreateEditor
+    OnEditing = DeviceTreeEditing
+    OnFreeNode = DeviceTreeFreeNode
+    OnGetText = DeviceTreeGetText
+    OnPaintText = DeviceTreePaintText
+    OnGetNodeDataSize = DeviceTreeGetNodeDataSize
+  end
+end

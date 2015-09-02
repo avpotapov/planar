@@ -1,0 +1,42 @@
+object BitsForm: TBitsForm
+  Left = 1307
+  Height = 392
+  Top = 189
+  Width = 537
+  Align = alBottom
+  BorderStyle = bsNone
+  Caption = 'BitsForm'
+  ClientHeight = 392
+  ClientWidth = 537
+  OnCreate = FormCreate
+  LCLVersion = '1.4.2.0'
+  object BitPanel: TPanel
+    Left = 0
+    Height = 226
+    Top = 166
+    Width = 537
+    Align = alBottom
+    BevelOuter = bvNone
+    Caption = 'BitPanel'
+    TabOrder = 0
+  end
+  object Splitter: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 5
+    Top = 161
+    Width = 537
+    Align = alBottom
+    ResizeAnchor = akBottom
+  end
+  object BitsPanel: TPanel
+    Left = 0
+    Height = 161
+    Top = 0
+    Width = 537
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'BitsPanel'
+    TabOrder = 2
+  end
+end

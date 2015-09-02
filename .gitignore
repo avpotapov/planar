@@ -1,0 +1,10 @@
+backup/
+lib/
+*.exe
+*.dll
+*.ppu
+*.o
+*.compiled
+*.log
+*.a
+*.bak

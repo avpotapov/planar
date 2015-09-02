@@ -1,0 +1,72 @@
+object BaseDescForm: TBaseDescForm
+  Left = 596
+  Height = 273
+  Top = 218
+  Width = 450
+  BorderStyle = bsNone
+  Caption = 'BaseDescForm'
+  ClientHeight = 273
+  ClientWidth = 450
+  LCLVersion = '1.4.2.0'
+  object Desc: TMemo
+    Left = 0
+    Height = 105
+    Top = 168
+    Width = 450
+    Align = alClient
+    OnEditingDone = DescEditingDone
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Splitter: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 5
+    Top = 163
+    Width = 450
+    Align = alTop
+    ResizeAnchor = akTop
+  end
+  object Panel: TPanel
+    Left = 0
+    Height = 163
+    Top = 0
+    Width = 450
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 163
+    ClientWidth = 450
+    TabOrder = 2
+    object FileNameEdit: TFileNameEdit
+      Left = 0
+      Height = 23
+      Hint = 'Выбрать изображение модуля'
+      Top = 140
+      Width = 450
+      OnAcceptFileName = FileNameEditAcceptFileName
+      DialogTitle = 'Выбрать изображение модуля'
+      DialogOptions = [ofEnableSizing, ofViewDetail, ofAutoPreview]
+      FilterIndex = 0
+      HideDirectories = True
+      ButtonWidth = 23
+      DirectInput = False
+      NumGlyphs = 1
+      FocusOnButtonClick = True
+      Align = alBottom
+      MaxLength = 0
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+    end
+    object Image: TImage
+      Left = 0
+      Height = 140
+      Top = 0
+      Width = 450
+      Align = alClient
+      Center = True
+      Proportional = True
+      Stretch = True
+    end
+  end
+end

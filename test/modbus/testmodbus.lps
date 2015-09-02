@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="15">
+      <Unit0>
+        <Filename Value="testmodbus.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="25" Y="19"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="units\utestform.lfm"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="units\utestform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <UnitName Value="uTestForm"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="136"/>
+        <CursorPos X="35" Y="152"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\src\modbus\units\umodbus.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\src\modbus\units\ubase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ubase"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uCommunication"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="834"/>
+        <CursorPos X="57" Y="857"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uConnection"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="483"/>
+        <CursorPos X="31" Y="498"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\src\modbus\units\ucontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ucontroller"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\src\modbus\units\ucontrollerpool.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ucontrollerpool"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\src\modbus\units\uframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uframe"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\src\modbus\units\uframefactory.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uframefactory"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\src\modbus\units\ulogger.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ulogger"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\src\modbus\units\userver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="userver"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\src\modbus\units\ustackbuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ustackbuilder"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\src\modbus\units\utransaction.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="utransaction"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit14>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <Caret Line="522" TopLine="482"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <Caret Line="523" TopLine="482"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="622" TopLine="590"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="626" TopLine="590"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="635" TopLine="590"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="616" TopLine="590"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <Caret Line="521" TopLine="482"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <Caret Line="522" TopLine="482"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <Caret Line="523" TopLine="482"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="852" TopLine="832"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="855" TopLine="832"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <Caret Line="521" TopLine="482"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <Caret Line="522" TopLine="482"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <Caret Line="523" TopLine="482"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="859" TopLine="832"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="862" TopLine="832"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="865" TopLine="832"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="867" TopLine="832"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="869" TopLine="832"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="855" TopLine="832"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <Caret Line="521" TopLine="482"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <Caret Line="522" TopLine="482"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\src\modbus\units\uconnection.pas"/>
+        <Caret Line="523" TopLine="482"/>
+      </Position23>
+      <Position24>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="859" TopLine="832"/>
+      </Position24>
+      <Position25>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="862" TopLine="832"/>
+      </Position25>
+      <Position26>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="865" TopLine="832"/>
+      </Position26>
+      <Position27>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="892" TopLine="866"/>
+      </Position27>
+      <Position28>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="872" Column="70" TopLine="839"/>
+      </Position28>
+      <Position29>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="852" Column="12" TopLine="844"/>
+      </Position29>
+      <Position30>
+        <Filename Value="..\..\src\modbus\units\ucommunication.pas"/>
+        <Caret Line="849" TopLine="838"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

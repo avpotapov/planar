@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="library"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MajorVersionNr Value="1"/>
+      <BuildNr Value="126"/>
+      <Language Value="0419"/>
+      <Attributes pvaPreRelease="True"/>
+      <StringTable Comments="Доступ к бибилотеке модулей" CompanyName="Planar, LLC" FileDescription="Доступ к библиотеке модулей" LegalCopyright="Planar, LLC" OriginalFilename="Library.dll" ProductVersion="1.0"/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <Units Count="10">
+      <Unit0>
+        <Filename Value="lib.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="units\ubase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uBase"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="units\ulibrary.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibrary"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="units\ulibrarycls.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibraryCls"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="units\ulibrarysaxparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibrarySaxParser"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="units\usaxbase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSaxBase"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="units\ulibrarybuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibraryBuilder"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="units\umodulebuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uModuleBuilder"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="units\ulibraryserializer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uLibrarySerializer"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\setting\units\usetting.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit9>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="..\..\bin\library"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="units;..\setting\units"/>
+      <UnitOutputDirectory Value="..\..\lib"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <RelocatableUnit Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+      </Debugging>
+      <Options>
+        <ExecutableType Value="Library"/>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

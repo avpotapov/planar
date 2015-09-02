@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lib type="developer">
+  <module uid="1" type_signature="2" type_bootloader="1">RCCU 3.0</module>
+  <module uid="10" type_signature="1" type_bootloader="2">UST_C7</module>
+  <module uid="13" type_signature="1" type_bootloader="1">RCCU 3.2M2</module>
+  <module uid="4096" type_signature="1" type_bootloader="2">JlS26</module>
+</lib>

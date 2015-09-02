@@ -1,0 +1,70 @@
+object DeviceForm: TDeviceForm
+  Left = 1858
+  Height = 104
+  Top = 239
+  Width = 311
+  BorderStyle = bsDialog
+  Caption = 'Добавить устройство'
+  ClientHeight = 104
+  ClientWidth = 311
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '1.4.0.4'
+  object OkButton: TButton
+    Left = 144
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'OK'
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object CancelButton: TButton
+    Left = 229
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Отмена'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object SlaveIdBox: TComboBox
+    Left = 128
+    Height = 21
+    Top = 32
+    Width = 176
+    DropDownCount = 16
+    ItemHeight = 15
+    ReadOnly = True
+    Style = csOwnerDrawFixed
+    TabOrder = 2
+  end
+  object ModuleBox: TComboBox
+    Left = 128
+    Height = 21
+    Top = 8
+    Width = 176
+    DropDownCount = 16
+    ItemHeight = 15
+    ReadOnly = True
+    Style = csOwnerDrawFixed
+    TabOrder = 3
+  end
+  object SlaveIdLabel: TLabel
+    Left = 18
+    Height = 15
+    Top = 36
+    Width = 100
+    Caption = 'Адрес устройства:'
+    ParentColor = False
+  end
+  object ModuleLabel: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 110
+    Caption = 'Модуль устройства:'
+    ParentColor = False
+  end
+end

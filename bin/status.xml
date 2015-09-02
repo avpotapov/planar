@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2007 (http://www.altova.com) by al.ptp@hotmail.com (Planar) -->
+<status>
+	<status_item>
+		<name>false</name>
+		<value>0</value>
+		<short_description>FALSE</short_description>
+		<description>FALSE - состояние логической переменной</description>
+	</status_item>
+	<status_item>
+		<name>ok</name>
+		<value>1</value>
+		<short_description>TRUE</short_description>
+		<description>OK/TRUE - состояние логической переменной</description>
+	</status_item>
+	<status_item>
+		<name>ndef</name>
+		<value>2</value>
+		<short_description>Не определено</short_description>
+		<description>Значение не определено (канал не опрошен)</description>
+	</status_item>
+	<status_item>
+		<name>off</name>
+		<value>3</value>
+		<short_description>Канал отключен</short_description>
+		<description>OFF опрос отключен или канал отсутствует физически</description>
+	</status_item>
+	<status_item>
+		<name>break</name>
+		<value>8</value>
+		<short_description>Обрыв</short_description>
+		<description>BREAK обрыв на линии</description>
+	</status_item>
+	<status_item>
+		<name>short</name>
+		<value>9</value>
+		<short_description>КЗ</short_description>
+		<description>SHORT - Короткое замыкание на линии</description>
+	</status_item>
+	<status_item>
+		<name>overload</name>
+		<value>10</value>
+		<short_description>Перегрузка</short_description>
+		<description>OVERLOAD перегрузка канала дискретного или аналогового вывода, перегрузка по входу для каналов аналогового ввода</description>
+	</status_item>
+	<status_item>
+		<name>fail</name>
+		<value>11</value>
+		<short_description>Аппаратная неиспр.</short_description>
+		<description>FAIL аппаратная неисправность в работе канала ввода/вывода</description>
+	</status_item>
+	<status_item>
+		<name>ch_nal</name>
+		<value>12</value>
+		<short_description>Ошибка конфигур.</short_description>
+		<description>CH_NAL Данный тип канала не разрешен для использования для данного канала ввода/вывода (ошибка конфигурирования)</description>
+	</status_item>
+	<status_item>
+		<name>no_con</name>
+		<value>13</value>
+		<short_description>Нет связи</short_description>
+		<description>NO_CON Нет связи с внешним модулем ввода/вывода (или с мезонином)</description>
+	</status_item>
+</status>

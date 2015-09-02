@@ -1,0 +1,74 @@
+object DetailedGroupForm: TDetailedGroupForm
+  Left = 70
+  Height = 419
+  Top = 107
+  Width = 571
+  BorderStyle = bsNone
+  Caption = 'DetailedGroupForm'
+  ClientHeight = 419
+  ClientWidth = 571
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.4.0.4'
+  object GroupItemTree: TVirtualStringTree
+    Left = 0
+    Height = 324
+    Top = 0
+    Width = 571
+    Align = alClient
+    DefaultText = 'Node'
+    Header.AutoSizeIndex = 1
+    Header.Columns = <    
+      item
+        CheckType = ctNone
+        MinWidth = 200
+        Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring, coAllowFocus]
+        Position = 0
+        Text = 'Параметр'
+        Width = 367
+      end    
+      item
+        CheckType = ctNone
+        CheckBox = True
+        Options = [coAllowClick, coDraggable, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAutoSpring, coAllowFocus]
+        Position = 1
+        Text = 'Значение'
+        Width = 200
+      end>
+    Header.DefaultHeight = 20
+    Header.Height = 20
+    Header.Options = [hoAutoResize, hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible, hoAutoSpring]
+    LineStyle = lsSolid
+    TabOrder = 0
+    TreeOptions.MiscOptions = [toAcceptOLEDrop, toCheckSupport, toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning, toEditOnClick]
+    TreeOptions.PaintOptions = [toShowButtons, toShowDropmark, toShowHorzGridLines, toShowRoot, toShowVertGridLines, toThemeAware, toUseBlendedImages]
+    TreeOptions.SelectionOptions = [toExtendedFocus]
+    OnChange = GroupItemTreeChange
+    OnChecked = GroupItemTreeChecked
+    OnChecking = GroupItemTreeChecking
+    OnColumnDblClick = GroupItemTreeColumnDblClick
+    OnCreateEditor = GroupItemTreeCreateEditor
+    OnEditing = GroupItemTreeEditing
+    OnFreeNode = GroupItemTreeFreeNode
+    OnGetText = GroupItemTreeGetText
+    OnGetNodeDataSize = GroupItemTreeGetNodeDataSize
+  end
+  object DescMemo: TMemo
+    Left = 0
+    Height = 90
+    Top = 329
+    Width = 571
+    Align = alBottom
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
+  object HSplitter: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 5
+    Top = 324
+    Width = 571
+    Align = alBottom
+    ResizeAnchor = akBottom
+  end
+end

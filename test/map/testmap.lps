@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="testmap.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="units\utestmap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="utestmap"/>
+        <TopLine Value="249"/>
+        <CursorPos X="27" Y="294"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\src\map\units\umap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uMap"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="70"/>
+        <CursorPos Y="121"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="3" HistoryIndex="2">
+      <Position1>
+        <Filename Value="units\utestmap.pas"/>
+        <Caret Line="25" Column="18" TopLine="2"/>
+      </Position1>
+      <Position2>
+        <Filename Value="units\utestmap.pas"/>
+        <Caret Line="26" Column="20" TopLine="10"/>
+      </Position2>
+      <Position3>
+        <Filename Value="units\utestmap.pas"/>
+        <Caret Line="27" Column="18"/>
+      </Position3>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

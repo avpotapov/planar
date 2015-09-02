@@ -1,0 +1,41 @@
+object PickListForm: TPickListForm
+  Left = 1342
+  Height = 418
+  Top = 538
+  Width = 499
+  BorderStyle = bsNone
+  Caption = 'PickListForm'
+  ClientHeight = 418
+  ClientWidth = 499
+  OnCreate = FormCreate
+  LCLVersion = '1.4.2.0'
+  object PickItemPanel: TPanel
+    Left = 0
+    Height = 226
+    Top = 192
+    Width = 499
+    Align = alBottom
+    BevelOuter = bvNone
+    Caption = 'PickItemPanel'
+    TabOrder = 0
+  end
+  object Splitter: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 5
+    Top = 187
+    Width = 499
+    Align = alBottom
+    ResizeAnchor = akBottom
+  end
+  object PickListPanel: TPanel
+    Left = 0
+    Height = 187
+    Top = 0
+    Width = 499
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'PickListPanel'
+    TabOrder = 2
+  end
+end

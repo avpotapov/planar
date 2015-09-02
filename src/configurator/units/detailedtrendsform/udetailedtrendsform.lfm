@@ -1,0 +1,20 @@
+object DetailedTrendsForm: TDetailedTrendsForm
+  Left = 1616
+  Height = 240
+  Top = 149
+  Width = 320
+  BorderStyle = bsNone
+  Caption = 'DetailedTrendsForm'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '1.4.0.4'
+  object Label1: TLabel
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 320
+    Align = alClient
+    Caption = 'Форма ТРЕНДЫ. В разработке.'
+    ParentColor = False
+  end
+end

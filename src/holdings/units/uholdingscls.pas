@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, fgl,
   uLibrary,
-  uHoldings, uString;
+  uHoldings{, uString};
 
 type
 

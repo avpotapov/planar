@@ -21,7 +21,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="126"/>
+      <BuildNr Value="131"/>
       <Language Value="0419"/>
       <Attributes pvaPreRelease="True"/>
       <StringTable Comments="Доступ к бибилотеке модулей" CompanyName="Planar, LLC" FileDescription="Доступ к библиотеке модулей" LegalCopyright="Planar, LLC" OriginalFilename="Library.dll" ProductVersion="1.0"/>
@@ -85,6 +85,7 @@
       <Unit9>
         <Filename Value="..\setting\units\usetting.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="uSetting"/>
       </Unit9>
     </Units>
   </ProjectOptions>
@@ -96,7 +97,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="units;..\setting\units"/>
+      <OtherUnitFiles Value="units"/>
       <UnitOutputDirectory Value="..\..\lib"/>
     </SearchPaths>
     <CodeGeneration>

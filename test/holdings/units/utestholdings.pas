@@ -5,7 +5,7 @@ unit uTestHoldings;
 interface
 
 uses
-  Classes, SysUtils, uholdings, fpcunit, testutils, testregistry;
+  Classes, SysUtils, System, uholdings, fpcunit, testutils, testregistry, Windows;
 
 type
 
@@ -48,14 +48,15 @@ begin
   AssertTrue(Holdings.Count = 2);
   H := Holdings.AddNew;
   AssertTrue(Holdings.Count = 3);
-
+//  InterLockedDecrement();
+//  HandleError(204);
 end;
 
 procedure TTestHoldings.TestEnumerator;
 var
   Holdings: IHoldings;
   H: IHolding;
-
+  S: TInterfacedObject;
 begin
   Holdings := CreateHoldings;
   AssertTrue(Holdings <> nil);

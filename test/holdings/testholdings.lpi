@@ -72,6 +72,7 @@
       <Unit6>
         <Filename Value="..\..\src\holdings\units\uholdingscls.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="uHoldingsCls"/>
       </Unit6>
       <Unit7>
         <Filename Value="..\..\src\holdings\units\uholdingssaxparser.pas"/>

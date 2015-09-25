@@ -21,7 +21,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="131"/>
+      <BuildNr Value="147"/>
       <Language Value="0419"/>
       <Attributes pvaPreRelease="True"/>
       <StringTable Comments="Доступ к бибилотеке модулей" CompanyName="Planar, LLC" FileDescription="Доступ к библиотеке модулей" LegalCopyright="Planar, LLC" OriginalFilename="Library.dll" ProductVersion="1.0"/>

@@ -903,6 +903,9 @@ begin
   if fSaxHandler.TagStack.Top = TTypeTagAttrName.tnEmpty then
   begin
     Groups := TSaxModuleDefineHandler(fSaxHandler).ModuleDefine.Configuration;
+
+    Groups.ImageIndex := StrToIntDef(GetAttrValue(aAtts, sImageIndex), -1);
+
     fSaxHandler.IntfStack.Push(Groups);
     // Поместить в стек тегов новый тег
     fSaxHandler.TagStack.Push(TTypeTagAttrName.tnGncSet);
@@ -914,6 +917,9 @@ begin
   if Supports(fSaxHandler.IntfStack.Top, IGroups, Groups) then
   begin
     Index := Groups.GroupsList.AddGroups(GetAttrValue(aAtts, sName));
+
+    Groups.GroupsList[Index].ImageIndex := StrToIntDef(GetAttrValue(aAtts, sImageIndex), -1);
+
     fSaxHandler.IntfStack.Push(Groups.GroupsList[Index]);
 
     // Поместить в стек тегов новый тег
@@ -924,8 +930,19 @@ begin
 end;
 
 procedure TGroupsBuilder.SetTagHandler(const aText: string);
+//var
+//  Groups: IGroups;
 begin
-  { TODO : image_index, description, visible, picture }
+  //if (fSaxHandler.TagStack.Top = TTypeTagAttrName.tnImageIndex)
+  //  and Supports(fSaxHandler.IntfStack.Top, IGroups, Groups) then
+  //begin
+  //  case fSaxHandler.CurrentTagAttrType of
+  //    tnImageIndex:
+  //    begin
+  //      Groups.ImageIndex := StrToIntDef(aText, -1);
+  //    end;
+  //  end;
+  //end;
 end;
 
 procedure TGroupsBuilder.EndTagHandler;

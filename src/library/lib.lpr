@@ -30,6 +30,10 @@ var
     Result := L;
   end;
 
+  procedure CloseLibrary; export;
+  begin
+    L := nil;
+  end;
 
   function GetNewGuid: String; export;
   var
@@ -65,6 +69,7 @@ var
 exports
   GetLibrary,
 	SaveLibrary,
+	CloseLibrary,
   GetNewGuid;
 
 

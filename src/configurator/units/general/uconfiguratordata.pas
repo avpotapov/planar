@@ -115,12 +115,13 @@ type
     function GetCaption: string; override;
     function GetImage: TTypeImage; override;
     function GetSelected: TTypeImage; override;
-    procedure Update(Sender: TObject);
+
     function GetContentSet: TContentSet; override;
   public
     constructor Create(const aSlaveId: byte); reintroduce;
 
   public
+    procedure Update(Sender: TObject);
     procedure SeekSignature;
 
     property SlaveId: byte read fSlaveId write SetSlaveId;
@@ -144,6 +145,7 @@ type
   TGroupsData = class(TContentData)
   private
     fGroups: IGroups;
+    function GetGroupsImageIndex: Integer;
 
   protected
     function GetCaption: string; override;
@@ -155,6 +157,7 @@ type
 
   public
     property Groups: IGroups read fGroups write fGroups;
+    property GroupsImageIndex: Integer read GetGroupsImageIndex;
   end;
 
     { TBootloaderData }
@@ -492,6 +495,14 @@ begin
   inherited Create;
   fGroups := aGroups;
   fFormClass := TDetailedGroupForm;
+end;
+
+function TGroupsData.GetGroupsImageIndex: Integer;
+begin
+  if fGroups.ImageIndex = -1 then
+  	Result :=	Ord(iiInactive)
+  else
+    Result := 9 +  fGroups.ImageIndex;
 end;
 
 function TGroupsData.GetCaption: string;

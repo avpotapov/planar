@@ -43,7 +43,7 @@ begin
   fRegistersEditor.Parent := RegistersPanel;
   fRegistersEditor.Align := alClient;
 
-  fConfigEditor := TConfigEditor.Create(Self);
+  fConfigEditor := TConfigEditor.Create(Self, ConfigImageList);
   fConfigEditor.Parent := ConfigPanel;
   fConfigEditor.Align := alClient;
   fConfigEditor.Images := ConfigImageList;

@@ -32465,7 +32465,7 @@
     </var_set>
   </registers>
   <configuration>
-    <gnc_set name="Состояние и управление">
+    <gnc_set name="Состояние и управление" image_index="-1">
       <gnc_var>
         <uid>A4038FEC-4936-4BB9-91DE-3F7ABC4078CE</uid>
         <uid>04D642A8-49E3-4D32-A210-524C65BF43B1</uid>
@@ -32483,7 +32483,7 @@
         <uid>A734DD1C-371B-481B-AB7C-480CC7E8EB99</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Основные настройки трекера">
+    <gnc_set name="Основные настройки трекера" image_index="-1">
       <gnc_var>
         <uid>7C3CF423-B803-46A9-85A2-C3F529CAF3DD</uid>
         <uid>FFD128D1-32C7-47FC-8AFC-19DC7447765D</uid>
@@ -32514,7 +32514,7 @@
         <uid>0F58D3D4-E08B-4D1B-8FF5-D76F3741E3E3</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Системные переменные">
+    <gnc_set name="Системные переменные" image_index="-1">
       <gnc_var>
         <uid>50868610-F795-4A4B-8C40-C957DFA9B6F7</uid>
         <uid>3C42F839-A260-4A5D-BE62-C9337EE75845</uid>
@@ -32522,7 +32522,7 @@
         <uid>573EAECE-00C4-4E7B-ADD5-1E91B2160D84</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Системное время">
+    <gnc_set name="Системное время" image_index="-1">
       <gnc_var>
         <uid>4F2D571D-8294-4C5D-B2C5-6BA90B90CACA</uid>
         <uid>61D3EB11-9622-423E-968B-69704A66ABE2</uid>
@@ -32534,7 +32534,7 @@
         <uid>56DC704C-8FE4-4B40-92A1-1081C20ABF87</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Установка системного времени">
+    <gnc_set name="Установка системного времени" image_index="-1">
       <gnc_var>
         <uid>283419F3-7A61-40C9-A237-B02E4C1C52DA</uid>
         <uid>C8E8B849-1DDA-4A1E-9C58-1B4ABFFC7DD8</uid>
@@ -32546,7 +32546,7 @@
         <uid>56DC704C-8FE4-4B40-92A1-1081C20ABF87</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Анализ работы самокалибровки">
+    <gnc_set name="Анализ работы самокалибровки" image_index="-1">
       <gnc_var>
         <uid>28CF9065-E5C5-4ACB-A15D-1D028A535240</uid>
         <uid>67BD13D5-C299-47EB-A292-D6A2E1628C1E</uid>
@@ -32566,7 +32566,7 @@
         <uid>299DEC02-080C-4A92-B168-E3F53AEE3642</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Таблица работы самокалибровки измерителей по азмуту">
+    <gnc_set name="Таблица работы самокалибровки измерителей по азмуту" image_index="-1">
       <gnc_var>
         <uid>448F03ED-BBB9-46FD-ADA3-BA29554C47CF</uid>
         <uid>266FAF5C-0E50-49B3-BE81-95A7D1BCAFDD</uid>
@@ -33370,7 +33370,7 @@
         <uid>41A97087-F895-49EA-9A3B-CEDCB516548D</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Таблица работы самокалибровки измерителей по горизонту">
+    <gnc_set name="Таблица работы самокалибровки измерителей по горизонту" image_index="-1">
       <gnc_var>
         <uid>82FD0561-FBBA-4B7B-9151-A9C118092EDA</uid>
         <uid>41DFB774-8A9C-48FB-8E68-811AF43EBF62</uid>
@@ -34174,7 +34174,7 @@
         <uid>3CF4011F-F3E7-45B4-9F4F-C7B7A8E7EAAE</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Порт RCI0">
+    <gnc_set name="Порт RCI0" image_index="-1">
       <gnc_var>
         <uid>F34949DA-9822-4949-9A52-8CFC5BF4A5BF</uid>
         <uid>9EB01584-7C2E-4444-9C06-8545D5519E55</uid>
@@ -34185,7 +34185,7 @@
         <uid>B6486BAD-D483-48EA-8EA0-335B9589D986</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Порт RCI1">
+    <gnc_set name="Порт RCI1" image_index="-1">
       <gnc_var>
         <uid>81CA5E77-3E1D-4028-BA08-520725070D5C</uid>
         <uid>D2C17936-8625-4B1D-ACBE-D39B92B0E679</uid>
@@ -34196,32 +34196,32 @@
         <uid>C169A776-CC14-4E7D-BA1E-E2847D684A14</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Каналы ввода / вывода">
-      <gnc_set name="Канал BSE/DO4">
+    <gnc_set name="Каналы ввода / вывода" image_index="-1">
+      <gnc_set name="Канал BSE/DO4" image_index="-1">
         <gnc_var>
           <uid>B4736AE2-98C6-47D8-B4E7-1478492576D4</uid>
           <uid>AC0862BF-33C0-4CE3-86F1-63241432A8A9</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал APX/DO3">
+      <gnc_set name="Канал APX/DO3" image_index="-1">
         <gnc_var>
           <uid>D2B0CE58-C8A9-49EE-85D8-D19B48BFC48C</uid>
           <uid>3CC176CF-0D00-447A-82F6-4CEBE98FE527</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал CCW/DO2">
+      <gnc_set name="Канал CCW/DO2" image_index="-1">
         <gnc_var>
           <uid>321FB905-2326-470E-99F7-0A863C80A040</uid>
           <uid>8E197925-DA45-46FC-A0C9-674CF13995F2</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал CW/DO1">
+      <gnc_set name="Канал CW/DO1" image_index="-1">
         <gnc_var>
           <uid>40BE621F-C8A6-49F1-85C2-A9B52CE90079</uid>
           <uid>86A38F33-4636-4241-ADF2-17B0DB4E2EB0</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал SOUTH_DAT/DI17">
+      <gnc_set name="Канал SOUTH_DAT/DI17" image_index="-1">
         <gnc_var>
           <uid>298B547B-6865-4915-9609-3591656B5D71</uid>
           <uid>382C6B7B-F94E-433A-8120-F4A0A05A9E9B</uid>
@@ -34230,7 +34230,7 @@
           <uid>AAB35717-97E0-412F-91C1-767BA30E1589</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал MOV VER/DI16">
+      <gnc_set name="Канал MOV VER/DI16" image_index="-1">
         <gnc_var>
           <uid>720FEB0D-B88E-4B86-AFB0-22CC30729F1B</uid>
           <uid>C0351EC5-D465-4E96-96BA-E5FF673D5E05</uid>
@@ -34240,7 +34240,7 @@
           <uid>EB50D0C2-AAEF-41CB-A979-62B0094FB4CA</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал MOV HOR/DI15">
+      <gnc_set name="Канал MOV HOR/DI15" image_index="-1">
         <gnc_var>
           <uid>9A55A585-EC97-4623-9F1A-1E934369BEFB</uid>
           <uid>990D7D3D-20EB-4F41-A831-C18F4588C248</uid>
@@ -34250,7 +34250,7 @@
           <uid>E81C03E5-ABE2-40CC-BDD5-C3FE91FD9FED</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал APEX LIM/DI14">
+      <gnc_set name="Канал APEX LIM/DI14" image_index="-1">
         <gnc_var>
           <uid>906B8529-5FA1-4574-A897-5352D411C2CD</uid>
           <uid>3502A23B-7754-4C7E-B922-8068F998E612</uid>
@@ -34259,7 +34259,7 @@
           <uid>B499D3D9-5298-4745-857A-F3DAC4CFF35A</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал BASE LIM/DI13">
+      <gnc_set name="Канал BASE LIM/DI13" image_index="-1">
         <gnc_var>
           <uid>6E1F2633-4DBC-4252-B9FF-B2763893DC10</uid>
           <uid>F21B1E0D-D111-4971-9B07-7EAF9B3CD5FC</uid>
@@ -34268,7 +34268,7 @@
           <uid>35A65A58-3E0D-43E8-B8D8-300EEB47C5E1</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал tHOR/DI12">
+      <gnc_set name="Канал tHOR/DI12" image_index="-1">
         <gnc_var>
           <uid>19332E1C-05BB-4094-B00E-FC3D575C99DF</uid>
           <uid>38BFD5C8-FA4A-40A9-97B6-BB0A7CC58B6D</uid>
@@ -34277,7 +34277,7 @@
           <uid>55E0845D-60A5-4D00-8BB6-FC709FE71292</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал bBSE/DI11">
+      <gnc_set name="Канал bBSE/DI11" image_index="-1">
         <gnc_var>
           <uid>F86ED163-BFE5-4D9D-B30B-C8F12B2D59DB</uid>
           <uid>50771A18-1580-41B0-8800-31234D899E0D</uid>
@@ -34286,7 +34286,7 @@
           <uid>E2679278-95CF-44DD-9A6D-9BD7D0E52804</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал DI10">
+      <gnc_set name="Канал DI10" image_index="-1">
         <gnc_var>
           <uid>B23E5DB9-1FC3-4E5D-A34A-3381A66E702E</uid>
           <uid>5F792240-614E-42C5-B6B4-528A0824F03E</uid>
@@ -34295,7 +34295,7 @@
           <uid>1CDF4866-6693-416D-9532-268BAC0FEBCF</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал WIND/DI9">
+      <gnc_set name="Канал WIND/DI9" image_index="-1">
         <gnc_var>
           <uid>4F157E7D-AA88-4933-915D-82CACAF74876</uid>
           <uid>D192DE1C-32C5-43D2-A38F-554C4226A9C2</uid>
@@ -34304,7 +34304,7 @@
           <uid>536503B9-F313-4E5F-B676-EC4A99606CAE</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал HAIL/DI8">
+      <gnc_set name="Канал HAIL/DI8" image_index="-1">
         <gnc_var>
           <uid>63227CC6-EE6D-48C0-92F1-55024BE5A96A</uid>
           <uid>F9F303A7-C828-4E8E-8476-04CD6714C0C5</uid>
@@ -34313,7 +34313,7 @@
           <uid>E8DEFDD4-D92A-4D4F-A2DC-793C7100AB99</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал tVER/DI7">
+      <gnc_set name="Канал tVER/DI7" image_index="-1">
         <gnc_var>
           <uid>B5D0F4FA-90FE-4C56-894B-1C3EE3EACE59</uid>
           <uid>2F491C51-21E9-411A-9FE2-05B231D69C70</uid>
@@ -34322,7 +34322,7 @@
           <uid>7507C87B-CEE2-4AF1-B87F-15F53BDFC62D</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал bСCW/DI6">
+      <gnc_set name="Канал bСCW/DI6" image_index="-1">
         <gnc_var>
           <uid>A079C897-BEA5-4DE3-89AF-3869E6C0CB6D</uid>
           <uid>085D5EB2-AF09-4129-B1FA-DE35970C8B56</uid>
@@ -34331,7 +34331,7 @@
           <uid>6690F141-5624-45F7-B5B8-C9769BD18845</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал RST/DI5">
+      <gnc_set name="Канал RST/DI5" image_index="-1">
         <gnc_var>
           <uid>F763FFFA-16D6-45AA-AD30-432EAD7D236E</uid>
           <uid>4141FE13-5061-448A-BB5B-F5BB0F00C54C</uid>
@@ -34340,7 +34340,7 @@
           <uid>2A4E5945-DE4E-449C-8A14-FB071D1C1975</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал bCW/DI4">
+      <gnc_set name="Канал bCW/DI4" image_index="-1">
         <gnc_var>
           <uid>7DC9E17A-17A7-4CDD-80B7-35763F2A0E78</uid>
           <uid>BEA445FB-B738-4587-A593-BCFE8C08F047</uid>
@@ -34349,7 +34349,7 @@
           <uid>3B6E529E-BEA7-40E7-B683-3C582F664F8D</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал bAPX/DI3">
+      <gnc_set name="Канал bAPX/DI3" image_index="-1">
         <gnc_var>
           <uid>E3D0243D-7E44-4C25-B294-D52B93B8950B</uid>
           <uid>8055201E-D30F-4E04-A822-A7BCA2CC11CE</uid>
@@ -34358,7 +34358,7 @@
           <uid>BD8038E4-197F-49DC-8412-FF807C6D7362</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал CW LIM/DI2">
+      <gnc_set name="Канал CW LIM/DI2" image_index="-1">
         <gnc_var>
           <uid>D855997C-65E1-436D-9CC5-B90F24F7A3A7</uid>
           <uid>9E65F939-C51E-4126-8C72-661548D3A75A</uid>
@@ -34367,7 +34367,7 @@
           <uid>234313FE-51C4-469A-9B4D-8245688B7F14</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал CCW LIM/DI1">
+      <gnc_set name="Канал CCW LIM/DI1" image_index="-1">
         <gnc_var>
           <uid>77E86E9D-22F4-4D4F-AB7E-B06CF8847647</uid>
           <uid>62BEB090-B6AC-44DD-B6CA-A9AB229B2057</uid>
@@ -34376,13 +34376,13 @@
           <uid>D3B55A1D-F7FD-49B8-88C2-317A1570AADC</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал ALR/DO5">
+      <gnc_set name="Канал ALR/DO5" image_index="-1">
         <gnc_var>
           <uid>2A094BCA-A8D4-4C63-9900-31000C8DA5D8</uid>
           <uid>956F8F6B-D589-43AA-B5E4-29EDB5840B0C</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Канал WRK/DO6">
+      <gnc_set name="Канал WRK/DO6" image_index="-1">
         <gnc_var>
           <uid>6445FA50-F521-47BE-A436-8BA9FC5641BB</uid>
           <uid>085C3E5D-6650-4420-9285-CF80B93F5016</uid>

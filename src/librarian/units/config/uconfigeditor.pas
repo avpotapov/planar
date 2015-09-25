@@ -132,6 +132,7 @@ type
   { TConfigEditor }
   TConfigEditor = class(TVirtualStringTree)
   private
+    fImageList: TImageList;
     fConfig: IGroups;
     fDragDropHandler: IDragDropHandler;
     fOnNodeSelect: TNodeSelectEvent;
@@ -141,6 +142,7 @@ type
     procedure AddGroups(Sender: TObject);
     procedure AddRootGroups(Sender: TObject);
     procedure EditGroups(Sender: TObject);
+    procedure ChangeImage(Sender: TObject);
     procedure ConstructPopupMenu;
   protected
     function DoKeyAction(var CharCode: word; var {%H-}Shift: TShiftState): boolean; override;
@@ -166,6 +168,8 @@ type
     procedure DoNewText(Node: PVirtualNode; Column: TColumnIndex;
      const CellText: string); override;
   public
+    constructor Create(aOwner: TComponent; aImageList: TImageList); overload;
+
     procedure LoadConfig(const aConfig: IGroups);
     procedure AfterConstruction; override;
     property OnNodeSelect: TNodeSelectEvent read fOnNodeSelect write fOnNodeSelect;
@@ -485,7 +489,10 @@ end;
 
 function TGroupsData.GetImageIndex: integer;
 begin
-  Result := 0;
+  if fGroups.ImageIndex = -1 then
+  	Result := 0
+  else
+    Result := fGroups.ImageIndex;
 end;
 
 constructor TGroupsData.Create(const aGroups: IGroups);
@@ -665,18 +672,33 @@ begin
   EditNode(FocusedNode, -1);
 end;
 
+procedure TConfigEditor.ChangeImage(Sender: TObject);
+begin
+  if (FocusedNode <> nil) and (GetData(FocusedNode) is TGroupsData) then
+     (GetData(FocusedNode) as TGroupsData).fGroups.ImageIndex := TMenuItem(Sender).ImageIndex;
+end;
+
 procedure TConfigEditor.ConstructPopupMenu;
 var
   Menu: TPopupMenu;
+  Item: TMenuItem;
+  I: Integer;
 begin
   Menu := TPopupMenu.Create(Self);
   Menu.Parent := Self;
+  Menu.Images := fImageList;
   PopupMenu := Menu;
 
   Menu.AddMenuItem('Новая группа...', @AddGroups);
   Menu.AddMenuItem('Новая корневая группа...', @AddRootGroups);
-  Menu.AddMenuItem('Редактировать', @EditGroups);
+
   Menu.AddMenuItem('-');
+  Menu.AddMenuItem('Редактировать', @EditGroups);
+  Item := Menu.AddSubMenu('Иконки');
+  for I := 0 to fImageList.Count - 1 do
+   Menu.AddMenuItem(Item, IntToStr(I), I, @ChangeImage);
+  Menu.AddMenuItem('-');
+
   Menu.AddMenuItem('Удалить...', @DeleteItems);
 
 end;
@@ -758,6 +780,12 @@ begin
   if GetData(Node) is TGroupsData then
   	TGroupsData(GetData(Node)).fGroups.ShortDescription := CellText;
   inherited DoNewText(Node, Column, CellText);
+end;
+
+constructor TConfigEditor.Create(aOwner: TComponent; aImageList: TImageList);
+begin
+  inherited Create(aOwner);
+	fImageList := aImageList;
 end;
 
 { TConfigData }

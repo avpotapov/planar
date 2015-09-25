@@ -4075,9 +4075,9 @@
     </var_set>
   </registers>
   <configuration>
-    <gnc_set name="Пример 3">
-      <gnc_set name="Подгруппа 2">
-        <gnc_set name="Подгруппа 2-1">
+    <gnc_set name="Пример 3" image_index="-1">
+      <gnc_set name="Подгруппа 2" image_index="-1">
+        <gnc_set name="Подгруппа 2-1" image_index="-1">
           <gnc_var>
             <uid>F3FE89B5-3CB1-4983-8CBA-EB0C38E01339</uid>
           </gnc_var>
@@ -4087,7 +4087,7 @@
           <uid>1CA7AB03-A7CB-4255-8A3C-D716B09B4786</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Подгруппа 1">
+      <gnc_set name="Подгруппа 1" image_index="-1">
         <gnc_var>
           <uid>F862771F-64A4-40B1-9EA7-B09B775B089D</uid>
           <uid>5F75BA57-1F33-494F-9C91-FEEA1F668E9D</uid>
@@ -4106,18 +4106,18 @@
         <uid>1068FD18-C6B9-4C93-A3D9-4E1216E8A011</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Пример 2">
+    <gnc_set name="Пример 2" image_index="-1">
       <gnc_var>
         <uid>4F53B8EF-9FC4-4E69-A60C-008EE921EBA8</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Пример 1">
-      <gnc_set name="Подгруппа 2">
+    <gnc_set name="Пример 1" image_index="-1">
+      <gnc_set name="Подгруппа 2" image_index="-1">
         <gnc_var>
           <uid>FEC7D1F8-9381-400F-A9C0-796142CD79A0</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Подгруппа 1">
+      <gnc_set name="Подгруппа 1" image_index="-1">
         <gnc_var>
           <uid>F862771F-64A4-40B1-9EA7-B09B775B089D</uid>
           <uid>5F75BA57-1F33-494F-9C91-FEEA1F668E9D</uid>
@@ -4129,23 +4129,23 @@
         <uid>2584DF16-3C35-4EF5-8D58-18762886EAC8</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="New_configuration_4">
+    <gnc_set name="New_configuration_4" image_index="-1">
       <gnc_var>
         <uid>F3FE89B5-3CB1-4983-8CBA-EB0C38E01339</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Пример4">
+    <gnc_set name="Пример4" image_index="-1">
       <gnc_var>
         <uid>2584DF16-3C35-4EF5-8D58-18762886EAC8</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Новая конфиг">
+    <gnc_set name="Новая конфиг" image_index="-1">
       <gnc_var>
         <uid>825DE168-7230-4FC9-A578-1A87AC8ACA3C</uid>
         <uid>B491D7A3-A623-4324-8E23-4EF789CFE03D</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Киловат">
+    <gnc_set name="Киловат" image_index="-1">
       <gnc_var>
         <uid>C78E1F4E-D08F-424B-AD95-8C82FEDDB5CF</uid>
       </gnc_var>

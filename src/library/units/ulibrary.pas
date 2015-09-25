@@ -578,19 +578,23 @@ type
   {
     Коллекция групп переменных конфигурации
   }
+
   IGroups = interface(IBase)
     ['{4A426538-0847-433E-AA2C-C55E32CD3DB8}']
 
     function GetGroupsList: IGroupsList;
     function GetGroup: IGroup;
+    function GetImageIndex: Integer;
 
     function GetShortDescription: string;
+    procedure SetImageIndex(const aImageIndex: Integer);
     procedure SetShortDescription(const aShortDescription: string);
 
     property GroupsList: IGroupsList read GetGroupsList;
     property Group: IGroup read GetGroup;
 
     property ShortDescription: string read GetShortDescription write SetShortDescription;
+    property ImageIndex: Integer read GetImageIndex write SetImageIndex;
   end;
 
 
@@ -630,6 +634,7 @@ end;
 
 {$REGION EXTERNAL}
 function GetLibrary(const aFileNames: array of string): ILibrary; external 'library.dll';
+procedure CloseLibrary; external 'library.dll';
 function GetNewGuid: String; external 'library.dll';
 procedure SaveLibrary(const aLibrary: ILibrary); external 'library.dll';
 {$ENDREGION EXTERNAL}

@@ -8,39 +8,41 @@
       <Unit0>
         <Filename Value="modbus.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="101"/>
         <CursorPos X="13" Y="18"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="units\ubase.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uBase"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="146"/>
         <CursorPos X="9" Y="158"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="units\ucommunication.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uCommunication"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="803"/>
         <CursorPos X="62" Y="889"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="units\uconnection.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="263"/>
-        <CursorPos X="37" Y="335"/>
-        <UsageCount Value="54"/>
+        <UnitName Value="uConnection"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="99"/>
+        <CursorPos X="14" Y="125"/>
+        <UsageCount Value="62"/>
+        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="units\ucontroller.pas"/>
@@ -48,7 +50,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="196"/>
         <CursorPos X="52" Y="219"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="62"/>
       </Unit4>
       <Unit5>
         <Filename Value="units\ucontrollerpool.pas"/>
@@ -56,24 +58,24 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="62"/>
         <CursorPos X="24" Y="90"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="62"/>
       </Unit5>
       <Unit6>
         <Filename Value="units\uframe.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="86"/>
         <CursorPos Y="102"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="units\uframefactory.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="53"/>
         <CursorPos X="3" Y="57"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit7>
       <Unit8>
@@ -83,16 +85,16 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="62"/>
       </Unit8>
       <Unit9>
         <Filename Value="units\userver.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uServer"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="85"/>
         <CursorPos Y="102"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit9>
       <Unit10>
@@ -101,25 +103,25 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="399"/>
         <CursorPos X="44" Y="247"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="62"/>
       </Unit10>
       <Unit11>
         <Filename Value="units\utransaction.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uTransaction"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="301"/>
         <CursorPos Y="19"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit11>
       <Unit12>
         <Filename Value="units\umodbus.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uModbus"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <CursorPos X="30" Y="8"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit12>
       <Unit13>
@@ -127,45 +129,45 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="1398"/>
         <CursorPos X="16" Y="1439"/>
-        <UsageCount Value="19"/>
+        <UsageCount Value="18"/>
       </Unit13>
       <Unit14>
         <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\sysutils\syspchh.inc"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="47" Y="39"/>
-        <UsageCount Value="15"/>
+        <UsageCount Value="14"/>
       </Unit14>
       <Unit15>
         <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\sysutils\sysunih.inc"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="10" Y="43"/>
-        <UsageCount Value="15"/>
+        <UsageCount Value="14"/>
       </Unit15>
       <Unit16>
         <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\win\wininc\redef.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="267"/>
         <CursorPos X="129" Y="294"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit16>
       <Unit17>
         <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\classes\classesh.inc"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="2026"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit17>
       <Unit18>
         <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\classes\classes.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="141"/>
         <CursorPos X="5" Y="145"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit18>
       <Unit19>
         <Filename Value="units\backup\userver.pas.bak"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="88"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit19>
       <Unit20>
@@ -173,14 +175,14 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="216"/>
         <CursorPos X="23" Y="241"/>
-        <UsageCount Value="15"/>
+        <UsageCount Value="14"/>
       </Unit20>
       <Unit21>
         <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\inc\objpas.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="967"/>
         <CursorPos X="11" Y="969"/>
-        <UsageCount Value="15"/>
+        <UsageCount Value="14"/>
       </Unit21>
     </Units>
     <JumpHistory Count="16" HistoryIndex="15">

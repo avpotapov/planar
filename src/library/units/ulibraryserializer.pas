@@ -176,6 +176,7 @@ begin
   begin
     Node := AddNode(sGncSet, aParentNode);
     AddAttribute(Node, sName, Utf8ToAnsi(Groups.ShortDescription));
+    AddAttribute(Node, sImageIndex, Utf8ToAnsi(IntToStr(Groups.ImageIndex)));
     GroupsSerialize(Groups, Node);
   end;
 
@@ -359,7 +360,7 @@ procedure TModuleDefineSerializer.Serialize(const aModule: IModule;
 var
 	RootNode: TDomNode;
   ConfigNode: TDomNode;
-  Groups: IGroups;
+//  Groups: IGroups;
 begin
   fXDoc := TXmlDocument.Create;
   try

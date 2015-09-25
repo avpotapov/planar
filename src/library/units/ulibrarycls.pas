@@ -465,8 +465,11 @@ type
   TGroups = class(TBase, IGroups)
   private
     fShortDescription: String;
+    fImageIndex: Integer;
     fGroupsList: IGroupsList;
     fGroup: IGroup;
+    function GetImageIndex: Integer;
+    procedure SetImageIndex(const aImageIndex: Integer);
 
   protected
     function GetGroupsList: IGroupsList;
@@ -483,6 +486,7 @@ type
     property Group: IGroup read GetGroup;
 
     property ShortDescription: String read GetShortDescription write SetShortDescription;
+    property ImageIndex: Integer read GetImageIndex write SetImageIndex;
   end;
 
   {$ENDREGION Groups}
@@ -1386,6 +1390,17 @@ end;
 
 {$REGION Groups}
 
+function TGroups.GetImageIndex: Integer;
+begin
+	Result := fImageIndex;
+end;
+
+procedure TGroups.SetImageIndex(const aImageIndex: Integer);
+begin
+	if fImageIndex <> aImageIndex then
+  	 fImageIndex := aImageIndex;
+end;
+
 function TGroups.GetGroupsList: IGroupsList;
 begin
   if fGroupsList = nil then
@@ -1414,6 +1429,7 @@ end;
 constructor TGroups.Create(const aShortDescription: String);
 begin
   inherited Create;
+  fImageIndex := -1;
   fShortDescription := aShortDescription;
 end;
 

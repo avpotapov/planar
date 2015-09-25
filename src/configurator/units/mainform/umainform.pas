@@ -25,21 +25,23 @@ type
   TMainForm = class(TForm)
     ContentImageList: TImageList;
     ContentTreeImageList: TImageList;
-    MenuItem1:     TMenuItem;
-    MenuItem2:     TMenuItem;
-    MenuItem3:     TMenuItem;
+    MenuItem1: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    SeparatorMenuItem: TMenuItem;
+    ReloadMenuItem: TMenuItem;
     ModbusImageList: TImageList;
-    MainMenu:      TMainMenu;
+    MainMenu: TMainMenu;
     ApplicationMenuItem: TMenuItem;
-    ExitMenuItem:  TMenuItem;
-    ContentPanel:  TPanel;
+    ExitMenuItem: TMenuItem;
+    ContentPanel: TPanel;
     DetailedPanel: TPanel;
     ModbusPopupMenu: TPopupMenu;
     ContentTreePopupMenu: TPopupMenu;
     SettingsMenuItem: TMenuItem;
-    MainSplitter:  TSplitter;
-    StatusBar:     TStatusBar;
-    ContentTree:   TVirtualStringTree;
+    MainSplitter: TSplitter;
+    StatusBar: TStatusBar;
+    ContentTree: TVirtualStringTree;
     ContentToolBar: TToolBar;
     ModbusToolButton: TToolButton;
     Splitter1ToolButton: TToolButton;
@@ -49,22 +51,22 @@ type
     Splitter3ToolButton: TToolButton;
     DeviceToolButton: TToolButton;
     SignatureToolButton: TToolButton;
-    ToolButton1:   TToolButton;
+    ToolButton1: TToolButton;
     SaveHoldingsToolButton: TToolButton;
     RestoreHoldingsToolButton: TToolButton;
 
     procedure ContentTreeChange(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure ContentTreeContextPopup(Sender: TObject; {%H-}MousePos: TPoint;
-      var {%H-}Handled: Boolean);
+      var {%H-}Handled: boolean);
     procedure ContentTreeFreeNode(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure ContentTreeGetImageIndex(Sender: TBaseVirtualTree;
       Node: PVirtualNode; Kind: TVTImageKind; {%H-}Column: TColumnIndex;
-      var {%H-}Ghosted: Boolean; var ImageIndex: Integer);
+      var {%H-}Ghosted: boolean; var ImageIndex: integer);
     procedure ContentTreeGetNodeDataSize(Sender: TBaseVirtualTree;
-      var NodeDataSize: Integer);
+      var NodeDataSize: integer);
 
     procedure ContentTreeGetText(Sender: TBaseVirtualTree; Node: PVirtualNode;
-    {%H-}Column: TColumnIndex; {%H-}TextType: TVSTTextType; var CellText: String);
+    {%H-}Column: TColumnIndex; {%H-}TextType: TVSTTextType; var CellText: string);
 
     procedure DeviceToolButtonClick(Sender: TObject);
     procedure ExitMenuItemClick(Sender: TObject);
@@ -72,6 +74,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure ModbusToolButtonClick(Sender: TObject);
     procedure ChangeModbusStatusToolButtonClick(Sender: TObject);
+    procedure ReloadMenuItemClick(Sender: TObject);
     procedure RestoreHoldingsToolButtonClick(Sender: TObject);
     procedure SaveHoldingsToolButtonClick(Sender: TObject);
     procedure SettingsMenuItemClick(Sender: TObject);
@@ -79,10 +82,10 @@ type
     procedure StartStopServerToolButtonClick(Sender: TObject);
 
   private
-    fServer:  IServer;
+    fServer: IServer;
     fLibrary: ILibrary;
     // Счетчик
-    fSuccess, fBad: Longint;
+    fSuccess, fBad: longint;
 
     fDetailedProxyForm: TDetailedProxyForm;
     fContentTreeProxyPopupMenu: TContentTreeProxyPopupMenu;
@@ -131,21 +134,32 @@ type
   public
     function GetParentNode(aTypeNode: TTypeNode;
       aCurrentNode: PVirtualNode): PVirtualNode;
+    function GetData(const aNode: PVirtualNode): TContentData;
   end;
 
 
 function TVirtualTreeViewHelper.GetParentNode(aTypeNode: TTypeNode;
   aCurrentNode: PVirtualNode): PVirtualNode;
 var
-  Level: Cardinal;
+  Level: cardinal;
 begin
-  Level  := Ord(aTypeNode);
+  Level := Ord(aTypeNode);
   Result := nil;
   if GetNodeLevel(aCurrentNode) < Level then
     Exit;
   Result := aCurrentNode;
   while GetNodeLevel(Result) <> Level do
     Result := Result^.Parent;
+end;
+
+function TVirtualTreeViewHelper.GetData(const aNode: PVirtualNode
+  ): TContentData;
+var
+  P: Pointer;
+begin
+  P := GetNodeData(aNode);
+  if TObject(P^) is TContentData then
+    Result := TContentData(P^);
 end;
 
 
@@ -157,17 +171,17 @@ type
   { TStatusBarHelper }
   TStatusBarHelper = class Helper for TStatusBar
   public
-    procedure Info(const aMsg: String);
-    procedure Count(const aMsg: String);
+    procedure Info(const aMsg: string);
+    procedure Count(const aMsg: string);
   end;
 
 
-procedure TStatusBarHelper.Info(const aMsg: String);
+procedure TStatusBarHelper.Info(const aMsg: string);
 begin
   Panels[0].Text := aMsg;
 end;
 
-procedure TStatusBarHelper.Count(const aMsg: String);
+procedure TStatusBarHelper.Count(const aMsg: string);
 begin
   Panels[1].Text := aMsg;
 end;
@@ -181,7 +195,7 @@ var
 begin
 
   fSuccess := 0;
-  fBad     := 0;
+  fBad := 0;
 
   SplashForm := TSplashForm.Create('configurator.png');
   try
@@ -206,7 +220,8 @@ begin
     fDetailedProxyForm := TDetailedProxyForm.Create(DetailedPanel);
 
     // Контексное меню для ContentTree
-    fContentTreeProxyPopupMenu := TContentTreeProxyPopupMenu.Create(ContentTreePopupMenu);
+    fContentTreeProxyPopupMenu :=
+      TContentTreeProxyPopupMenu.Create(ContentTreePopupMenu);
     fContentTreeProxyPopupMenu.Setup(@ChangeModbusStatusToolButtonClick,
       @DeviceToolButtonClick, @RemoveNode);
 
@@ -224,15 +239,15 @@ begin
 end;
 
 procedure TMainForm.ContentTreeGetNodeDataSize(Sender: TBaseVirtualTree;
-  var NodeDataSize: Integer);
+  var NodeDataSize: integer);
 begin
   NodeDataSize := SizeOf(TContentData);
 end;
 
 procedure TMainForm.ContentTreeContextPopup(Sender: TObject; MousePos: TPoint;
-  var Handled: Boolean);
+  var Handled: boolean);
 var
-  P:    Pointer;
+  P: Pointer;
   Node: PVirtualNode;
 begin
   Node := ContentTree.FocusedNode;
@@ -290,20 +305,32 @@ end;
 
 procedure TMainForm.ContentTreeGetImageIndex(Sender: TBaseVirtualTree;
   Node: PVirtualNode; Kind: TVTImageKind; Column: TColumnIndex;
-  var Ghosted: Boolean; var ImageIndex: Integer);
+  var Ghosted: boolean; var ImageIndex: integer);
 var
   P: Pointer;
 begin
   P := Sender.GetNodeData(Node);
   case Kind of
-    ikNormal: ImageIndex   := Ord(TContentData(P^).Image);
-    ikSelected: ImageIndex := Ord(TContentData(P^).Selected);
+    ikNormal:
+    begin
+      if TContentData(P^) is TGroupsData then
+        ImageIndex := TGroupsData(P^).GroupsImageIndex
+      else
+        ImageIndex := Ord(TContentData(P^).Image);
+    end;
+    ikSelected:
+    begin
+      if TContentData(P^) is TGroupsData then
+        ImageIndex := TGroupsData(P^).GroupsImageIndex
+      else
+        ImageIndex := Ord(TContentData(P^).Selected);
+    end;
   end;
 end;
 
 procedure TMainForm.ContentTreeGetText(Sender: TBaseVirtualTree;
   Node: PVirtualNode; Column: TColumnIndex; TextType: TVSTTextType;
-  var CellText: String);
+  var CellText: string);
 var
   P: Pointer;
 begin
@@ -320,7 +347,7 @@ end;
 procedure TMainForm.ChangeModbusStatusStyle(const aController: IController);
 const
   CONTROLLER_CLOSE = 1;
-  CONTROLLER_OPEN  = 2;
+  CONTROLLER_OPEN = 2;
 begin
   case aController.IsOpen of
     True:
@@ -344,9 +371,9 @@ end;
 procedure TMainForm.ChangeServerStatusStyle;
 const
   SERVER_OFF = 3;
-  SERVER_ON  = 4;
+  SERVER_ON = 4;
 var
-  IsActive: Boolean;
+  IsActive: boolean;
 begin
   IsActive := (fServer <> nil) and fServer.IsActive;
   case IsActive of
@@ -377,7 +404,7 @@ end;
 procedure TMainForm.ChangeModbusStatusToolButtonClick(Sender: TObject);
 var
   Node: PVirtualNode;
-  P:    Pointer;
+  P: Pointer;
 begin
   Screen.Cursor := crHourGLass;
   try
@@ -406,7 +433,7 @@ end;
 
 procedure TMainForm.SaveHoldings(const aTypeOperation: TTypeOperation);
 var
-  P:    Pointer;
+  P: Pointer;
   Node: PVirtualNode;
   DeviceData: TDeviceData;
   ModbusData: TModbusData;
@@ -440,18 +467,18 @@ begin
     Exit;
   HoldingsForm := THoldingsForm.Create(Self);
   try
-     try
-        if not ModbusData.Controller.IsOpen then
-          raise Exception.Create('Включите канал связи');
-        HoldingsForm.SaveHoldings(ModbusData, DeviceData, aTypeOperation);
-      except
-        on E: Exception do
-          MessageBox(Handle, PChar(Utf8ToAnsi(E.Message)),
-            PChar(Utf8ToAnsi('Ошибка')), MB_ICONERROR + MB_OK);
-      end;
-    finally
-      HoldingsForm.Release;
+    try
+      if not ModbusData.Controller.IsOpen then
+        raise Exception.Create('Включите канал связи');
+      HoldingsForm.SaveHoldings(ModbusData, DeviceData, aTypeOperation);
+    except
+      on E: Exception do
+        MessageBox(Handle, PChar(Utf8ToAnsi(E.Message)),
+          PChar(Utf8ToAnsi('Ошибка')), MB_ICONERROR + MB_OK);
     end;
+  finally
+    HoldingsForm.Release;
+  end;
 
 end;
 
@@ -469,7 +496,7 @@ end;
 
 procedure TMainForm.StartStopServerToolButtonClick(Sender: TObject);
 var
-  IsActive: Boolean;
+  IsActive: boolean;
 begin
   IsActive := (fServer <> nil) and fServer.IsActive;
   try
@@ -554,7 +581,7 @@ end;
 procedure TMainForm.SignatureToolButtonClick(Sender: TObject);
 var
   Node: PVirtualNode;
-  P:    Pointer;
+  P: Pointer;
 begin
   // Запросить сигнатуры выделенного устройства
   Node := ContentTree.GetParentNode(TTypeNode.tnDevice, ContentTree.GetFirstSelected);
@@ -569,7 +596,7 @@ end;
 procedure TMainForm.DeviceToolButtonClick(Sender: TObject);
 var
   Node: PVirtualNode;
-  P:    Pointer;
+  P: Pointer;
   ModbusData: TModbusData;
 begin
   ModbusData := nil;
@@ -580,7 +607,7 @@ begin
     if Node = nil then
       raise Exception.Create('Не выделен узел связи');
     Node := ContentTree.GetParentNode(TTypeNode.tnModbus, Node);
-    P    := ContentTree.GetNodeData(Node);
+    P := ContentTree.GetNodeData(Node);
 
     if TContentData(P^) is TModbusData then
       ModbusData := TModbusData(P^);
@@ -597,6 +624,30 @@ begin
       MessageBox(Handle, PChar(Utf8ToAnsi(E.Message)),
         PChar(Utf8ToAnsi('Ошибка')), MB_ICONERROR + MB_OK);
   end;
+end;
+
+procedure TMainForm.ReloadMenuItemClick(Sender: TObject);
+	procedure DepthFirstSearch(const aParentNode: PVirtualNode);
+  var
+    Node: PVirtualNode;
+  begin
+    Node := aParentNode^.FirstChild;
+    while Assigned(Node) do
+    begin
+      if ContentTree.GetData(Node) is TDeviceData then
+        TDeviceData(ContentTree.GetData(Node)).Update(nil)
+      else
+      	DepthFirstSearch(Node);
+      Node := Node^.NextSibling;
+    end;
+  end;
+
+begin
+	StatusBar.Info('Перезагрузка конфигуратора');
+  CloseLibrary;
+  DepthFirstSearch(ContentTree.RootNode^.FirstChild);
+	StatusBar.Info('Конфигуратор обновлен');
+
 end;
 
 {$ENDREGION MainFrom}

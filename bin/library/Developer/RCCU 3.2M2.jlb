@@ -41061,8 +41061,8 @@
     </var_set>
   </registers>
   <configuration>
-    <gnc_set name="Управление установкой">
-      <gnc_set name="Уставки и задания">
+    <gnc_set name="Управление установкой" image_index="3">
+      <gnc_set name="Уставки и задания" image_index="-1">
         <gnc_var>
           <uid>9891A634-8817-400B-A8F1-2E9031CAAE6C</uid>
           <uid>BEA61E0F-6E4E-479D-910E-7997C96A6630</uid>
@@ -41076,7 +41076,7 @@
           <uid>C000143D-3AEF-495D-ACB4-D95857AF4F8A-1</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Текущее состояние">
+      <gnc_set name="Текущее состояние" image_index="-1">
         <gnc_var>
           <uid>AB696DC2-CF2B-498E-9B0C-3E3F83784D9B</uid>
           <uid>A553F343-35A4-407B-8A47-2A581FF48B8B</uid>
@@ -41101,9 +41101,9 @@
           <uid>A553F343-35A4-407B-8A47-2A581F777777</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Планировщик заданий">
-        <gnc_set name="Планировщик 1">
-          <gnc_set name="Таймер 1">
+      <gnc_set name="Планировщик заданий" image_index="-1">
+        <gnc_set name="Планировщик 1" image_index="-1">
+          <gnc_set name="Таймер 1" image_index="-1">
             <gnc_var>
               <uid>01F2E28A-BA5D-40E3-988C-F88ACE2C0421</uid>
               <uid>0A7AA7C8-50C5-49FE-9F62-A38240853851</uid>
@@ -41111,7 +41111,7 @@
               <uid>A4A612F0-4F01-49AD-BD70-0135942B8554</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Таймер 2">
+          <gnc_set name="Таймер 2" image_index="-1">
             <gnc_var>
               <uid>E718465B-898B-47DC-825B-A9845EBEF511</uid>
               <uid>B4965811-9B1E-4389-A93E-A37DC30F082C</uid>
@@ -41128,8 +41128,8 @@
             <uid>0A7AA7C8-50C5-49FE-9F62-A38240888888</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Планировщик 2">
-          <gnc_set name="Таймер 1">
+        <gnc_set name="Планировщик 2" image_index="-1">
+          <gnc_set name="Таймер 1" image_index="-1">
             <gnc_var>
               <uid>01F2E28A-BA5D-40E3-988C-F88ACE2C0421-1</uid>
               <uid>0A7AA7C8-50C5-49FE-9F62-A38240853851-1</uid>
@@ -41137,7 +41137,7 @@
               <uid>A4A612F0-4F01-49AD-BD70-0135942B8554-1</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Таймер 2">
+          <gnc_set name="Таймер 2" image_index="-1">
             <gnc_var>
               <uid>E718465B-898B-47DC-825B-A9845EBEF511-1</uid>
               <uid>B4965811-9B1E-4389-A93E-A37DC30F082C-1</uid>
@@ -41154,8 +41154,8 @@
             <uid>0A7AA7C8-50C5-49FE-9F62-A38240888888-1</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Планировщик 3">
-          <gnc_set name="Таймер 1">
+        <gnc_set name="Планировщик 3" image_index="-1">
+          <gnc_set name="Таймер 1" image_index="-1">
             <gnc_var>
               <uid>01F2E28A-BA5D-40E3-988C-F88ACE2C0421-2</uid>
               <uid>0A7AA7C8-50C5-49FE-9F62-A38240853851-2</uid>
@@ -41163,7 +41163,7 @@
               <uid>A4A612F0-4F01-49AD-BD70-0135942B8554-2</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Таймер 2">
+          <gnc_set name="Таймер 2" image_index="-1">
             <gnc_var>
               <uid>E718465B-898B-47DC-825B-A9845EBEF511-2</uid>
               <uid>B4965811-9B1E-4389-A93E-A37DC30F082C-2</uid>
@@ -41180,8 +41180,8 @@
             <uid>0A7AA7C8-50C5-49FE-9F62-A38240888888-2</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Планировщик 4">
-          <gnc_set name="Таймер 1">
+        <gnc_set name="Планировщик 4" image_index="-1">
+          <gnc_set name="Таймер 1" image_index="-1">
             <gnc_var>
               <uid>01F2E28A-BA5D-40E3-988C-F88ACE2C0421-3</uid>
               <uid>0A7AA7C8-50C5-49FE-9F62-A38240853851-3</uid>
@@ -41189,7 +41189,7 @@
               <uid>A4A612F0-4F01-49AD-BD70-0135942B8554-3</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Таймер 2">
+          <gnc_set name="Таймер 2" image_index="-1">
             <gnc_var>
               <uid>E718465B-898B-47DC-825B-A9845EBEF511-3</uid>
               <uid>B4965811-9B1E-4389-A93E-A37DC30F082C-3</uid>
@@ -41212,8 +41212,8 @@
         </gnc_var>
       </gnc_set>
     </gnc_set>
-    <gnc_set name="Отладочные режимы">
-      <gnc_set name="Регистры уставок и состояний ">
+    <gnc_set name="Отладочные режимы" image_index="4">
+      <gnc_set name="Регистры уставок и состояний " image_index="-1">
         <gnc_var>
           <uid>135593C9-0954-4987-BC0A-2BFF7C7BFE3D</uid>
           <uid>90ED31B3-776F-4EB6-86F1-5E4A309CEA4B</uid>
@@ -41227,7 +41227,7 @@
           <uid>CF005E6D-03E6-45ED-87C1-0B6201F5E817-fan</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Собственные каналы AO и DO">
+      <gnc_set name="Собственные каналы AO и DO" image_index="-1">
         <gnc_var>
           <uid>D0DC995A-1FA5-432C-9149-8A8A96B38632</uid>
           <uid>9552A60D-98EA-4F71-B705-F042EFACA6C3</uid>
@@ -41249,8 +41249,8 @@
           <uid>F51167A1-8419-405E-9837-2D1F789A82AD</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Внешний модуль 1. Каналы ввода/вывода">
-        <gnc_set name="Каналы AI">
+      <gnc_set name="Внешний модуль 1. Каналы ввода/вывода" image_index="-1">
+        <gnc_set name="Каналы AI" image_index="-1">
           <gnc_var>
             <uid>073051F0-3F3E-4AC9-910E-3A02A6E0F623</uid>
             <uid>CC322413-BD2A-40BB-AE9D-286BE4660502</uid>
@@ -41262,7 +41262,7 @@
             <uid>7ABEBB23-773A-41CF-A6E5-FCAB65A3984C</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каналы DO">
+        <gnc_set name="Каналы DO" image_index="-1">
           <gnc_var>
             <uid>EEAFD4C8-1577-4E17-9126-121452285E4B</uid>
             <uid>7743F938-8DA8-4052-9E2D-CA89622D37B9</uid>
@@ -41283,7 +41283,7 @@
             <uid>F259BAA3-68F5-4413-AC34-4F5C84C709BD</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каналы AO">
+        <gnc_set name="Каналы AO" image_index="-1">
           <gnc_var>
             <uid>F1E7C64A-8FE7-4798-9408-6848BFE0E281</uid>
             <uid>E9203921-D83E-48F0-8EF9-92A39E325062</uid>
@@ -41303,7 +41303,7 @@
             <uid>5BD5D8EE-733A-425F-B4B2-6472AE5A108C</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каналы DI">
+        <gnc_set name="Каналы DI" image_index="-1">
           <gnc_var>
             <uid>0558A005-5330-401C-BBCA-EB64A2B946F6</uid>
             <uid>E6E34FDA-22D8-4231-8218-5EDA926F99D7</uid>
@@ -41331,8 +41331,8 @@
           <uid>2FA7AF3D-B948-421E-B486-79000FF300AA</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Внешний модуль 2. Каналы ввода/вывода">
-        <gnc_set name="Каналы AI">
+      <gnc_set name="Внешний модуль 2. Каналы ввода/вывода" image_index="-1">
+        <gnc_set name="Каналы AI" image_index="-1">
           <gnc_var>
             <uid>073051F0-3F3E-4AC9-910E-3A02A6E0F623-1</uid>
             <uid>CC322413-BD2A-40BB-AE9D-286BE4660502-1</uid>
@@ -41344,7 +41344,7 @@
             <uid>7ABEBB23-773A-41CF-A6E5-FCAB65A3984C-1</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каналы DO">
+        <gnc_set name="Каналы DO" image_index="-1">
           <gnc_var>
             <uid>EEAFD4C8-1577-4E17-9126-121452285E4B-1</uid>
             <uid>7743F938-8DA8-4052-9E2D-CA89622D37B9-1</uid>
@@ -41365,7 +41365,7 @@
             <uid>F259BAA3-68F5-4413-AC34-4F5C84C709BD-1</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каналы AO">
+        <gnc_set name="Каналы AO" image_index="-1">
           <gnc_var>
             <uid>F1E7C64A-8FE7-4798-9408-6848BFE0E281-1</uid>
             <uid>E9203921-D83E-48F0-8EF9-92A39E325062-1</uid>
@@ -41385,7 +41385,7 @@
             <uid>5BD5D8EE-733A-425F-B4B2-6472AE5A108C-1</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каналы DI">
+        <gnc_set name="Каналы DI" image_index="-1">
           <gnc_var>
             <uid>0558A005-5330-401C-BBCA-EB64A2B946F6-1</uid>
             <uid>E6E34FDA-22D8-4231-8218-5EDA926F99D7-1</uid>
@@ -41413,8 +41413,8 @@
           <uid>2FA7AF3D-B948-421E-B486-79000FF300AA-1</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Внешний модуль 3. Каналы ввода/вывода">
-        <gnc_set name="Каналы AI">
+      <gnc_set name="Внешний модуль 3. Каналы ввода/вывода" image_index="-1">
+        <gnc_set name="Каналы AI" image_index="-1">
           <gnc_var>
             <uid>073051F0-3F3E-4AC9-910E-3A02A6E0F623-2</uid>
             <uid>CC322413-BD2A-40BB-AE9D-286BE4660502-2</uid>
@@ -41426,7 +41426,7 @@
             <uid>7ABEBB23-773A-41CF-A6E5-FCAB65A3984C-2</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каналы DO">
+        <gnc_set name="Каналы DO" image_index="-1">
           <gnc_var>
             <uid>EEAFD4C8-1577-4E17-9126-121452285E4B-2</uid>
             <uid>7743F938-8DA8-4052-9E2D-CA89622D37B9-2</uid>
@@ -41447,7 +41447,7 @@
             <uid>F259BAA3-68F5-4413-AC34-4F5C84C709BD-2</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каналы AO">
+        <gnc_set name="Каналы AO" image_index="-1">
           <gnc_var>
             <uid>F1E7C64A-8FE7-4798-9408-6848BFE0E281-2</uid>
             <uid>E9203921-D83E-48F0-8EF9-92A39E325062-2</uid>
@@ -41467,7 +41467,7 @@
             <uid>5BD5D8EE-733A-425F-B4B2-6472AE5A108C-2</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каналы DI">
+        <gnc_set name="Каналы DI" image_index="-1">
           <gnc_var>
             <uid>0558A005-5330-401C-BBCA-EB64A2B946F6-2</uid>
             <uid>E6E34FDA-22D8-4231-8218-5EDA926F99D7-2</uid>
@@ -41495,8 +41495,8 @@
           <uid>2FA7AF3D-B948-421E-B486-79000FF300AA-2</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Внешний модуль 4. Каналы ввода/вывода">
-        <gnc_set name="Каналы AI">
+      <gnc_set name="Внешний модуль 4. Каналы ввода/вывода" image_index="-1">
+        <gnc_set name="Каналы AI" image_index="-1">
           <gnc_var>
             <uid>073051F0-3F3E-4AC9-910E-3A02A6E0F623-3</uid>
             <uid>CC322413-BD2A-40BB-AE9D-286BE4660502-3</uid>
@@ -41508,7 +41508,7 @@
             <uid>7ABEBB23-773A-41CF-A6E5-FCAB65A3984C-3</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каналы DO">
+        <gnc_set name="Каналы DO" image_index="-1">
           <gnc_var>
             <uid>EEAFD4C8-1577-4E17-9126-121452285E4B-3</uid>
             <uid>7743F938-8DA8-4052-9E2D-CA89622D37B9-3</uid>
@@ -41529,7 +41529,7 @@
             <uid>F259BAA3-68F5-4413-AC34-4F5C84C709BD-3</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каналы AO">
+        <gnc_set name="Каналы AO" image_index="-1">
           <gnc_var>
             <uid>F1E7C64A-8FE7-4798-9408-6848BFE0E281-3</uid>
             <uid>E9203921-D83E-48F0-8EF9-92A39E325062-3</uid>
@@ -41549,7 +41549,7 @@
             <uid>5BD5D8EE-733A-425F-B4B2-6472AE5A108C-3</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каналы DI">
+        <gnc_set name="Каналы DI" image_index="-1">
           <gnc_var>
             <uid>0558A005-5330-401C-BBCA-EB64A2B946F6-3</uid>
             <uid>E6E34FDA-22D8-4231-8218-5EDA926F99D7-3</uid>
@@ -41582,9 +41582,9 @@
         <uid>5A7918AC-2E0F-4DA1-A09C-08D693FA47AA</uid>
       </gnc_var>
     </gnc_set>
-    <gnc_set name="Конфигурация и настройки управляющей программы">
-      <gnc_set name="Блок общего управления">
-        <gnc_set name="Общие настройки">
+    <gnc_set name="Конфигурация и настройки управляющей программы" image_index="-1">
+      <gnc_set name="Блок общего управления" image_index="-1">
+        <gnc_set name="Общие настройки" image_index="-1">
           <gnc_var>
             <uid>3A40FBB7-F7C5-4984-92B0-1BFE0386A729</uid>
             <uid>DBB8B767-9168-464A-AC35-851CC5EC63AB</uid>
@@ -41593,7 +41593,7 @@
             <uid>82657104-8046-4A1F-8DBD-1CECFE42E06B</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Привязки каналов ввода/вывода">
+        <gnc_set name="Привязки каналов ввода/вывода" image_index="-1">
           <gnc_var>
             <uid>8C160A3E-8828-4D80-BCBA-9AE86713E151</uid>
             <uid>383487F4-088F-446D-9147-23B928903161</uid>
@@ -41609,7 +41609,7 @@
             <uid>C7F29A4F-D255-428F-9F9C-460EEEDDEEFF</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Дистанционное управление от переключателя">
+        <gnc_set name="Дистанционное управление от переключателя" image_index="-1">
           <gnc_var>
             <uid>CD7BCDFE-3385-4C8D-B54A-54F56CA83A43</uid>
             <uid>CD7BCDFE-3385-4C8D-B54A-54F511111111</uid>
@@ -41618,7 +41618,7 @@
             <uid>A4724F40-A125-496C-80B8-50CF4CCFBE24</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Автопереключение режима по условию">
+        <gnc_set name="Автопереключение режима по условию" image_index="-1">
           <gnc_var>
             <uid>D280B91B-84CE-4CDF-87FB-252BD56CB6B2</uid>
             <uid>9FE36672-EFA3-446F-8E23-001744E63A07</uid>
@@ -41630,7 +41630,7 @@
             <uid>B308EB86-6426-43F9-9562-D799327DE1A9</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Автопереключение режима для калибровки датчиков давления">
+        <gnc_set name="Автопереключение режима для калибровки датчиков давления" image_index="-1">
           <gnc_var>
             <uid>C3F2279C-AEDB-4178-B9BC-B76BF5208848</uid>
             <uid>2E3B276A-57AA-485A-A9B3-B638B2FABA10</uid>
@@ -41638,7 +41638,7 @@
             <uid>A4F57A11-19EB-4DA6-98A6-CEA07BA98D63</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Формирование уставки для температуры">
+        <gnc_set name="Формирование уставки для температуры" image_index="-1">
           <gnc_var>
             <uid>BD22E44F-5082-433F-8FA6-39A3E31920E0</uid>
             <uid>7CA8407D-D6F0-464C-B94F-3D4BF621979A</uid>
@@ -41652,7 +41652,7 @@
             <uid>47745F53-909B-467A-B3F2-BDE918085061</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Формирование уставки для относительной влажности">
+        <gnc_set name="Формирование уставки для относительной влажности" image_index="-1">
           <gnc_var>
             <uid>BD22E44F-5082-433F-8FA6-39A3E31920E0-2</uid>
             <uid>7CA8407D-D6F0-464C-B94F-3D4BF621979A-2</uid>
@@ -41666,7 +41666,7 @@
             <uid>47745F53-909B-467A-B3F2-BDE918085061-2</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Формирование уставки для производительности вентилятора">
+        <gnc_set name="Формирование уставки для производительности вентилятора" image_index="-1">
           <gnc_var>
             <uid>BD22E44F-5082-433F-8FA6-39A3E31920E0-3</uid>
             <uid>7CA8407D-D6F0-464C-B94F-3D4BF621979A-3</uid>
@@ -41680,7 +41680,7 @@
             <uid>47745F53-909B-467A-B3F2-BDE918085061-3</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каскадный регулятор температуры">
+        <gnc_set name="Каскадный регулятор температуры" image_index="-1">
           <gnc_var>
             <uid>8272571E-99E8-45E0-9FFD-10DFBC1AC321</uid>
             <uid>3F69A110-3307-47BC-BF18-A78D072F83BE</uid>
@@ -41692,7 +41692,7 @@
             <uid>E3FCFEDE-3D4A-46D6-820A-81875683A4C8</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Каскадный регулятор влажности">
+        <gnc_set name="Каскадный регулятор влажности" image_index="-1">
           <gnc_var>
             <uid>8272571E-99E8-45E0-9FFD-10DFBC1AC321-h</uid>
             <uid>3F69A110-3307-47BC-BF18-A78D072F83BE-h</uid>
@@ -41705,9 +41705,9 @@
           </gnc_var>
         </gnc_set>
       </gnc_set>
-      <gnc_set name="Узлы управления воздушными заслонками">
-        <gnc_set name="Дискретная заслонка 1">
-          <gnc_set name="Настройки узла">
+      <gnc_set name="Узлы управления воздушными заслонками" image_index="-1">
+        <gnc_set name="Дискретная заслонка 1" image_index="-1">
+          <gnc_set name="Настройки узла" image_index="-1">
             <gnc_var>
               <uid>333AF7C6-94D7-49F6-B1FB-A2BEFC6BF55B</uid>
               <uid>85E4E09A-9851-4C42-AF79-57861FC3D544</uid>
@@ -41717,7 +41717,7 @@
               <uid>296237F5-58A5-43D9-BC55-BE941D3A26F2</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка каналов">
+          <gnc_set name="Настройка каналов" image_index="-1">
             <gnc_var>
               <uid>9B7A45F3-515A-4E33-8117-9F085A3B1615</uid>
               <uid>EBA01FE5-15F4-4FAE-9A40-9F82BEB61E43</uid>
@@ -41731,8 +41731,8 @@
             <uid>852EF5BC-4EE0-420A-9F01-F19952AEE21B</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Дискретная заслонка 2">
-          <gnc_set name="Настройки узла">
+        <gnc_set name="Дискретная заслонка 2" image_index="-1">
+          <gnc_set name="Настройки узла" image_index="-1">
             <gnc_var>
               <uid>D9FAEA1A-F710-491E-98E3-56BD89E3F573</uid>
               <uid>62B71838-2931-4424-821F-0B1F5BC2FAD3</uid>
@@ -41742,7 +41742,7 @@
               <uid>296237F5-58A5-43D9-BC55-BE941D3A26F2</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка каналов">
+          <gnc_set name="Настройка каналов" image_index="-1">
             <gnc_var>
               <uid>C57696CF-1954-4D1E-B6C4-F5047CE9D870</uid>
               <uid>2F436FE0-D0D6-4AB4-92C7-4EC323E8752E</uid>
@@ -41756,8 +41756,8 @@
             <uid>DDA7EA02-72D7-4D28-8A10-B4DC9ECA9CBC</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Аналоговая заслонка 1">
-          <gnc_set name="Настройки узла">
+        <gnc_set name="Аналоговая заслонка 1" image_index="-1">
+          <gnc_set name="Настройки узла" image_index="-1">
             <gnc_var>
               <uid>57DE6353-DB86-4038-B749-51B67621FF01</uid>
               <uid>2B14512C-5DFE-45D8-9854-080B2F9E7502</uid>
@@ -41766,15 +41766,15 @@
               <uid>AD9BBD6C-87B6-4182-A62C-1DD28943AC99</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка каналов">
+          <gnc_set name="Настройка каналов" image_index="-1">
             <gnc_var>
               <uid>5EFBD69C-3CB8-4668-96BA-15E7F916EA15</uid>
               <uid>8A575C50-3392-4F23-BDA9-F61F3CAD8F96</uid>
               <uid>62C449E0-B251-4B7A-9CB1-5FACE768E50A</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настраиваемый режим 1">
-            <gnc_set name="Регулятор">
+          <gnc_set name="Настраиваемый режим 1" image_index="-1">
+            <gnc_set name="Регулятор" image_index="-1">
               <gnc_var>
                 <uid>5C67BD19-C174-4D6A-BC5F-B2AB8265C1EE</uid>
                 <uid>90CD009B-EE76-440F-85FE-0BCC311DB425</uid>
@@ -41803,8 +41803,8 @@
               <uid>0EC154B9-636B-4E05-B673-ED34C0816444</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настраиваемый режим 2">
-            <gnc_set name="Регулятор">
+          <gnc_set name="Настраиваемый режим 2" image_index="-1">
+            <gnc_set name="Регулятор" image_index="-1">
               <gnc_var>
                 <uid>1EE305D3-E181-43E2-AEDA-0C026EF6223E</uid>
                 <uid>258215C5-A77C-4569-9C1C-8572B4A045FC</uid>
@@ -41846,8 +41846,8 @@
             <uid>D35D10D9-5026-4496-A09B-3CBD0F584867</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Аналоговая заслонка 2">
-          <gnc_set name="Настройка узла">
+        <gnc_set name="Аналоговая заслонка 2" image_index="-1">
+          <gnc_set name="Настройка узла" image_index="-1">
             <gnc_var>
               <uid>57DE6353-DB86-4038-B749-51B67621FF01-1</uid>
               <uid>2B14512C-5DFE-45D8-9854-080B2F9E7502-1</uid>
@@ -41856,15 +41856,15 @@
               <uid>AD9BBD6C-87B6-4182-A62C-1DD28943AC99-1</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка каналов">
+          <gnc_set name="Настройка каналов" image_index="-1">
             <gnc_var>
               <uid>5EFBD69C-3CB8-4668-96BA-15E7F916EA15-1</uid>
               <uid>8A575C50-3392-4F23-BDA9-F61F3CAD8F96-1</uid>
               <uid>62C449E0-B251-4B7A-9CB1-5FACE768E50A-1</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настраиваемый режим 1">
-            <gnc_set name="Регулятор">
+          <gnc_set name="Настраиваемый режим 1" image_index="-1">
+            <gnc_set name="Регулятор" image_index="-1">
               <gnc_var>
                 <uid>5C67BD19-C174-4D6A-BC5F-B2AB8265C1EE-1</uid>
                 <uid>90CD009B-EE76-440F-85FE-0BCC311DB425-1</uid>
@@ -41893,8 +41893,8 @@
               <uid>E4543670-A14B-42AD-80A5-A9909E82CD65-1</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настраиваемый режим 2">
-            <gnc_set name="Регулятор">
+          <gnc_set name="Настраиваемый режим 2" image_index="-1">
+            <gnc_set name="Регулятор" image_index="-1">
               <gnc_var>
                 <uid>1EE305D3-E181-43E2-AEDA-0C026EF6223E-1</uid>
                 <uid>258215C5-A77C-4569-9C1C-8572B4A045FC-1</uid>
@@ -41936,8 +41936,8 @@
             <uid>6CA653DA-6B12-4641-9F30-51DF9677968C-1</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Аналоговая заслонка 3">
-          <gnc_set name="Настройка узла">
+        <gnc_set name="Аналоговая заслонка 3" image_index="-1">
+          <gnc_set name="Настройка узла" image_index="-1">
             <gnc_var>
               <uid>57DE6353-DB86-4038-B749-51B67621FF01-2</uid>
               <uid>2B14512C-5DFE-45D8-9854-080B2F9E7502-2</uid>
@@ -41946,15 +41946,15 @@
               <uid>AD9BBD6C-87B6-4182-A62C-1DD28943AC99-2</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка каналов">
+          <gnc_set name="Настройка каналов" image_index="-1">
             <gnc_var>
               <uid>5EFBD69C-3CB8-4668-96BA-15E7F916EA15-2</uid>
               <uid>8A575C50-3392-4F23-BDA9-F61F3CAD8F96-2</uid>
               <uid>62C449E0-B251-4B7A-9CB1-5FACE768E50A-2</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настраиваемый режим 1">
-            <gnc_set name="Регулятор">
+          <gnc_set name="Настраиваемый режим 1" image_index="-1">
+            <gnc_set name="Регулятор" image_index="-1">
               <gnc_var>
                 <uid>5C67BD19-C174-4D6A-BC5F-B2AB8265C1EE-2</uid>
                 <uid>90CD009B-EE76-440F-85FE-0BCC311DB425-2</uid>
@@ -41983,8 +41983,8 @@
               <uid>E4543670-A14B-42AD-80A5-A9909E82CD65-2</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настраиваемый режим 2">
-            <gnc_set name="Регулятор">
+          <gnc_set name="Настраиваемый режим 2" image_index="-1">
+            <gnc_set name="Регулятор" image_index="-1">
               <gnc_var>
                 <uid>1EE305D3-E181-43E2-AEDA-0C026EF6223E-2</uid>
                 <uid>258215C5-A77C-4569-9C1C-8572B4A045FC-2</uid>
@@ -42026,8 +42026,8 @@
             <uid>D35D10D9-5026-4496-A09B-3CBD0F584867-2</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Аналоговая заслонка 4">
-          <gnc_set name="Настройка узла">
+        <gnc_set name="Аналоговая заслонка 4" image_index="-1">
+          <gnc_set name="Настройка узла" image_index="-1">
             <gnc_var>
               <uid>57DE6353-DB86-4038-B749-51B67621FF01-3</uid>
               <uid>2B14512C-5DFE-45D8-9854-080B2F9E7502-3</uid>
@@ -42036,15 +42036,15 @@
               <uid>AD9BBD6C-87B6-4182-A62C-1DD28943AC99-3</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка каналов">
+          <gnc_set name="Настройка каналов" image_index="-1">
             <gnc_var>
               <uid>5EFBD69C-3CB8-4668-96BA-15E7F916EA15-3</uid>
               <uid>8A575C50-3392-4F23-BDA9-F61F3CAD8F96-3</uid>
               <uid>62C449E0-B251-4B7A-9CB1-5FACE768E50A-3</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настраиваемый режим 1">
-            <gnc_set name="Регулятор">
+          <gnc_set name="Настраиваемый режим 1" image_index="-1">
+            <gnc_set name="Регулятор" image_index="-1">
               <gnc_var>
                 <uid>5C67BD19-C174-4D6A-BC5F-B2AB8265C1EE-3</uid>
                 <uid>90CD009B-EE76-440F-85FE-0BCC311DB425-3</uid>
@@ -42073,8 +42073,8 @@
               <uid>E4543670-A14B-42AD-80A5-A9909E82CD65-3</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настраиваемый режим 2">
-            <gnc_set name="Регулятор">
+          <gnc_set name="Настраиваемый режим 2" image_index="-1">
+            <gnc_set name="Регулятор" image_index="-1">
               <gnc_var>
                 <uid>1EE305D3-E181-43E2-AEDA-0C026EF6223E-3</uid>
                 <uid>258215C5-A77C-4569-9C1C-8572B4A045FC-3</uid>
@@ -42121,22 +42121,22 @@
           <uid>9AAFC930-D03B-42A3-8137-EE201ECA8922</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Узлы управления фильтрами">
-        <gnc_set name="Фильтр 1">
-          <gnc_set name="Настройка каналов">
+      <gnc_set name="Узлы управления фильтрами" image_index="-1">
+        <gnc_set name="Фильтр 1" image_index="-1">
+          <gnc_set name="Настройка каналов" image_index="-1">
             <gnc_var>
               <uid>EFEE7D52-380D-4145-9C39-37CDF361313A</uid>
               <uid>EC9CA01E-6E5B-41D8-A2AE-BB8987EA0295</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка узла">
+          <gnc_set name="Настройка узла" image_index="-1">
             <gnc_var>
               <uid>B852834E-C542-4260-A32E-D524238ABA98</uid>
               <uid>AC1C6D94-3F05-4D0B-9102-D114627E2008</uid>
               <uid>B7895B75-01E1-44CB-821F-7C93D9AB20B3</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Статусы и ошибки">
+          <gnc_set name="Статусы и ошибки" image_index="-1">
             <gnc_var>
               <uid>B01C62C3-B08B-4BDF-8286-1C90A69A26FD</uid>
               <uid>EF3FBBB1-DC43-4617-9699-7A9C5A5706CB</uid>
@@ -42146,21 +42146,21 @@
             </gnc_var>
           </gnc_set>
         </gnc_set>
-        <gnc_set name="Фильтр 2">
-          <gnc_set name="Настройка узла">
+        <gnc_set name="Фильтр 2" image_index="-1">
+          <gnc_set name="Настройка узла" image_index="-1">
             <gnc_var>
               <uid>62B6D3A8-5350-4127-8DC5-6D3D16488BFA</uid>
               <uid>A06BF5DC-37ED-42D5-A5DE-1753C9248140</uid>
               <uid>6C91F866-FEC1-4B61-86E9-0173C06DAB40</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка каналов">
+          <gnc_set name="Настройка каналов" image_index="-1">
             <gnc_var>
               <uid>3186339C-7879-4361-B561-69BDD43F5835</uid>
               <uid>98E28890-9EDB-4BC1-99BE-AC78B569C187</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Статусы и ошибки">
+          <gnc_set name="Статусы и ошибки" image_index="-1">
             <gnc_var>
               <uid>4A0389D9-CE9F-4C17-99AC-3BB7B10D1DAF</uid>
               <uid>D666F2DA-052D-4D5D-9ACB-B7A6452D0B31</uid>
@@ -42170,8 +42170,8 @@
             </gnc_var>
           </gnc_set>
         </gnc_set>
-        <gnc_set name="Фильтр 3">
-          <gnc_set name="Статусы и ошибки">
+        <gnc_set name="Фильтр 3" image_index="-1">
+          <gnc_set name="Статусы и ошибки" image_index="-1">
             <gnc_var>
               <uid>2CF15305-2F62-47A2-8641-0682F5EF04FC</uid>
               <uid>7002ACB9-F4F6-4167-A5AD-195F447B0E8C</uid>
@@ -42180,13 +42180,13 @@
               <uid>EF3FBBB1-DC43-4617-9699-7A9C5AFFF333</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка каналов">
+          <gnc_set name="Настройка каналов" image_index="-1">
             <gnc_var>
               <uid>08A792EF-9384-43BF-82C4-65EC4828F9BF</uid>
               <uid>17E50491-E01C-4703-8315-97CDFEE20241</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка узла">
+          <gnc_set name="Настройка узла" image_index="-1">
             <gnc_var>
               <uid>410AF214-00A7-4AF0-9717-781507E4229E</uid>
               <uid>237E6365-9611-450B-8EC3-6205C1175BA1</uid>
@@ -42194,8 +42194,8 @@
             </gnc_var>
           </gnc_set>
         </gnc_set>
-        <gnc_set name="Фильтр 4">
-          <gnc_set name="Статусы и ошибки">
+        <gnc_set name="Фильтр 4" image_index="-1">
+          <gnc_set name="Статусы и ошибки" image_index="-1">
             <gnc_var>
               <uid>EA3CCBD4-7873-4E51-8B3F-FF3C119B5AD3</uid>
               <uid>A5EA592A-3801-4562-B384-ED3CE2B409DB</uid>
@@ -42204,13 +42204,13 @@
               <uid>EF3FBBB1-DC43-4617-9699-7A9C5AFFF444</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка каналов">
+          <gnc_set name="Настройка каналов" image_index="-1">
             <gnc_var>
               <uid>57B72625-7E7A-4B88-96AC-3D5549717B8C</uid>
               <uid>83D2AAED-819F-4760-8F0F-CB5FB1CDFE2A</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка узла">
+          <gnc_set name="Настройка узла" image_index="-1">
             <gnc_var>
               <uid>4703ED05-0ADF-4CFF-BFD8-854DE9259EBE</uid>
               <uid>859424BC-8039-4492-B7B8-2D629A10616B</uid>
@@ -42227,10 +42227,10 @@
           <uid>E3B9675E-F384-4DDD-A515-721046A61D47</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Узлы управления вентиляторами">
-        <gnc_set name="Вентилятор 1 (Приточный)">
-          <gnc_set name="Настройки вентилятора">
-            <gnc_set name="Регулятор давления">
+      <gnc_set name="Узлы управления вентиляторами" image_index="-1">
+        <gnc_set name="Вентилятор 1 (Приточный)" image_index="-1">
+          <gnc_set name="Настройки вентилятора" image_index="-1">
+            <gnc_set name="Регулятор давления" image_index="-1">
               <gnc_var>
                 <uid>5C67BD19-C174-4D6A-BC5F-B2AB82651111</uid>
                 <uid>90CD009B-EE76-440F-85FE-0BCC311D2222</uid>
@@ -42255,7 +42255,7 @@
               <uid>98175B96-E0BB-423C-BDEF-19C4A3FE2222</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Привязки каналов">
+          <gnc_set name="Привязки каналов" image_index="-1">
             <gnc_var>
               <uid>0F8F83E0-9CC8-43C8-A033-3C7FD147D0DD</uid>
               <uid>D01E6922-FDFB-4C5A-A173-D9593AD1B480</uid>
@@ -42277,9 +42277,9 @@
             <uid>98175B96-E0BB-423C-BDEF-19C4A3FEFEDD</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Вентилятор 2 (Вытяжной)">
-          <gnc_set name="Настройки вентилятора">
-            <gnc_set name="Регулятор давления">
+        <gnc_set name="Вентилятор 2 (Вытяжной)" image_index="-1">
+          <gnc_set name="Настройки вентилятора" image_index="-1">
+            <gnc_set name="Регулятор давления" image_index="-1">
               <gnc_var>
                 <uid>5C67BD19-C174-4D6A-BC5F-B2AB82651111-1</uid>
                 <uid>90CD009B-EE76-440F-85FE-0BCC311D2222-1</uid>
@@ -42304,7 +42304,7 @@
               <uid>98175B96-E0BB-423C-BDEF-19C4A3FE2222-1</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Привязки каналов">
+          <gnc_set name="Привязки каналов" image_index="-1">
             <gnc_var>
               <uid>0F8F83E0-9CC8-43C8-A033-3C7FD147D0DD-1</uid>
               <uid>D01E6922-FDFB-4C5A-A173-D9593AD1B480-1</uid>
@@ -42326,13 +42326,13 @@
             <uid>98175B96-E0BB-423C-BDEF-19C4A3FEFEDD-1</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Вентилятор 3 (Дополнительный приточный)">
-          <gnc_set name="Задание вентилятору">
+        <gnc_set name="Вентилятор 3 (Дополнительный приточный)" image_index="-1">
+          <gnc_set name="Задание вентилятору" image_index="-1">
             <gnc_var>
               <uid>8B939B76-8EE5-4383-B974-141108F176F7-2</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Статусы и ошибки">
+          <gnc_set name="Статусы и ошибки" image_index="-1">
             <gnc_var>
               <uid>C2177E53-330F-42CF-AA8A-CFCB6B46085F-2</uid>
               <uid>F463290E-5BE6-4C89-9D6C-74F0A11F7E01-2</uid>
@@ -42340,7 +42340,7 @@
               <uid>98175B96-E0BB-423C-BDEF-19C4A3FEFEDD-2</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка каналов">
+          <gnc_set name="Настройка каналов" image_index="-1">
             <gnc_var>
               <uid>0F8F83E0-9CC8-43C8-A033-3C7FD147D0DD-2</uid>
               <uid>D01E6922-FDFB-4C5A-A173-D9593AD1B480-2</uid>
@@ -42354,8 +42354,8 @@
               <uid>21D6D1A3-B566-433E-8C01-5A92B0A7E888-2</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка узла">
-            <gnc_set name="Регулятор давления">
+          <gnc_set name="Настройка узла" image_index="-1">
+            <gnc_set name="Регулятор давления" image_index="-1">
               <gnc_var>
                 <uid>5C67BD19-C174-4D6A-BC5F-B2AB82651111-2</uid>
                 <uid>90CD009B-EE76-440F-85FE-0BCC311D2222-2</uid>
@@ -42384,13 +42384,13 @@
             <uid>8B939B76-8EE5-4383-B974-141108F176F7-2</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Вентилятор 4 (Дополнительный вытяжной)">
-          <gnc_set name="Задание вентилятору">
+        <gnc_set name="Вентилятор 4 (Дополнительный вытяжной)" image_index="-1">
+          <gnc_set name="Задание вентилятору" image_index="-1">
             <gnc_var>
               <uid>8B939B76-8EE5-4383-B974-141108F176F7-3</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Статусы и ошибки">
+          <gnc_set name="Статусы и ошибки" image_index="-1">
             <gnc_var>
               <uid>C2177E53-330F-42CF-AA8A-CFCB6B46085F-3</uid>
               <uid>F463290E-5BE6-4C89-9D6C-74F0A11F7E01-3</uid>
@@ -42398,7 +42398,7 @@
               <uid>98175B96-E0BB-423C-BDEF-19C4A3FEFEDD-3</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка каналов">
+          <gnc_set name="Настройка каналов" image_index="-1">
             <gnc_var>
               <uid>0F8F83E0-9CC8-43C8-A033-3C7FD147D0DD-3</uid>
               <uid>D01E6922-FDFB-4C5A-A173-D9593AD1B480-3</uid>
@@ -42412,8 +42412,8 @@
               <uid>21D6D1A3-B566-433E-8C01-5A92B0A7E888-3</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Настройка узла">
-            <gnc_set name="Регулятор давления">
+          <gnc_set name="Настройка узла" image_index="-1">
+            <gnc_set name="Регулятор давления" image_index="-1">
               <gnc_var>
                 <uid>5C67BD19-C174-4D6A-BC5F-B2AB82651111-3</uid>
                 <uid>90CD009B-EE76-440F-85FE-0BCC311D2222-3</uid>
@@ -42461,10 +42461,10 @@
           <uid>20253260-388E-48F9-A150-28DF1A960AB4</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Узлы управления калориферами">
-        <gnc_set name="Калорифер 1">
-          <gnc_set name="Настройка узла калорифера">
-            <gnc_set name="ПИД-регулятор">
+      <gnc_set name="Узлы управления калориферами" image_index="-1">
+        <gnc_set name="Калорифер 1" image_index="-1">
+          <gnc_set name="Настройка узла калорифера" image_index="-1">
+            <gnc_set name="ПИД-регулятор" image_index="-1">
               <gnc_var>
                 <uid>81396361-37C3-4E63-AF18-D3D0B6625C28</uid>
                 <uid>86CF38F2-12C4-41A0-A218-2B349B963791</uid>
@@ -42494,7 +42494,7 @@
               <uid>418E9710-4C6F-4E97-99F8-924DD77698BE</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Привязки каналов">
+          <gnc_set name="Привязки каналов" image_index="-1">
             <gnc_var>
               <uid>DD13F79E-2BBB-46EE-92E2-56D0823F8567</uid>
               <uid>ED366185-5AFC-44F0-A560-512465C9B3DE</uid>
@@ -42508,7 +42508,7 @@
               <uid>01907E4E-6F81-44BD-97C2-F0FBB6E28AA0</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Режим 1">
+          <gnc_set name="Режим 1" image_index="-1">
             <gnc_var>
               <uid>3C22EE35-0BF0-41EA-A97B-C4776858BB55</uid>
               <uid>27FDD285-3C26-42DA-A7DB-D2B4B245B143</uid>
@@ -42516,7 +42516,7 @@
               <uid>50557CB2-4C0C-4201-A8BF-29813C8989CC</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Режим 2">
+          <gnc_set name="Режим 2" image_index="-1">
             <gnc_var>
               <uid>3C22EE35-0BF0-41EA-A97B-C4776858BB55-1</uid>
               <uid>27FDD285-3C26-42DA-A7DB-D2B4B245B143-1</uid>
@@ -42524,7 +42524,7 @@
               <uid>50557CB2-4C0C-4201-A8BF-29813C8989CC-1</uid>
             </gnc_var>
           </gnc_set>
-          <gnc_set name="Режим 3">
+          <gnc_set name="Режим 3" image_index="-1">
             <gnc_var>
               <uid>3C22EE35-0BF0-41EA-A97B-C4776858BB55-2</uid>
               <uid>27FDD285-3C26-42DA-A7DB-D2B4B245B143-2</uid>
@@ -42545,13 +42545,13 @@
           </gnc_var>
         </gnc_set>
       </gnc_set>
-      <gnc_set name="Узел управления компрессором">
-        <gnc_set name="Задание на компрессор">
+      <gnc_set name="Узел управления компрессором" image_index="-1">
+        <gnc_set name="Задание на компрессор" image_index="-1">
           <gnc_var>
             <uid>6FA08945-1109-4A1A-8BF9-E1F83592EA01</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Статусы и ошибки">
+        <gnc_set name="Статусы и ошибки" image_index="-1">
           <gnc_var>
             <uid>B1C3CA6E-D223-4A10-92A0-16C3FFA59C29</uid>
             <uid>4F416B76-A2BE-4B35-81AC-33EB471AFA5F</uid>
@@ -42559,7 +42559,7 @@
             <uid>5BC2FF38-EEA3-46F2-B7C5-BBF37614ED47</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Настройка узла">
+        <gnc_set name="Настройка узла" image_index="-1">
           <gnc_var>
             <uid>AE48D2F1-02A0-4D68-92AF-5366DE473676</uid>
             <uid>6B3A2F9C-F3B6-42F0-9A4D-3D3CAE2265EB</uid>
@@ -42569,7 +42569,7 @@
             <uid>C32941FB-B568-47AF-AF54-A457060BBF3C</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Настройка режима 1">
+        <gnc_set name="Настройка режима 1" image_index="-1">
           <gnc_var>
             <uid>5DCBC260-306C-474D-BAC9-2900BED73E02</uid>
             <uid>ECA3E0B6-0279-484C-83D4-93F7300382AB</uid>
@@ -42580,7 +42580,7 @@
             <uid>049EB414-1747-4E2A-B4F4-64140C5EA26F</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Настройка режима 2">
+        <gnc_set name="Настройка режима 2" image_index="-1">
           <gnc_var>
             <uid>8AC6E2AB-6E55-4017-AE10-4FF4C5E059EE</uid>
             <uid>831C2ED8-3C5C-4CDC-945F-C0FBE458BC74</uid>
@@ -42591,7 +42591,7 @@
             <uid>049EB414-1747-4E2A-B4F4-64140C5EA26F-1</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Настройка режима 3">
+        <gnc_set name="Настройка режима 3" image_index="-1">
           <gnc_var>
             <uid>6B491694-77C5-4CD6-BA63-6F2A14222CE2</uid>
             <uid>187BE683-4D18-4A82-B7B6-D4C2A3A6CEE5</uid>
@@ -42602,7 +42602,7 @@
             <uid>049EB414-1747-4E2A-B4F4-64140C5EA26F-2</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Привязки каналов">
+        <gnc_set name="Привязки каналов" image_index="-1">
           <gnc_var>
             <uid>99C600C1-1D9B-447E-B93E-26F52D7F3B36</uid>
             <uid>CB075DDA-403E-467E-9549-9DAAD7D5F299</uid>
@@ -42613,8 +42613,8 @@
         </gnc_set>
       </gnc_set>
     </gnc_set>
-    <gnc_set name="Аппаратные настройки модуля">
-      <gnc_set name="Часы">
+    <gnc_set name="Аппаратные настройки модуля" image_index="-1">
+      <gnc_set name="Часы" image_index="-1">
         <gnc_var>
           <uid>8246834B-F9DD-4A2A-9EF6-4D96AB5F9D3E</uid>
           <uid>AFAB1A72-7CE5-42A1-B6D6-7699C38A5CD1</uid>
@@ -42622,8 +42622,8 @@
           <uid>3530EE19-310C-4B20-807A-CB8FC592987C</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="PORT1 настройки">
-        <gnc_set name="Внешнее Slave-устройство 1">
+      <gnc_set name="PORT1 настройки" image_index="-1">
+        <gnc_set name="Внешнее Slave-устройство 1" image_index="-1">
           <gnc_var>
             <uid>C4128223-9403-45D7-83CD-D140DC0E4150</uid>
             <uid>F57D8BAB-8482-4F66-97FE-43D5B9B86782</uid>
@@ -42631,7 +42631,7 @@
             <uid>FFD20D37-D12B-40C9-94AA-DC843504F261</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Внешнее Slave-устройство 2">
+        <gnc_set name="Внешнее Slave-устройство 2" image_index="-1">
           <gnc_var>
             <uid>37632CCF-BB3F-4E6E-980D-A25989AFA76F</uid>
             <uid>75740B5D-88C9-4984-A34D-C84CB5D7DE21</uid>
@@ -42639,7 +42639,7 @@
             <uid>17A212AA-60DC-48CE-BBA2-6E50AB667C8D</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Внешнее Slave-устройство 3">
+        <gnc_set name="Внешнее Slave-устройство 3" image_index="-1">
           <gnc_var>
             <uid>A641F6BF-5EB7-4372-9C50-A31BED1ABCD9</uid>
             <uid>F6BA67FC-C3DD-42D8-A0ED-45814B2B916B</uid>
@@ -42647,7 +42647,7 @@
             <uid>7189EB53-63D1-422D-882A-423B1F0E11CA</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="Внешнее Slave-устройство 4">
+        <gnc_set name="Внешнее Slave-устройство 4" image_index="-1">
           <gnc_var>
             <uid>662B5633-5DA0-4AE7-AE9D-1CC09B1706B5</uid>
             <uid>0675F908-119E-4C1B-91CF-B0E00B52747A</uid>
@@ -42665,8 +42665,8 @@
           <uid>34561B76-B419-4120-B8C2-DFE00AA8D12F</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Каналы аналогового ввода">
-        <gnc_set name="AI0">
+      <gnc_set name="Каналы аналогового ввода" image_index="-1">
+        <gnc_set name="AI0" image_index="-1">
           <gnc_var>
             <uid>C6EB0BDA-3782-4905-83F0-0EC3C7C0881B</uid>
             <uid>2F65CF09-D672-41C8-B555-2EBBA623A282</uid>
@@ -42675,7 +42675,7 @@
             <uid>FBDFB652-3D51-4072-81FB-6D379930BEAD</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="AI1">
+        <gnc_set name="AI1" image_index="-1">
           <gnc_var>
             <uid>3E3C8AC7-919E-42AB-9F5F-BFFD5F2B500B</uid>
             <uid>8E3F8CF3-66E4-4717-884F-4721D75070C5</uid>
@@ -42684,7 +42684,7 @@
             <uid>34A0D728-8379-40FE-9E90-D5DFFBCA66AA</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="AI2">
+        <gnc_set name="AI2" image_index="-1">
           <gnc_var>
             <uid>2748FDE6-7E19-44CD-8110-68C2D73ADB54</uid>
             <uid>36EE7DF1-BCB5-42D2-9EB4-67C91D2435EC</uid>
@@ -42694,20 +42694,20 @@
           </gnc_var>
         </gnc_set>
       </gnc_set>
-      <gnc_set name="Каналы аналогового вывода">
-        <gnc_set name="AO0">
+      <gnc_set name="Каналы аналогового вывода" image_index="-1">
+        <gnc_set name="AO0" image_index="-1">
           <gnc_var>
             <uid>9552A60D-98EA-4F71-B705-F042EFACA6C3</uid>
             <uid>CCC3D768-5069-403C-9673-ADABD277302E</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="AO1">
+        <gnc_set name="AO1" image_index="-1">
           <gnc_var>
             <uid>9333EECC-0632-443D-B6E2-73A710B24F03</uid>
             <uid>D67F4A5E-1F8E-4688-9841-55194B07B857</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="AO2">
+        <gnc_set name="AO2" image_index="-1">
           <gnc_var>
             <uid>2582878A-C7D4-423E-9C43-B8C6A2FC8CFB</uid>
             <uid>CB4EBF87-5F71-4E59-90CA-D8CAC17CDDDF</uid>
@@ -42715,7 +42715,7 @@
             <uid>062CEE81-4643-4BA5-B763-E4239DF51E69</uid>
           </gnc_var>
         </gnc_set>
-        <gnc_set name="AO3">
+        <gnc_set name="AO3" image_index="-1">
           <gnc_var>
             <uid>C1E59240-56CF-4533-9B7F-DBC016914FD8</uid>
             <uid>0792D78C-46D6-474F-914B-B744978A308D</uid>
@@ -42724,14 +42724,14 @@
           </gnc_var>
         </gnc_set>
       </gnc_set>
-      <gnc_set name="Каналы дискретного ввода">
+      <gnc_set name="Каналы дискретного ввода" image_index="-1">
         <gnc_var>
           <uid>1956194F-7E80-4E77-9DE0-BDD9BF940626</uid>
           <uid>97670149-173D-41BE-A1A2-D1EF7DA1B423</uid>
           <uid>6198D18B-4D8F-4E99-BF2D-C2BCF2106D96</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Каналы дискретного вывода">
+      <gnc_set name="Каналы дискретного вывода" image_index="-1">
         <gnc_var>
           <uid>A73B70A8-20BF-4BE2-9B33-C7BAD5AF3D9B</uid>
           <uid>D602A242-E5D3-4C1E-AA87-CF3480A0C890</uid>
@@ -42744,7 +42744,7 @@
           <uid>F51167A1-8419-405E-9837-2D1F789A82AD</uid>
         </gnc_var>
       </gnc_set>
-      <gnc_set name="Системная информация">
+      <gnc_set name="Системная информация" image_index="-1">
         <gnc_var>
           <uid>F5FA5DF3-AD50-4B61-90E5-52D71932A7E7</uid>
           <uid>2E47B286-F5AD-404F-8011-9D1CF7125803</uid>

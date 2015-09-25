@@ -21,7 +21,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="24"/>
+      <BuildNr Value="36"/>
       <Language Value="0419"/>
       <Attributes pvaPreRelease="True"/>
       <StringTable Comments="Приложение &quot;Конфигуратор&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Конфигуратор&quot;" LegalCopyright="Planar, LLC" OriginalFilename="Configurator.exe" ProductName="Конфигуратор" ProductVersion="1.0"/>
@@ -154,6 +154,7 @@
       <Unit18>
         <Filename Value="units\general\uconfiguratordata.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="uConfiguratorData"/>
       </Unit18>
       <Unit19>
         <Filename Value="units\mainform\udetailedproxyform.pas"/>
@@ -166,6 +167,7 @@
       <Unit21>
         <Filename Value="units\mainform\ucontentbuilder.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="uContentBuilder"/>
       </Unit21>
       <Unit22>
         <Filename Value="units\mainform\umainformpopupmenu.pas"/>

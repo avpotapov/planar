@@ -4,12 +4,13 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="36">
+    <Units Count="38">
       <Unit0>
         <Filename Value="librarian.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="71"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="91"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="units\main\umainform.pas"/>
@@ -18,13 +19,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMainForm"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="6"/>
-        <TopLine Value="32"/>
-        <CursorPos X="37" Y="24"/>
-        <UsageCount Value="71"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="19" Y="13"/>
+        <UsageCount Value="91"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\library\units\ulibrary.pas"/>
@@ -33,38 +30,38 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="569"/>
         <CursorPos X="3" Y="613"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit2>
       <Unit3>
         <Filename Value="..\setting\units\usetting.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\general\splashform\units\usplashform.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
         <UnitName Value="uSplashForm"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit4>
       <Unit5>
         <Filename Value="..\general\settingform\units\usettingform.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
         <UnitName Value="uSettingForm"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit5>
       <Unit6>
         <Filename Value="..\general\settingform\units\usettingformdata.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSettingFormData"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit6>
       <Unit7>
         <Filename Value="units\main\ueditingformpool.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uEditingFormPool"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit7>
       <Unit8>
         <Filename Value="units\module\umoduleform.pas"/>
@@ -73,7 +70,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uModuleForm"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit8>
       <Unit9>
         <Filename Value="units\empty\uemptyform.pas"/>
@@ -82,7 +79,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uEmptyForm"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit9>
       <Unit10>
         <Filename Value="units\basedesc\ubasedescform.pas"/>
@@ -93,7 +90,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="98"/>
         <CursorPos Y="150"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit10>
       <Unit11>
         <Filename Value="units\picklist\upicklistform.pas"/>
@@ -104,7 +101,7 @@
         <UnitName Value="uPickListForm"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="91" Y="39"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit11>
       <Unit12>
         <Filename Value="units\vars\uvarsform.pas"/>
@@ -112,12 +109,10 @@
         <ComponentName Value="VarsForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="157"/>
         <CursorPos X="13" Y="174"/>
-        <UsageCount Value="71"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <UsageCount Value="91"/>
       </Unit12>
       <Unit13>
         <Filename Value="units\config\uconfigform.pas"/>
@@ -126,24 +121,27 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uConfigForm"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="9"/>
-        <CursorPos X="56" Y="18"/>
-        <UsageCount Value="71"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="18"/>
+        <CursorPos X="59" Y="23"/>
+        <UsageCount Value="91"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit13>
       <Unit14>
         <Filename Value="..\general\customeditor\units\ucustomeditor.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit14>
       <Unit15>
         <Filename Value="units\picklist\upickitemeditor.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uPickItemEditor"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="67"/>
         <CursorPos X="36" Y="80"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
         <Loaded Value="True"/>
       </Unit15>
       <Unit16>
@@ -153,7 +151,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uBitsForm"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit16>
       <Unit17>
         <Filename Value="units\bits\ubiteditor.pas"/>
@@ -162,59 +160,61 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="91"/>
         <CursorPos X="28" Y="258"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit17>
       <Unit18>
         <Filename Value="units\vars\uvareditor.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uVarEditor"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit18>
       <Unit19>
         <Filename Value="units\picklist\upicklisteditor.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uPickListEditor"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="15"/>
-        <CursorPos Y="49"/>
-        <UsageCount Value="71"/>
+        <TopLine Value="82"/>
+        <CursorPos X="127" Y="97"/>
+        <UsageCount Value="91"/>
         <Loaded Value="True"/>
       </Unit19>
       <Unit20>
         <Filename Value="..\general\vteditor\uvtbaseeditor.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uVtBaseEditor"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit20>
       <Unit21>
         <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uPropertyEditorNew"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="91"/>
-        <CursorPos X="3" Y="94"/>
-        <UsageCount Value="71"/>
+        <EditorIndex Value="6"/>
+        <CursorPos X="19" Y="124"/>
+        <UsageCount Value="91"/>
         <Loaded Value="True"/>
       </Unit21>
       <Unit22>
         <Filename Value="units\bits\ubitseditor.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uBitsEditor"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit22>
       <Unit23>
         <Filename Value="units\general\umenuhelper.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uMenuHelper"/>
-        <UsageCount Value="71"/>
+        <EditorIndex Value="11"/>
+        <CursorPos X="67" Y="17"/>
+        <UsageCount Value="91"/>
+        <Loaded Value="True"/>
       </Unit23>
       <Unit24>
         <Filename Value="units\general\uadvancedpropertyeditor.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uAdvancedPropertyEditor"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <CursorPos X="3" Y="16"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
         <Loaded Value="True"/>
       </Unit24>
       <Unit25>
@@ -223,17 +223,17 @@
         <UnitName Value="u2ColumnEditor"/>
         <TopLine Value="144"/>
         <CursorPos X="5" Y="153"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
         <Loaded Value="True"/>
       </Unit25>
       <Unit26>
         <Filename Value="units\vars\uvarseditor.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uVarsEditor"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="13"/>
         <TopLine Value="40"/>
         <CursorPos X="29" Y="51"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
         <Loaded Value="True"/>
       </Unit26>
       <Unit27>
@@ -243,15 +243,17 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="91"/>
         <CursorPos X="24" Y="124"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit27>
       <Unit28>
         <Filename Value="units\general\ulibrarydata.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uLibraryData"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos Y="31"/>
-        <UsageCount Value="71"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="11"/>
+        <CursorPos X="3" Y="37"/>
+        <UsageCount Value="91"/>
+        <Loaded Value="True"/>
       </Unit28>
       <Unit29>
         <Filename Value="units\main\ulibrarybuilder.pas"/>
@@ -260,13 +262,13 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="287"/>
         <CursorPos X="51" Y="314"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit29>
       <Unit30>
         <Filename Value="units\module\umoduledata.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uModuleData"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="91"/>
       </Unit30>
       <Unit31>
         <Filename Value="units\config\uregisterseditor.pas"/>
@@ -274,161 +276,182 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="163"/>
         <CursorPos X="55" Y="184"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="90"/>
       </Unit31>
       <Unit32>
         <Filename Value="units\config\uconfigeditor.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uConfigEditor"/>
-        <EditorIndex Value="8"/>
-        <TopLine Value="452"/>
-        <CursorPos X="104" Y="395"/>
-        <UsageCount Value="70"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="652"/>
+        <CursorPos X="51" Y="679"/>
+        <UsageCount Value="90"/>
         <Loaded Value="True"/>
       </Unit32>
       <Unit33>
         <Filename Value="d:\soft\lazarus\components\virtualtreeview\virtualtreeview-4.8.7\VirtualTrees.pas"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="15560"/>
-        <CursorPos Y="15585"/>
-        <UsageCount Value="34"/>
+        <TopLine Value="3343"/>
+        <CursorPos X="54" Y="3370"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
       </Unit33>
       <Unit34>
         <Filename Value="d:\soft\lazarus\lcl\controls.pp"/>
         <UnitName Value="Controls"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="355"/>
-        <CursorPos X="3" Y="381"/>
-        <UsageCount Value="28"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="2234"/>
+        <CursorPos X="3" Y="2260"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
       </Unit34>
       <Unit35>
         <Filename Value="d:\soft\lazarus\lcl\lcltype.pp"/>
         <UnitName Value="LCLType"/>
-        <EditorIndex Value="10"/>
+        <EditorIndex Value="14"/>
         <TopLine Value="615"/>
         <CursorPos X="3" Y="401"/>
-        <UsageCount Value="25"/>
+        <UsageCount Value="34"/>
         <Loaded Value="True"/>
       </Unit35>
+      <Unit36>
+        <Filename Value="d:\soft\lazarus\fpc\2.6.4\source\packages\sdl\src\logger.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="48"/>
+        <CursorPos X="40" Y="157"/>
+        <UsageCount Value="18"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="d:\soft\lazarus\lcl\menus.pp"/>
+        <UnitName Value="Menus"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="355"/>
+        <CursorPos X="3" Y="381"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit37>
     </Units>
-    <JumpHistory Count="29" HistoryIndex="28">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="137" Column="34" TopLine="109"/>
+        <Caret Line="142" TopLine="115"/>
       </Position1>
       <Position2>
-        <Filename Value="units\general\u2columneditor.pas"/>
-        <Caret Line="153" Column="7" TopLine="138"/>
+        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
+        <Caret Line="146" Column="10" TopLine="109"/>
       </Position2>
       <Position3>
-        <Filename Value="units\general\u2columneditor.pas"/>
-        <Caret Line="152" Column="6" TopLine="138"/>
+        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
+        <Caret Line="141" TopLine="109"/>
       </Position3>
       <Position4>
         <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="138" TopLine="109"/>
+        <Caret Line="144" TopLine="109"/>
       </Position4>
       <Position5>
-        <Filename Value="units\general\u2columneditor.pas"/>
-        <Caret Line="162" Column="36" TopLine="138"/>
+        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
+        <Caret Line="145" TopLine="109"/>
       </Position5>
       <Position6>
         <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="141" TopLine="115"/>
+        <Caret Line="146" TopLine="109"/>
       </Position6>
       <Position7>
         <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="144" TopLine="115"/>
+        <Caret Line="147" TopLine="109"/>
       </Position7>
       <Position8>
         <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="145" TopLine="115"/>
+        <Caret Line="150" TopLine="109"/>
       </Position8>
       <Position9>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="146" TopLine="115"/>
+        <Filename Value="d:\soft\lazarus\components\virtualtreeview\virtualtreeview-4.8.7\VirtualTrees.pas"/>
+        <Caret Line="15585" TopLine="15560"/>
       </Position9>
       <Position10>
         <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="141" TopLine="115"/>
+        <Caret Line="94" Column="3" TopLine="91"/>
       </Position10>
       <Position11>
         <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="144" TopLine="115"/>
+        <Caret Line="133" Column="3" TopLine="107"/>
       </Position11>
       <Position12>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="145" TopLine="115"/>
+        <Filename Value="units\config\uconfigform.pas"/>
+        <Caret Line="21" Column="43" TopLine="9"/>
       </Position12>
       <Position13>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="146" TopLine="115"/>
+        <Filename Value="units\config\uconfigform.pas"/>
+        <Caret Line="23" Column="41" TopLine="9"/>
       </Position13>
       <Position14>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="149" TopLine="115"/>
+        <Filename Value="units\config\uconfigform.pas"/>
+        <Caret Line="46" Column="29" TopLine="18"/>
       </Position14>
       <Position15>
-        <Filename Value="d:\soft\lazarus\components\virtualtreeview\virtualtreeview-4.8.7\VirtualTrees.pas"/>
-        <Caret Line="15585" TopLine="15560"/>
+        <Filename Value="units\config\uconfigeditor.pas"/>
+        <Caret Line="679" Column="4" TopLine="160"/>
       </Position15>
       <Position16>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="141" TopLine="115"/>
+        <Filename Value="units\general\umenuhelper.pas"/>
+        <Caret Line="16" Column="36"/>
       </Position16>
       <Position17>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="142" TopLine="115"/>
+        <Filename Value="units\config\uconfigform.pas"/>
+        <Caret Line="52" Column="29" TopLine="18"/>
       </Position17>
       <Position18>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="146" Column="10" TopLine="109"/>
+        <Filename Value="d:\soft\lazarus\components\virtualtreeview\virtualtreeview-4.8.7\VirtualTrees.pas"/>
+        <Caret Line="3456" Column="14" TopLine="3432"/>
       </Position18>
       <Position19>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="141" TopLine="109"/>
+        <Filename Value="d:\soft\lazarus\components\virtualtreeview\virtualtreeview-4.8.7\VirtualTrees.pas"/>
+        <Caret Line="2805" Column="62" TopLine="2780"/>
       </Position19>
       <Position20>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="144" TopLine="109"/>
+        <Filename Value="d:\soft\lazarus\components\virtualtreeview\virtualtreeview-4.8.7\VirtualTrees.pas"/>
+        <Caret Line="13935" Column="3" TopLine="13929"/>
       </Position20>
       <Position21>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="145" TopLine="109"/>
+        <Filename Value="units\config\uconfigform.pas"/>
+        <Caret Line="52" Column="29" TopLine="18"/>
       </Position21>
       <Position22>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="146" TopLine="109"/>
+        <Filename Value="units\config\uconfigeditor.pas"/>
+        <Caret Line="169" Column="28" TopLine="145"/>
       </Position22>
       <Position23>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="147" TopLine="109"/>
+        <Filename Value="units\general\umenuhelper.pas"/>
+        <Caret Line="17" Column="19"/>
       </Position23>
       <Position24>
-        <Filename Value="..\general\vteditor\upropertyeditornew.pas"/>
-        <Caret Line="150" TopLine="109"/>
+        <Filename Value="units\config\uconfigeditor.pas"/>
+        <Caret Line="689" Column="26" TopLine="656"/>
       </Position24>
       <Position25>
-        <Filename Value="d:\soft\lazarus\components\virtualtreeview\virtualtreeview-4.8.7\VirtualTrees.pas"/>
-        <Caret Line="15585" TopLine="15560"/>
+        <Filename Value="units\config\uconfigeditor.pas"/>
+        <Caret Line="693" Column="3" TopLine="663"/>
       </Position25>
       <Position26>
-        <Filename Value="units\vars\uvarsform.pas"/>
-        <Caret Line="76" Column="28" TopLine="58"/>
+        <Filename Value="units\config\uconfigeditor.pas"/>
+        <Caret Line="690" Column="32" TopLine="664"/>
       </Position26>
       <Position27>
-        <Filename Value="units\vars\uvarsform.pas"/>
-        <Caret Line="88" Column="27" TopLine="75"/>
+        <Filename Value="units\config\uconfigeditor.pas"/>
+        <Caret Line="692" Column="41" TopLine="664"/>
       </Position27>
       <Position28>
-        <Filename Value="units\vars\uvarsform.pas"/>
-        <Caret Line="222" Column="33" TopLine="178"/>
+        <Filename Value="units\config\uconfigeditor.pas"/>
+        <Caret Line="145" Column="18" TopLine="116"/>
       </Position28>
       <Position29>
-        <Filename Value="units\vars\uvarsform.pas"/>
-        <Caret Line="223" Column="35" TopLine="179"/>
+        <Filename Value="units\config\uconfigeditor.pas"/>
+        <Caret Line="700" Column="55" TopLine="669"/>
       </Position29>
+      <Position30>
+        <Filename Value="units\config\uconfigeditor.pas"/>
+        <Caret Line="678" Column="47" TopLine="573"/>
+      </Position30>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

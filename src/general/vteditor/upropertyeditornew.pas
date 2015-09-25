@@ -129,9 +129,9 @@ end;
 
 function TPropertyEditor.DoKeyAction(var CharCode: word; var Shift: TShiftState
   ): boolean;
-var
-  Column: TColumnIndex;
-  Node: PVirtualNode;
+//var
+//  Column: TColumnIndex;
+//  Node: PVirtualNode;
 begin
   Result := True;
   case CharCode of

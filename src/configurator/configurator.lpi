@@ -21,7 +21,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="36"/>
+      <BuildNr Value="44"/>
       <Language Value="0419"/>
       <Attributes pvaPreRelease="True"/>
       <StringTable Comments="Приложение &quot;Конфигуратор&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Конфигуратор&quot;" LegalCopyright="Planar, LLC" OriginalFilename="Configurator.exe" ProductName="Конфигуратор" ProductVersion="1.0"/>
@@ -45,7 +45,7 @@
         <PackageName Value="LCL"/>
       </Item2>
     </RequiredPackages>
-    <Units Count="33">
+    <Units Count="34">
       <Unit0>
         <Filename Value="configurator.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -226,6 +226,11 @@
         <Filename Value="..\general\customeditor\units\upropertyeditor.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit32>
+      <Unit33>
+        <Filename Value="..\library\units\usaxbase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSaxBase"/>
+      </Unit33>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -241,7 +246,6 @@
     </SearchPaths>
     <Linking>
       <Debugging>
-        <GenerateDebugInfo Value="False"/>
         <UseLineInfoUnit Value="False"/>
       </Debugging>
       <Options>

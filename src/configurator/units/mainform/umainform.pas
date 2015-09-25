@@ -11,7 +11,9 @@ uses
   uModbus,
   uDetailedProxyForm,
   uMainFormPopupMenu,
-  uHoldingsForm;
+  uHoldingsForm,
+  // Из модуля взят стек
+  uSaxBase;
 
 const
   WM_COUNT = WM_USER + 1;
@@ -21,6 +23,9 @@ type
   {$REGION MainFrom}
 
   { TMainForm }
+
+  TBackNodeStack = specialize TFpgStack<PVirtualNode>;
+  TForwardNodeStack = specialize TFpgStack<PVirtualNode>;
 
   TMainForm = class(TForm)
     ContentImageList: TImageList;
@@ -40,6 +45,7 @@ type
     ContentTreePopupMenu: TPopupMenu;
     SettingsMenuItem: TMenuItem;
     MainSplitter: TSplitter;
+    Splitter3ToolButton1: TToolButton;
     StatusBar: TStatusBar;
     ContentTree: TVirtualStringTree;
     ContentToolBar: TToolBar;
@@ -51,13 +57,21 @@ type
     Splitter3ToolButton: TToolButton;
     DeviceToolButton: TToolButton;
     SignatureToolButton: TToolButton;
-    ToolButton1: TToolButton;
+    Splitter4ToolButton: TToolButton;
     SaveHoldingsToolButton: TToolButton;
     RestoreHoldingsToolButton: TToolButton;
+    BackToolButton: TToolButton;
+    Splitter5ToolButton: TToolButton;
+    ForwardToolButton: TToolButton;
 
+    procedure BackToolButtonClick(Sender: TObject);
     procedure ContentTreeChange(Sender: TBaseVirtualTree; Node: PVirtualNode);
+    procedure ContentTreeClick(Sender: TObject);
     procedure ContentTreeContextPopup(Sender: TObject; {%H-}MousePos: TPoint;
       var {%H-}Handled: boolean);
+    procedure ContentTreeFocusChanging(Sender: TBaseVirtualTree; OldNode,
+      NewNode: PVirtualNode; OldColumn, NewColumn: TColumnIndex;
+      var Allowed: Boolean);
     procedure ContentTreeFreeNode(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure ContentTreeGetImageIndex(Sender: TBaseVirtualTree;
       Node: PVirtualNode; Kind: TVTImageKind; {%H-}Column: TColumnIndex;
@@ -72,6 +86,7 @@ type
     procedure ExitMenuItemClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var {%H-}CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
+    procedure ForwardToolButtonClick(Sender: TObject);
     procedure ModbusToolButtonClick(Sender: TObject);
     procedure ChangeModbusStatusToolButtonClick(Sender: TObject);
     procedure ReloadMenuItemClick(Sender: TObject);
@@ -90,6 +105,8 @@ type
     fDetailedProxyForm: TDetailedProxyForm;
     fContentTreeProxyPopupMenu: TContentTreeProxyPopupMenu;
 
+    fBackNodeStack: TBackNodeStack;
+    fForwardNodeStack: TForwardNodeStack;
   private
     procedure AddModbus(Sender: TObject);
     procedure RemoveNode(Sender: TObject);
@@ -197,6 +214,12 @@ begin
   fSuccess := 0;
   fBad := 0;
 
+  fBackNodeStack := TBackNodeStack.Create;
+  fForwardNodeStack := TForwardNodeStack.Create;
+
+  BackToolButton.Enabled := not fBackNodeStack.IsEmpty;
+  ForwardToolButton.Enabled := not fForwardNodeStack.IsEmpty;
+
   SplashForm := TSplashForm.Create('configurator.png');
   try
 
@@ -232,7 +255,6 @@ begin
 end;
 
 
-
 procedure TMainForm.ExitMenuItemClick(Sender: TObject);
 begin
   Application.Terminate;
@@ -259,6 +281,13 @@ begin
   end;
 end;
 
+procedure TMainForm.ContentTreeFocusChanging(Sender: TBaseVirtualTree; OldNode,
+  NewNode: PVirtualNode; OldColumn, NewColumn: TColumnIndex;
+  var Allowed: Boolean);
+begin
+	fBackNodeStack.Push(OldNode);
+end;
+
 procedure TMainForm.ContentTreeFreeNode(Sender: TBaseVirtualTree; Node: PVirtualNode);
 var
   P: Pointer;
@@ -275,6 +304,14 @@ var
 begin
   ModbusNode := nil;
   DeviceNode := nil;
+
+    // Положить в стек узел
+  //if Node <> nil then
+  //	fBackNodeStack.Push(Node);
+
+  // Показ кнопки 'Назад', 'Вперед'
+  BackToolButton.Enabled := not fBackNodeStack.IsEmpty;
+  ForwardToolButton.Enabled := not fForwardNodeStack.IsEmpty;
 
   // Управление связи
   ModbusNode := Sender.GetParentNode(TTypeNode.tnModbus, Node);
@@ -301,6 +338,63 @@ begin
     fDetailedProxyForm.View(TContentData(P^).ContentSet);
   end;
 
+end;
+
+procedure TMainForm.BackToolButtonClick(Sender: TObject);
+var
+  Node: PVirtualNode;
+begin
+// Сохраняем текущий узел в стеке
+  if fForwardNodeStack.IsEmpty and (ContentTree.FocusedNode <> nil) then
+       fForwardNodeStack.Push(ContentTree.FocusedNode);
+  Node := nil;
+
+  // Достаем последний узел из стека показываем и сохраняем в  Forward-стеке
+  fBackNodeStack.Pop(Node);
+  if ContentTree.Selected[Node] then
+  begin
+	  fForwardNodeStack.Push(Node);
+     Node := nil;
+    fBackNodeStack.Pop(Node);
+	end;
+  if Assigned(Node) then
+  begin
+    ContentTree.SetFocus;
+    ContentTree.Selected[Node] := True;
+    fForwardNodeStack.Push(Node);
+  end;
+end;
+
+procedure TMainForm.ForwardToolButtonClick(Sender: TObject);
+var
+  Node: PVirtualNode;
+begin
+   Node := nil;
+  // Если последний узел в стеке и текущий узел равны
+  // сохраняем в Back-стеке
+
+  fForwardNodeStack.Pop(Node);
+  if ContentTree.Selected[Node] then
+  begin
+	  fBackNodeStack.Push(Node);
+     Node := nil;
+    fForwardNodeStack.Pop(Node);
+	end;
+
+  if Assigned(Node) then
+  begin
+    ContentTree.SetFocus;
+    ContentTree.Selected[Node] := True;
+    fBackNodeStack.Push(Node);
+end;
+end;
+
+
+procedure TMainForm.ContentTreeClick(Sender: TObject);
+begin
+  // Положить в стек узел
+  //if TBaseVirtualTree(Sender).FocusedNode <> nil then
+  //	fBackNodeStack.Push(TBaseVirtualTree(Sender).FocusedNode);
 end;
 
 procedure TMainForm.ContentTreeGetImageIndex(Sender: TBaseVirtualTree;
@@ -340,6 +434,8 @@ end;
 
 procedure TMainForm.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
+  FreeAndNil(fForwardNodeStack);
+  FreeAndNil(fBackNodeStack);
   FreeAndNil(fDetailedProxyForm);
   FreeAndNil(fContentTreeProxyPopupMenu);
 end;

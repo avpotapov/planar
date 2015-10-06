@@ -1,0 +1,46 @@
+object UpdateForm: TUpdateForm
+  Left = 1060
+  Height = 99
+  Top = 336
+  Width = 239
+  BorderStyle = bsDialog
+  Caption = 'Проверка обновлений'
+  ClientHeight = 99
+  ClientWidth = 239
+  Position = poScreenCenter
+  LCLVersion = '1.4.2.0'
+  object CloseButton: TButton
+    Left = 152
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Закрыть'
+    OnClick = CloseButtonClick
+    TabOrder = 0
+  end
+  object CheckUpdateButton: TButton
+    Left = 72
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Проверить'
+    OnClick = CheckUpdateButtonClick
+    TabOrder = 1
+  end
+  object OnePerWeekCheckBox: TCheckBox
+    Left = 16
+    Height = 19
+    Top = 8
+    Width = 163
+    Caption = 'Проверять 1 раз в неделю'
+    TabOrder = 2
+  end
+  object EveryStartApplicationCheckBox: TCheckBox
+    Left = 16
+    Height = 19
+    Top = 32
+    Width = 215
+    Caption = 'При каждым запуском программы'
+    TabOrder = 3
+  end
+end

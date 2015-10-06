@@ -1,0 +1,35 @@
+﻿<?xml version="1.0"?>
+<update>
+  <soft>
+    <ver id="1.0.0">
+      <description>
+        <para>Описание обновления</para>
+        <para>Описание обновления</para>
+      </description>
+      <file>http://www.jetlogic.ru/files/configurator_1.0.zip</file>
+    </ver>
+    <ver id="2.0.0">
+      <description>
+        <para>Описание обновления</para>
+        <para>Описание обновления</para>
+      </description>
+      <file>http://www.jetlogic.ru/files/configurator_1.0.zip</file>
+    </ver>
+  </soft>
+  <lib>
+    <ver id="1.0.0">
+      <description>
+        <para>Описание обновления</para>
+        <para>Описание обновления</para>
+      </description>
+      <file>http://www.jetlogic.ru/files/library_1.0.zip</file>
+    </ver>
+    <ver id="2.0.0">
+      <description>
+        <para>Описание обновления</para>
+        <para>Описание обновления</para>
+      </description>
+      <file>http://www.jetlogic.ru/files/library_1.0.zip</file>
+    </ver>
+  </lib>
+</update>

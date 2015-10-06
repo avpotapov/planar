@@ -1,0 +1,35 @@
+object AboutForm: TAboutForm
+  Left = 738
+  Height = 240
+  Top = 280
+  Width = 320
+  BorderStyle = bsDialog
+  Caption = 'О программе'
+  ClientHeight = 240
+  ClientWidth = 320
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.4.2.0'
+  object VersionValueListEditor: TValueListEditor
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 320
+    Align = alClient
+    DefaultColWidth = 120
+    FixedCols = 0
+    Flat = True
+    RowCount = 2
+    TabOrder = 0
+    TitleStyle = tsStandard
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goAlwaysShowEditor, goThumbTracking]
+    TitleCaptions.Strings = (
+      'Параметр'
+      'Значение'
+    )
+    ColWidths = (
+      120
+      199
+    )
+  end
+end

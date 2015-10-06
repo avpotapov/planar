@@ -21,10 +21,11 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="44"/>
+      <BuildNr Value="53"/>
       <Language Value="0419"/>
+      <CharSet Value="04B0"/>
       <Attributes pvaPreRelease="True"/>
-      <StringTable Comments="Приложение &quot;Конфигуратор&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Конфигуратор&quot;" LegalCopyright="Planar, LLC" OriginalFilename="Configurator.exe" ProductName="Конфигуратор" ProductVersion="1.0"/>
+      <StringTable Comments="Приложение &quot;Конфигуратор&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Конфигуратор&quot;" InternalName="Configurator.exe" LegalCopyright="Planar, LLC" OriginalFilename="Configurator.exe" ProductName="Конфигуратор" ProductVersion="1.0.0"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
@@ -37,15 +38,18 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="2">
+    <RequiredPackages Count="3">
       <Item1>
-        <PackageName Value="virtualtreeview_package"/>
+        <PackageName Value="laz_synapse"/>
       </Item1>
       <Item2>
-        <PackageName Value="LCL"/>
+        <PackageName Value="virtualtreeview_package"/>
       </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
     </RequiredPackages>
-    <Units Count="34">
+    <Units Count="39">
       <Unit0>
         <Filename Value="configurator.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -231,6 +235,40 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSaxBase"/>
       </Unit33>
+      <Unit34>
+        <Filename Value="units\update\uupdateform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="UpdateForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uUpdateForm"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="units\update\ucheckupdate.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uCheckUpdate"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="units\update\uupdateinfoform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="UpdateInfoForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uUpdateInfoForm"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="units\about\uaboutform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AboutForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAboutForm"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="units\about\uabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uAbout"/>
+      </Unit38>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -241,12 +279,18 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="units;..\setting\units;..\modbus\units;..\library\units;..\map\units;units\general;units\mainform;units\detailedbackupform;units\detailedbootloaderform;units\detaileddeviceform;units\detailedmodbusform;units\deviceform;units\detailedtrendsform;units\detailedgroupform;..\holdings\units;..\general\settingform\units;units\holdingsform;..\general\customeditor\units;..\general\splashform\units"/>
+      <OtherUnitFiles Value="units;..\setting\units;..\modbus\units;..\library\units;..\map\units;units\general;units\mainform;units\detailedbackupform;units\detailedbootloaderform;units\detaileddeviceform;units\detailedmodbusform;units\deviceform;units\detailedtrendsform;units\detailedgroupform;..\holdings\units;..\general\settingform\units;units\holdingsform;..\general\customeditor\units;..\general\splashform\units;units\update;units\about"/>
       <UnitOutputDirectory Value="..\..\lib"/>
     </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <IncludeAssertionCode Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
     <Linking>
       <Debugging>
         <UseLineInfoUnit Value="False"/>
+        <UseHeaptrc Value="True"/>
       </Debugging>
       <Options>
         <Win32>

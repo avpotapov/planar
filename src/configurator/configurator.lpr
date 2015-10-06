@@ -14,7 +14,8 @@ uses
   uFrameListFactory, uGroupItemTreeNodeFactory, uConfiguratorData,
   uDetailedProxyForm, uAutoScan, uContentBuilder, uMainFormPopupMenu,
   uModbusFormData, uDeviceFormData, uBootLoader, uBackupFormData, uHoldingsData,
-  uHoldingsForm, ucustomeditor, upropertyeditor, uSplashForm;
+  uHoldingsForm, ucustomeditor, upropertyeditor, uSplashForm, uUpdateForm,
+  uCheckUpdate, uUpdateInfoForm, uAboutForm, uAbout;
 
 {$R *.res}
 

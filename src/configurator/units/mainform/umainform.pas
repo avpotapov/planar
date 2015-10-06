@@ -33,6 +33,9 @@ type
     MenuItem1: TMenuItem;
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
+    AboutMenuItem: TMenuItem;
+    RefMenuItem: TMenuItem;
+    UpdateMenuItem: TMenuItem;
     SeparatorMenuItem: TMenuItem;
     ReloadMenuItem: TMenuItem;
     ModbusImageList: TImageList;
@@ -64,14 +67,15 @@ type
     Splitter5ToolButton: TToolButton;
     ForwardToolButton: TToolButton;
 
+    procedure AboutMenuItemClick(Sender: TObject);
     procedure BackToolButtonClick(Sender: TObject);
     procedure ContentTreeChange(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure ContentTreeClick(Sender: TObject);
     procedure ContentTreeContextPopup(Sender: TObject; {%H-}MousePos: TPoint;
       var {%H-}Handled: boolean);
     procedure ContentTreeFocusChanging(Sender: TBaseVirtualTree; OldNode,
-      NewNode: PVirtualNode; OldColumn, NewColumn: TColumnIndex;
-      var Allowed: Boolean);
+      {%H-}NewNode: PVirtualNode; {%H-}OldColumn, {%H-}NewColumn: TColumnIndex;
+      var {%H-}Allowed: Boolean);
     procedure ContentTreeFreeNode(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure ContentTreeGetImageIndex(Sender: TBaseVirtualTree;
       Node: PVirtualNode; Kind: TVTImageKind; {%H-}Column: TColumnIndex;
@@ -95,6 +99,7 @@ type
     procedure SettingsMenuItemClick(Sender: TObject);
     procedure SignatureToolButtonClick(Sender: TObject);
     procedure StartStopServerToolButtonClick(Sender: TObject);
+    procedure UpdateMenuItemClick(Sender: TObject);
 
   private
     fServer: IServer;
@@ -135,6 +140,7 @@ uses
   uDeviceForm,
   uConfiguratorData,
   uContentBuilder,
+  uUpdateForm, uAboutForm,
   uSetting,
   uSplashForm;
 
@@ -363,6 +369,16 @@ begin
     ContentTree.Selected[Node] := True;
     fForwardNodeStack.Push(Node);
   end;
+end;
+
+procedure TMainForm.AboutMenuItemClick(Sender: TObject);
+begin
+  with TAboutForm.Create(nil) do
+    try
+      ShowModal;
+    finally
+      Free;
+    end;
 end;
 
 procedure TMainForm.ForwardToolButtonClick(Sender: TObject);
@@ -621,6 +637,16 @@ begin
       fServer := nil;
     end;
   end;
+end;
+
+procedure TMainForm.UpdateMenuItemClick(Sender: TObject);
+begin
+  with TUpdateForm.Create(Self) do
+    try
+      ShowModal;
+    finally
+      Free;
+    end;
 end;
 
 procedure TMainForm.ModbusToolButtonClick(Sender: TObject);

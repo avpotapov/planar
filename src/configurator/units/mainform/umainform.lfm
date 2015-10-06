@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 459
+  Left = 1022
   Height = 582
-  Top = 245
+  Top = 460
   Width = 828
   Caption = 'Конфигуратор'
   ClientHeight = 562
@@ -239,6 +239,17 @@ object MainForm: TMainForm
     object SettingsMenuItem: TMenuItem
       Caption = 'Настройка'
       OnClick = SettingsMenuItemClick
+    end
+    object RefMenuItem: TMenuItem
+      Caption = 'Справка'
+      object UpdateMenuItem: TMenuItem
+        Caption = 'Проверка обновлений...'
+        OnClick = UpdateMenuItemClick
+      end
+      object AboutMenuItem: TMenuItem
+        Caption = 'О программе...'
+        OnClick = AboutMenuItemClick
+      end
     end
   end
   object ContentImageList: TImageList

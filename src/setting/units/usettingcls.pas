@@ -25,6 +25,8 @@ type
     function GetRepeats: Byte;
     function GetResponseTimeout: dword;
     function GetTimeout: dword;
+    function GetUpdateEveryStart: Boolean;
+    function GetUpdateEveryWeek: Boolean;
     function GetUserImage: String;
     function GetUserLibrary: String;
     procedure SetBackupTimeout(const aBackupTimeout: dword);
@@ -35,6 +37,8 @@ type
     procedure SetRepeats(const aRepeats: Byte);
     procedure SetResponseTimeout(const aResponseTimeout: dword);
     procedure SetTimeout(const aTimeout: dword);
+    procedure SetUpdateEveryWeek(AValue: Boolean);
+    procedure SetUpdateEveryStart(AValue: Boolean);
     procedure SetUserImage(const aUserImage: String);
     procedure SetUserLibrary(const aUserLibrary: String);
     function GetBaudRate: dword;
@@ -79,6 +83,8 @@ type
     property DeveloperImage: String read GetDeveloperImage write SetDeveloperImage;
     property UserLibrary: String read GetUserLibrary write SetUserLibrary;
     property UserImage: String read GetUserImage write SetUserImage;
+    property UpdateEveryStart: Boolean read GetUpdateEveryStart write SetUpdateEveryStart;
+    property UpdateEveryWeek: Boolean read GetUpdateEveryWeek write SetUpdateEveryWeek;
 
   end;
 
@@ -213,9 +219,29 @@ begin
   Result := fIniFile.ReadInteger('CONFIGURATOR', 'Timeout', 1000);
 end;
 
+function TSetting.GetUpdateEveryStart: Boolean;
+begin
+  Result := fIniFile.ReadBool('CONFIGURATOR', 'UpdateEveryStart', False);
+end;
+
+function TSetting.GetUpdateEveryWeek: Boolean;
+begin
+  Result := fIniFile.ReadBool('CONFIGURATOR', 'UpdateEveryWeek', False);
+end;
+
 procedure TSetting.SetTimeout(const aTimeout: dword);
 begin
    fIniFile.WriteInteger('CONFIGURATOR', 'Timeout', aTimeout);
+end;
+
+procedure TSetting.SetUpdateEveryWeek(AValue: Boolean);
+begin
+  fIniFile.WriteBool('CONFIGURATOR', 'UpdateEveryWeek', aValue);
+end;
+
+procedure TSetting.SetUpdateEveryStart(AValue: Boolean);
+begin
+  fIniFile.WriteBool('CONFIGURATOR', 'UpdateEveryStart', aValue);
 end;
 
 function TSetting.GetResponseTimeout: dword;

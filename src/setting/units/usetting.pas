@@ -55,6 +55,12 @@ type
     function GetServerPort: Word;
     procedure SetServerPort(const aPort: Word);
 
+    function GetUpdateEveryStart: Boolean;
+    function GetUpdateEveryWeek: Boolean;
+
+  	procedure SetUpdateEveryWeek(AValue: Boolean);
+    procedure SetUpdateEveryStart(AValue: Boolean);
+
     property BaudRate: dword read GetBaudRate write SetBaudRate;
     property ByteSize: Byte read GetByteSize write SetByteSize;
     property Parity: Byte read GetParity write SetParity;
@@ -74,6 +80,8 @@ type
     property DeveloperImage: String read GetDeveloperImage write SetDeveloperImage;
     property UserLibrary: String read GetUserLibrary write SetUserLibrary;
     property UserImage: String read GetUserImage write SetUserImage;
+    property UpdateEveryStart: Boolean read GetUpdateEveryStart write SetUpdateEveryStart;
+    property UpdateEveryWeek: Boolean read GetUpdateEveryWeek write SetUpdateEveryWeek;
   end;
 
   function GetSetting(const aFileName: string = ''): ISetting; external 'setting.dll';

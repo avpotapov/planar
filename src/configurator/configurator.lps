@@ -9,7 +9,7 @@
         <Filename Value="configurator.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit0>
       <Unit1>
         <Filename Value="units\mainform\umainform.pas"/>
@@ -18,11 +18,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMainForm"/>
-        <TopLine Value="374"/>
-        <CursorPos X="12" Y="380"/>
-        <UsageCount Value="40"/>
+        <TopLine Value="751"/>
+        <CursorPos X="53" Y="788"/>
+        <UsageCount Value="42"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\general\settingform\units\usettingform.pas"/>
@@ -31,22 +30,27 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uSettingForm"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit2>
       <Unit3>
         <Filename Value="..\general\customeditor\units\ucustomeditor.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\setting\units\usetting.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="40"/>
+        <UnitName Value="uSetting"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="22"/>
+        <CursorPos X="40" Y="45"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="..\modbus\units\umodbus.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit5>
       <Unit6>
         <Filename Value="units\deviceform\udeviceform.pas"/>
@@ -54,22 +58,22 @@
         <ComponentName Value="DeviceForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit6>
       <Unit7>
         <Filename Value="..\library\units\ulibrary.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit7>
       <Unit8>
         <Filename Value="..\map\units\umap.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit8>
       <Unit9>
         <Filename Value="units\general\usignature.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit9>
       <Unit10>
         <Filename Value="units\detailedmodbusform\udetailedmodbusform.pas"/>
@@ -78,7 +82,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uDetailedModbusForm"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit10>
       <Unit11>
         <Filename Value="units\detaileddeviceform\udetaileddeviceform.pas"/>
@@ -87,7 +91,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uDetailedDeviceForm"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit11>
       <Unit12>
         <Filename Value="units\detailedgroupform\udetailedgroupform.pas"/>
@@ -98,7 +102,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="171"/>
         <CursorPos X="40" Y="20"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit12>
       <Unit13>
         <Filename Value="units\detailedbackupform\udetailedbackupform.pas"/>
@@ -106,7 +110,7 @@
         <ComponentName Value="DetailedBackupForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit13>
       <Unit14>
         <Filename Value="units\detailedtrendsform\udetailedtrendsform.pas"/>
@@ -114,7 +118,7 @@
         <ComponentName Value="DetailedTrendsForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit14>
       <Unit15>
         <Filename Value="units\detailedbootloaderform\udetailedbootloaderform.pas"/>
@@ -122,19 +126,19 @@
         <ComponentName Value="DetailedBootloaderForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit15>
       <Unit16>
         <Filename Value="units\general\uframelistfactory.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uFrameListFactory"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit16>
       <Unit17>
         <Filename Value="units\detailedgroupform\ugroupitemtreenodefactory.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uGroupItemTreeNodeFactory"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit17>
       <Unit18>
         <Filename Value="units\general\uconfiguratordata.pas"/>
@@ -143,17 +147,17 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="125"/>
         <CursorPos X="15" Y="33"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit18>
       <Unit19>
         <Filename Value="units\mainform\udetailedproxyform.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit19>
       <Unit20>
         <Filename Value="units\general\uautoscan.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit20>
       <Unit21>
         <Filename Value="units\mainform\ucontentbuilder.pas"/>
@@ -162,40 +166,40 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="218"/>
         <CursorPos X="3" Y="135"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit21>
       <Unit22>
         <Filename Value="units\mainform\umainformpopupmenu.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uMainFormPopupMenu"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit22>
       <Unit23>
         <Filename Value="units\detailedmodbusform\umodbusformdata.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uModbusFormData"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit23>
       <Unit24>
         <Filename Value="units\detaileddeviceform\udeviceformdata.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uDeviceFormData"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit24>
       <Unit25>
         <Filename Value="units\detailedbootloaderform\ubootloader.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit25>
       <Unit26>
         <Filename Value="units\detailedbackupform\ubackupformdata.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit26>
       <Unit27>
         <Filename Value="..\holdings\units\uholdings.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit27>
       <Unit28>
         <Filename Value="units\holdingsform\uholdingsform.pas"/>
@@ -204,13 +208,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uHoldingsForm"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit28>
       <Unit29>
         <Filename Value="units\holdingsform\uholdingsdata.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uHoldingsData"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit29>
       <Unit30>
         <Filename Value="..\general\splashform\units\usplashform.pas"/>
@@ -219,18 +223,18 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uSplashForm"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit30>
       <Unit31>
         <Filename Value="..\general\settingform\units\usettingformdata.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSettingFormData"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit31>
       <Unit32>
         <Filename Value="..\general\customeditor\units\upropertyeditor.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="42"/>
       </Unit32>
       <Unit33>
         <Filename Value="..\library\units\usaxbase.pas"/>
@@ -239,7 +243,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="115"/>
         <CursorPos X="3" Y="249"/>
-        <UsageCount Value="37"/>
+        <UsageCount Value="39"/>
       </Unit33>
       <Unit34>
         <Filename Value="units\update\uupdateform.pas"/>
@@ -250,21 +254,18 @@
         <UnitName Value="uUpdateForm"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="25"/>
-        <CursorPos X="39" Y="50"/>
-        <FoldState Value=" T3a031"/>
-        <UsageCount Value="28"/>
+        <TopLine Value="38"/>
+        <CursorPos X="51" Y="69"/>
+        <UsageCount Value="30"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit34>
       <Unit35>
         <Filename Value="units\update\ucheckupdate.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uCheckUpdate"/>
-        <EditorIndex Value="8"/>
-        <TopLine Value="118"/>
-        <CursorPos X="117" Y="149"/>
-        <UsageCount Value="28"/>
+        <EditorIndex Value="9"/>
+        <CursorPos X="18"/>
+        <UsageCount Value="30"/>
         <Loaded Value="True"/>
       </Unit35>
       <Unit36>
@@ -274,12 +275,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uUpdateInfoForm"/>
-        <EditorIndex Value="6"/>
-        <TopLine Value="49"/>
-        <CursorPos X="17" Y="74"/>
-        <UsageCount Value="27"/>
+        <EditorIndex Value="7"/>
+        <CursorPos X="78" Y="8"/>
+        <UsageCount Value="29"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit36>
       <Unit37>
         <Filename Value="units\about\uaboutform.pas"/>
@@ -289,8 +288,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uAboutForm"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="41" Y="37"/>
-        <UsageCount Value="24"/>
+        <CursorPos X="3" Y="45"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit37>
@@ -299,7 +298,8 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uAbout"/>
         <EditorIndex Value="3"/>
-        <UsageCount Value="24"/>
+        <CursorPos Y="26"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
       </Unit38>
       <Unit39>
@@ -318,9 +318,9 @@
       </Unit40>
       <Unit41>
         <Filename Value="d:\soft\lazarus\components\synapse\httpsend.pas"/>
-        <EditorIndex Value="10"/>
+        <EditorIndex Value="11"/>
         <TopLine Value="40"/>
-        <UsageCount Value="14"/>
+        <UsageCount Value="15"/>
         <Loaded Value="True"/>
       </Unit41>
       <Unit42>
@@ -336,31 +336,31 @@
         <EditorIndex Value="2"/>
         <TopLine Value="52"/>
         <CursorPos X="3" Y="79"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="13"/>
         <Loaded Value="True"/>
       </Unit43>
       <Unit44>
         <Filename Value="d:\soft\lazarus\fpc\2.6.4\source\packages\fcl-xml\src\xmlread.pp"/>
         <UnitName Value="XMLRead"/>
-        <EditorIndex Value="9"/>
-        <UsageCount Value="11"/>
+        <EditorIndex Value="10"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit44>
       <Unit45>
         <Filename Value="d:\soft\lazarus\fpc\2.6.4\source\rtl\win\wininc\defines.inc"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="2172"/>
         <CursorPos X="20" Y="2206"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit45>
       <Unit46>
         <Filename Value="d:\soft\lazarus\lcl\lclintf.pas"/>
         <UnitName Value="LCLIntf"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="9"/>
         <CursorPos X="26" Y="73"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit46>
     </Units>

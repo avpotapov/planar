@@ -1,35 +1,56 @@
 object AboutForm: TAboutForm
-  Left = 738
-  Height = 240
-  Top = 280
+  Left = 1418
+  Height = 142
+  Top = 443
   Width = 320
   BorderStyle = bsDialog
   Caption = 'О программе'
-  ClientHeight = 240
+  ClientHeight = 142
   ClientWidth = 320
+  Color = clWindow
   OnCreate = FormCreate
   Position = poScreenCenter
   LCLVersion = '1.4.2.0'
   object VersionValueListEditor: TValueListEditor
     Left = 0
-    Height = 240
-    Top = 0
+    Height = 88
+    Top = 54
     Width = 320
-    Align = alClient
+    Align = alBottom
+    BorderStyle = bsNone
     DefaultColWidth = 120
     FixedCols = 0
     Flat = True
-    RowCount = 2
+    GridLineWidth = 0
+    RowCount = 1
     TabOrder = 0
     TitleStyle = tsStandard
+    DisplayOptions = [doAutoColResize, doKeyColFixed]
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goAlwaysShowEditor, goThumbTracking]
+    Strings.Strings = (
+      ''
+    )
     TitleCaptions.Strings = (
       'Параметр'
       'Значение'
     )
     ColWidths = (
       120
-      199
+      200
     )
+  end
+  object StaticText: TStaticText
+    Left = 8
+    Height = 33
+    Top = 8
+    Width = 240
+    Caption = ' ООО "Планар"'
+    Font.Height = -24
+    Font.Quality = fqCleartype
+    OnClick = StaticTextClick
+    OnMouseEnter = StaticTextMouseEnter
+    OnMouseLeave = StaticTextMouseLeave
+    ParentFont = False
+    TabOrder = 1
   end
 end

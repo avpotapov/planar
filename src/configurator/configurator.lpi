@@ -21,7 +21,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="53"/>
+      <BuildNr Value="55"/>
       <Language Value="0419"/>
       <CharSet Value="04B0"/>
       <Attributes pvaPreRelease="True"/>
@@ -77,6 +77,7 @@
       <Unit4>
         <Filename Value="..\setting\units\usetting.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="uSetting"/>
       </Unit4>
       <Unit5>
         <Filename Value="..\modbus\units\umodbus.pas"/>
@@ -282,15 +283,10 @@
       <OtherUnitFiles Value="units;..\setting\units;..\modbus\units;..\library\units;..\map\units;units\general;units\mainform;units\detailedbackupform;units\detailedbootloaderform;units\detaileddeviceform;units\detailedmodbusform;units\deviceform;units\detailedtrendsform;units\detailedgroupform;..\holdings\units;..\general\settingform\units;units\holdingsform;..\general\customeditor\units;..\general\splashform\units;units\update;units\about"/>
       <UnitOutputDirectory Value="..\..\lib"/>
     </SearchPaths>
-    <Parsing>
-      <SyntaxOptions>
-        <IncludeAssertionCode Value="True"/>
-      </SyntaxOptions>
-    </Parsing>
     <Linking>
       <Debugging>
+        <GenerateDebugInfo Value="False"/>
         <UseLineInfoUnit Value="False"/>
-        <UseHeaptrc Value="True"/>
       </Debugging>
       <Options>
         <Win32>

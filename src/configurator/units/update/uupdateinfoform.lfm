@@ -1,7 +1,7 @@
 object UpdateInfoForm: TUpdateInfoForm
-  Left = 531
+  Left = 1420
   Height = 240
-  Top = 720
+  Top = 671
   Width = 320
   BorderStyle = bsDialog
   Caption = 'Информация об обновлении'
@@ -11,8 +11,8 @@ object UpdateInfoForm: TUpdateInfoForm
   LCLVersion = '1.4.2.0'
   object DescMemo: TMemo
     Left = 0
-    Height = 192
-    Top = 48
+    Height = 152
+    Top = 88
     Width = 320
     Align = alBottom
     ReadOnly = True
@@ -21,7 +21,7 @@ object UpdateInfoForm: TUpdateInfoForm
   object FileLinkStatText: TStaticText
     Left = 0
     Height = 17
-    Top = 31
+    Top = 71
     Width = 320
     Align = alBottom
     Alignment = taCenter
@@ -34,7 +34,7 @@ object UpdateInfoForm: TUpdateInfoForm
   object VersionLabeledEdit: TLabeledEdit
     Left = 120
     Height = 15
-    Top = 8
+    Top = 24
     Width = 104
     BorderStyle = bsNone
     Color = clMenu
@@ -45,12 +45,28 @@ object UpdateInfoForm: TUpdateInfoForm
     EditLabel.AnchorSideBottom.Side = asrBottom
     EditLabel.Left = 10
     EditLabel.Height = 15
-    EditLabel.Top = 8
+    EditLabel.Top = 24
     EditLabel.Width = 107
     EditLabel.Caption = 'Актуальная версия:'
     EditLabel.ParentColor = False
     LabelPosition = lpLeft
     TabOrder = 2
     Text = 'VersionLabeledEdit'
+  end
+  object StaticText1: TStaticText
+    Left = 8
+    Height = 17
+    Top = 8
+    Width = 168
+    Caption = 'Приложение: "Конфигуратор"'
+    TabOrder = 3
+  end
+  object StaticText2: TStaticText
+    Left = 8
+    Height = 17
+    Top = 48
+    Width = 320
+    Caption = 'Ссылка для скачивания:'
+    TabOrder = 4
   end
 end

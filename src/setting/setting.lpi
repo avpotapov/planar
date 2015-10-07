@@ -21,7 +21,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="8"/>
+      <BuildNr Value="10"/>
       <Language Value="0419"/>
       <Attributes pvaPreRelease="True"/>
       <StringTable Comments="Настройка приложения Librarian, Configurator. . Настройки сохраняются. Пользовательские настройки сохраняются в файле Setting.ini" CompanyName="Planar, LLC" FileDescription="Содержит основные настройки программ" LegalCopyright="Planar, LLC" OriginalFilename="Setting.dll" ProductVersion="1.0"/>

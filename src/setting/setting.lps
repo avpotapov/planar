@@ -18,7 +18,8 @@
         <UnitName Value="uSetting"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="19" Y="53"/>
+        <TopLine Value="34"/>
+        <CursorPos X="5" Y="58"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -27,8 +28,8 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSettingCls"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="199"/>
-        <CursorPos X="5" Y="18"/>
+        <TopLine Value="14"/>
+        <CursorPos Y="28"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -39,7 +40,7 @@
         <UsageCount Value="11"/>
       </Unit3>
     </Units>
-    <JumpHistory Count="9" HistoryIndex="8">
+    <JumpHistory Count="11" HistoryIndex="10">
       <Position1>
         <Filename Value="setting.lpr"/>
         <Caret Line="22"/>
@@ -76,6 +77,14 @@
         <Filename Value="units\usettingcls.pas"/>
         <Caret Line="276" Column="89" TopLine="219"/>
       </Position9>
+      <Position10>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="87" Column="57" TopLine="55"/>
+      </Position10>
+      <Position11>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="41" Column="20" TopLine="13"/>
+      </Position11>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

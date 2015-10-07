@@ -8,13 +8,19 @@ uses
   Classes, SysUtils, FileInfo;
 
 var
-  Version: TFileVersionInfo;
+  ConfiguratorVersion: TFileVersionInfo;
+  LibrarianVersion: TFileVersionInfo;
 
 implementation
 
 initialization
-  Version := TFileVersionInfo.Create(nil);
-  Version.FileName := AnsiToUtf8(ParamStr(0));
+  ConfiguratorVersion := TFileVersionInfo.Create(nil);
+  ConfiguratorVersion.FileName := AnsiToUtf8(ParamStr(0));
+
+  LibrarianVersion := TFileVersionInfo.Create(nil);
+  LibrarianVersion.FileName := AnsiToUtf8(IncludeTrailingPathDelimiter(ExtractFilePath(ParamStr(0)))+ 'librarian.exe');
+
 finalization
-  Version.Free;
+  ConfiguratorVersion.Free;
+  LibrarianVersion.Free;
 end.

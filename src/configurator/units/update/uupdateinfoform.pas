@@ -15,6 +15,8 @@ type
   TUpdateInfoForm = class(TForm)
     DescMemo: TMemo;
     FileLinkStatText: TStaticText;
+    StaticText1: TStaticText;
+    StaticText2: TStaticText;
     VersionLabeledEdit: TLabeledEdit;
     procedure FileLinkStatTextClick(Sender: TObject);
     procedure FileLinkStatTextMouseEnter(Sender: TObject);

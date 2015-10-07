@@ -74,8 +74,8 @@ type
     procedure ContentTreeContextPopup(Sender: TObject; {%H-}MousePos: TPoint;
       var {%H-}Handled: boolean);
     procedure ContentTreeFocusChanging(Sender: TBaseVirtualTree; OldNode,
-      {%H-}NewNode: PVirtualNode; {%H-}OldColumn, {%H-}NewColumn: TColumnIndex;
-      var {%H-}Allowed: Boolean);
+    {%H-}NewNode: PVirtualNode; {%H-}OldColumn, {%H-}NewColumn: TColumnIndex;
+      var {%H-}Allowed: boolean);
     procedure ContentTreeFreeNode(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure ContentTreeGetImageIndex(Sender: TBaseVirtualTree;
       Node: PVirtualNode; Kind: TVTImageKind; {%H-}Column: TColumnIndex;
@@ -118,7 +118,7 @@ type
     procedure ChangeModbusStatusStyle(const aController: IController);
     procedure ChangeServerStatusStyle;
     procedure SaveHoldings(const aTypeOperation: TTypeOperation);
-
+    procedure CheckUpdate;
 
     procedure WmCount(var Message: TMessage); message WM_COUNT;
     // Принимает новый контроллер, созданный сервером
@@ -142,7 +142,10 @@ uses
   uContentBuilder,
   uUpdateForm, uAboutForm,
   uSetting,
-  uSplashForm;
+  uSplashForm,
+  uCheckUpdate,
+  uUpdateInfoForm,
+  uAbout;
 
 {$R *.lfm}
 
@@ -175,8 +178,7 @@ begin
     Result := Result^.Parent;
 end;
 
-function TVirtualTreeViewHelper.GetData(const aNode: PVirtualNode
-  ): TContentData;
+function TVirtualTreeViewHelper.GetData(const aNode: PVirtualNode): TContentData;
 var
   P: Pointer;
 begin
@@ -231,7 +233,8 @@ begin
 
     SplashForm.Show;
     SplashForm.Repaint;
-
+    // Проверка обновлений
+    CheckUpdate;
     // Список доступных каналов связи
     TModbusPopupMenuFactory.Setup(ModbusPopupMenu, @AddModbus);
 
@@ -287,11 +290,11 @@ begin
   end;
 end;
 
-procedure TMainForm.ContentTreeFocusChanging(Sender: TBaseVirtualTree; OldNode,
-  NewNode: PVirtualNode; OldColumn, NewColumn: TColumnIndex;
-  var Allowed: Boolean);
+procedure TMainForm.ContentTreeFocusChanging(Sender: TBaseVirtualTree;
+  OldNode, NewNode: PVirtualNode; OldColumn, NewColumn: TColumnIndex;
+  var Allowed: boolean);
 begin
-	fBackNodeStack.Push(OldNode);
+  fBackNodeStack.Push(OldNode);
 end;
 
 procedure TMainForm.ContentTreeFreeNode(Sender: TBaseVirtualTree; Node: PVirtualNode);
@@ -311,9 +314,9 @@ begin
   ModbusNode := nil;
   DeviceNode := nil;
 
-    // Положить в стек узел
+  // Положить в стек узел
   //if Node <> nil then
-  //	fBackNodeStack.Push(Node);
+  //  fBackNodeStack.Push(Node);
 
   // Показ кнопки 'Назад', 'Вперед'
   BackToolButton.Enabled := not fBackNodeStack.IsEmpty;
@@ -350,19 +353,19 @@ procedure TMainForm.BackToolButtonClick(Sender: TObject);
 var
   Node: PVirtualNode;
 begin
-// Сохраняем текущий узел в стеке
+  // Сохраняем текущий узел в стеке
   if fForwardNodeStack.IsEmpty and (ContentTree.FocusedNode <> nil) then
-       fForwardNodeStack.Push(ContentTree.FocusedNode);
+    fForwardNodeStack.Push(ContentTree.FocusedNode);
   Node := nil;
 
   // Достаем последний узел из стека показываем и сохраняем в  Forward-стеке
   fBackNodeStack.Pop(Node);
   if ContentTree.Selected[Node] then
   begin
-	  fForwardNodeStack.Push(Node);
-     Node := nil;
+    fForwardNodeStack.Push(Node);
+    Node := nil;
     fBackNodeStack.Pop(Node);
-	end;
+  end;
   if Assigned(Node) then
   begin
     ContentTree.SetFocus;
@@ -385,24 +388,24 @@ procedure TMainForm.ForwardToolButtonClick(Sender: TObject);
 var
   Node: PVirtualNode;
 begin
-   Node := nil;
+  Node := nil;
   // Если последний узел в стеке и текущий узел равны
   // сохраняем в Back-стеке
 
   fForwardNodeStack.Pop(Node);
   if ContentTree.Selected[Node] then
   begin
-	  fBackNodeStack.Push(Node);
-     Node := nil;
+    fBackNodeStack.Push(Node);
+    Node := nil;
     fForwardNodeStack.Pop(Node);
-	end;
+  end;
 
   if Assigned(Node) then
   begin
     ContentTree.SetFocus;
     ContentTree.Selected[Node] := True;
     fBackNodeStack.Push(Node);
-end;
+  end;
 end;
 
 
@@ -410,7 +413,7 @@ procedure TMainForm.ContentTreeClick(Sender: TObject);
 begin
   // Положить в стек узел
   //if TBaseVirtualTree(Sender).FocusedNode <> nil then
-  //	fBackNodeStack.Push(TBaseVirtualTree(Sender).FocusedNode);
+  //  fBackNodeStack.Push(TBaseVirtualTree(Sender).FocusedNode);
 end;
 
 procedure TMainForm.ContentTreeGetImageIndex(Sender: TBaseVirtualTree;
@@ -594,7 +597,6 @@ begin
 
 end;
 
-
 procedure TMainForm.RestoreHoldingsToolButtonClick(Sender: TObject);
 begin
   SaveHoldings(TTypeOperation.toRestore);
@@ -749,7 +751,8 @@ begin
 end;
 
 procedure TMainForm.ReloadMenuItemClick(Sender: TObject);
-	procedure DepthFirstSearch(const aParentNode: PVirtualNode);
+
+  procedure DepthFirstSearch(const aParentNode: PVirtualNode);
   var
     Node: PVirtualNode;
   begin
@@ -759,17 +762,41 @@ procedure TMainForm.ReloadMenuItemClick(Sender: TObject);
       if ContentTree.GetData(Node) is TDeviceData then
         TDeviceData(ContentTree.GetData(Node)).Update(nil)
       else
-      	DepthFirstSearch(Node);
+        DepthFirstSearch(Node);
       Node := Node^.NextSibling;
     end;
   end;
 
 begin
-	StatusBar.Info('Перезагрузка конфигуратора');
+  StatusBar.Info('Перезагрузка конфигуратора');
   CloseLibrary;
   DepthFirstSearch(ContentTree.RootNode^.FirstChild);
-	StatusBar.Info('Конфигуратор обновлен');
+  StatusBar.Info('Конфигуратор обновлен');
 
+end;
+
+procedure TMainForm.CheckUpdate;
+var
+  Upd: TUpdate;
+begin
+  if uSetting.GetSetting.UpdateEveryStart or
+    (uSetting.GetSetting.UpdateEveryWeek and (DayOfWeek(Now) = 1)) then
+    if TUpdate.GetUpdateFile then
+    begin
+      Upd := TUpdate.Create;
+      Upd.Parse();
+      if uAbout.ConfiguratorVersion.VersionStrings[8] = Upd.UpdateSoft[0].Version then
+        Exit;
+      with TUpdateInfoForm.Create(Self) do
+        try
+          Description := Upd.UpdateSoft[0].Description;
+          FileLink := Upd.UpdateSoft[0].FileLink;
+          Version := Upd.UpdateSoft[0].Version;
+          ShowModal;
+        finally
+          Free;
+        end;
+    end;
 end;
 
 {$ENDREGION MainFrom}

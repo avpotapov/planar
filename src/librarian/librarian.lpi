@@ -19,10 +19,10 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="412"/>
+      <BuildNr Value="413"/>
       <Language Value="0419"/>
       <Attributes pvaPreRelease="True"/>
-      <StringTable Comments="Приложение &quot;Библиотекарь&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Библиотекарь&quot;" LegalCopyright="Planar, LLC" OriginalFilename="Librarian.exe" ProductName="Библиотекарь" ProductVersion="0.0"/>
+      <StringTable Comments="Приложение &quot;Библиотекарь&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Библиотекарь&quot;" LegalCopyright="Planar, LLC" OriginalFilename="Librarian.exe" ProductName="Библиотекарь" ProductVersion="1.0.0"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>

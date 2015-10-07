@@ -1,0 +1,155 @@
+﻿[Setup]
+Version=6.2
+Edition=1
+GUID={9B6629F4-8608-46F4-BDD4-E5241A74A8F0}
+AppName=Конфигуратор
+AppVersion=1.0.0
+CompanyName=ООО "Планар"
+WebSite=http://www.planar-smt.ru
+SupportLink=http://www.planar-smt.ru
+WizardBitmap=C:\Program Files\Actual Installer\Bitmaps\Wizard\10.bmp
+HeaderBitmap=C:\Program Files\Actual Installer\Bitmaps\Header\10.bmp
+CustomIcon=0
+CustomIconFile=
+Windows XP=1
+Windows Vista=1
+Windows 7=1
+Windows 8=1
+Windows 8.1=1
+Windows 10=1
+Windows Server 2003=0
+Windows Server 2008=0
+Windows Server 2008 R2=0
+Windows Server 2012=0
+Windows Server 2012 R2=0
+Windows Server 2016=0
+x64=0
+Admin=1
+Internet=0
+CloseApp=0
+CloseAppFile=iexplore.exe
+CloseAppText=Internet Explorer
+dotNET=0
+dotNETVersion=0
+LinkDN=http://www.microsoft.com/en-us/download/details.aspx?id=17113
+IE=0
+IEVersion=0
+LinkIE=http://www.microsoft.com/en-us/download/internet-explorer-10-details.aspx
+AR=0
+ARVersion=5
+LinkAR=http://get.adobe.com/reader/
+Java=0
+JavaVersion=0
+LinkJR=http://www.java.com/en/download/manual.jsp
+SQL=0
+SQLVersion=0
+LinkSQL=http://www.microsoft.com/en-us/download/details.aspx?id=5783
+SQLE=0
+SQLEVersion=0
+SQLExpressVersion=2005
+LinkSQLE=http://www.microsoft.com/en-us/download/details.aspx?id=30438
+PackageType=0
+DataFileName=
+SetupFolder=C:\Users\Aleksei\Desktop\Конфигуратор_Setup
+SetupFileName=Setup
+SetupFile=C:\Users\Aleksei\Desktop\Конфигуратор_Setup\Setup.exe
+InstallMode=0
+InstallLevel=1
+PromptUninstall=1
+PromptSilentUninstall=0
+CheckVersions=0
+CheckMinVer=1.0
+CheckMaxVer=2.0
+InstallationPath=<AppData>\Planar
+SourceDir=
+MainExecutable=<InstallDir>\configurator.exe
+Uninstall=1
+ShowAddRemove=1
+SilentUninstall=0
+UninstallForce=0
+UninstallRestart=0
+UninstallSettings=0
+UninstallSettingsCommand=
+VisitUninstallPage=0
+UninstallURL=http://www.company.com/uninstall.html
+Updater=0
+UpdateURL=http://www.company.com/update.txt
+CheckUpdateBefore=0
+AutoCheckUpdate=0
+UpdateDay=1
+AutoSilentUpdate=0
+SilentInstall=0
+ShowPublisher=0
+DialogWelcome=1
+DialogLicense=0
+DialogReadme=0
+DialogUserInfo=0
+DialogDestinationFolder=1
+DialogAdditionalTasks=1
+DialogReady=1
+DialogFinish=1
+DefaultLanguage=Russian
+AutoDetectLanguage=0
+AcceptAgreement=0
+InfoUserName=0
+InfoUserNameReq=0
+InfoCompany=0
+InfoCompanyReq=0
+InfoCustom=0
+InfoCustomReq=0
+InfoCustomName=
+InfoSerial=0
+InfoSerialReq=0
+SerialsCount=0
+RestartComputer=0
+LaunchFile=1
+LaunchFileName=<InstallDir>\configurator.exe
+LaunchFileChecked=1
+ViewReadme=0
+ViewReadmeFile=
+ViewReadmeChecked=0
+CustomAction=0
+CustomActionName=Visit Web Site
+CustomActionCommand=<WebSite>
+CustomActionChecked=0
+ProgramGroup=Планар
+TotalFiles=19
+
+[Languages]
+Russian=
+
+[Files]
+0=E:\planar\configurator.exe?<InstallDir>\configurator.exe?1?-1
+1=E:\planar\configurator.png?<InstallDir>\configurator.png?1?-1
+2=E:\planar\fpcmemdll.dll?<InstallDir>\fpcmemdll.dll?1?-1
+3=E:\planar\holdings.dll?<InstallDir>\holdings.dll?1?-1
+4=E:\planar\librarian.exe?<InstallDir>\librarian.exe?1?-1
+5=E:\planar\librarian.log?<InstallDir>\librarian.log?1?-1
+6=E:\planar\librarian.png?<InstallDir>\librarian.png?1?-1
+7=E:\planar\library\Developer\module.jlf?<InstallDir>\library\Developer\module.jlf?1?-1
+8=E:\planar\library\Developer\RCCU 3.2M2.jlb?<InstallDir>\library\Developer\RCCU 3.2M2.jlb?1?-1
+9=E:\planar\library\User\module.jlf?<InstallDir>\library\User\module.jlf?1?-1
+10=E:\planar\library.dll?<InstallDir>\library.dll?1?-1
+11=E:\planar\map.dll?<InstallDir>\map.dll?1?-1
+12=E:\planar\modbus.dll?<InstallDir>\modbus.dll?1?-1
+13=E:\planar\modbus.log?<InstallDir>\modbus.log?1?-1
+14=E:\planar\setting.dll?<InstallDir>\setting.dll?1?-1
+15=E:\planar\setting.ini?<InstallDir>\setting.ini?1?-1
+16=E:\planar\status.xml?<InstallDir>\status.xml?1?-1
+17=E:\planar\update.dat?<InstallDir>\update.dat?1?-1
+18=C:\Program Files\Actual Installer\Uninstall.exe?<InstallDir>\Uninstall.exe?1?-1
+
+[License]
+(Default)=
+Russian=
+
+[Readme]
+(Default)=
+Russian=
+
+[Shortcuts]
+0=<ProgramGroup>*?Конфигуратор*?<InstallDir>\configurator.exe*?*?*?<InstallDir>*?*?0*?Normal
+1=<CommonDesktop>*?<AppName>*?<InstallDir>\configurator.exe*?*?*?<InstallDir>*?*?0*?Normal
+2=<ProgramGroup>*?Удалить*?<InstallDir>\Uninstall.exe*?*?*?<InstallDir>*?*?0*?Normal
+3=<ProgramGroup>*?Библиотекарь*?<InstallDir>\librarian.exe*?Редактирование базы данных*?*?<InstallDir>*?*?0*?Normal
+

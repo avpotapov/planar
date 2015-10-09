@@ -104,7 +104,7 @@ end;
 procedure TSetting.AfterConstruction;
 begin
   inherited AfterConstruction;
-  fIniFile := TIniFile.Create(fFileName);
+  fIniFile := TIniFile.Create(Utf8ToAnsi(fFileName));
   fCurrentPath := ExtractFilePath(ParamStr(0));
 end;
 

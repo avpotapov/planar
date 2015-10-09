@@ -18,10 +18,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMainForm"/>
-        <TopLine Value="751"/>
-        <CursorPos X="53" Y="788"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="224"/>
+        <CursorPos Y="444"/>
         <UsageCount Value="42"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\general\settingform\units\usettingform.pas"/>
@@ -41,7 +43,7 @@
         <Filename Value="..\setting\units\usetting.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSetting"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="22"/>
         <CursorPos X="40" Y="45"/>
         <UsageCount Value="42"/>
@@ -126,7 +128,13 @@
         <ComponentName Value="DetailedBootloaderForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uDetailedBootloaderForm"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="40"/>
+        <CursorPos X="34" Y="56"/>
         <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit15>
       <Unit16>
         <Filename Value="units\general\uframelistfactory.pas"/>
@@ -252,8 +260,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uUpdateForm"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="38"/>
         <CursorPos X="51" Y="69"/>
         <UsageCount Value="30"/>
@@ -263,7 +270,7 @@
         <Filename Value="units\update\ucheckupdate.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uCheckUpdate"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="10"/>
         <CursorPos X="18"/>
         <UsageCount Value="30"/>
         <Loaded Value="True"/>
@@ -275,7 +282,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uUpdateInfoForm"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="8"/>
         <CursorPos X="78" Y="8"/>
         <UsageCount Value="29"/>
         <Loaded Value="True"/>
@@ -287,17 +294,16 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uAboutForm"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <CursorPos X="3" Y="45"/>
         <UsageCount Value="26"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit37>
       <Unit38>
         <Filename Value="units\about\uabout.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uAbout"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <CursorPos Y="26"/>
         <UsageCount Value="26"/>
         <Loaded Value="True"/>
@@ -318,7 +324,7 @@
       </Unit40>
       <Unit41>
         <Filename Value="d:\soft\lazarus\components\synapse\httpsend.pas"/>
-        <EditorIndex Value="11"/>
+        <EditorIndex Value="12"/>
         <TopLine Value="40"/>
         <UsageCount Value="15"/>
         <Loaded Value="True"/>
@@ -333,7 +339,7 @@
       <Unit43>
         <Filename Value="d:\soft\lazarus\lcl\valedit.pas"/>
         <UnitName Value="ValEdit"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="52"/>
         <CursorPos X="3" Y="79"/>
         <UsageCount Value="13"/>
@@ -342,13 +348,13 @@
       <Unit44>
         <Filename Value="d:\soft\lazarus\fpc\2.6.4\source\packages\fcl-xml\src\xmlread.pp"/>
         <UnitName Value="XMLRead"/>
-        <EditorIndex Value="10"/>
+        <EditorIndex Value="11"/>
         <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit44>
       <Unit45>
         <Filename Value="d:\soft\lazarus\fpc\2.6.4\source\rtl\win\wininc\defines.inc"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="2172"/>
         <CursorPos X="20" Y="2206"/>
         <UsageCount Value="12"/>
@@ -357,7 +363,7 @@
       <Unit46>
         <Filename Value="d:\soft\lazarus\lcl\lclintf.pas"/>
         <UnitName Value="LCLIntf"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="9"/>
         <TopLine Value="9"/>
         <CursorPos X="26" Y="73"/>
         <UsageCount Value="11"/>

@@ -240,8 +240,8 @@ begin
 
     // Загрузить библиотеку
     try
-      fLibrary := GetLibrary([GetSetting.DeveloperLibrary + '\module.jlf',
-        GetSetting.UserLibrary + '\module.jlf']);
+      fLibrary := GetLibrary([Utf8ToAnsi(GetSetting.DeveloperLibrary + '\module.jlf'),
+        Utf8ToAnsi(GetSetting.UserLibrary + '\module.jlf')]);
 
     except
       MessageBox(Handle, PChar(Utf8ToAnsi('Ошибка загрузки файла библиотеки')),

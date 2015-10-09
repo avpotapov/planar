@@ -8,7 +8,7 @@
       <Unit0>
         <Filename Value="setting.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="5" Y="6"/>
+        <CursorPos X="28" Y="14"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -16,9 +16,8 @@
         <Filename Value="units\usetting.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSetting"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="34"/>
+        <TopLine Value="17"/>
         <CursorPos X="5" Y="58"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
@@ -27,9 +26,10 @@
         <Filename Value="units\usettingcls.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSettingCls"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="14"/>
-        <CursorPos Y="28"/>
+        <TopLine Value="93"/>
+        <CursorPos X="53" Y="107"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit2>

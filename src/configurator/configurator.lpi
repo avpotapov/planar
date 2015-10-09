@@ -21,7 +21,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="55"/>
+      <BuildNr Value="56"/>
       <Language Value="0419"/>
       <CharSet Value="04B0"/>
       <Attributes pvaPreRelease="True"/>
@@ -145,6 +145,7 @@
         <ComponentName Value="DetailedBootloaderForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uDetailedBootloaderForm"/>
       </Unit15>
       <Unit16>
         <Filename Value="units\general\uframelistfactory.pas"/>

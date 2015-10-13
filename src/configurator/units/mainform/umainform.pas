@@ -256,6 +256,8 @@ begin
       TContentTreeProxyPopupMenu.Create(ContentTreePopupMenu);
     fContentTreeProxyPopupMenu.Setup(@ChangeModbusStatusToolButtonClick,
       @DeviceToolButtonClick, @RemoveNode);
+    sleep(1000);
+
 
   finally
     SplashForm.Hide;
@@ -756,6 +758,8 @@ procedure TMainForm.ReloadMenuItemClick(Sender: TObject);
   var
     Node: PVirtualNode;
   begin
+    if aParentNode = nil then
+    	Exit;
     Node := aParentNode^.FirstChild;
     while Assigned(Node) do
     begin

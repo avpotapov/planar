@@ -24,6 +24,8 @@ type
     FormPanel:    TPanel;
     ExitMenuItem: TMenuItem;
     MenuItem1: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
     SaveLibraryMenuItem: TMenuItem;
     Separator: TMenuItem;
     PopupImageList: TImageList;
@@ -36,6 +38,7 @@ type
     procedure ExitMenuItemClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var {%H-}CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
     procedure SaveLibraryMenuItemClick(Sender: TObject);
     procedure SettingsMenuItemClick(Sender: TObject);
 
@@ -54,7 +57,7 @@ implementation
 
 uses
   uSplashForm,
-  uSettingForm;
+  uSettingForm, uAboutForm;
 
 {$R *.lfm}
 
@@ -81,7 +84,7 @@ begin
         fLibraryEditor.Images := LibraryImageList;
         fLibraryEditor.OnNodeSelect := @NodeSelect;
         fLibraryEditor.LoadLibrary;
-
+        sleep(1000);
       except
         on E: Exception do
         begin
@@ -96,6 +99,16 @@ begin
 
     finally
       SplashForm.Release;
+    end;
+end;
+
+procedure TMainForm.MenuItem3Click(Sender: TObject);
+begin
+  with TAboutForm.Create(nil) do
+    try
+      ShowModal;
+    finally
+      Free;
     end;
 end;
 

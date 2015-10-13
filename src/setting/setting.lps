@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="4">
+    <Units Count="5">
       <Unit0>
         <Filename Value="setting.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -16,9 +16,9 @@
         <Filename Value="units\usetting.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSetting"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="17"/>
-        <CursorPos X="5" Y="58"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="44"/>
+        <CursorPos X="72" Y="64"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -28,8 +28,8 @@
         <UnitName Value="uSettingCls"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="93"/>
-        <CursorPos X="53" Y="107"/>
+        <TopLine Value="87"/>
+        <CursorPos X="70" Y="135"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -39,8 +39,15 @@
         <CursorPos X="10" Y="18"/>
         <UsageCount Value="11"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="d:\soft\lazarus\fpc\2.6.4\source\packages\fcl-registry\src\regdef.inc"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="21" Y="12"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
     </Units>
-    <JumpHistory Count="11" HistoryIndex="10">
+    <JumpHistory Count="13" HistoryIndex="12">
       <Position1>
         <Filename Value="setting.lpr"/>
         <Caret Line="22"/>
@@ -85,6 +92,14 @@
         <Filename Value="units\usettingcls.pas"/>
         <Caret Line="41" Column="20" TopLine="13"/>
       </Position11>
+      <Position12>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="96" TopLine="67"/>
+      </Position12>
+      <Position13>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="90" Column="31" TopLine="60"/>
+      </Position13>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

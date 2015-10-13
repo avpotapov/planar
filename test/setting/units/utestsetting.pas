@@ -5,7 +5,7 @@ unit utestsetting;
 interface
 
 uses
-  Classes, SysUtils, usetting, fpcunit, testregistry;
+  Classes, SysUtils, usetting, uSettingCls, fpcunit, testregistry;
 
 type
 
@@ -21,6 +21,7 @@ type
     procedure TestWriteKeepAliveTimeout;
     procedure TestBaudRate;
     procedure TestDeveloperLibrary;
+     procedure TestDeveloperLibrary1;
 
   end;
 
@@ -44,7 +45,17 @@ end;
 
 procedure TTestSetting.TestDeveloperLibrary;
 begin
-  writeln(fSetting.DeveloperLibrary);
+  writeln((TSetting.Create() as ISetting).DeveloperLibrary);
+end;
+
+procedure TTestSetting.TestDeveloperLibrary1;
+var
+  S: ISetting;
+  L: string;
+begin
+  S := TSetting.Create();
+  L := S.DeveloperLibrary;
+  AssertTrue(S <> nil);
 end;
 
 procedure TTestSetting.SetUp;

@@ -82,6 +82,8 @@ type
     property UserImage: String read GetUserImage write SetUserImage;
     property UpdateEveryStart: Boolean read GetUpdateEveryStart write SetUpdateEveryStart;
     property UpdateEveryWeek: Boolean read GetUpdateEveryWeek write SetUpdateEveryWeek;
+    function GetUserData: string;
+    property UserData: string read GetUserData;
   end;
 
   function GetSetting(const aFileName: string = ''): ISetting; external 'setting.dll';

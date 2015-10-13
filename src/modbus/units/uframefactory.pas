@@ -30,6 +30,9 @@ type
     class function RunApplication(const aSlaveId: byte;
       const aTimeout: dword): IFrame;
 
+    class function ResetApplication(const aSlaveId: byte;
+      const aTimeout: dword): IFrame;
+
     class function RunBootloader(const aSlaveId: byte;
       const aTimeout: dword): IFrame;
 
@@ -137,6 +140,30 @@ begin
   Result.RequestCount := SizeOfBuffer;
 
   Result.Timeout := aTimeout;
+end;
+
+class function TFrameFactory.ResetApplication(const aSlaveId: byte;
+  const aTimeout: dword): IFrame;
+const
+  MB_DEVICE_FUNCTION: Byte = $68;
+  MB_RESET_APPLICATION: Byte  = 4;
+  PROTECT_CODE: Dword = $5FA0A05F;
+
+  SizeOfBuffer: Byte  = 7;
+
+begin
+  Result := TFrame.Create;
+  Result.SlaveId := aSlaveId;
+
+  Result.RequestPdu^[0] := MB_DEVICE_FUNCTION;
+  Result.RequestPdu^[1] := MB_RESET_APPLICATION;
+  Result.RequestPdu^[2] := 0;
+  PDWord(@Result.RequestPdu^[3])^ := PROTECT_CODE;
+
+  Result.RequestCount := SizeOfBuffer;
+
+  Result.Timeout := aTimeout;
+
 end;
 
 class function TFrameFactory.RunBootloader(const aSlaveId: byte;

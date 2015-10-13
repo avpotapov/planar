@@ -4,38 +4,200 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="3">
+    <Units Count="6">
       <Unit0>
         <Filename Value="testsetting.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="testsetting"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit0>
       <Unit1>
         <Filename Value="units\utestsetting.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="utestsetting"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="7"/>
-        <CursorPos Y="60"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="20"/>
+        <CursorPos Y="57"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\..\src\setting\units\usetting.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="usetting"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSettingCls"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="269"/>
+        <CursorPos Y="312"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="d:\soft\lazarus\components\fpcunit\guitestrunner.pas"/>
+        <UnitName Value="GuiTestRunner"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="284"/>
+        <CursorPos Y="310"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="d:\soft\lazarus\fpc\2.6.4\source\packages\fcl-registry\src\regdef.inc"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="20" Y="11"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="114" TopLine="88"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="116" TopLine="88"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="119" TopLine="88"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="127" TopLine="88"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="129" TopLine="88"/>
+      </Position5>
+      <Position6>
+        <Filename Value="units\utestsetting.pas"/>
+        <Caret Line="57" TopLine="20"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="310" TopLine="284"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="311" TopLine="284"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="108" TopLine="94"/>
+      </Position9>
+      <Position10>
+        <Filename Value="units\utestsetting.pas"/>
+        <Caret Line="56" TopLine="20"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="125" TopLine="94"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="126" TopLine="94"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="127" TopLine="94"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="129" TopLine="94"/>
+      </Position14>
+      <Position15>
+        <Filename Value="units\utestsetting.pas"/>
+        <Caret Line="57" TopLine="20"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="310" TopLine="284"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="311" TopLine="284"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="112" Column="24" TopLine="95"/>
+      </Position18>
+      <Position19>
+        <Filename Value="units\utestsetting.pas"/>
+        <Caret Line="56" TopLine="20"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="122" TopLine="95"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="129" TopLine="95"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="123" TopLine="95"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="124" TopLine="95"/>
+      </Position23>
+      <Position24>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="125" TopLine="95"/>
+      </Position24>
+      <Position25>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="126" TopLine="95"/>
+      </Position25>
+      <Position26>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="127" TopLine="95"/>
+      </Position26>
+      <Position27>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="129" TopLine="95"/>
+      </Position27>
+      <Position28>
+        <Filename Value="units\utestsetting.pas"/>
+        <Caret Line="57" TopLine="20"/>
+      </Position28>
+      <Position29>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="310" TopLine="284"/>
+      </Position29>
+      <Position30>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Caret Line="311" TopLine="284"/>
+      </Position30>
+    </JumpHistory>
   </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="2">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="units\utestsetting.pas"/>
+        <Line Value="56"/>
+      </Item1>
+      <Item2>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\..\src\setting\units\usettingcls.pas"/>
+        <Line Value="125"/>
+      </Item2>
+    </BreakPoints>
+  </Debugging>
 </CONFIG>

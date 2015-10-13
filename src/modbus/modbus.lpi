@@ -21,7 +21,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="150"/>
+      <BuildNr Value="152"/>
       <Language Value="0419"/>
       <Attributes pvaPreRelease="True"/>
       <StringTable Comments="Модуль связи с устройством по протоколу Modbus" CompanyName="Planar, LLC" FileDescription="Связь с устройством по протоколу Modbus TCP, RTU. Поддержка серверного соединения." LegalCopyright="Planar, LLC" OriginalFilename="Modbus.dll" ProductVersion="1.0"/>
@@ -37,7 +37,7 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <Units Count="13">
+    <Units Count="14">
       <Unit0>
         <Filename Value="modbus.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -55,6 +55,7 @@
       <Unit3>
         <Filename Value="units\uconnection.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="uConnection"/>
       </Unit3>
       <Unit4>
         <Filename Value="units\ucontroller.pas"/>
@@ -75,6 +76,7 @@
       <Unit8>
         <Filename Value="units\ulogger.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="uLogger"/>
       </Unit8>
       <Unit9>
         <Filename Value="units\userver.pas"/>
@@ -95,6 +97,10 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uModbus"/>
       </Unit12>
+      <Unit13>
+        <Filename Value="..\setting\units\usetting.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit13>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -105,7 +111,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="units"/>
+      <OtherUnitFiles Value="units;..\setting\units"/>
       <UnitOutputDirectory Value="..\..\lib"/>
     </SearchPaths>
     <CodeGeneration>

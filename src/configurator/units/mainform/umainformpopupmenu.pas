@@ -5,7 +5,7 @@ unit uMainFormPopupMenu;
 interface
 
 uses
-  Classes, SysUtils, Menus, Registry, Forms,
+  Classes, SysUtils, Menus, Registry, Forms, Controls,
   uConfiguratorData;
 
 type
@@ -36,11 +36,13 @@ type
   TContentTreeProxyPopupMenu = class
   private
     fMenu: TPopupMenu;
-
+    fDeviceData : TDeviceData;
     fOnChangeLinkStatus: TNotifyEvent;
     fOnAddDevice:  TNotifyEvent;
     fOnRemoveNode: TNotifyEvent;
+
   private
+    procedure ResetDevice(Sender: TObject);
     procedure ViewModbusMenu(const aModbusData: TModbusData);
     procedure AddMenuItem(const aCaption: string; const aOnClick: TNotifyEvent = nil);
   public
@@ -206,7 +208,30 @@ begin
   if aContentData is TModbusData then
     ViewModbusMenu(TModbusData(aContentData));
   if aContentData is TDeviceData then
+  begin
+    fDeviceData := aContentData as TDeviceData;
     AddMenuItem('Удалить устройство', fOnRemoveNode);
+    AddMenuItem('Перезагрузить устройство', @ResetDevice);
+
+  end;
+end;
+
+procedure TContentTreeProxyPopupMenu.ResetDevice(Sender: TObject);
+var
+Frame: IFrame;
+begin
+  Screen.Cursor:= crHourGlass;
+  try
+  FRame := uModbus.ResetApplication(fDeviceData.SlaveId, 1000);
+  FRame.Priority:= TPriority.prHigh;
+
+  if (fDeviceData.ContentSet[1] is TModbusData) then
+      (fDeviceData.ContentSet[1] as TModbusData).Controller.InQueue(FRame);
+  sleep(3000);
+
+  finally
+    Screen.Cursor:= crDefault;
+  end;
 end;
 
 

@@ -39,22 +39,24 @@
         <PackageName Value="FCL"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="3">
+    <Units Count="4">
       <Unit0>
         <Filename Value="testsetting.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="testsetting"/>
       </Unit0>
       <Unit1>
         <Filename Value="units\utestsetting.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="utestsetting"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\..\src\setting\units\usetting.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="usetting"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="..\..\src\setting\units\usettingcls.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSettingCls"/>
+      </Unit3>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -68,6 +70,16 @@
       <OtherUnitFiles Value="units;..\..\src\setting\units"/>
       <UnitOutputDirectory Value="..\..\lib"/>
     </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <IncludeAssertionCode Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <UseHeaptrc Value="True"/>
+      </Debugging>
+    </Linking>
   </CompilerOptions>
   <Debugging>
     <Exceptions Count="3">

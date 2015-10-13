@@ -405,8 +405,8 @@ begin
   FirmWare := fSignature.TypeFirmWare;
 
   // Загрузить библиотеку
-  Lib := GetLibrary([GetSetting.DeveloperLibrary + '\module.jlf',
-    GetSetting.UserLibrary + '\module.jlf']);
+  Lib := GetLibrary([Utf8ToAnsi(GetSetting.DeveloperLibrary + '\module.jlf'),
+    Utf8ToAnsi(GetSetting.UserLibrary + '\module.jlf')]);
 
   if Lib = nil then
     Exit;
@@ -428,9 +428,24 @@ begin
 end;
 
 function TDeviceData.GetContentSet: TContentSet;
+var
+  P: Pointer;
+  Node: PVirtualNode;
 begin
-  SetLength(Result, 1);
+  SetLength(Result, 2);
   Result[0] := Self;
+
+    Node := fOwnerNode;
+  while Node <> nil do
+  begin
+    if fTree.GetNodeLevel(Node) = 0 then
+    begin
+      P := fTree.GetNodeData(Node);
+      Result[1] := TContentData(P^);
+      Break;
+    end;
+    Node := Node^.Parent;
+  end;
 end;
 
 procedure TDeviceData.SeekSignature;

@@ -411,6 +411,8 @@ function RunBootloader(const aSlaveId: Byte; const aTimeout: dword): IFrame;
 
 function RunApplication(const aSlaveId: Byte; const aTimeout: dword): IFrame;
   external 'modbus.dll';
+function ResetApplication(const aSlaveId: Byte; const aTimeout: dword): IFrame;  external 'modbus.dll';
+
 
 function WritePage(const aSlaveId: byte;
   const aCurrentPage, aSize: word; const aBuffer: PBuffer;

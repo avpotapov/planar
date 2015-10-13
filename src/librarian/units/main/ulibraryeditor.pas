@@ -121,7 +121,7 @@ begin
   if not FileExists(Utf8ToAnsi(UserModule)) then
     raise Exception.Create('Не найден файл содержания библиотеки пользователя');
 
-  fLibrary := uLibrary.GetLibrary([DeveloperModule, UserModule]);
+  fLibrary := uLibrary.GetLibrary([Utf8ToAnsi(DeveloperModule), Utf8ToAnsi(UserModule)]);
 
 
   //Список библиотек

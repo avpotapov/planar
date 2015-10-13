@@ -18,11 +18,10 @@
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
-      <MajorVersionNr Value="1"/>
-      <BuildNr Value="413"/>
+      <MajorVersionNr Value="2"/>
+      <BuildNr Value="418"/>
       <Language Value="0419"/>
-      <Attributes pvaPreRelease="True"/>
-      <StringTable Comments="Приложение &quot;Библиотекарь&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Библиотекарь&quot;" LegalCopyright="Planar, LLC" OriginalFilename="Librarian.exe" ProductName="Библиотекарь" ProductVersion="1.0.0"/>
+      <StringTable Comments="Приложение &quot;Библиотекарь&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Библиотекарь&quot;" LegalCopyright="Planar, LLC" OriginalFilename="Librarian.exe" ProductName="Библиотекарь" ProductVersion="2.0.0"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
@@ -43,7 +42,7 @@
         <PackageName Value="LCL"/>
       </Item2>
     </RequiredPackages>
-    <Units Count="33">
+    <Units Count="36">
       <Unit0>
         <Filename Value="librarian.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -64,6 +63,7 @@
       <Unit3>
         <Filename Value="..\setting\units\usetting.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="uSetting"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\general\splashform\units\usplashform.pas"/>
@@ -229,6 +229,22 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uConfigEditor"/>
       </Unit32>
+      <Unit33>
+        <Filename Value="units\about\uabout.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="units\about\uaboutform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AboutForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uAboutForm"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="units\about\uaboutform.lfm"/>
+        <IsPartOfProject Value="True"/>
+      </Unit35>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -239,7 +255,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="units\main;units\general;..\library\units;..\setting\units;..\general\splashform\units;..\general\settingform\units;..\general\customeditor\units;units;..\general\vteditor;units\bits;units\picklist;units\vars;units\basedesc;units\module;units\empty;units\config"/>
+      <OtherUnitFiles Value="units\main;units\general;..\library\units;..\setting\units;..\general\splashform\units;..\general\settingform\units;..\general\customeditor\units;units;..\general\vteditor;units\bits;units\picklist;units\vars;units\basedesc;units\module;units\empty;units\config;units\about"/>
       <UnitOutputDirectory Value="..\..\lib"/>
     </SearchPaths>
     <Linking>

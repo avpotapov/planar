@@ -5,7 +5,7 @@ unit uSettingCls;
 interface
 
 uses
-  Classes, SysUtils, INIFiles, uSetting;
+  Classes, SysUtils, INIFiles, Registry, uSetting;
 
 type
 
@@ -19,44 +19,45 @@ type
   private
     function GetKeepAliveTimeout: dword;
     function GetBackupTimeout: dword;
-    function GetDeveloperImage: String;
-    function GetDeveloperLibrary: String;
-    function GetKeepAliveAddress: Byte;
-    function GetRepeats: Byte;
+    function GetDeveloperImage: string;
+    function GetDeveloperLibrary: string;
+    function GetKeepAliveAddress: byte;
+    function GetRepeats: byte;
     function GetResponseTimeout: dword;
     function GetTimeout: dword;
-    function GetUpdateEveryStart: Boolean;
-    function GetUpdateEveryWeek: Boolean;
-    function GetUserImage: String;
-    function GetUserLibrary: String;
+    function GetUpdateEveryStart: boolean;
+    function GetUpdateEveryWeek: boolean;
+    function GetUserData: string;
+    function GetUserImage: string;
+    function GetUserLibrary: string;
     procedure SetBackupTimeout(const aBackupTimeout: dword);
-    procedure SetDeveloperImage(const aDeveloperImage: String);
-    procedure SetDeveloperLibrary(const aDeveloperLibrary: String);
-    procedure SetKeepAliveAddress(const aKeepAliveAddress: Byte);
+    procedure SetDeveloperImage(const aDeveloperImage: string);
+    procedure SetDeveloperLibrary(const aDeveloperLibrary: string);
+    procedure SetKeepAliveAddress(const aKeepAliveAddress: byte);
     procedure SetKeepAliveTimeout(const aKeepAliveTimeout: dword);
-    procedure SetRepeats(const aRepeats: Byte);
+    procedure SetRepeats(const aRepeats: byte);
     procedure SetResponseTimeout(const aResponseTimeout: dword);
     procedure SetTimeout(const aTimeout: dword);
-    procedure SetUpdateEveryWeek(AValue: Boolean);
-    procedure SetUpdateEveryStart(AValue: Boolean);
-    procedure SetUserImage(const aUserImage: String);
-    procedure SetUserLibrary(const aUserLibrary: String);
+    procedure SetUpdateEveryWeek(AValue: boolean);
+    procedure SetUpdateEveryStart(AValue: boolean);
+    procedure SetUserImage(const aUserImage: string);
+    procedure SetUserLibrary(const aUserLibrary: string);
     function GetBaudRate: dword;
     procedure SetBaudRate(const aBaudRate: dword);
-    function GetParity: Byte;
-    procedure SetParity(const aParity: Byte);
-    function GetByteSize: Byte;
-    procedure SetByteSize(const aByteSize: Byte);
-    function GetStopBits: Byte;
-    procedure SetStopBits(const aStopBits: Byte);
-    function GetThreeAndHalf: Byte;
-    procedure SetThreeAndHalf(const aThreeAndHalf: Byte);
-    function GetIp: String;
-    procedure SetIp(const aIp: String);
-    function GetPort: Word;
-    procedure SetPort(const aPort: Word);
-    function GetServerPort: Word;
-    procedure SetServerPort(const aPort: Word);
+    function GetParity: byte;
+    procedure SetParity(const aParity: byte);
+    function GetByteSize: byte;
+    procedure SetByteSize(const aByteSize: byte);
+    function GetStopBits: byte;
+    procedure SetStopBits(const aStopBits: byte);
+    function GetThreeAndHalf: byte;
+    procedure SetThreeAndHalf(const aThreeAndHalf: byte);
+    function GetIp: string;
+    procedure SetIp(const aIp: string);
+    function GetPort: word;
+    procedure SetPort(const aPort: word);
+    function GetServerPort: word;
+    procedure SetServerPort(const aPort: word);
 
   public
     constructor Create(const aFileName: string = ''); reintroduce;
@@ -65,26 +66,28 @@ type
 
   public
     property BaudRate: dword read GetBaudRate write SetBaudRate;
-    property ByteSize: Byte read GetByteSize write SetByteSize;
-    property Parity: Byte read GetParity write SetParity;
-    property StopBits: Byte read GetStopBits write SetStopBits;
-    property ThreeAndHalf: Byte read GetThreeAndHalf write SetThreeAndHalf;
-    property Ip: String read GetIp write SetIp;
-    property Port: Word read GetPort write SetPort;
-    property ServerPort: Word read GetServerPort write SetServerPort;
-    property KeepAliveAddress: Byte read GetKeepAliveAddress write SetKeepAliveAddress;
+    property ByteSize: byte read GetByteSize write SetByteSize;
+    property Parity: byte read GetParity write SetParity;
+    property StopBits: byte read GetStopBits write SetStopBits;
+    property ThreeAndHalf: byte read GetThreeAndHalf write SetThreeAndHalf;
+    property Ip: string read GetIp write SetIp;
+    property Port: word read GetPort write SetPort;
+    property ServerPort: word read GetServerPort write SetServerPort;
+    property KeepAliveAddress: byte read GetKeepAliveAddress write SetKeepAliveAddress;
     property KeepAliveTimeout: dword read GetKeepAliveTimeout write SetKeepAliveTimeout;
     property Timeout: dword read GetTimeout write SetTimeout;
     property ResponseTimeout: dword read GetResponseTimeout write SetResponseTimeout;
     property BackupTimeout: dword read GetBackupTimeout write SetBackupTimeout;
-    property Repeats: Byte read GetRepeats write SetRepeats;
-    property DeveloperLibrary: String read GetDeveloperLibrary
+    property Repeats: byte read GetRepeats write SetRepeats;
+    property DeveloperLibrary: string read GetDeveloperLibrary
       write SetDeveloperLibrary;
-    property DeveloperImage: String read GetDeveloperImage write SetDeveloperImage;
-    property UserLibrary: String read GetUserLibrary write SetUserLibrary;
-    property UserImage: String read GetUserImage write SetUserImage;
-    property UpdateEveryStart: Boolean read GetUpdateEveryStart write SetUpdateEveryStart;
-    property UpdateEveryWeek: Boolean read GetUpdateEveryWeek write SetUpdateEveryWeek;
+    property DeveloperImage: string read GetDeveloperImage write SetDeveloperImage;
+    property UserLibrary: string read GetUserLibrary write SetUserLibrary;
+    property UserImage: string read GetUserImage write SetUserImage;
+    property UpdateEveryStart: boolean read GetUpdateEveryStart
+      write SetUpdateEveryStart;
+    property UpdateEveryWeek: boolean read GetUpdateEveryWeek write SetUpdateEveryWeek;
+    property UserData: string read GetUserData;
 
   end;
 
@@ -92,20 +95,44 @@ implementation
 
 { TSetting }
 
+
+function GetUserPathFromRegistry: string;
+var
+  Registry: TRegistry;
+begin
+  Result := '';
+  { создаём объект TRegistry }
+  Registry := TRegistry.Create;
+  try
+    { устанавливаем корневой ключ; напрмер hkey_local_machine или hkey_current_user }
+    Registry.RootKey := HKEY_CURRENT_USER;
+    { открываем ключ }
+    if not Registry.OpenKey('SOFTWARE\JetLogic', True) then
+      Exit;
+    Result :=AnsiToUtf8(Registry.ReadString('UserData'));
+    { закрываем и освобождаем ключ }
+    Registry.CloseKey;
+  finally
+    Registry.Free;
+  end;
+
+end;
+
 constructor TSetting.Create(const aFileName: string);
 begin
   inherited Create;
-  if aFileName = '' then
-    fFileName := 'setting.ini'
-  else
-    fFileName := aFileName;
+  fFileName := aFileName;
+  if fFileName = '' then
+    fFileName := IncludeTrailingPathDelimiter(GetUserPathFromRegistry) + 'setting.ini';
+  if fFileName = '' then
+    fFileName := IncludeTrailingPathDelimiter(ExtractFilePath(ParamStr(0))) + 'setting.ini';
 end;
 
 procedure TSetting.AfterConstruction;
 begin
   inherited AfterConstruction;
   fIniFile := TIniFile.Create(Utf8ToAnsi(fFileName));
-  fCurrentPath := ExtractFilePath(ParamStr(0));
+  fCurrentPath := Utf8ToAnsi(ExtractFilePath({ParamStr(0)}fFileName));
 end;
 
 destructor TSetting.Destroy;
@@ -124,74 +151,74 @@ begin
   fIniFile.WriteInteger('MODBUS', 'BaudRate', aBaudRate);
 end;
 
-function TSetting.GetParity: Byte;
+function TSetting.GetParity: byte;
 begin
   Result := fIniFile.ReadInteger('MODBUS', 'Parity', 2);
 end;
 
-procedure TSetting.SetParity(const aParity: Byte);
+procedure TSetting.SetParity(const aParity: byte);
 begin
-    fIniFile.WriteInteger('MODBUS', 'Parity', aParity);
+  fIniFile.WriteInteger('MODBUS', 'Parity', aParity);
 end;
 
-function TSetting.GetByteSize: Byte;
+function TSetting.GetByteSize: byte;
 begin
   Result := fIniFile.ReadInteger('MODBUS', 'ByteSize', 8);
 end;
 
-procedure TSetting.SetByteSize(const aByteSize: Byte);
+procedure TSetting.SetByteSize(const aByteSize: byte);
 begin
-    fIniFile.WriteInteger('MODBUS', 'ByteSize', aByteSize);
+  fIniFile.WriteInteger('MODBUS', 'ByteSize', aByteSize);
 end;
 
-function TSetting.GetStopBits: Byte;
+function TSetting.GetStopBits: byte;
 begin
   Result := fIniFile.ReadInteger('MODBUS', 'StopBits', 0);
 end;
 
-procedure TSetting.SetStopBits(const aStopBits: Byte);
+procedure TSetting.SetStopBits(const aStopBits: byte);
 begin
-    fIniFile.WriteInteger('MODBUS', 'StopBits', aStopBits);
+  fIniFile.WriteInteger('MODBUS', 'StopBits', aStopBits);
 end;
 
-function TSetting.GetThreeAndHalf: Byte;
+function TSetting.GetThreeAndHalf: byte;
 begin
   Result := fIniFile.ReadInteger('MODBUS', 'ThreeAndHalf', 30);
 end;
 
-procedure TSetting.SetThreeAndHalf(const aThreeAndHalf: Byte);
+procedure TSetting.SetThreeAndHalf(const aThreeAndHalf: byte);
 begin
-    fIniFile.WriteInteger('MODBUS', 'ThreeAndHalf', aThreeAndHalf);
+  fIniFile.WriteInteger('MODBUS', 'ThreeAndHalf', aThreeAndHalf);
 end;
 
-function TSetting.GetIp: String;
+function TSetting.GetIp: string;
 begin
   Result := fIniFile.ReadString('MODBUS', 'IP', '192.168.0.166');
 end;
 
-procedure TSetting.SetIp(const aIp: String);
+procedure TSetting.SetIp(const aIp: string);
 begin
   fIniFile.WriteString('MODBUS', 'IP', aIp);
 end;
 
-function TSetting.GetPort: Word;
+function TSetting.GetPort: word;
 begin
   Result := fIniFile.ReadInteger('MODBUS', 'Port', 502);
 end;
 
-procedure TSetting.SetPort(const aPort: Word);
+procedure TSetting.SetPort(const aPort: word);
 begin
-   fIniFile.WriteInteger('MODBUS', 'Port', aPort);
+  fIniFile.WriteInteger('MODBUS', 'Port', aPort);
 end;
 
-function TSetting.GetServerPort: Word;
+function TSetting.GetServerPort: word;
 begin
   Result := fIniFile.ReadInteger('MODBUS', 'ServerPort', 502);
 end;
 
-procedure TSetting.SetServerPort(const aPort: Word);
+procedure TSetting.SetServerPort(const aPort: word);
 begin
-   fIniFile.WriteInteger('MODBUS', 'ServerPort', aPort);
+  fIniFile.WriteInteger('MODBUS', 'ServerPort', aPort);
 end;
 
 function TSetting.GetKeepAliveTimeout: dword;
@@ -204,12 +231,12 @@ begin
   fIniFile.WriteInteger('MODBUS', 'KeepAliveTimeout', aKeepAliveTimeout);
 end;
 
-function TSetting.GetKeepAliveAddress: Byte;
+function TSetting.GetKeepAliveAddress: byte;
 begin
   Result := fIniFile.ReadInteger('MODBUS', 'KeepAliveAddress', 246);
 end;
 
-procedure TSetting.SetKeepAliveAddress(const aKeepAliveAddress: Byte);
+procedure TSetting.SetKeepAliveAddress(const aKeepAliveAddress: byte);
 begin
   fIniFile.WriteInteger('MODBUS', 'KeepAliveAddress', aKeepAliveAddress);
 end;
@@ -219,27 +246,32 @@ begin
   Result := fIniFile.ReadInteger('CONFIGURATOR', 'Timeout', 1000);
 end;
 
-function TSetting.GetUpdateEveryStart: Boolean;
+function TSetting.GetUpdateEveryStart: boolean;
 begin
   Result := fIniFile.ReadBool('CONFIGURATOR', 'UpdateEveryStart', False);
 end;
 
-function TSetting.GetUpdateEveryWeek: Boolean;
+function TSetting.GetUpdateEveryWeek: boolean;
 begin
   Result := fIniFile.ReadBool('CONFIGURATOR', 'UpdateEveryWeek', False);
 end;
 
-procedure TSetting.SetTimeout(const aTimeout: dword);
+function TSetting.GetUserData: string;
 begin
-   fIniFile.WriteInteger('CONFIGURATOR', 'Timeout', aTimeout);
+	Result := Utf8ToAnsi(GetUserPathFromRegistry);
 end;
 
-procedure TSetting.SetUpdateEveryWeek(AValue: Boolean);
+procedure TSetting.SetTimeout(const aTimeout: dword);
+begin
+  fIniFile.WriteInteger('CONFIGURATOR', 'Timeout', aTimeout);
+end;
+
+procedure TSetting.SetUpdateEveryWeek(AValue: boolean);
 begin
   fIniFile.WriteBool('CONFIGURATOR', 'UpdateEveryWeek', aValue);
 end;
 
-procedure TSetting.SetUpdateEveryStart(AValue: Boolean);
+procedure TSetting.SetUpdateEveryStart(AValue: boolean);
 begin
   fIniFile.WriteBool('CONFIGURATOR', 'UpdateEveryStart', aValue);
 end;
@@ -261,54 +293,55 @@ end;
 
 procedure TSetting.SetBackupTimeout(const aBackupTimeout: dword);
 begin
-    fIniFile.WriteInteger('CONFIGURATOR', 'BackupTimeout', aBackupTimeout);
+  fIniFile.WriteInteger('CONFIGURATOR', 'BackupTimeout', aBackupTimeout);
 end;
 
-function TSetting.GetRepeats: Byte;
+function TSetting.GetRepeats: byte;
 begin
   Result := fIniFile.ReadInteger('CONFIGURATOR', 'Repeats', 0);
 end;
 
-procedure TSetting.SetRepeats(const aRepeats: Byte);
+procedure TSetting.SetRepeats(const aRepeats: byte);
 begin
-   fIniFile.WriteInteger('CONFIGURATOR', 'Repeats', aRepeats);
+  fIniFile.WriteInteger('CONFIGURATOR', 'Repeats', aRepeats);
 end;
 
-function TSetting.GetDeveloperLibrary: String;
+function TSetting.GetDeveloperLibrary: string;
 begin
-  Result := fIniFile.ReadString('LIBRARY', 'DeveloperLibrary',  fCurrentPath);
+  Result := fIniFile.ReadString('LIBRARY', 'DeveloperLibrary', fCurrentPath);
 end;
-procedure TSetting.SetDeveloperLibrary(const aDeveloperLibrary: String);
+
+procedure TSetting.SetDeveloperLibrary(const aDeveloperLibrary: string);
 begin
   fIniFile.WriteString('LIBRARY', 'DeveloperLibrary', aDeveloperLibrary);
 end;
 
-function TSetting.GetDeveloperImage: String;
+function TSetting.GetDeveloperImage: string;
 begin
   Result := fIniFile.ReadString('LIBRARY', 'DeveloperImage', fCurrentPath);
 end;
 
-procedure TSetting.SetDeveloperImage(const aDeveloperImage: String);
+procedure TSetting.SetDeveloperImage(const aDeveloperImage: string);
 begin
   fIniFile.WriteString('LIBRARY', 'DeveloperImage', aDeveloperImage);
 end;
 
-function TSetting.GetUserLibrary: String;
+function TSetting.GetUserLibrary: string;
 begin
- Result := fIniFile.ReadString('LIBRARY', 'UserLibrary', fCurrentPath);
+  Result := fIniFile.ReadString('LIBRARY', 'UserLibrary', fCurrentPath);
 end;
 
-procedure TSetting.SetUserLibrary(const aUserLibrary: String);
+procedure TSetting.SetUserLibrary(const aUserLibrary: string);
 begin
   fIniFile.WriteString('LIBRARY', 'UserLibrary', aUserLibrary);
 end;
 
-function TSetting.GetUserImage: String;
+function TSetting.GetUserImage: string;
 begin
- Result := fIniFile.ReadString('LIBRARY', 'UserImage', fCurrentPath);
+  Result := fIniFile.ReadString('LIBRARY', 'UserImage', fCurrentPath);
 end;
 
-procedure TSetting.SetUserImage(const aUserImage: String);
+procedure TSetting.SetUserImage(const aUserImage: string);
 begin
   fIniFile.WriteString('LIBRARY', 'UserImage', aUserImage);
 end;

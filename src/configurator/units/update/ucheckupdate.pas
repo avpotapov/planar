@@ -5,7 +5,7 @@ unit uCheckUpdate;
 interface
 
 uses
-  Classes, SysUtils, httpsend, fgl, Dom, XmlRead;
+  Classes, SysUtils, httpsend, uSetting, fgl, Dom, XmlRead;
 
 const
   URL = 'http://planar-smt.ru/updates/jlconfigurator/update.dat';
@@ -41,7 +41,7 @@ type
     function GetUpdateSoft: TUpdateObject;
   public
     destructor Destroy; override;
-    procedure Parse(const AFileName: string = SAVED_FILE_NAME);
+    procedure Parse(const AFileName: string = '');
     class function GetUpdateFile: boolean;
     property UpdateSoft: TUpdateObject read GetUpdateSoft;
     property UpdateLib: TUpdateObject read GetUpdateLib;
@@ -74,15 +74,25 @@ class function TUpdate.GetUpdateFile: boolean;
 var
   FileStream: TFileStream;
   F: TExtFile;
+  Path: string;
+  FileName: string;
 begin
   Result := False;
   // Создать файл
-  AssignFile(F, SAVED_FILE_NAME);
-  ReWrite(F);
-  CloseFile(F);
+  Path := uSetting.GetSetting.UserData;
+  if Path <> '' then
+    FileName := IncludeTrailingPathDelimiter(Path) + SAVED_FILE_NAME
+  else
+    FileName := SAVED_FILE_NAME;
+
+  //AssignFile(F, FileName);
+  //ReWrite(F);
+  //CloseFile(F);
 
   // Создаём файловый поток
-  FileStream := TFileStream.Create(SAVED_FILE_NAME, fmCreate);
+
+  FileStream := TFileStream.Create(FileName, fmCreate);
+
   try
     with THTTPSend.Create do
     begin
@@ -151,11 +161,20 @@ procedure TUpdate.Parse(const AFileName: string);
 
 var
   Doc: TXMLDocument;
+  FileName: string;
+  Path: string;
 begin
-  if not FileExists(AFileName) then
+  FileName := AFileName;
+  if FileName = '' then
+  begin
+    Path := uSetting.GetSetting.UserData;
+    FileName := IncludeTrailingPathDelimiter(Path) + SAVED_FILE_NAME;
+  end;
+
+  if not FileExists(FileName) then
     exit;
   // Парсинг XML
-  ReadXMLFile(Doc, SAVED_FILE_NAME);
+  ReadXMLFile(Doc, FileName);
   try
     // Soft
     InternalParse(Doc, 'soft', UpdateSoft);

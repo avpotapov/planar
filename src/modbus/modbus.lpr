@@ -94,6 +94,10 @@ var
   begin
     Result := TFrameFactory.RunApplication(aSlaveId, aTimeout);
   end;
+function ResetApplication(const aSlaveId: Byte; const aTimeout: dword): IFrame; export;
+begin
+  Result := TFrameFactory.ResetApplication(aSlaveId, aTimeout);
+end;
 
   function RunBootloader(const aSlaveId: Byte; const aTimeout: dword): IFrame; export;
   begin
@@ -132,7 +136,8 @@ exports
   WriteMultiple,
 
   RunApplication,
-  RunBootloader,
+  ResetApplication,
+	RunBootloader,
   WritePage,
 
   CalcCrc16;

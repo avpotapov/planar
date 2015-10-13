@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils,
-  ubase;
+  ubase, uSetting;
 
 type
 
@@ -56,6 +56,7 @@ implementation
 constructor TLogger.Create(const aLoggerName: string);
 var
   FileName : string;
+  Path: string;
 begin
 
   if aLoggerName = '' then
@@ -63,7 +64,11 @@ begin
   else
     fLoggerName := aLoggerName;
 
-  fApplicationPath := ExtractFilePath( ParamStr(0) );
+  Path := uSetting.GetSetting.UserData;
+  if Path <> '' then
+  	fApplicationPath := ExtractFilePath( Path )
+  else
+    fApplicationPath := ExtractFilePath( ParamStr(0) ) ;
 
   FileName := fApplicationPath + ChangeFileExt( fLoggerName, '.log' );
 

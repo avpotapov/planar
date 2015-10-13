@@ -1,23 +1,23 @@
 object SplashForm: TSplashForm
-  Left = 373
-  Height = 132
-  Top = 195
-  Width = 487
+  Left = 1021
+  Height = 207
+  Top = 243
+  Width = 531
   AlphaBlendValue = 200
   BorderStyle = bsNone
   Caption = 'SplashForm'
-  ClientHeight = 132
-  ClientWidth = 487
+  ClientHeight = 207
+  ClientWidth = 531
   Color = clNone
   FormStyle = fsSplash
   OnCreate = FormCreate
   Position = poScreenCenter
-  LCLVersion = '1.4.0.4'
+  LCLVersion = '1.4.2.0'
   object Logo: TImage
     Left = 0
-    Height = 132
+    Height = 207
     Top = 0
-    Width = 487
+    Width = 531
     Align = alClient
     AutoSize = True
     BorderSpacing.CellAlignHorizontal = ccaCenter
@@ -25,5 +25,32 @@ object SplashForm: TSplashForm
     Center = True
     Proportional = True
     Transparent = True
+  end
+  object Label1: TLabel
+    Left = 216
+    Height = 15
+    Top = 136
+    Width = 115
+    Caption = 'Версия приложения:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 216
+    Height = 15
+    Top = 152
+    Width = 111
+    Caption = 'Версия библиотеки:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 216
+    Height = 15
+    Top = 168
+    Width = 171
+    Caption = 'Copyright: ООО "Планар", 2015'
+    ParentColor = False
+    ParentFont = False
   end
 end

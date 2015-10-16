@@ -39,7 +39,7 @@
         <PackageName Value="FCL"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="4">
+    <Units Count="5">
       <Unit0>
         <Filename Value="testsetting.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -57,6 +57,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSettingCls"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="..\..\src\setting\units\uregsetting.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRegSetting"/>
+      </Unit4>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

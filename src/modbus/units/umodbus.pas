@@ -412,12 +412,14 @@ function RunBootloader(const aSlaveId: Byte; const aTimeout: dword): IFrame;
 function RunApplication(const aSlaveId: Byte; const aTimeout: dword): IFrame;
   external 'modbus.dll';
 function ResetApplication(const aSlaveId: Byte; const aTimeout: dword): IFrame;  external 'modbus.dll';
+function ReadSerial(const aSlaveId: Byte; const aTimeout: dword): IFrame;  external 'modbus.dll';
 
 
 function WritePage(const aSlaveId: byte;
   const aCurrentPage, aSize: word; const aBuffer: PBuffer;
   const aTimeout: dword): IFrame; external 'modbus.dll';
-
+function WriteStruct(const aSlaveId: byte; const aPdu: TBuffer;
+  const aCount: word; const aTimeout: dword): IFrame; external 'modbus.dll';
 
 procedure CalcCrc16(const aBuffer: PBuffer; const aCount: Longint;
       var aCrc16: Word); external 'modbus.dll';

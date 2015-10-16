@@ -5,7 +5,7 @@ unit utestsetting;
 interface
 
 uses
-  Classes, SysUtils, usetting, uSettingCls, fpcunit, testregistry;
+  Classes, SysUtils, usetting, uSettingCls, uRegSetting, fpcunit, testregistry;
 
 type
 
@@ -21,8 +21,8 @@ type
     procedure TestWriteKeepAliveTimeout;
     procedure TestBaudRate;
     procedure TestDeveloperLibrary;
-     procedure TestDeveloperLibrary1;
-
+    procedure TestDeveloperLibrary1;
+    procedure TestRegSetting;
   end;
 
 implementation
@@ -56,6 +56,14 @@ begin
   S := TSetting.Create();
   L := S.DeveloperLibrary;
   AssertTrue(S <> nil);
+end;
+
+procedure TTestSetting.TestRegSetting;
+var
+  BaudRate: DWord;
+begin
+  BaudRate := (TRegSetting.Create as ISetting).BaudRate;
+  (TRegSetting.Create as ISetting).BaudRate:= 1000;
 end;
 
 procedure TTestSetting.SetUp;

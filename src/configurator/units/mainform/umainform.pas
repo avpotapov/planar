@@ -217,6 +217,7 @@ end;
 procedure TMainForm.FormCreate(Sender: TObject);
 var
   SplashForm: TSplashForm;
+  S: String;
 begin
 
   fSuccess := 0;
@@ -240,6 +241,7 @@ begin
 
     // Загрузить библиотеку
     try
+      S := GetSetting.DeveloperLibrary + '\module.jlf';
       fLibrary := GetLibrary([Utf8ToAnsi(GetSetting.DeveloperLibrary + '\module.jlf'),
         Utf8ToAnsi(GetSetting.UserLibrary + '\module.jlf')]);
 
@@ -256,7 +258,7 @@ begin
       TContentTreeProxyPopupMenu.Create(ContentTreePopupMenu);
     fContentTreeProxyPopupMenu.Setup(@ChangeModbusStatusToolButtonClick,
       @DeviceToolButtonClick, @RemoveNode);
-    sleep(1000);
+
 
 
   finally
@@ -316,9 +318,9 @@ begin
   ModbusNode := nil;
   DeviceNode := nil;
 
-  // Положить в стек узел
-  //if Node <> nil then
-  //  fBackNodeStack.Push(Node);
+  //// Положить в стек узел
+  ////if Node <> nil then
+  ////  fBackNodeStack.Push(Node);
 
   // Показ кнопки 'Назад', 'Вперед'
   BackToolButton.Enabled := not fBackNodeStack.IsEmpty;
@@ -654,8 +656,13 @@ begin
 end;
 
 procedure TMainForm.ModbusToolButtonClick(Sender: TObject);
+const
+  TCP = 'TCP';
 begin
-  TContentBuilders.GetBuilders(ContentTree).BuildTcp;
+  if SameText(uSetting.GetSetting.LastLink, TCP) then
+    TContentBuilders.GetBuilders(ContentTree).BuildTcp
+  else
+    TContentBuilders.GetBuilders(ContentTree).BuildRtu(uSetting.GetSetting.LastLink);
 end;
 
 procedure TMainForm.AddModbus(Sender: TObject);
@@ -665,9 +672,15 @@ begin
   if Sender is TMenuItem then
     // Выбрать контроллер
     if SameText(TMenuItem(Sender).Caption, TCP) then
-      TContentBuilders.GetBuilders(ContentTree).BuildTcp
+    begin
+      TContentBuilders.GetBuilders(ContentTree).BuildTcp;
+      uSetting.GetSetting.LastLink := TCP;
+    end
     else
+    begin
       TContentBuilders.GetBuilders(ContentTree).BuildRtu(TMenuItem(Sender).Caption);
+      uSetting.GetSetting.LastLink := TMenuItem(Sender).Caption;
+    end;
 end;
 
 procedure TMainForm.WmCount(var Message: TMessage);

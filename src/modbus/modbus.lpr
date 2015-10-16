@@ -99,6 +99,11 @@ begin
   Result := TFrameFactory.ResetApplication(aSlaveId, aTimeout);
 end;
 
+function ReadSerial(const aSlaveId: Byte; const aTimeout: dword): IFrame; export;
+begin
+  Result := TFrameFactory.ReadSerial(aSlaveId, aTimeout);
+end;
+
   function RunBootloader(const aSlaveId: Byte; const aTimeout: dword): IFrame; export;
   begin
     Result := TFrameFactory.RunBootloader(aSlaveId, aTimeout);
@@ -111,7 +116,11 @@ end;
     Result := TFrameFactory.WritePage(aSlaveId, aCurrentPage, aSize, aBuffer,
       aTimeout);
   end;
-
+function WriteStruct(const aSlaveId: byte;const aPdu: TBuffer;
+  const aCount: word; const aTimeout: dword): IFrame; export;
+begin
+  Result := TFrameFactory.WriteStruct(aSlaveId, aPdu, aCount, aTimeout);
+end;
 
 
   procedure CalcCrc16(const aBuffer: PBuffer; const aCount: Longint;
@@ -134,12 +143,12 @@ exports
   ReadInput,
   ReadHolding,
   WriteMultiple,
-
+  WriteStruct,
   RunApplication,
   ResetApplication,
 	RunBootloader,
   WritePage,
-
+  ReadSerial,
   CalcCrc16;
 
 // Инициализация библиотеки WinSock

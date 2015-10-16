@@ -16,12 +16,19 @@ type
     fFileName: string;
     fIniFile: TIniFile;
     fCurrentPath: string;
+    fDeveloperLibrary: string;
+    fDeveloperImage : string;
+   fUserImage : string;
+   fUserLibrary  : string;
+
+
   private
     function GetKeepAliveTimeout: dword;
     function GetBackupTimeout: dword;
     function GetDeveloperImage: string;
     function GetDeveloperLibrary: string;
     function GetKeepAliveAddress: byte;
+    function GetLastLink: string;
     function GetRepeats: byte;
     function GetResponseTimeout: dword;
     function GetTimeout: dword;
@@ -35,6 +42,7 @@ type
     procedure SetDeveloperLibrary(const aDeveloperLibrary: string);
     procedure SetKeepAliveAddress(const aKeepAliveAddress: byte);
     procedure SetKeepAliveTimeout(const aKeepAliveTimeout: dword);
+    procedure SetLastLink(AValue: string);
     procedure SetRepeats(const aRepeats: byte);
     procedure SetResponseTimeout(const aResponseTimeout: dword);
     procedure SetTimeout(const aTimeout: dword);
@@ -88,6 +96,7 @@ type
       write SetUpdateEveryStart;
     property UpdateEveryWeek: boolean read GetUpdateEveryWeek write SetUpdateEveryWeek;
     property UserData: string read GetUserData;
+    property LastLink: string read GetLastLink write SetLastLink;
 
   end;
 
@@ -231,9 +240,19 @@ begin
   fIniFile.WriteInteger('MODBUS', 'KeepAliveTimeout', aKeepAliveTimeout);
 end;
 
+procedure TSetting.SetLastLink(AValue: string);
+begin
+  fIniFile.WriteString('CONFIGURATOR', 'LastLink', AValue);
+end;
+
 function TSetting.GetKeepAliveAddress: byte;
 begin
   Result := fIniFile.ReadInteger('MODBUS', 'KeepAliveAddress', 246);
+end;
+
+function TSetting.GetLastLink: string;
+begin
+  Result := fIniFile.ReadString('CONFIGURATOR', 'LastLink', 'TCP');
 end;
 
 procedure TSetting.SetKeepAliveAddress(const aKeepAliveAddress: byte);
@@ -258,7 +277,7 @@ end;
 
 function TSetting.GetUserData: string;
 begin
-	Result := Utf8ToAnsi(GetUserPathFromRegistry);
+	Result := GetUserPathFromRegistry;
 end;
 
 procedure TSetting.SetTimeout(const aTimeout: dword);
@@ -307,43 +326,82 @@ begin
 end;
 
 function TSetting.GetDeveloperLibrary: string;
+var
+  Registry: TRegistry;
 begin
-  Result := fIniFile.ReadString('LIBRARY', 'DeveloperLibrary', fCurrentPath);
+  Result := '';
+  { создаём объект TRegistry }
+  Registry := TRegistry.Create;
+  try
+    { устанавливаем корневой ключ; напрмер hkey_local_machine или hkey_current_user }
+    Registry.RootKey := HKEY_CURRENT_USER;
+    { открываем ключ }
+    if not Registry.OpenKey('SOFTWARE\JetLogic', True) then
+      Exit;
+    Result :=AnsiToUtf8(Registry.ReadString('DeveloperLibrary'));
+    { закрываем и освобождаем ключ }
+    Registry.CloseKey;
+  finally
+    Registry.Free;
+  end;
+
+//  fDeveloperLibrary := {AnsiToUtf8}(fIniFile.ReadString('LIBRARY', 'DeveloperLibrary', fCurrentPath));
+//  Result := fDeveloperLibrary
 end;
 
 procedure TSetting.SetDeveloperLibrary(const aDeveloperLibrary: string);
 begin
-  fIniFile.WriteString('LIBRARY', 'DeveloperLibrary', aDeveloperLibrary);
+  fIniFile.WriteString('LIBRARY', 'DeveloperLibrary', {Utf8ToAnsi}(aDeveloperLibrary));
 end;
 
 function TSetting.GetDeveloperImage: string;
 begin
-  Result := fIniFile.ReadString('LIBRARY', 'DeveloperImage', fCurrentPath);
+  fDeveloperImage :=  {AnsiToUtf8}(fIniFile.ReadString('LIBRARY', 'DeveloperImage', fCurrentPath));
+  Result := fDeveloperImage
 end;
 
 procedure TSetting.SetDeveloperImage(const aDeveloperImage: string);
 begin
-  fIniFile.WriteString('LIBRARY', 'DeveloperImage', aDeveloperImage);
+  fIniFile.WriteString('LIBRARY', 'DeveloperImage', {Utf8ToAnsi}(aDeveloperImage));
 end;
 
 function TSetting.GetUserLibrary: string;
+var
+  Registry: TRegistry;
 begin
-  Result := fIniFile.ReadString('LIBRARY', 'UserLibrary', fCurrentPath);
+  Result := '';
+  { создаём объект TRegistry }
+  Registry := TRegistry.Create;
+  try
+    { устанавливаем корневой ключ; напрмер hkey_local_machine или hkey_current_user }
+    Registry.RootKey := HKEY_CURRENT_USER;
+    { открываем ключ }
+    if not Registry.OpenKey('SOFTWARE\JetLogic', True) then
+      Exit;
+    Result :=AnsiToUtf8(Registry.ReadString('UserLibrary'));
+    { закрываем и освобождаем ключ }
+    Registry.CloseKey;
+  finally
+    Registry.Free;
+  end;
+//  fUserLibrary := {AnsiToUtf8}(fIniFile.ReadString('LIBRARY', 'UserLibrary', fCurrentPath));
+//  Result := fUserLibrary;
 end;
 
 procedure TSetting.SetUserLibrary(const aUserLibrary: string);
 begin
-  fIniFile.WriteString('LIBRARY', 'UserLibrary', aUserLibrary);
+  fIniFile.WriteString('LIBRARY', 'UserLibrary', {Utf8ToAnsi}(aUserLibrary));
 end;
 
 function TSetting.GetUserImage: string;
 begin
-  Result := fIniFile.ReadString('LIBRARY', 'UserImage', fCurrentPath);
+  fUserImage := {AnsiToUtf8}(fIniFile.ReadString('LIBRARY', 'UserImage', fCurrentPath));
+  Result := fUserImage;
 end;
 
 procedure TSetting.SetUserImage(const aUserImage: string);
 begin
-  fIniFile.WriteString('LIBRARY', 'UserImage', aUserImage);
+  fIniFile.WriteString('LIBRARY', 'UserImage', {Utf8ToAnsi}(aUserImage));
 end;
 
 end.

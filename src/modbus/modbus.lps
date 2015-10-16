@@ -8,8 +8,8 @@
       <Unit0>
         <Filename Value="modbus.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="74"/>
-        <CursorPos Y="97"/>
+        <TopLine Value="106"/>
+        <CursorPos X="49" Y="122"/>
         <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -63,7 +63,7 @@
         <Filename Value="units\uframe.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="86"/>
+        <TopLine Value="22"/>
         <CursorPos Y="102"/>
         <UsageCount Value="62"/>
         <Loaded Value="True"/>
@@ -71,10 +71,9 @@
       <Unit7>
         <Filename Value="units\uframefactory.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="133"/>
-        <CursorPos X="48" Y="159"/>
+        <TopLine Value="125"/>
+        <CursorPos X="20" Y="127"/>
         <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit7>
@@ -120,9 +119,10 @@
         <Filename Value="units\umodbus.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uModbus"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="382"/>
-        <CursorPos Y="415"/>
+        <TopLine Value="323"/>
+        <CursorPos X="44" Y="421"/>
         <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit12>
@@ -196,7 +196,7 @@
         <UsageCount Value="14"/>
       </Unit22>
     </Units>
-    <JumpHistory Count="18" HistoryIndex="17">
+    <JumpHistory Count="26" HistoryIndex="25">
       <Position1>
         <Filename Value="modbus.lpr"/>
         <Caret Line="124" Column="17" TopLine="73"/>
@@ -269,6 +269,38 @@
         <Filename Value="units\uframefactory.pas"/>
         <Caret Line="57" Column="3" TopLine="53"/>
       </Position18>
+      <Position19>
+        <Filename Value="units\uframefactory.pas"/>
+        <Caret Line="37" Column="20" TopLine="11"/>
+      </Position19>
+      <Position20>
+        <Filename Value="units\uframefactory.pas"/>
+        <Caret Line="30" Column="27"/>
+      </Position20>
+      <Position21>
+        <Filename Value="modbus.lpr"/>
+        <Caret Line="120" Column="64" TopLine="101"/>
+      </Position21>
+      <Position22>
+        <Filename Value="units\uframefactory.pas"/>
+        <Caret Line="127" Column="36" TopLine="111"/>
+      </Position22>
+      <Position23>
+        <Filename Value="units\uframefactory.pas"/>
+        <Caret Line="30" Column="39" TopLine="30"/>
+      </Position23>
+      <Position24>
+        <Filename Value="units\uframefactory.pas"/>
+        <Caret Line="127" Column="56" TopLine="125"/>
+      </Position24>
+      <Position25>
+        <Filename Value="units\uframefactory.pas"/>
+        <Caret Line="30" Column="20" TopLine="30"/>
+      </Position25>
+      <Position26>
+        <Filename Value="units\uframefactory.pas"/>
+        <Caret Line="127" Column="52" TopLine="125"/>
+      </Position26>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

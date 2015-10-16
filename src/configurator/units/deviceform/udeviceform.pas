@@ -78,8 +78,8 @@ begin
 
     // Загрузить библиотеку
     Lib := GetLibrary([
-      GetSetting.DeveloperLibrary + '\module.jlf',
-      GetSetting.UserLibrary + '\module.jlf']);
+      Utf8ToAnsi(GetSetting.DeveloperLibrary + '\module.jlf'),
+      Utf8ToAnsi(GetSetting.UserLibrary + '\module.jlf')]);
 
     for P in Lib do
     begin

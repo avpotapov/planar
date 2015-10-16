@@ -11,7 +11,7 @@ object SettingForm: TSettingForm
   OnHide = FormHide
   OnShow = FormShow
   Position = poMainFormCenter
-  LCLVersion = '1.4.0.4'
+  LCLVersion = '1.4.2.0'
   object SettingTree: TVirtualStringTree
     Left = 0
     Height = 428

@@ -28,10 +28,9 @@
         <Filename Value="units\ulibrary.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uLibrary"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
         <TopLine Value="600"/>
-        <CursorPos X="23" Y="638"/>
+        <CursorPos X="52" Y="607"/>
         <UsageCount Value="137"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -88,6 +87,7 @@
         <Filename Value="units\ulibraryserializer.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uLibrarySerializer"/>
+        <IsVisibleTab Value="True"/>
         <TopLine Value="154"/>
         <CursorPos X="35" Y="160"/>
         <UsageCount Value="45"/>

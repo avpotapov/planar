@@ -103,6 +103,8 @@ type
   { TVersionFirmWareData }
 
   TVersionFirmWareData = class(TDeviceBaseData)
+  private
+    fVersionFirmWare: string;
   protected
     function GetValue: string; override;
     procedure SetValue(const {%H-}aValue: string); override;
@@ -127,6 +129,8 @@ type
   { TVersionProjectData }
 
   TVersionProjectData = class(TDeviceBaseData)
+  private
+    fSignatureProject: string;
   protected
     function GetValue: string; override;
     procedure SetValue(const {%H-}aValue: string); override;
@@ -149,7 +153,8 @@ end;
 
 function TVersionProjectData.GetValue: string;
 begin
-  Result:= fDeviceData.Signarute.VersionProject;
+  fSignatureProject := fDeviceData.Signarute.VersionProject;
+  Result:= fSignatureProject;
 
 end;
 
@@ -185,7 +190,8 @@ end;
 
 function TVersionFirmWareData.GetValue: string;
 begin
-  Result:= fDeviceData.Signarute.VersionFirmWare;
+  fVersionFirmWare := fDeviceData.Signarute.VersionFirmWare;
+  Result:= fVersionFirmWare;
 end;
 
 procedure TVersionFirmWareData.SetValue(const aValue: string);
@@ -328,6 +334,8 @@ var
   Sublib: ISublibrary;
   M: IModule;
   P, P1: Pointer;
+  S: String;
+  I: Integer;
 begin
   inherited AfterConstruction;
 
@@ -343,9 +351,12 @@ begin
     for P in Lib do
     begin
       Sublib := Lib.ExtractData(P);
+      if Sublib.Count = 0 then
+        Exit;
       for P1 in Sublib do
       begin
          M := Sublib.ExtractData(P1);
+         S := M.Name;
          Strings.AddObject(M.Name, TObject(Pointer(M)));
       end;
     end;

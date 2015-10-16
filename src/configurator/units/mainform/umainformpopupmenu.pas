@@ -5,7 +5,7 @@ unit uMainFormPopupMenu;
 interface
 
 uses
-  Classes, SysUtils, Menus, Registry, Forms, Controls,
+  Classes, SysUtils, Menus, Registry, Forms, Controls, Dialogs,
   uConfiguratorData;
 
 type
@@ -36,13 +36,14 @@ type
   TContentTreeProxyPopupMenu = class
   private
     fMenu: TPopupMenu;
-    fDeviceData : TDeviceData;
+    fDeviceData: TDeviceData;
     fOnChangeLinkStatus: TNotifyEvent;
-    fOnAddDevice:  TNotifyEvent;
+    fOnAddDevice: TNotifyEvent;
     fOnRemoveNode: TNotifyEvent;
 
   private
     procedure ResetDevice(Sender: TObject);
+    procedure ShowSerialForm(Sender: TObject);
     procedure ViewModbusMenu(const aModbusData: TModbusData);
     procedure AddMenuItem(const aCaption: string; const aOnClick: TNotifyEvent = nil);
   public
@@ -60,7 +61,7 @@ type
 implementation
 
 uses
-  uModbus;
+  uModbus, uSerialForm;
 
 {$REGION ModbusPopupMenuFactory}
 
@@ -68,7 +69,7 @@ constructor TModbusPopupMenuFactory.Create(const aMenu: TPopupMenu;
   const aOnClick: TNotifyEvent);
 begin
   inherited Create;
-  fMenu    := aMenu;
+  fMenu := aMenu;
   fOnClick := aOnClick;
   fSerialList := TStringList.Create;
 end;
@@ -198,7 +199,7 @@ procedure TContentTreeProxyPopupMenu.Setup(aOnChangeLinkStatus,
   aOnAddDevice, aOnRemoveNode: TNotifyEvent);
 begin
   fOnChangeLinkStatus := aOnChangeLinkStatus;
-  fOnAddDevice  := aOnAddDevice;
+  fOnAddDevice := aOnAddDevice;
   fOnRemoveNode := aOnRemoveNode;
 end;
 
@@ -209,29 +210,43 @@ begin
     ViewModbusMenu(TModbusData(aContentData));
   if aContentData is TDeviceData then
   begin
-    fDeviceData := aContentData as TDeviceData;
-    AddMenuItem('Удалить устройство', fOnRemoveNode);
-    AddMenuItem('Перезагрузить устройство', @ResetDevice);
 
+    fDeviceData := aContentData as TDeviceData;
+    AddMenuItem('Серийный номер...', @ShowSerialForm);
+    AddMenuItem('Перезагрузить устройство', @ResetDevice);
+    AddMenuItem('Удалить устройство', fOnRemoveNode);
   end;
 end;
 
 procedure TContentTreeProxyPopupMenu.ResetDevice(Sender: TObject);
 var
-Frame: IFrame;
+  Frame: IFrame;
 begin
-  Screen.Cursor:= crHourGlass;
+  Screen.Cursor := crHourGlass;
   try
-  FRame := uModbus.ResetApplication(fDeviceData.SlaveId, 1000);
-  FRame.Priority:= TPriority.prHigh;
+    FRame := uModbus.ResetApplication(fDeviceData.SlaveId, 1000);
+    FRame.Priority := TPriority.prHigh;
 
-  if (fDeviceData.ContentSet[1] is TModbusData) then
+    if (fDeviceData.ContentSet[1] is TModbusData) then
       (fDeviceData.ContentSet[1] as TModbusData).Controller.InQueue(FRame);
-  sleep(3000);
+    Frame.Responded;
+
+    sleep(1000);
 
   finally
-    Screen.Cursor:= crDefault;
+    Screen.Cursor := crDefault;
   end;
+end;
+
+procedure TContentTreeProxyPopupMenu.ShowSerialForm(Sender: TObject);
+begin
+  with TSerialForm.Create(nil) do
+    try
+      Load([fDeviceData.ContentSet[0], fDeviceData.ContentSet[1]]);
+      ShowModal;
+    finally
+      Free;
+    end;
 end;
 
 

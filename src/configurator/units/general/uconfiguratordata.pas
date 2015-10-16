@@ -478,7 +478,9 @@ begin
   end;
   case fModule.TypeSignature of
     TTypeSignature.sgAuto:
-      fSignature := TAuto.Create(Controller, fMap, fSlaveId, @Update);
+      begin
+        fSignature := TAuto.Create(Controller, fMap, fSlaveId, @Update);
+      end;
     TTypeSignature.sgRccu:
       fSignature := TRccu.Create(Controller, fMap, fSlaveId);
     else

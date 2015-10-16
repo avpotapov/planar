@@ -172,13 +172,14 @@ begin
 end;
 
 procedure TThreadSignature.Execute;
+var
+  Res: Boolean;
 begin
   Windows.InterLockedExchange(fClosed, 0);
   try
 
   if fSignature.fInput <> nil then
   begin
-
     // Пока не отправлен запрос
     while not fSignature.fController.InQueue(fSignature.fInput) do
     begin
@@ -186,9 +187,10 @@ begin
       if IsClosed then
         Exit;
     end;
-
+    sleep(1000);
     // Обработка ответа
-    if fSignature.fInput.Responded then
+    Res := fSignature.fInput.Responded;
+    if Res then
     begin
       fSignature.fMap.WriteData(Swap(PWord(@fSignature.fInput.RequestPdu^[1])^),
         fSignature.fInput.ResponsePdu);
@@ -354,10 +356,12 @@ const
 
   ADDRESS_HOLDING      = 65000;
   NUMBER_HOLDING: Word = 25;
-
+var
+  T: Integer;
 begin
-  fInput    := ReadInput(fSlaveId, ADDRESS_INPUT, NUMBER_INPUT, GetSetting.Timeout);
-  fHolding  := ReadHolding(fSlaveId, ADDRESS_HOLDING, NUMBER_HOLDING, GetSetting.Timeout);
+  T := GetSetting.Timeout;
+  fInput    := ReadInput(fSlaveId, ADDRESS_INPUT, NUMBER_INPUT, T);
+  fHolding  := ReadHolding(fSlaveId, ADDRESS_HOLDING, NUMBER_HOLDING, T);
 end;
 
 function TAuto.GetDateIdHard: String;

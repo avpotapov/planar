@@ -21,7 +21,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="22"/>
+      <BuildNr Value="34"/>
       <Language Value="0419"/>
       <Attributes pvaPreRelease="True"/>
       <StringTable Comments="Настройка приложения Librarian, Configurator. . Настройки сохраняются. Пользовательские настройки сохраняются в файле Setting.ini" CompanyName="Planar, LLC" FileDescription="Содержит основные настройки программ" LegalCopyright="Planar, LLC" OriginalFilename="Setting.dll" ProductVersion="1.0"/>
@@ -37,7 +37,7 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <Units Count="3">
+    <Units Count="4">
       <Unit0>
         <Filename Value="setting.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -52,6 +52,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSettingCls"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="units\uregsetting.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRegSetting"/>
+      </Unit3>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

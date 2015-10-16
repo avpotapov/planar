@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 516
+  Left = 434
   Height = 582
-  Top = 150
+  Top = 423
   Width = 828
   Caption = 'Jl Configurator'
   ClientHeight = 562

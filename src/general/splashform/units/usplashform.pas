@@ -37,7 +37,7 @@ begin
   if FileExists(fLogoFileName) then
   Logo.Picture.Png.LoadFromFile(fLogoFileName);
   Label1.Caption := Label1.Caption + ' ' +  AnsiToUtf8(ConfiguratorVersion.VersionStrings[8]);
-  Label2.Caption := Label2.Caption + '  ' +  AnsiToUtf8(LibrarianVersion.VersionStrings[8]);
+  Label2.Caption := Label2.Caption + '  ' +  '1.0.0'{AnsiToUtf8(LibrarianVersion.VersionStrings[8])};
 
 end;
 

@@ -1,0 +1,89 @@
+object SerialForm: TSerialForm
+  Left = 163
+  Height = 184
+  Top = 639
+  Width = 264
+  BorderStyle = bsDialog
+  Caption = 'Серийный номер'
+  ClientHeight = 184
+  ClientWidth = 264
+  Position = poScreenCenter
+  LCLVersion = '1.4.2.0'
+  object SerialLabeledEdit: TLabeledEdit
+    Left = 8
+    Height = 23
+    Top = 69
+    Width = 247
+    EditLabel.AnchorSideLeft.Control = SerialLabeledEdit
+    EditLabel.AnchorSideRight.Control = SerialLabeledEdit
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = SerialLabeledEdit
+    EditLabel.Left = 8
+    EditLabel.Height = 15
+    EditLabel.Top = 51
+    EditLabel.Width = 247
+    EditLabel.Caption = 'Серийный номер'
+    EditLabel.ParentColor = False
+    TabOrder = 0
+  end
+  object DateEdit: TDateEdit
+    Left = 8
+    Height = 23
+    Top = 112
+    Width = 247
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    OKCaption = 'OK'
+    CancelCaption = 'Cancel'
+    DateOrder = doNone
+    ButtonWidth = 23
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 1
+  end
+  object DateLabel: TLabel
+    Left = 8
+    Height = 15
+    Top = 96
+    Width = 25
+    Caption = 'Дата'
+    ParentColor = False
+  end
+  object OkButton: TButton
+    Left = 96
+    Height = 25
+    Top = 152
+    Width = 75
+    Caption = 'Применить'
+    OnClick = OkButtonClick
+    TabOrder = 2
+  end
+  object CancelButton: TButton
+    Left = 180
+    Height = 25
+    Top = 152
+    Width = 75
+    Caption = 'Закрыть'
+    OnClick = CancelButtonClick
+    TabOrder = 3
+  end
+  object UidEditButton: TEditButton
+    Left = 8
+    Height = 23
+    Top = 24
+    Width = 247
+    ButtonWidth = 23
+    MaxLength = 0
+    NumGlyphs = 1
+    OnButtonClick = UidEditButtonButtonClick
+    PasswordChar = #0
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 5
+    Width = 19
+    Caption = 'UID'
+    ParentColor = False
+  end
+end

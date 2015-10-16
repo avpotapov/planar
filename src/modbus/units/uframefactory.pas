@@ -27,10 +27,15 @@ type
     class function WriteMultiple(const aSlaveId: byte;
       const aStart, aRegCount: word; const aValue, aTimeout: dword): IFrame;
 
+    class function WriteStruct(const aSlaveId: byte; const aPdu: TBuffer; const aCount: word; const aTimeout: dword): IFrame;
+
     class function RunApplication(const aSlaveId: byte;
       const aTimeout: dword): IFrame;
 
     class function ResetApplication(const aSlaveId: byte;
+      const aTimeout: dword): IFrame;
+
+    class function ReadSerial(const aSlaveId: byte;
       const aTimeout: dword): IFrame;
 
     class function RunBootloader(const aSlaveId: byte;
@@ -119,6 +124,16 @@ begin
   Result.RequestCount := 6 + ValueSize;
 end;
 
+class function TFrameFactory.WriteStruct(const aSlaveId: byte; const aPdu: TBuffer;
+  const aCount: word; const aTimeout: dword): IFrame;
+begin
+  Result := TFrame.Create;
+  Result.SlaveId:= aSlaveId;;
+  System.Move(aPdu[0], Result.RequestPdu^[0], aCount);
+  Result.RequestCount := aCount;
+  Result.Timeout := aTimeout;
+end;
+
 class function TFrameFactory.RunApplication(const aSlaveId: byte;
   const aTimeout: dword): IFrame;
 const
@@ -145,7 +160,7 @@ end;
 class function TFrameFactory.ResetApplication(const aSlaveId: byte;
   const aTimeout: dword): IFrame;
 const
-  MB_DEVICE_FUNCTION: Byte = $68;
+  MB_DEVICE_FUNCTION: Byte = $44;
   MB_RESET_APPLICATION: Byte  = 4;
   PROTECT_CODE: Dword = $5FA0A05F;
 
@@ -159,6 +174,28 @@ begin
   Result.RequestPdu^[1] := MB_RESET_APPLICATION;
   Result.RequestPdu^[2] := 0;
   PDWord(@Result.RequestPdu^[3])^ := PROTECT_CODE;
+
+  Result.RequestCount := SizeOfBuffer;
+
+  Result.Timeout := aTimeout;
+
+end;
+
+class function TFrameFactory.ReadSerial(const aSlaveId: byte;
+  const aTimeout: dword): IFrame;
+const
+  MB_DEVICE_FUNCTION: Byte = 71;
+  MB_READ_SERIAL: Byte  = 0;
+
+  SizeOfBuffer: Byte  = 2;
+
+begin
+  Result := TFrame.Create;
+  Result.SlaveId := aSlaveId;
+
+  Result.RequestPdu^[0] := MB_DEVICE_FUNCTION;
+  Result.RequestPdu^[1] := MB_READ_SERIAL;
+
 
   Result.RequestCount := SizeOfBuffer;
 

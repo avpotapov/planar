@@ -9,6 +9,7 @@ object SplashForm: TSplashForm
   ClientHeight = 207
   ClientWidth = 531
   Color = clNone
+  Enabled = False
   FormStyle = fsSplash
   OnCreate = FormCreate
   Position = poScreenCenter

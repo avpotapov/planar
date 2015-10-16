@@ -4,33 +4,32 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="5">
+    <Units Count="6">
       <Unit0>
         <Filename Value="setting.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="28" Y="14"/>
-        <UsageCount Value="23"/>
+        <CursorPos X="34" Y="19"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="units\usetting.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSetting"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="44"/>
-        <CursorPos X="72" Y="64"/>
-        <UsageCount Value="23"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="46"/>
+        <CursorPos X="61" Y="93"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="units\usettingcls.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSettingCls"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="87"/>
-        <CursorPos X="70" Y="135"/>
-        <UsageCount Value="23"/>
+        <TopLine Value="97"/>
+        <CursorPos X="61" Y="121"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -41,13 +40,24 @@
       </Unit3>
       <Unit4>
         <Filename Value="d:\soft\lazarus\fpc\2.6.4\source\packages\fcl-registry\src\regdef.inc"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <CursorPos X="21" Y="12"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit4>
+      <Unit5>
+        <Filename Value="units\uregsetting.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRegSetting"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="63"/>
+        <CursorPos Y="63"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit5>
     </Units>
-    <JumpHistory Count="13" HistoryIndex="12">
+    <JumpHistory Count="23" HistoryIndex="22">
       <Position1>
         <Filename Value="setting.lpr"/>
         <Caret Line="22"/>
@@ -100,6 +110,46 @@
         <Filename Value="units\usettingcls.pas"/>
         <Caret Line="90" Column="31" TopLine="60"/>
       </Position13>
+      <Position14>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="93" Column="55" TopLine="49"/>
+      </Position14>
+      <Position15>
+        <Filename Value="units\usetting.pas"/>
+        <Caret Line="89" Column="72" TopLine="45"/>
+      </Position15>
+      <Position16>
+        <Filename Value="units\usettingcls.pas"/>
+        <Caret Line="307" Column="36" TopLine="307"/>
+      </Position16>
+      <Position17>
+        <Filename Value="units\uregsetting.pas"/>
+        <Caret Line="12" Column="5"/>
+      </Position17>
+      <Position18>
+        <Filename Value="units\uregsetting.pas"/>
+        <Caret Line="8" Column="30"/>
+      </Position18>
+      <Position19>
+        <Filename Value="units\uregsetting.pas"/>
+        <Caret Line="14" Column="46"/>
+      </Position19>
+      <Position20>
+        <Filename Value="units\uregsetting.pas"/>
+        <Caret Line="60" Column="19" TopLine="31"/>
+      </Position20>
+      <Position21>
+        <Filename Value="units\uregsetting.pas"/>
+        <Caret Line="91" Column="31" TopLine="71"/>
+      </Position21>
+      <Position22>
+        <Filename Value="units\uregsetting.pas"/>
+        <Caret Line="16" Column="9" TopLine="46"/>
+      </Position22>
+      <Position23>
+        <Filename Value="units\uregsetting.pas"/>
+        <Caret Line="101" TopLine="75"/>
+      </Position23>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

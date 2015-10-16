@@ -18,6 +18,7 @@ type
     function GetDeveloperLibrary: String;
     function GetKeepAliveTimeout: dword;
     function GetKeepAliveAddress: Byte;
+    function GetLastLink: string;
     function GetRepeats: Byte;
     function GetResponseTimeout: dword;
     function GetTimeout: dword;
@@ -28,6 +29,7 @@ type
     procedure SetDeveloperLibrary(const aDeveloperLibrary: String);
     procedure SetKeepAliveAddress(const aKeepAliveAddress: Byte);
     procedure SetKeepAliveTimeout(const aKeepAliveTimeout: dword);
+    procedure SetLastLink(AValue: string);
     procedure SetRepeats(const aRepeats: Byte);
     procedure SetResponseTimeout(const aResponseTimeout: dword);
     procedure SetTimeout(const aTimeout: dword);
@@ -84,10 +86,11 @@ type
     property UpdateEveryWeek: Boolean read GetUpdateEveryWeek write SetUpdateEveryWeek;
     function GetUserData: string;
     property UserData: string read GetUserData;
+        property LastLink: string read GetLastLink write SetLastLink;
   end;
 
   function GetSetting(const aFileName: string = ''): ISetting; external 'setting.dll';
-
+  function GetRegSetting: ISetting; external 'setting.dll';
 implementation
 
 end.

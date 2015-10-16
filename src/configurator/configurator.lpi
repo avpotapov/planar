@@ -21,7 +21,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="2"/>
-      <BuildNr Value="78"/>
+      <BuildNr Value="94"/>
       <Language Value="0419"/>
       <CharSet Value="04B0"/>
       <StringTable Comments="Приложение &quot;Конфигуратор&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Конфигуратор&quot;" InternalName="Configurator.exe" LegalCopyright="Planar, LLC" OriginalFilename="Configurator.exe" ProductName="Конфигуратор" ProductVersion="2.0.0"/>
@@ -48,7 +48,7 @@
         <PackageName Value="LCL"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="39">
+    <Units Count="40">
       <Unit0>
         <Filename Value="configurator.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -89,6 +89,7 @@
         <ComponentName Value="DeviceForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uDeviceForm"/>
       </Unit6>
       <Unit7>
         <Filename Value="..\library\units\ulibrary.pas"/>
@@ -102,6 +103,7 @@
       <Unit9>
         <Filename Value="units\general\usignature.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="uSignature"/>
       </Unit9>
       <Unit10>
         <Filename Value="units\detailedmodbusform\udetailedmodbusform.pas"/>
@@ -272,6 +274,14 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uAbout"/>
       </Unit38>
+      <Unit39>
+        <Filename Value="units\userialform\userialform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SerialForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uSerialForm"/>
+      </Unit39>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -282,7 +292,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="units;..\setting\units;..\modbus\units;..\library\units;..\map\units;units\general;units\mainform;units\detailedbackupform;units\detailedbootloaderform;units\detaileddeviceform;units\detailedmodbusform;units\deviceform;units\detailedtrendsform;units\detailedgroupform;..\holdings\units;..\general\settingform\units;units\holdingsform;..\general\customeditor\units;..\general\splashform\units;units\update;units\about"/>
+      <OtherUnitFiles Value="units;..\setting\units;..\modbus\units;..\library\units;..\map\units;units\general;units\mainform;units\detailedbackupform;units\detailedbootloaderform;units\detaileddeviceform;units\detailedmodbusform;units\deviceform;units\detailedtrendsform;units\detailedgroupform;..\holdings\units;..\general\settingform\units;units\holdingsform;..\general\customeditor\units;..\general\splashform\units;units\update;units\about;units\userialform"/>
       <UnitOutputDirectory Value="..\..\lib"/>
     </SearchPaths>
     <Parsing>
@@ -292,7 +302,6 @@
     </Parsing>
     <Linking>
       <Debugging>
-        <GenerateDebugInfo Value="False"/>
         <UseLineInfoUnit Value="False"/>
       </Debugging>
       <Options>

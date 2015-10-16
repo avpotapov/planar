@@ -19,7 +19,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="2"/>
-      <BuildNr Value="418"/>
+      <BuildNr Value="421"/>
       <Language Value="0419"/>
       <StringTable Comments="Приложение &quot;Библиотекарь&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Библиотекарь&quot;" LegalCopyright="Planar, LLC" OriginalFilename="Librarian.exe" ProductName="Библиотекарь" ProductVersion="2.0.0"/>
     </VersionInfo>

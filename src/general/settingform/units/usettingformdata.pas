@@ -256,12 +256,12 @@ end;
 
 procedure TUserImage.SetValue(const aValue: string);
 begin
-  GetSetting.UserImage := aValue;
+  GetSetting.UserImage := Utf8ToAnsi(aValue);
 end;
 
 function TUserImage.GetValue: string;
 begin
-  Result := GetSetting.UserImage;
+  Result := AnsiToUtf8(GetSetting.UserImage);
 end;
 
 constructor TUserImage.Create;
@@ -274,12 +274,12 @@ end;
 
 procedure TUserLibrary.SetValue(const aValue: string);
 begin
-  GetSetting.UserLibrary := aValue;
+  GetSetting.UserLibrary := Utf8ToAnsi(aValue);
 end;
 
 function TUserLibrary.GetValue: string;
 begin
-  Result := GetSetting.UserLibrary;
+  Result := AnsiToUtf8(GetSetting.UserLibrary);
 end;
 
 constructor TUserLibrary.Create;
@@ -292,12 +292,12 @@ end;
 
 procedure TDeveloperImage.SetValue(const aValue: string);
 begin
-  GetSetting.DeveloperImage := aValue;
+  GetSetting.DeveloperImage := Utf8ToAnsi(aValue);
 end;
 
 function TDeveloperImage.GetValue: string;
 begin
-  Result := GetSetting.DeveloperImage;
+  Result := AnsiToUtf8(GetSetting.DeveloperImage);
 end;
 
 constructor TDeveloperImage.Create;
@@ -310,12 +310,12 @@ end;
 
 procedure TDeveloperLibrary.SetValue(const aValue: string);
 begin
-  GetSetting.DeveloperLibrary := aValue;
+  GetSetting.DeveloperLibrary := Utf8ToAnsi(aValue);
 end;
 
 function TDeveloperLibrary.GetValue: string;
 begin
-  Result := GetSetting.DeveloperLibrary;
+  Result := AnsiToUtf8(GetSetting.DeveloperLibrary);
 end;
 
 constructor TDeveloperLibrary.Create;

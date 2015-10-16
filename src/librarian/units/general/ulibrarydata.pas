@@ -226,8 +226,8 @@ end;
 function TVarsData.GetCaption: string;
 begin
   case fTypeRegister of
-	  trHolding: Result := 'Input';
-  	trInput: Result := 'Holding';
+	  trHolding: Result := 'Holding';
+  	trInput: Result := 'Input';
   end;
 end;
 

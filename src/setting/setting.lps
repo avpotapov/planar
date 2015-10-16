@@ -26,38 +26,38 @@
         <Filename Value="units\usettingcls.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uSettingCls"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="97"/>
-        <CursorPos X="61" Y="121"/>
+        <TopLine Value="321"/>
+        <CursorPos Y="372"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
+        <Filename Value="units\uregsetting.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRegSetting"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="103"/>
+        <CursorPos Y="63"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
         <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\sysutils\diskh.inc"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="10" Y="18"/>
         <UsageCount Value="11"/>
-      </Unit3>
-      <Unit4>
+      </Unit4>
+      <Unit5>
         <Filename Value="d:\soft\lazarus\fpc\2.6.4\source\packages\fcl-registry\src\regdef.inc"/>
         <EditorIndex Value="3"/>
         <CursorPos X="21" Y="12"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
-      </Unit4>
-      <Unit5>
-        <Filename Value="units\uregsetting.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="uRegSetting"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="63"/>
-        <CursorPos Y="63"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
       </Unit5>
     </Units>
-    <JumpHistory Count="23" HistoryIndex="22">
+    <JumpHistory Count="22" HistoryIndex="21">
       <Position1>
         <Filename Value="setting.lpr"/>
         <Caret Line="22"/>
@@ -144,12 +144,8 @@
       </Position21>
       <Position22>
         <Filename Value="units\uregsetting.pas"/>
-        <Caret Line="16" Column="9" TopLine="46"/>
-      </Position22>
-      <Position23>
-        <Filename Value="units\uregsetting.pas"/>
         <Caret Line="101" TopLine="75"/>
-      </Position23>
+      </Position22>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

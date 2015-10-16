@@ -187,7 +187,6 @@ begin
       if IsClosed then
         Exit;
     end;
-    sleep(1000);
     // Обработка ответа
     Res := fSignature.fInput.Responded;
     if Res then

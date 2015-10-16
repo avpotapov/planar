@@ -121,7 +121,8 @@ begin
   Frame := uModbus.ReadSerial(fDeviceData.SlaveId, 1000);
   Frame.Priority:= TPriority.prHigh;
   fModbusData.Controller.InQueue(Frame);
-  if Frame.Responded then
+ sleep(100);
+  if not Frame.Responded then
   begin
     Respond := Frame.ResponsePdu^;
     DeSerialize(Frame.ResponsePdu^, SR);

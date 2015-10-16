@@ -326,27 +326,9 @@ begin
 end;
 
 function TSetting.GetDeveloperLibrary: string;
-var
-  Registry: TRegistry;
 begin
-  Result := '';
-  { создаём объект TRegistry }
-  Registry := TRegistry.Create;
-  try
-    { устанавливаем корневой ключ; напрмер hkey_local_machine или hkey_current_user }
-    Registry.RootKey := HKEY_CURRENT_USER;
-    { открываем ключ }
-    if not Registry.OpenKey('SOFTWARE\JetLogic', True) then
-      Exit;
-    Result :=AnsiToUtf8(Registry.ReadString('DeveloperLibrary'));
-    { закрываем и освобождаем ключ }
-    Registry.CloseKey;
-  finally
-    Registry.Free;
-  end;
-
-//  fDeveloperLibrary := {AnsiToUtf8}(fIniFile.ReadString('LIBRARY', 'DeveloperLibrary', fCurrentPath));
-//  Result := fDeveloperLibrary
+  fDeveloperLibrary := {AnsiToUtf8}(fIniFile.ReadString('LIBRARY', 'DeveloperLibrary', fCurrentPath));
+  Result := fDeveloperLibrary
 end;
 
 procedure TSetting.SetDeveloperLibrary(const aDeveloperLibrary: string);
@@ -366,26 +348,9 @@ begin
 end;
 
 function TSetting.GetUserLibrary: string;
-var
-  Registry: TRegistry;
 begin
-  Result := '';
-  { создаём объект TRegistry }
-  Registry := TRegistry.Create;
-  try
-    { устанавливаем корневой ключ; напрмер hkey_local_machine или hkey_current_user }
-    Registry.RootKey := HKEY_CURRENT_USER;
-    { открываем ключ }
-    if not Registry.OpenKey('SOFTWARE\JetLogic', True) then
-      Exit;
-    Result :=AnsiToUtf8(Registry.ReadString('UserLibrary'));
-    { закрываем и освобождаем ключ }
-    Registry.CloseKey;
-  finally
-    Registry.Free;
-  end;
-//  fUserLibrary := {AnsiToUtf8}(fIniFile.ReadString('LIBRARY', 'UserLibrary', fCurrentPath));
-//  Result := fUserLibrary;
+  fUserLibrary := {AnsiToUtf8}(fIniFile.ReadString('LIBRARY', 'UserLibrary', fCurrentPath));
+  Result := fUserLibrary;
 end;
 
 procedure TSetting.SetUserLibrary(const aUserLibrary: string);

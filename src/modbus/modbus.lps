@@ -62,9 +62,10 @@
       <Unit6>
         <Filename Value="units\uframe.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="22"/>
-        <CursorPos Y="102"/>
+        <TopLine Value="134"/>
+        <CursorPos X="3" Y="167"/>
         <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit6>
@@ -119,7 +120,6 @@
         <Filename Value="units\umodbus.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uModbus"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
         <TopLine Value="323"/>
         <CursorPos X="44" Y="421"/>

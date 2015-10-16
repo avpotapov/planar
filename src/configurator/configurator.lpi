@@ -21,7 +21,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="2"/>
-      <BuildNr Value="94"/>
+      <BuildNr Value="95"/>
       <Language Value="0419"/>
       <CharSet Value="04B0"/>
       <StringTable Comments="Приложение &quot;Конфигуратор&quot;" CompanyName="Planar, LLC" FileDescription="Приложение &quot;Конфигуратор&quot;" InternalName="Configurator.exe" LegalCopyright="Planar, LLC" OriginalFilename="Configurator.exe" ProductName="Конфигуратор" ProductVersion="2.0.0"/>
@@ -196,6 +196,7 @@
       <Unit25>
         <Filename Value="units\detailedbootloaderform\ubootloader.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="uBootLoader"/>
       </Unit25>
       <Unit26>
         <Filename Value="units\detailedbackupform\ubackupformdata.pas"/>
